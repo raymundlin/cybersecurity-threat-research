@@ -24,11 +24,12 @@ notable incidents:
      	when victim click the lure .lnk, the malware will collect data from the victim device and save them
       	to $RECYCLE.BIN in the removable device.
 attribution: |
-	
+	Currently, apt31 is dedicated to collecting government intelligence information around the world 
+ 	and is suspected of working for Chinese intelligence agencies.
     
 sources of intelligence:
 - Cybersecurity Firm Report
-- Blog Engine
+- Blog Search Engine
 - Mitre Att&ck Groups
 - Microsoft Blog
 - Checkpoint Blog
