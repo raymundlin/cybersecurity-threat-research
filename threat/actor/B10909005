@@ -1,0 +1,22 @@
+Threat Actor: APT40 (Bronze President)
+
+Background: 
+    APT40 is a Chinese threat actor that has been active since at least 2009. 
+    It employs tailored malicious software and spear-phishing emails as tactics to target entities within the defense, government, maritime, aerospace, education, and healthcare sectors.
+
+Notable Incidents:
+- Targeting Maritime Organizations
+- Operation Cloud Hopper
+- Espionage in Southeast Asia
+EX. Really Incidents
+(1) APT40 was involved in the cyberattacks against Microsoft Exchange servers in 2021. 
+(2) APT40 was also behind the theft of sensitive data from US Navy contractors in 2018.
+
+Attribution:
+    APT40 is believed to be associated with the Chinese Ministry of State Security (MSS) and its Hainan State Security Department (HSSD). 
+    The US and its allies have publicly attributed the Microsoft Exchange attacks to the MSS.
+    
+sources of intelligence:
+- Avertium: https://explore.avertium.com/resource/bronze-mohawk-and-cyber-espionage
+- Security Boulevard: https://securityboulevard.com/2021/07/nations-come-together-to-condemn-china-apt31-and-apt40/
+- Malpedia: https://malpedia.caad.fkie.fraunhofer.de/actor/apt40
