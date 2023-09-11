@@ -1,4 +1,4 @@
-threat actor: APT41 (Double Dragon, Winnti, Barium, Wicked Panda, Bronze Atlas)
+threat actor: APT41 (Double Dragon, Winnti, Barium, Wicked Panda, Bronze Atlas, HOODOO)
 
 background:
     Double Dragon or Winnti Group, is a highly sophisticated and adaptable advanced persistent threat (APT) organization that has been active since at least 2012. 
@@ -10,6 +10,7 @@ notable incidents:
 - Supply chain breach affecting a popular video game
 - High-profile cyber espionage campaigns
 - Law Firms and Legal Services
+- Taiwan Media Organization by spreading phising emails
 
 attribution: 
     They are known to suspect US state Government based on organization investigation on May 2021 to February 2022. 
