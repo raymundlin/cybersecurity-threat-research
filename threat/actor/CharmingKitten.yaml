@@ -1,0 +1,49 @@
+threat actor: Charming Kitten
+
+background: |
+  Charming Kitten is an Iranian threat group that has been active since at least 2014. The group has targeted a variety of sectors, 
+  including government, defense, and technology, and has largely focused its operations within the Middle East. 
+  Charming Kitten has been known to use spearphishing emails, social engineering, and watering hole attacks to gain initial access to victims. 
+  The group has also been known to use compromised email accounts to send spearphishing emails to other victims. 
+
+notable incidents:
+- date: 2017
+  description: |
+    Charming Kitten targeted a number of individuals associated with the U.S. aerospace industry, including personnel at Boeing, 
+    Raytheon, and TASC. The group used spearphishing emails containing malicious attachments to gain initial access to victims. 
+    The emails were spoofed to appear as if they were sent from Boeing and contained a malicious attachment that, when opened, 
+    installed a backdoor on the victim’s machine. The backdoor was used to collect information from the victim’s machine and 
+    send it to a command and control (C2) server. The C2 server was also used to send commands to the backdoor, including commands 
+    to download and execute additional malware. The group also used a compromised email account to send spearphishing emails to 
+    other individuals associated with the aerospace industry. The emails contained a malicious link that, when clicked, 
+    redirected the victim to a website that hosted a malicious file. The file, when opened, installed a backdoor on the victim’s machine.
+
+- date: 2019
+  description: |
+    Charming Kitten targeted a number of individuals associated with the Trump administration. The group used spearphishing emails 
+    containing malicious attachments to gain initial access to victims. The emails were spoofed to appear as if they were sent from 
+    the University of Cambridge and contained a malicious attachment that, when opened, installed a backdoor on the victim’s machine. 
+    The backdoor was used to collect information from the victim’s machine and send it to a C2 server. The C2 server was also used 
+    to send commands to the backdoor, including commands to download and execute additional malware.
+    
+-date: 2020
+  description: |
+    Between August and September 2019, Charming Kitten, a suspected Iranian hacking group, made 2,700 attempts to access targeted email accounts, 
+    resulting in 241 attacks and 4 compromised accounts, according to Microsoft.
+    While the targets were linked to a United States presidential campaign, no election-related accounts were compromised. 
+    Although Microsoft did not specify the campaign, Reuters later suggested it was Donald Trump's re-election campaign due to its use of Microsoft Outlook. 
+    Iran denied involvement in election meddling, but cybersecurity experts, including Microsoft and ClearSky Cyber Security, 
+    maintained Charming Kitten's involvement, citing victim profiles, time overlap, and consistent attack methods as evidence.
+
+attribution: |
+  No, we do not know the real identity of the members of Charming Kitten. Attribution of cyber threat actors is often difficult and contested. 
+  There is no single, definitive source of attribution, and different organizations may use different names for the same group. 
+  In the case of Charming Kitten, there is a consensus among many experts that the group is likely based in Iran. 
+  However, there is no concrete evidence to prove this, and the group could be operating from another country.
+
+sources of intelligence: |
+  Cybersecurity Reports
+  Government Statements
+  Incident Reports
+  Open-Source Intelligence
+  Threat Intelligence Sharing
