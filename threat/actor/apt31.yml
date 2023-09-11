@@ -1,0 +1,22 @@
+threat actor: APT31 (Zirconium)
+
+background: |
+    ZIRCONIUM is a threat group operating out of China, active since at least 2017, 
+	that has targeted individuals associated with the 2020 US presidential election 
+	and prominent leaders in the international affairs community.
+
+notable incidents:
+- cyberattacks targeting U.S. elections 
+- Leverages COVID-19 Vaccine Theme and Abuses Legitimate Online Services
+
+attribution: |
+    While the true identity of Zirconium remains unknown, investigations have led to the apprehension of some members.
+    
+sources of intelligence:
+- Mitre Att&ck Groups
+- Microsoft Blog
+- Checkpoint Blog
+- Google THREAT ANALYSIS GROUP Blog
+- Zscaler Security Insights Blog
+- Wiki
+- CyberScoop
