@@ -16,8 +16,8 @@ notable incidents:
 	Discovered by Zscaler. The group leverages COVID-19 Vaccine Theme, to conduct social engneering.
     	They combine c2-tool-downloader and decoy file to lure victim to open the file in the covid associated email. 
 - APT31 operating mode attack campaign targeting France (2021): |
-	Alert by ANSSI. The group leverages the compromised home routers to do reconnaissance and 
-    	attacking in the Frace.
+	Alerted by ANSSI. The group leverages the compromised home routers to do reconnaissance and 
+    	attacking in the France.
 - Breach air-gapped devices in Eastern Europe (2023): |
 	Reported by Kaspesky. The group leverages removable devices to collect sensitive data. They inject 
     	malicious dll payload in a legitimate McAfee dll and hide it in removable device.
