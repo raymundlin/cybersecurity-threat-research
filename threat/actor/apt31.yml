@@ -6,17 +6,24 @@ background: |
 	and prominent leaders in the international affairs community.
 
 notable incidents:
-- cyberattacks targeting U.S. elections 
-- Leverages COVID-19 Vaccine Theme and Abuses Legitimate Online Services
+- cyberattacks targeting U.S. elections (2020)
+- Leverages COVID-19 Vaccine Theme and Abuses Legitimate Online Services (2020)
+- APT31 operating mode attack campaign targeting France (2021)
+- breach air-gapped devices in Eastern Europe (2023)
 
 attribution: |
     While the true identity of Zirconium remains unknown, investigations have led to the apprehension of some members.
     
 sources of intelligence:
+- Cybersecurity Firm Report
+- Blog Engine
 - Mitre Att&ck Groups
 - Microsoft Blog
 - Checkpoint Blog
 - Google THREAT ANALYSIS GROUP Blog
 - Zscaler Security Insights Blog
 - Wiki
-- CyberScoop
+- Malpedia
+- Github Aptnote
+- IBM X-Force Exchange
+
