@@ -6,13 +6,25 @@ background: |
 	and prominent leaders in the international affairs community.
 
 notable incidents:
-- cyberattacks targeting U.S. elections (2020)
+- Cyberattacks Targeting U.S. Elections (2020)
 - Leverages COVID-19 Vaccine Theme and Abuses Legitimate Online Services (2020)
 - APT31 operating mode attack campaign targeting France (2021)
-- breach air-gapped devices in Eastern Europe (2023)
+- Breach air-gapped devices in Eastern Europe (2023)
 
 attribution: |
-    While the true identity of Zirconium remains unknown, investigations have led to the apprehension of some members.
+    #1 	Detected by Microsoft. The group attempt to gain intelligence about the 
+    	2020 US presidential election. Targeting people closely associated with U.S. presidential campaigns 
+     	and prominent individuals in the international affairs community. They using web bugs or web beacons,
+      	tied to the domain they purchased, and send the urls throuth email text or attachment to victims.
+       	When victims access the link, the group can trace what they access.
+    #2	Discoverd by Zscaler. The group leverages COVID-19 Vaccine Theme, to conduct social engneering.
+    	They combine c2-tool-downloader and convoy file to lure victim to open the file in the covid associated email. 
+    #3  Alert by ANSSI. The group leverages the compromised home routers to do reconnaissance and 
+    	attacking in the Frace.
+    #4	Reported by Kaspesky. The group leverages removable devices to collect sensitive data. They inject 
+    	malicious dll payload in a legitimate McAfee dll and hide it in removable device.
+     	when victim click the lure .lnk, the malware will collect data from the victim device and save them
+      	to $RECYCLE.BIN in the removable device.
     
 sources of intelligence:
 - Cybersecurity Firm Report
