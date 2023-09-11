@@ -1,0 +1,20 @@
+threat actor:  APT28 (Sofacy) 
+
+background:
+Sofacy (also known as APT28, Pawn Storm, Tsar Team, Fancy Bear, Sednit and Strontium) is a cyber espionage group. Its behaviour has been classified as an advanced persistent threat. They employ zero-day vulnerabilities and use spear phishing and malware to compromise targets. Preferred targets are web-based email services. The threat group is known to target government, military, and security organizations. Sofacy route their attacks through relatively small supply chain companies was effective in this instance, as the smaller orgainisations did not realise the risks associated with remote access, nor their role as an infiltration vector to other companies.
+notable incidents:
+They employ zero-day vulnerabilities and use spear phishing and malware to compromise targets.
+
+attribution: 
+APT28 vs. Sandworm (generally)
+APT28 vs. Sandworm (Georgia 2008)
+APT28 vs. Sandworm (BadRabbit 2017)
+APT28 vs. Sandworm (Olympic Destroyer 2018)
+    
+sources of intelligence:
+1. Targeted Attacks: Sofacy is known for conducting highly targeted and sophisticated cyber-attacks primarily against government entities, military organizations, and diplomatic institutions in various countries. 
+2. Advanced Tools and Techniques: They employ advanced malware and hacking techniques, including spear-phishing, zero-day exploits, and custom-built malware tools like Sofacy, X-Agent, and Sednit. 
+3. Political Influence: Sofacy has been linked to cyber-attacks aimed at influencing political events, such as alleged interference in the 2016 U.S. Presidential election. 
+4. Persistence: The group is aptly named "Advanced Persistent Threat" because they are known for their long-term, continuous cyber-espionage campaigns. 
+5. Geopolitical Focus: Sofacy's activities often align with Russian geopolitical interests, targeting countries and organizations seen as adversaries to Russia. 
+6. Evolving Tactics: They continually adapt and evolve their tactics, techniques, and procedures to evade detection and maintain their access to targeted systems. 
