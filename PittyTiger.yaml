@@ -1,0 +1,46 @@
+threat actor: PittyTiger
+
+background: |
+	    Pitty Tiger is a group of attackers that have been active since at least 2011.
+			They have targeted private companies in several sectors, such as defense and telecommunications, but also at least one government.
+			Investigations indicate that Pitty Tiger has not used any 0day vulnerability so far, rather they prefer using custom malware, developed for the group’s exclusive usage. 
+			Discoveries indicate that Pitty Tiger is a group of attackers with the ability to stay under the radar, yet still not as mature as other groups of attackers we monitor.
+			Pitty Tiger is probably not a state-sponsored group of attackers.
+			They lack the experience and financial support that one would expect from state-sponsored attackers.
+			This group is opportunistic and sells its services to probable competitors of their targets in the private sector.
+	
+notable incidents:
+- date: 2014
+	description: |
+		"The Pitty Tiger group mostly uses spear phishing in order to gain an initial foothold within the targeted environment. The group exploits known vulnerabilities in Microsoft Office products to infect their targets with malware. Pitty Tiger group is sometimes using stolen material as spear phishing content to target other persons. They have also been seen using HeartBleed vulnerability in order to directly get valid credentials."
+  victims: |
+		Mapping the victims of such a targeted campaign is not an easy task.	
+		Airbus Defence and Space Reserchers have found the Pitty Tiger group to be very active against one particular private company from the defense industry and one academic network of a government, , yet we think it was done to be used as a proxy for some of the group’s operations.
+		Airbus Defence and Space Reserchers have also found some connections from other companies to the c&c servers, yet we did not find evidence that they were real victims.
+		These supposed victims do work in different sectors and are located mostly in European countries.
+		1 company from the defense industry;
+		1 company from the energy industry;
+		1 company from the telecommunications industry;
+		1 company specialized in web development.
+	attackers: |
+		Airbus Defence and Space Reserchers found out interesting information about the Pitty Tiger group.
+		Airbus Defence and Space Reserchers have been able to get all the RDP connections to one c&c server:
+		These connections are either VPS or dynamic IP addresses, mostly from China.
+		
+
+attribution: |
+		Determining who is exactly behind an APT campaign is difficult. We tried to extract different technical indicators, together with contextual elements.
+		Information relating to the tools used by the attackers has been leveraged for attribution:
+		Several Chinese vulnerability scanners have been launched against targets;
+		Several Chinese tools have been used and found on the c&c servers of the attackers: 8uFTP, a Chinese version of calc.exe, etc.;
+		Two of the used RATs have been developed by the same developers: CT RAT and PittyTiger RAT. The controllers for these RATs show Chinese language;
+		Several binaries used by the attackers show either “Chinese – China” or “Chinese-Taiwan” language ID in their resources;
+		A decoy Word document has been found, written in Chinese language;
+		The IP addresses used for the hosting of the c&c domains are mainly located in Taipei (Taïwan) and Hong Kong City (Hong Kong Special Administrative Region, PRC):
+		All the items listed in this part are strong indicators that the attackers might be Chinese.
+		Main malwares are : PittyTiger, CT RAT, Troj/ReRol.A, gh0st RAT, gsecdump, Lurid, Mimikatz, PoisonIvy
+		Main domains are : avstore.com.tw, sophos.skypetm.com.tw, symantecs.com.tw, trendmicro.org.tw
+sources of intelligence:
+- The MITRE Corporation(https://attack.mitre.org/groups/G0011/)
+- Airbus Defence and Space(https://www.cyber.airbus.com/the-eye-of-the-tiger/)
+- Electronic Transactions Development Agency(https://apt.etda.or.th/cgi-bin/showcard.cgi?g=PittyTiger%2C%20Pitty%20Panda)
