@@ -5,12 +5,11 @@ background: |
     Saudi Arabia and the United States two years ago continues targeting organizations in the two nations, Symantec reported on Wednesday.
 
 notable incidents:
-- Healthcare Sector Breaches
-- Entertainment Industry Intrusions
-- Law Firms and Legal Services
+- 
 
 attribution: |
-    While the true identity of The Dark Overlord remains unknown, investigations have led to the apprehension of some members.
+- member: xman_1365_x -> has been identified as part of the group by researchers; xman_1365_x also was community manager in the Barnamenevis Iranian programming and software engineering forum 
+  (https://www.cyberdefensemagazine.com/iranian-cyber-spies-apt33-target-aerospace-and-energy-organizations-2/)
     
 sources of intelligence:
 - News Outlets
