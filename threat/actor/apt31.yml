@@ -13,7 +13,7 @@ notable incidents:
 	tied to the domain they purchased, and send the urls throuth email text or attachment to victims.
 	When victims access the link, the group can trace what they access.
 - Leverages COVID-19 Vaccine Theme and Abuses Legitimate Online Services (2020): |
-	Discoverd by Zscaler. The group leverages COVID-19 Vaccine Theme, to conduct social engneering.
+	Discovered by Zscaler. The group leverages COVID-19 Vaccine Theme, to conduct social engneering.
     	They combine c2-tool-downloader and decoy file to lure victim to open the file in the covid associated email. 
 - APT31 operating mode attack campaign targeting France (2021): |
 	Alert by ANSSI. The group leverages the compromised home routers to do reconnaissance and 
