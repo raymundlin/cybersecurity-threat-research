@@ -1,0 +1,8 @@
+threat actor: APT28(Fancy Bear)
+background: APT28 (Fancy Bear) is a threat group that has been attributed to Russia's General Staff Main Intelligence Directorate (GRU) 85th Main Special Service Center (GTsSS) military unit 26165. This group has been active since at least 2004.(From attack.mitre.org,G0007)
+notable incidents: APT28 reportedly compromised the Hillary Clinton campaign, the Democratic National Committee, and the Democratic Congressional Campaign Committee in 2016 in an attempt to interfere with the U.S. presidential election.
+    
+attribution: 
+sources of intelligence: Phishing 
+Account manipulation
+Active Scanning
