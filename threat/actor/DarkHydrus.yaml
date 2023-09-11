@@ -10,11 +10,12 @@ notable incidents:
 - Mimikatz
 
 attribution: |
-    While the true identity of The Dark Overlord remains unknown, investigations have led to the apprehension of some members.
+    On 2019, DarkHydrus was absuing the Google Drive as an alternative communications channel. 
+    The latest DarkHydrus scheme was first spotted after 360TIC secured samples of malicious Microsoft Excel documents on 9 January 2019
     
 sources of intelligence:
--malware that required users to hit the enable button in Microsoft Excel to allow an .iqy file to be downloaded
--an open-source tool, Phishery, to inject malicious remote template URLs into Microsoft Word documents and then sent them to victims to enable Forced Authentication
--Phishing: Spearphishing Attachment
--Hide Artifacts: Hidden Window
--Template Injection to launch an authentication window for users to enter their credentials
+- malware that required users to hit the enable button in Microsoft Excel to allow an .iqy file to be downloaded
+- an open-source tool, Phishery, to inject malicious remote template URLs into Microsoft Word documents and then sent them to victims to enable Forced Authentication
+- Phishing \: Spearphishing Attachment
+- Hide Artifacts \: Hidden Window
+- Template Injection to launch an authentication window for users to enter their credentials
