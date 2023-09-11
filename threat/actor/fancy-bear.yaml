@@ -1,0 +1,20 @@
+threat actor: Fancy Bear
+
+background: |
+    Fancy Bear is the name of a notorious Russian cyber-espionage group, also known by various other names such as APT28 (Advanced Persistent Threat 28), Sofacy Group, Strontium, and Pawn Storm. This group has been active since at least 2004 and is widely believed to be sponsored and operated by the Russian government, particularly the Russian military intelligence agency, GRU (Main Intelligence Directorate).
+
+notable incidents:
+- Hacking the Democratic National Committee (DNC) emails and leaking them to WikiLeaks in 2016, in an attempt to influence the outcome of the United States presidential election1
+- Targeting European military organizations, such as the German parliament, the Norwegian parliament, and NATO, with phishing and malware attacks12
+- Disrupting the broadcast of the French television station TV5Monde in 2015, and attempting to interfere with the campaign of French presidential candidate Emmanuel Macron in 20171
+- Compromising the network of the Organization for Security and Co-operation in Europe (OSCE) in 2016, and stealing confidential documents and personal data1
+- Attacking Ukrainian government and military institutions, as well as critical infrastructure, with ransomware and destructive malware, amid the ongoing conflict between Russia and Ukraine3
+
+attribution: |
+    Fancy Bear is widely attributed to the Russian military intelligence agency GRU, based on the evidence of their targets, methods, and infrastructure. Several cybersecurity firms, such as CrowdStrike, FireEye, and Mandiant, have said with a medium to high level of confidence that Fancy Bear is associated with the GRU12 In 2018, an indictment by the United States Special Counsel identified Fancy Bear as GRU Unit 261653 The UK’s Foreign and Commonwealth Office and other governments have also publicly accused Russia of being behind Fancy Bear’s activities1 However, Russia has denied any involvement or connection with Fancy Bear1
+    
+sources of intelligence:
+- Search Engines
+- Bing
+- Cybersecurity Reports
+- Social Media Platforms
