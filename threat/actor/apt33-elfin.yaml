@@ -5,7 +5,8 @@ background: |
     Saudi Arabia and the United States two years ago continues targeting organizations in the two nations, Symantec reported on Wednesday.
 
 notable incidents:
-- 
+- May 2017 - now: attack on Saudi Arabian and South Korean business conglomerate using a malicious file mainly targeting aviation and oil & gas businesses to possibly gain insights on military capabilities https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage
+    - Attack: Spear Phishing + Domain Masquerading
 
 attribution: |
 - member: xman_1365_x -> has been identified as part of the group by researchers; xman_1365_x also was community manager in the Barnamenevis Iranian programming and software engineering forum 
