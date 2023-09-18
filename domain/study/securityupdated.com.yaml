@@ -11,6 +11,6 @@ dnsdumpster: |
   two active DNS servers, one in China and one in Germany 
   tech used: nginx
 shodan: |
-  XXX ports 80, 443
+  open ports 22, 80, and 8888; several vulnerabilities listed concerning an outdated OpenSSH implementation
 censys: |
-  XXX amazonaws!
+  no further interesting information
