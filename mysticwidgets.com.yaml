@@ -1,0 +1,21 @@
+dig: |
+  mysticwidgets.com. relays to 64.187.239.250
+
+whoisrws: |
+  nothing interesting
+
+dnsdumpster: |
+  HTTP: Apache
+  FTP: 220- Welcome to Pure-FTPd privsep TLS -220-You are user number 1 of 50 allowed.220-Local time is now
+
+shodan: |
+  ports 21,53,80,110,143,443,587,993,995,2082,2083,2086,2087
+
+censys: |
+  Reverse DNS:64-187-239-250.quickpacket.com
+  OS:linux
+  Network:QUICKPACKET (US)
+  Routing:64.187.232.0/21  via  AS46261
+  Protocols:21/FTP , 25/SMTP , 53/DNS , 80/HTTP , 110/POP3 , 143/IMAP , 443/HTTP , 465/SMTP , 587/SMTP , 993/IMAP , 995/POP3 , 1357/SSH , 2077/HTTP , 2078/HTTP , 2082/HTTP , 2083/HTTP , 2086/HTTP , 2087/HTTP , 2095/HTTP , 2096/HTTP
+  Labels:email , file-sharing , login-page , remote-access , web.control-panel.hosting
+  
