@@ -1,0 +1,21 @@
+threat actor: Cozy Bear
+
+background: |
+    "Cozy Bear, classified by the United States federal government as advanced persistent threat APT29,
+     it was reported that  was responsible for a cyber attack on U.S. sovereign national data, believed to be at the direction of the Russian government.
+
+notable incidents:
+- Office monkeys that would include malicious executables
+- A spear-phishing cyber-attack against the Pentagon email system
+- SUNBURST malware supply chain attack 
+
+attribution: |
+   it believed to be associated with one or more intelligence agencies of Russia.
+    
+sources of intelligence:
+- Wikipedia
+- Cybersecurity Blogs and Forums
+- technology-specific websites
+- Cybersecurity Reports
+- Social Media and news
+- MITRE ATT&CK
