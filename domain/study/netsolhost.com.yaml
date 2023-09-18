@@ -1,0 +1,21 @@
+dig: |
+  netsolhost.com relays to NS99.WORLDNIC.com. namehost.WORLDNIC.com. 
+whoisrws: |
+  nothing interesting
+dnsdumpster: |
+  HTTP: openresty/1.19.9.1, FTP: 220 FTP Server ready, SSH: SSH-2.0-mod_sftp/0.9.9, HTTP TECH: openresty
+shodan: |
+  ports 21, 22, 80, 443
+censys: |
+  OpenResty, Microsoft IIS, NETWORK-SOLUTIONS-HOSTING
+virustotal: |
+  1 in 89 security vendor flagged this domain as malicious, Communicating Files (4.5 K) and most of security vendor flagged this files as malicious
+Whois Lookup: |
+  Admin Email: e405b2feeacedd33s@web.com, Admin Organization: Network Solutions, LLC
+fierce: | 
+  NS: ns2.netsolmail.com. ns1.netsolmail.com., SOA: NS99.WORLDNIC.com. (162.159.26.217), Nearby: {'205.178.146.20': 'miva2.bos.netsolhost.com.'}
+sublist3r.py: |
+  nothing interesting
+
+
+  
