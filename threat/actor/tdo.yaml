@@ -1,21 +1,21 @@
-threat actor: TDO
+threat actor: Cozy Bear
 
 background: |
-    "The Dark Overlord" is a pseudonymous cybercriminal entity known for its involvement in high-profile data breaches and extortion activities. 
-    They have targeted various organizations, including those in the healthcare, entertainment, and legal sectors.
+    "Cozy Bear, classified by the United States federal government as advanced persistent threat APT29,
+     it was reported that  was responsible for a cyber attack on U.S. sovereign national data, believed to be at the direction of the Russian government.
 
 notable incidents:
-- Healthcare Sector Breaches
-- Entertainment Industry Intrusions
-- Law Firms and Legal Services
+- Office monkeys that would include malicious executables
+- A spear-phishing cyber-attack against the Pentagon email system
+- SUNBURST malware supply chain attack 
 
 attribution: |
-    While the true identity of The Dark Overlord remains unknown, investigations have led to the apprehension of some members.
+   it believed to be associated with one or more intelligence agencies of Russia.
     
 sources of intelligence:
-- News Outlets
+- Wikipedia
 - Cybersecurity Blogs and Forums
-- Law Enforcement Statements
+- technology-specific websites
 - Cybersecurity Reports
-- Social Media Platforms
-- Legal Documents and Court Cases
+- Social Media and news
+- MITRE ATT&CK
