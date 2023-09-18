@@ -1,0 +1,17 @@
+dig: |
+  oilrig.com points to specific IP address: 199.59.243.224
+
+whoisrws: |
+  name of the organization that the IP address belongs to Bodis, LLC
+
+dnsdumpster: |
+  we found more complete version of the domain mapping. Through DNS, it can relays to 2 different website, either ns1.bodis.com or ns2.bodis.com. Those 2 website points to different IP address.
+
+shodan: |
+  ports 80, 443
+  domains za.com
+
+censys: |
+  Network AMAZON-02 (US)
+
+student id : B10909015 and B10909018
