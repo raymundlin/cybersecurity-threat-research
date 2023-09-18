@@ -13,6 +13,13 @@ notable incidents:
 - 2023 Password spraying attack using AzureHound (https://www.microsoft.com/en-us/security/blog/2023/09/14/peach-sandstorm-password-spray-campaigns-enable-intelligence-collection-at-high-value-targets/)
 - 2019 attempted to exploit a known vulnerability (CVE-2018-20250) in WinRAR (https://www.csoonline.com/article/567091/apt-group-elfin-switches-from-data-destruction-to-data-stealing-via-winrar-vulnerability.html)
 - 2018 Suspected to be linked to the Shamoon malware attacks (https://www.cfr.org/cyber-operations/apt-33)
+- 2017 Spear phishing with malious attachment, attempted to compromise organizations within the petrochemical sector (https://www.boozallen.com/insights/cyber/tech/apt33-hunt-report.html)
 
 attribution: |
     The identity of APT33 is unknown, one member is known by the pseudonym "xman_1365_x" in iranian hacker forums.
+
+sources of intelligence:
+- Iranian Hacking Forums (Shabgard, Ashiyane) (https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage)
+- Iranian hacking websites (getting publicly available backdoors and tools including NANOCORE, NETWIRE, and ALFA Shell)
+- Obtained Credentials using third-party breaches 
+- Custom-built malware (https://cyware.com/blog/apt33-the-lesser-known-adversary-with-ties-to-advanced-espionage-threats-27a0/)
