@@ -32,3 +32,61 @@ shodan: |
 censys: |
   amazonaws!
   protocol 80/HTTP
+
+[other tools]
+
+urlscan.io: |
+  (using the dig infomation - IP : 52.86.6.113)
+  result : www.hugedomains.com 
+   This website contacted 15 IPs in 4 countries across 12 domains to perform 44 HTTP transactions. The main IP is 2606:4700:20::ac43:46bf, located in United States and belongs to CLOUDFLARENET, US. The main domain is www.hugedomains.com. The Cisco Umbrella rank of the primary domain is 88146.
+   TLS certificate: Issued by Cloudflare Inc ECC CA-3 on April 17th 2023. Valid for: a year.
+   Detected technologies : 
+     - Adobe ColdFusion (Web Frameworks)
+     - Google Analytics (Analytics)
+     - Google Tag Manager (Tag Managers)
+     - Statcounter (Analytics)
+     - jQuery (JavaScript Libraries)
+     - jsDelivr (CDN)
+     - reCAPTCHA (Captchas)
+
+Website Informer: |
+  Hosting company:	Amazon Technologies Inc.
+  DNS:	domain-for-sale.hugedomainsdns.com
+  forsale.hugedomainsdns.com
+  Domain Name: FANCYBEAR.COM
+  Registrar Abuse Contact Email: abuse@NameBright.com
+  Registrar Abuse Contact Phone: +1.7204960020
+  Domain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited
+  Registry Registrant ID: Not Available From Registry
+  Registrant Name: Domain Admin / This Domain is For Sale
+  Registrant Organization: HugeDomains.com
+  Registrant Street: 2635 Walnut Street
+  Registrant City: Denver
+  Registrant State/Province: CO
+  Registrant Postal Code: 80205
+  Registrant Country: US
+  Registrant Phone: +1.3038930552
+  Registrant Email: domains@hugedomains.com
+  Admin Name: Domain Admin / This Domain is For Sale
+  Admin Organization: HugeDomains.com
+  Admin Street: 2635 Walnut Street
+  Admin City: Denver
+  Admin State/Province: CO
+  Admin Postal Code: 80205
+  Admin Country: US
+  Admin Phone: +1.3038930552
+  Admin Email: domains@hugedomains.com
+  Tech Name: Domain Admin / This Domain is For Sale
+  Tech Organization: HugeDomains.com
+  Tech Street: 2635 Walnut Street
+  Tech City: Denver
+  Tech State/Province: CO
+  Tech Postal Code: 80205
+  Tech Country: US
+  Tech Phone: +1.3038930552
+  Tech Email: domains@hugedomains.com
+  Name Server: DOMAIN-FOR-SALE.HUGEDOMAINSDNS.COM
+  Name Server: FORSALE.HUGEDOMAINSDNS.COM
+  DNSSEC: unsigned
+  URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+  >>> Last update of WHOIS database: 2021-05-20T07:19:56.785Z <<<
