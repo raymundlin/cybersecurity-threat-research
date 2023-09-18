@@ -1,1 +1,29 @@
 
+dig: |
+  on.tdo.com relays to cname.bitly.com
+www.ntust.edu.tw.	directs to	140.118.242.124
+
+whoisrws: |
+  This network is owned by Asia Pacific Network Information Centre (APNIC)
+  This IP address range is not registered in the ARIN database.
+
+  Net Range	140.109.0.0 - 140.138.255.255
+  CIDR	140.109.0.0/16
+  140.110.0.0/15
+  140.112.0.0/12
+  140.128.0.0/13
+  140.136.0.0/15
+  140.138.0.0/16
+  Name	APNIC-ERX-140-109-0-0
+  Handle	NET-140-109-0-0-1
+  Parent	NET140 (NET-140-0-0-0-0)
+  Net Type	Early Registrations, Transferred to APNIC
+
+dnsdumpster: |
+  nginx = 140.118.242.124
+
+shodan: |
+  ports : 443
+
+censys: |
+  ERX-TANET-ASN1 Taiwan Academic Network TANet Information Center (1659) 
