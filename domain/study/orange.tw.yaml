@@ -1,0 +1,61 @@
+dig (orange.tw): |
+  A RECORD 50.116.8.239 
+
+whoisrws (50.116.8.239): |
+  Linode
+  Akamai
+  Last update: 2023/2/9
+
+dnsdumpster (orange.tw): |
+  ns1.cyberdns.tw:
+    212.212.80.34.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
+  ns2.cyberdne.tw:
+    87.228.194.35.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
+    
+  orange.tw(50.116.8.239): 
+    devstd.in(50.116.8.239):
+      ns29.domaincontrol.com: GODADDY-DNS
+      ns30.domaincontrol.com: GODADDY-DNS
+    AKAMAI-LINODE-AP Akamai Connected Cloud
+    Apache/2.4.7
+    SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+    
+  testname.orange.tw(185.199.111.153): 
+    cdn-185-199-111-153.github.com
+    GitHub.com
+    varnish (reverse proxy server)
+    
+  howger.orange.tw(18.180.25.5): 
+    AMAZON-02 JAPAN
+    ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com
+    Apache/2.4.29 (Ubuntu)
+    GAnalytics,13047966
+
+shodan (50.116.8.239): |
+  50.116.8.239:
+    domains:
+      devstd.in:
+      z.nisra.net:
+    ports: 22, 25, 53, 80, 111, udp/123, 443, udp/500, udp/1701
+
+censys (orange.tw): |
+  54.178.226.226 (ec2-54-178-226-226.ap-northeast-1.compute.amazonaws.com):
+    HTML Title: How哥產生器
+  18.180.25.5 (ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com)
+    HTML Title: How哥產生器
+  50.116.8.239 (devstd.in)
+    http response body: 
+      Fork you :q
+    https response body:
+      # Index of /
+
+      ![\[ICO\]](/icons/blank.gif)| [Name](?C=N;O=D)| [Last modified](?C=M;O=A)|
+      [Size](?C=S;O=A)| [Description](?C=D;O=A)  
+      ---|---|---|---|---  
+        
+      * * *  
+        
+      ![\[   \]](/icons/unknown.gif)| [test.sql](test.sql)| 2017-05-26 18:20 |  25M|  
+        
+      * * *
+    
