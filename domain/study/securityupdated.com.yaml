@@ -1,10 +1,16 @@
+affiliation: |
+  relates to APT33 in previous research: https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage
+googledorks: |
+  securityupdated.com domain still or again active
 dig: |
-  on.tdo.com relays to cname.bitly.com
+  no relay, domain points to 8.222.152.215
 whoisrws: |
-  nothing interesting
+  securityupdated.com -> registered under CN organization but listed for sale 
+  8.222.152.215 -> located in Singapore, server hosted by Alibaba, 584 other sites hosted on this server 
 dnsdumpster: |
-  nginx and WordPress!
+  two active DNS servers, one in China and one in Germany 
+  tech used: nginx
 shodan: |
-  ports 80, 443
+  XXX ports 80, 443
 censys: |
-  amazonaws!
+  XXX amazonaws!
