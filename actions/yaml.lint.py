@@ -14,6 +14,7 @@ def get_files(folder_name):
                 files.append(os.path.join(root, file_name))
     return files
 
+
 def get_yaml(file_name):
     """Get yaml content from a file."""
     try:
@@ -22,7 +23,8 @@ def get_yaml(file_name):
     except yaml.YAMLError as exc:
         print(exc)
         return None
-   
+
+
 def get_spec(spec_file):
     """Get spec from a file."""
     try:
@@ -31,6 +33,7 @@ def get_spec(spec_file):
     except json.JSONDecodeError as exc:
         print(exc)
         return None
+
 
 def check_spec(spec, content):
     """Check if the content is valid according to the spec."""
@@ -48,6 +51,7 @@ def check_spec(spec, content):
         else:
             continue
     return True
+
 
 def main():
     """Main function."""
@@ -74,6 +78,7 @@ def main():
             if not check_spec(spec, content):
                 print("Error: {} Spec file not valid.".format(file))
                 sys.exit(-1)
+
 
 if __name__ == '__main__':
     main()
