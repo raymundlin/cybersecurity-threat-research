@@ -1,1 +1,1 @@
-# Lab, Young & Restless in Threat Hunting
+# LAB, Young & Restless IN Threat Hunting
