@@ -23,6 +23,8 @@ def get_yaml(file_name):
     except yaml.YAMLError as exc:
         print(exc)
         return None
+    except FileNotFoundError:
+        return None
 
 
 def get_spec(spec_file):
@@ -32,6 +34,8 @@ def get_spec(spec_file):
             return json.load(stream)
     except json.JSONDecodeError as exc:
         print(exc)
+        return None
+    except FileNotFoundError:
         return None
 
 
