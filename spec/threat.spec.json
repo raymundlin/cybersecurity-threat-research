@@ -20,5 +20,6 @@
             "name": "sources of intelligence",
             "type": "list"
         }
-    ]
+    ],
+    "optional": []
 }

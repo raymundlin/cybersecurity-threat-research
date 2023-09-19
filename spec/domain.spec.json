@@ -20,5 +20,6 @@
           "name": "censys",
           "type": "str"
       }
-  ]
+  ],
+  "optional": []
 }
