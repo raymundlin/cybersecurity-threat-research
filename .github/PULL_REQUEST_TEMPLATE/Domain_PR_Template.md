@@ -3,16 +3,16 @@
 # Domain file submit  
 Your submit must fit following format:
 
--dig: |
-   "your command"
--whoisrws: |
-  "your command"
--dnsdumpster: |
-  "your command"
--shodan: |
-  "your command"
--censys: |
-  "your command"
+-dig: |  
+   "your command"  
+-whoisrws: |  
+  "your command"  
+-dnsdumpster: |  
+  "your command"  
+-shodan: |  
+  "your command"  
+-censys: |  
+  "your command"  
   
 ### Checks
 - [ ] Your file fit the required format 
