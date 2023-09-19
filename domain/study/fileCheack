@@ -1,0 +1,7 @@
+### YAML template
+### Checks
+- [ ] Your file have to  include dig tool  
+- [ ] Your file have to  include whoisrws tool  
+- [ ] Your file have to  include dnsdumpster tool
+- [ ] Your file have to  include shodan tool 
+- [ ] Your file have to  include censys tool  
