@@ -4,19 +4,14 @@
 Your submit must fit following format:
 
 dig: |
-  on.tdo.com relays to cname.bitly.com
 
 whoisrws: |
-  nothing interesting
 
 dnsdumpster: |
-  nginx and WordPress!
 
 shodan: |
-  ports 80, 443
 
 censys: |
-  amazonaws!
 
 ### Checks
 - [ ] Your file fit the required format 
