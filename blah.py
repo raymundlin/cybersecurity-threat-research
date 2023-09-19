@@ -41,7 +41,7 @@ def main(root_directory):
         return
 
     for yaml_file_path in yaml_files:
-        domain = yaml_file_path.replace("./", "")
+        domain = yaml_file_path.replace("./", "").split("/")[-1]
         if domain.endswith(".yaml"):
             domain = domain[:-6]
         elif domain.endswith(".yml"):
@@ -56,21 +56,19 @@ def main(root_directory):
     for key, value in vector.items():
         row = {"Domain": key}
         for element in value:
-            if (
-                element != "Domain"
-                and value[element] not in element.keys()
-            ):
+            if element != "Domain":
                 value[element] = "X"
         row.update(value)
         rows.append(row)
 
     df = pd.DataFrame(rows)
 
-    # Write Score Summary
+    # Write Domain Summary
     with open("./README.md", "w+", encoding="utf-8") as markdownFile:
-        markdownFile.write("### Domain\Study\n")
+        markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
+        print(df)
 
 if __name__ == "__main__":
-    main("./")
+    main("./domain/study")
