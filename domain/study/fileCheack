@@ -1,7 +1,10 @@
 ### YAML template
-### Checks
+You have to follow those rules to upload your file
+
+### Rules
 - [ ] Your file have to  include dig tool  
 - [ ] Your file have to  include whoisrws tool  
 - [ ] Your file have to  include dnsdumpster tool
 - [ ] Your file have to  include shodan tool 
 - [ ] Your file have to  include censys tool  
+- [ ] "Are you sure you want to make this file available for everyone to use?"
