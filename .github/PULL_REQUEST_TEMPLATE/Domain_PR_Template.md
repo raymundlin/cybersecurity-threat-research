@@ -1,6 +1,6 @@
 ### YAML template
 ---
-#Domain file submit
+# Domain file submit  
 Your submit must fit following format:
 
 dig: |
