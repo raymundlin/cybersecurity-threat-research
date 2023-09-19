@@ -55,9 +55,6 @@ def main(root_directory):
     rows = []
     for key, value in vector.items():
         row = {"Domain": key}
-        for element in value:
-            if element != "Domain":
-                value[element] = "X"
         row.update(value)
         rows.append(row)
 
