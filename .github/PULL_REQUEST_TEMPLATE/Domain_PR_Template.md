@@ -4,15 +4,15 @@
 Your submit must fit following format:
 
 -dig: |  
-   "your command"  
+&emsp; "your command"  
 -whoisrws: |  
-  "your command"  
+&emsp; "your command"  
 -dnsdumpster: |  
-  "your command"  
+&emsp; "your command"  
 -shodan: |  
-  "your command"  
+&emsp; "your command"  
 -censys: |  
-  "your command"  
+&emsp; "your command"  
   
 ### Checks
 - [ ] Your file fit the required format 
