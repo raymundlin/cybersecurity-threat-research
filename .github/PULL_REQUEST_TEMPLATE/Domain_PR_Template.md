@@ -1,19 +1,24 @@
-### YAML template
 ---
-# Domain file submit  
-Your submit must fit following format:
+# Domain file Pull Request 
+### YAML template
+###### Your file must fit following format:
+```yaml    
+dig: |
+  on.tdo.com relays to cname.bitly.com
 
--dig: |  
-&emsp; "your command"  
--whoisrws: |  
-&emsp; "your command"  
--dnsdumpster: |  
-&emsp; "your command"  
--shodan: |  
-&emsp; "your command"  
--censys: |  
-&emsp; "your command"  
-  
+whoisrws: |
+  nothing interesting
+
+dnsdumpster: |
+  nginx and WordPress!
+
+shodan: |
+  ports 80, 443
+
+censys: |
+  amazonaws!
+```       
 ### Checks
+- [ ] File type are .yaml or .yml
 - [ ] Your file fit the required format 
-- [ ] You allow to share your project publicly and will not ask any profit from it.
+- [ ] You allow to share your project publicly and won't ask for any profit.
