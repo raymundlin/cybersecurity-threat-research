@@ -4,19 +4,19 @@
 ###### Your file must fit following format:
 ```yaml    
 dig: |
-  on.tdo.com relays to cname.bitly.com
+  # Description
 
 whoisrws: |
-  nothing interesting
+  # Description
 
 dnsdumpster: |
-  nginx and WordPress!
+  # Description
 
 shodan: |
-  ports 80, 443
+  # Description
 
 censys: |
-  amazonaws!
+  # Description
 ```       
 ### Checks
 - [ ] File type are .yaml or .yml
