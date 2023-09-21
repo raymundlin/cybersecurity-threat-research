@@ -97,7 +97,8 @@ def main():
         for file in get_files(folder['name']):
             content = get_yaml(file)
             if content is None:
-                continue
+                print("Error: {} file format is error.".format(file))
+                sys.exit(-1)
             if not check_spec(spec, content):
                 print("Error: {} file not valid.".format(file))
                 sys.exit(-1)
