@@ -4,6 +4,8 @@ import json
 import sys
 import yaml
 
+# Allow Optional Fields without Spec
+ALLOW_OPTIONAL = True
 
 def get_files(folder_name):
     """Get all files in a folder recursively."""
@@ -65,11 +67,12 @@ def check_spec(spec, content):
     optional_fields = [optional_field['name'] for optional_field in spec['optional']]
 
     # Check Optional Fields
-    for item in content:
-        if item not in requirement_fields and item not in optional_fields:
-            return False
-        else:
-            continue
+    if not ALLOW_OPTIONAL:
+        for item in content:
+            if item not in requirement_fields and item not in optional_fields:
+                return False
+            else:
+                continue
     return True
 
 
@@ -94,7 +97,8 @@ def main():
         for file in get_files(folder['name']):
             content = get_yaml(file)
             if content is None:
-                continue
+                print("Error: {} file format is error.".format(file))
+                sys.exit(-1)
             if not check_spec(spec, content):
                 print("Error: {} file not valid.".format(file))
                 sys.exit(-1)
