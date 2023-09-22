@@ -1,5 +1,5 @@
 ### YAML template
----
+```yaml
 threat actor: your title
 
 background: |
@@ -13,7 +13,7 @@ attribution: |
 sources of intelligence:
 - 
 - 
-
+```
 ### Checks
 - [ ] Your YAML file is in root theat/actor/
 - [ ] threat actor:{YOUR-TITLE}
