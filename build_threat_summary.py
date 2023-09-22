@@ -33,7 +33,7 @@ def find_yaml_files(root_dir):
 def main(threat_actor_directory):
     """main"""
     score_data = {}
-    yaml_files = find_yaml_files(root_directory)
+    yaml_files = find_yaml_files(threat_actor_directory)
 
     print(yaml_files)
 
