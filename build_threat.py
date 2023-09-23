@@ -11,12 +11,21 @@ def count_yaml_keys(file_path):
             return 0
         return len(data.keys())
 
+def save_yaml_content(file_path, content, testing=False):
+    if testing:
+        print(f"Testing {file_path}: {content}")
+        return
+    with open(file_path, "w+", encoding="utf-8") as yaml_file:
+        yaml.safe_dump(content, yaml_file, encoding='utf-8', allow_unicode=True, default_flow_style=False, sort_keys=False)
+
 def get_yaml_content(file_path):
     with open(file_path,"r", encoding="utf-8") as yaml_file:
         raw = yaml.safe_load(yaml_file)
         normalized = {}
         for key in raw:
             normalized[key.lower()] = raw[key]
+        if normalized != raw:
+            save_yaml_content(file_path, normalized)
         return normalized
 
 def find_yaml_files(root_dir):
