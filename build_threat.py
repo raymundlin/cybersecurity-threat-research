@@ -13,7 +13,11 @@ def count_yaml_keys(file_path):
 
 def get_yaml_content(file_path):
     with open(file_path,"r", encoding="utf-8") as yaml_file:
-        return yaml.safe_load(yaml_file)
+        raw = yaml.safe_load(yaml_file)
+        normalized = {}
+        for key in raw:
+            normalized[key.lower()] = raw[key]
+        return normalized
 
 def find_yaml_files(root_dir):
     """process all yamls"""
