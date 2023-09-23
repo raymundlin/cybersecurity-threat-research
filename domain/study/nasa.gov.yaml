@@ -2,9 +2,7 @@ dig: |
   nasa.gov relays to ec2-23-22-39-120.compute-1.amazonaws.com
 
 whoisrws: |
-  At its 20 centers and facilities across the country – and the only National Laboratory in space – NASA studies Earth, 
-  including its climate, our Sun, and our solar system and beyond. We conduct research, testing, and development to advance aeronautics, including electric propulsion and supersonic flight. 
-  We develop and fund space technologies that will enable future exploration and benefit life on Earth.
+  nothing interesting
 
 dnsdumpster: |
   Ubuntu and nginx,1.18.0 and Drupal,7
