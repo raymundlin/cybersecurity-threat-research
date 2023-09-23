@@ -6,14 +6,13 @@ whoisrws: |
   Registry Domain ID: 1225976_DOMAIN_COM-VRSN
   Registrar WHOIS Server: whois.comlaude.com
   Registrar URL: http://www.comlaude.com
-  Registry Expiration: 2025-02-20 05:00:00 UTC
   Updated: 2023-08-28 18:33:11 UTC
   Created: 1987-02-19 05:00:00 UTC
+  Registry Expiry Date: 2025-02-20 05:00:00 UTC
   Registrar: NOM-IQ Ltd dba Com Laude
   Registrar IANA ID: 470
   Registrar Abuse contact email: abuse@comlaude.com
   Registrar Abuse contact phone: +44.2074218250
-  DNSSEC: Unsigned
   Domain Status: clientDeleteProhibited
   Domain Status: clientTransferProhibited
   Domain Status: clientUpdateProhibited
@@ -24,6 +23,8 @@ whoisrws: |
   Nameservers: B.NS.APPLE.COM
   Nameservers: C.NS.APPLE.COM
   Nameservers: D.NS.APPLE.COM
+  DNSSEC: Unsigned
+  URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
 
 dnsdumpster: |
   TXT record: 
@@ -44,7 +45,32 @@ dnsdumpster: |
   "Dynatrace-site-verification=7d881a7c-c13f-4146-9d27-2731459e2509__iqls0105tagglcsaul0m16ibrf"
 
 shodan: |
-  ports 22, 80, 443
+  ports: 80, 443
+  80:
+  HTTP/1.1 404 Not Found on Accelerator
+  Date: Sat, 23 Sep 2023 06:48:35 GMT
+  Connection: keep-alive
+  Via: http/1.1 usscz2-edge-bx-013.ts.apple.com (acdn/4.1)
+  Cache-Control: no-store
+  Content-Type: text/html
+  Content-Language: en
+  X-Cache: none
+  CDNUUID: 58fbf9a7-9c5c-4eac-ac39-7b60d1b7a759-13854100
+  Content-Length: 287
+  443
+  HTTP/1.1 404 Not Found on Accelerator
+  Date: Sat, 23 Sep 2023 10:53:59 GMT
+  Connection: keep-alive
+  Via: http/1.1 usnyc3-edge-bx-018.ts.apple.com (acdn/4.1)
+  Cache-Control: no-store
+  Content-Type: text/html
+  Content-Language: en
+  X-Cache: none
+  CDNUUID: 524743a5-43b1-4ccb-86bb-eb90c4dd89c3-4607102370
+  Content-Length: 287
 
 censys: |
-  apple
+  Basic Information
+  Network: APPLE-ENGINEERING (US)
+  Routing: 17.253.144.0/24  via  AS714
+  Protocols: 80/HTTP , 443/HTTP
