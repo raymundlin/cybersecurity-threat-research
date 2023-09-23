@@ -1,0 +1,50 @@
+dig: |
+  apple.com relays to 17.253.144.10
+  
+whoisrws: |
+  Name: APPLE.COM
+  Registry Domain ID: 1225976_DOMAIN_COM-VRSN
+  Registrar WHOIS Server: whois.comlaude.com
+  Registrar URL: http://www.comlaude.com
+  Registry Expiration: 2025-02-20 05:00:00 UTC
+  Updated: 2023-08-28 18:33:11 UTC
+  Created: 1987-02-19 05:00:00 UTC
+  Registrar: NOM-IQ Ltd dba Com Laude
+  Registrar IANA ID: 470
+  Registrar Abuse contact email: abuse@comlaude.com
+  Registrar Abuse contact phone: +44.2074218250
+  DNSSEC: Unsigned
+  Domain Status: clientDeleteProhibited
+  Domain Status: clientTransferProhibited
+  Domain Status: clientUpdateProhibited
+  Domain Status: serverDeleteProhibited
+  Domain Status:serverTransferProhibited
+  Domain Status: serverUpdateProhibited
+  Nameservers: A.NS.APPLE.COM
+  Nameservers: B.NS.APPLE.COM
+  Nameservers: C.NS.APPLE.COM
+  Nameservers: D.NS.APPLE.COM
+
+dnsdumpster: |
+  TXT record: 
+  "ValidationTokenValue=77a4a6de-da14-449c-83c4-85366e0f55f9"
+  "cisco-ci-domain-verification=6f3bfb849796a518061f8e8c4356f687a138502d86db742791685059176547dd"
+  "apple-domain-verification=X5Jt76bn3Dnmgzjj"
+  "facebook-domain-verification=n6cqjfucq6plswmtfbwnbbeu1qiq3v"
+  "adobe-idp-site-verification=6bd5e74c-a3a0-4781-b2e1-e95399b5e11c"
+  "v=spf1 include:_spf.apple.com include:_spf-txn.apple.com ~all"
+  "webexdomainverification.8C462=b728ec3f-dfc9-42f9-92cb-9ba8853cbee8"
+  "google-site-verification=8M6XjQCzydT62jk8HY3VXPAG-nKDllTRV-JpA3-Ktyw"
+  "google-site-verification=zBSq1mG5ssu2If-C17UAz_MzSZDcx03MVxmeDwMNc5w"
+  "miro-verification=2494d255c4c50b1e521650a0659cbf3fa08b0072"
+  "google-site-verification=L5kkMdiFI8npvb6KlHui84fJaCw5G64DWhaDRIAT4_c"
+  "cerner-client-id=ce3abf18-ee87-43b9-9927-9eb24b4bac4a"
+  "77a4a6de-da14-449c-83c4-85366e0f55f9"
+  "cerner-client-id=22dd1d8a-5e8b-4e1e-80ef-39bcdfd42798"
+  "Dynatrace-site-verification=7d881a7c-c13f-4146-9d27-2731459e2509__iqls0105tagglcsaul0m16ibrf"
+
+shodan: |
+  ports 22, 80, 443
+
+censys: |
+  apple
