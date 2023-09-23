@@ -1,1 +1,18 @@
+dig: |
+  muddywater.com relays to muddywaterholdings.com
 
+whoisrws: |
+  CIDR:15.196.0.0/14
+       15.200.0.0/16
+  Name:AT-88-Z
+  Handle:NET-15-196-0-0-1
+  Parent:NET15 (NET-15-0-0-0-0)
+
+dnsdumpster: |
+  awselb/2.0
+
+shodan: |
+  ports 80, 443
+
+censys: |
+  amazon-02(US)
