@@ -37,34 +37,33 @@ def main(threat_actor_directory):
 
     print(yaml_files)
 
-    
+
     if not yaml_files:
         print("No YAML files found in the specified directory.")
         return
 
 
-    for index, yaml_file_path in yaml_files:
+    for index, yaml_file_path in enumerate(yaml_files):
         actor_content = get_yaml_content(yaml_file_path)
+        del actor_content["background"]
+        del actor_content["attribution"]
+        actor_content["notable incidents"] = len(actor_content["notable incidents"])
+        actor_content["sources of intelligence"] = len(actor_content["sources of intelligence"])
         actor_content_data[index] = {
             "Index": index,
             **actor_content,
         }
-        del actor_content_data["background"]
-        del actor_content_data["attribution"]
 
     rows = []
     for key, value in actor_content_data.items():
         row = {"Index": key}
-        for actor_content_item in value:
-            if(actor_content_item == "notable incidents" or "sources of intelligence"):
-                value[actor_content_item]=value[actor_content_item].count("-",0)
         row.update(value)
         rows.append(row)
 
     df = pd.DataFrame(rows)
 
     # Write Summary
-    with open("./thread_summary.md", "w+", encoding="utf-8") as markdownFile:
+    with open("./threat_statistics.md", "w+", encoding="utf-8") as markdownFile:
         markdownFile.write("### Threat 202309\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
