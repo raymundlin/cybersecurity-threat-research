@@ -46,7 +46,7 @@ def main(root_directory):
             domain = domain[:-6]
         elif domain.endswith(".yml"):
             domain = domain[:-5]
-        contents = get_yaml_content(yaml_file_path) 
+        contents = get_yaml_content(yaml_file_path)
         vector[domain] = {
             "Domain": domain,
             **contents,
@@ -61,7 +61,7 @@ def main(root_directory):
     df = pd.DataFrame(rows)
 
     # Write Domain Summary
-    with open("./README.md", "w+", encoding="utf-8") as markdownFile:
+    with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))

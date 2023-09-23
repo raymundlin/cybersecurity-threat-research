@@ -14,7 +14,7 @@ def count_yaml_keys(file_path):
 def get_yaml_content(file_path):
     with open(file_path,"r", encoding="utf-8") as yaml_file:
         return yaml.safe_load(yaml_file)
-    
+
 def find_yaml_files(root_dir):
     """process all yamls"""
     yaml_files = []
@@ -34,7 +34,7 @@ def main(threat_directory):
     if not threat_yaml_files:
         print("No YAML files found in the specified directory.")
         return
-    
+
     for index, path in enumerate(threat_yaml_files):
         actor_info[index] = {
             "Index": index,
@@ -52,7 +52,7 @@ def main(threat_directory):
     threat_actor_list = pd.DataFrame(rows)
     print(threat_actor_list)
 
-    with open("./README.md", "w+", encoding="utf-8") as markdownFile:
+    with open(f"{threat_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
         markdownFile.write("### Threat Actors\n")
         markdownFile.writelines(threat_actor_list.to_markdown(index=False))
 
