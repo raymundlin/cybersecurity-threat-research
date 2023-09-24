@@ -1,0 +1,24 @@
+threat actor: FIN7 (Carbanak)
+
+background: 
+  Carbanak is an APT-style campaign targeting (but not limited to) financial institutions,that was discovered in 2014 by the Russian cyber security company Kaspersky Lab.
+  It utilizes malware that is introduced into systems running Microsoft Windows using phishing emails,which is then used to steal money from banks via macros in documents. 
+  The hacker group is said to have stolen over 900 million dollars, from the banks as well as from over a thousand private customers.
+
+notable incidents:
+- Carbanak Campaign
+- Point-of-Sale (POS) Attacks
+- Liquor Lovers Campaign
+
+
+attribution: |
+- FIN7 is identified through their use of the Carbanak malware. 
+- Bastion Secure: FIN7 is now operating under the guise of a fake cybersecurity company called "Bastion Secure", a replacement for the previously reported "Combi Security". 
+- Recruitment Process: Bastion Secure posts job offers for IT specialists on both their website and job search sites in post-Soviet states. The job offers appear legitimate, but the recruitment process involves several red flags indicating potential criminal intent.
+- Tools and Techniques: Bastion Secure provides recruits with tools that are components of the Carbanak and Lizar/Tirion post-exploitation toolkits. 
+
+sources of intelligence:
+- News Outlets
+- Cybersecurity Blogs 
+- Search Engine
+- Cybersecurity Reports
