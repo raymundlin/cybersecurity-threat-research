@@ -1,0 +1,58 @@
+name: Build Summary
+
+on:
+  workflow_dispatch:
+
+jobs:
+  summary-all:
+    runs-on: ubuntu-latest
+    steps:
+    - id: checkout
+      name: Checkout code
+      uses: actions/checkout@v3
+
+    - id: setup-python
+      name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - id: install-dependencies
+      name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - id: build-threat
+      name: Run build-threat script
+      run: python build_threat.py
+      shell: bash
+
+    - id: build-threat-statistics
+      name: Run build-threat-statistics script
+      run: python build_threat_statistics.py
+      shell: bash
+
+    - id: build-domain
+      name: Run build-domain script
+      run: python build_domain.py
+      shell: bash
+
+    - id: build-root
+      name: Run build-root script
+      run: python build_root.py
+      shell: bash
+
+    - id: commit-file
+      name: Commit file to a summary branch
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "Docs: Update Summary"
+        git checkout -b the-summary-all
+        git push origin the-summary-all
+
+    - id: create-pr
+      name: Create pull request
+      run: gh pr create -B main --title 'Merge summary into main' --body 'Created by Github action'
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
