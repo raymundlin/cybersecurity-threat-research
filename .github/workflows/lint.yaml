@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  summary-score:
+  run-yaml-lint:
     runs-on: ubuntu-latest
     steps:
     - id: checkout
