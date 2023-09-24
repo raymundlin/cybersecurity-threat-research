@@ -1,25 +1,17 @@
-threat actor: APT33 (Elfin)
+threat actor: APT33
 
 background: |
-    The cybercriminal entity "Advanced Persistent Threat 33" is a hacker group supported by the gouvernment of Iran and identified by the cyber security company "FireEye" (Today called Trellix). 
-    Other Pseudonyms: Peach Sandstorm, Refined Kitten (by Crowdstrike), Magnallium (by Dragos), and Holmium (by Microsoft)
-    According to FireEye is was formed around 2013.
-    The groups trargets have been aerospace, defense and petrochemical industry in the United States, South Korea, and Saudi Arabia.
-    2023 thy have a particular interest in satellite, defense and pharmaceutical sectors.
-    Reported used tools are ALFASHELL, which they used to send spear-phishing emails loaded with malicious HTML Application files to its targets.
-    APT33 used domains to impersonate commercial entities like Boeing, Alsalam Aircraft Company, Northrop Grumman and Vinnell.
+    APT33 is a suspected Iranian threat group that has carried out operations since at least 2013. The group has targeted organizations across multiple industries in the United States, Saudi Arabia, and South Korea, with a particular interest in the aviation and energy sectors.
 
 notable incidents:
-- 2023 Password spraying attack using AzureHound (https://www.microsoft.com/en-us/security/blog/2023/09/14/peach-sandstorm-password-spray-campaigns-enable-intelligence-collection-at-high-value-targets/)
-- 2019 attempted to exploit a known vulnerability (CVE-2018-20250) in WinRAR (https://www.csoonline.com/article/567091/apt-group-elfin-switches-from-data-destruction-to-data-stealing-via-winrar-vulnerability.html)
-- 2018 Suspected to be linked to the Shamoon malware attacks (https://www.cfr.org/cyber-operations/apt-33)
-- 2017 Spear phishing with malious attachment, attempted to compromise organizations within the petrochemical sector (https://www.boozallen.com/insights/cyber/tech/apt33-hunt-report.html)
+- APT33 has shown particular interest in organizations in the aviation sector involved in both military and commercial capacities, as well as organizations in the energy sector with ties to petrochemical production.
+- From mid-2016 through early 2017, APT33 compromised a U.S. organization in the aerospace sector and targeted a business conglomerate located in Saudi Arabia with aviation holdings.
+- During the same time period, APT33 also targeted a South Korean company involved in oil refining and petrochemicals. More recently, in May 2017, APT33 appeared to target a Saudi organization and a South Korean business conglomerate using a malicious file that attempted to entice victims with job vacancies for a Saudi Arabian petrochemical company.
 
 attribution: |
-    The identity of APT33 is unknown, one member is known by the pseudonym "xman_1365_x" in iranian hacker forums.
-
+    APT33, also known as Elfin, is a cyber espionage group operating since at least 2013. APT33 is believed to operate out of the geographic boundaries of the Islamic Republic of Iran and has been linked to attacks on targets in the Middle East, Europe, and the United States.
+    
 sources of intelligence:
-- Iranian Hacking Forums (Shabgard, Ashiyane) (https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage)
-- Iranian hacking websites (getting publicly available backdoors and tools including NANOCORE, NETWIRE, and ALFA Shell)
-- Obtained Credentials using third-party breaches 
-- Custom-built malware (https://cyware.com/blog/apt33-the-lesser-known-adversary-with-ties-to-advanced-espionage-threats-27a0/)
+- News Outlets
+- Search engine
+- Social Media Platforms
