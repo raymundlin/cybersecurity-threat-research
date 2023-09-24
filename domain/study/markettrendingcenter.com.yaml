@@ -1,3 +1,45 @@
-# TODO
-dig : |
-    
+# Searching Lazarus Group related domain (markettrendingcenter.com)
+# source: https://www.malwarebytes.com/blog/threat-intelligence/2022/01/north-koreas-lazarus-apt-leverages-windows-update-client-github-in-latest-campaign
+# the malicious document used this domain to retrieve a remote HTML page
+# Below are the information that we gathered for the domain markettrendingcenter.com
+dig: |
+  markettrendingcenter.com resolves to 204.11.56.48
+
+whoisrws: |
+  Record of this domain was not found
+
+dnsdumpster: |
+  markettrendingcenter.com 204.11.56.48 A CONFLUENCE-NETWORK-INC British Virgin Islands
+  ns2626.ztomy.com. 204.11.57.26 NS CONFLUENCE-NETWORK-INC British Virgin Islands
+  ns1626.ztomy.com. 204.11.56.26 NS CONFLUENCE-NETWORK-INC British Virgin Islands
+
+shodan: |
+  No result
+
+censys: |
+  CN=markettrendingcenter.com
+  ZeroSSL ECC Domain Secure Site CA
+  Valid: 2023-09-02 — 2023-12-01
+  
+  CN=markettrendingcenter.com
+  Let's Encrypt R3
+  Valid: 2022-01-13 — 2022-04-13
+  Domains: *.markettrendingcenter.com, markettrendingcenter.com
+
+  No result for host search
+
+crt.sh: |
+  No subdomains, domain certificate firstly logged at 2021-08-19
+
+fierce: |
+  NS: ns2626.ztomy.com. ns1626.ztomy.com.
+  SOA: ns1626.ztomy.com. (204.11.56.26)
+  Zone: failure
+  Wildcard: 204.11.56.48
+
+sublist3r: |
+  No result (Virustotal blocked our request for some reason)
+
+virustotal: |
+  Domain reputation: Clean (10/89)
+  Communicating files: 	0160375e19e606d06f672be6e43f70fa70093d2a30031affd2929a5c446d07c1.doc, WMVxEncd.vbs, Benefit_Job_LockheedMartin_description.exe
