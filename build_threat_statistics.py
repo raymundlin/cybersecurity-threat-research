@@ -44,11 +44,11 @@ def main(threat_actor_directory):
 
 
     for index, yaml_file_path in enumerate(yaml_files):
-        actor_content = get_yaml_content(yaml_file_path)
-        del actor_content["background"]
-        del actor_content["attribution"]
-        actor_content["notable incidents"] = len(actor_content["notable incidents"])
-        actor_content["sources of intelligence"] = len(actor_content["sources of intelligence"])
+        raw_content = get_yaml_content(yaml_file_path)
+        actor_content = {}
+        actor_content["name"] = raw_content["threat actor"]
+        actor_content["notable incidents"] = len(raw_content["notable incidents"])
+        actor_content["sources of intelligence"] = len(raw_content["sources of intelligence"])
         actor_content_data[index] = {
             "Index": index,
             **actor_content,
@@ -63,8 +63,8 @@ def main(threat_actor_directory):
     df = pd.DataFrame(rows)
 
     # Write Summary
-    with open("./threat_statistics.md", "w+", encoding="utf-8") as markdownFile:
-        markdownFile.write("### Threat 202309\n")
+    with open("./threat/README.md", "w+", encoding="utf-8") as markdownFile:
+        markdownFile.write("### Threat Actor 202309\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
 

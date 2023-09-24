@@ -1,5 +1,5 @@
 import os
-
+import json
 import pandas as pd
 import yaml
 
@@ -48,10 +48,16 @@ def main(threat_directory):
         print("No YAML files found in the specified directory.")
         return
 
+    with open('spec/threat.spec.json', 'r', encoding="utf-8") as stream:
+        spec = json.load(stream)
+        required = [requirement_field['name'] for requirement_field in spec['requirement']]
+
     for index, path in enumerate(threat_yaml_files):
+        raw = get_yaml_content(path)
+        required_contents = {k:raw[k] for k in required if k in raw}
         actor_info[index] = {
             "Index": index,
-            **get_yaml_content(path)
+            **required_contents
         }
 
     print(actor_info)
