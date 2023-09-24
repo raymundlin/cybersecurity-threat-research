@@ -45,19 +45,19 @@ def check_spec(spec, content):
     """Check if the content is valid according to the spec."""
     # Check Requirement & Optional Fields in Spec
     if 'requirement' not in spec or 'optional' not in spec:
-        return False
-    
+        return False, "Spec file format error"
+
     # Check Requirement Fields
     requirement_fields = spec['requirement']
     for requirement_field in requirement_fields:
         name = requirement_field['name']
         field_type = requirement_field['type']
         if name not in content:
-            return False
+            return False, f"Field '{name}' is not in spec"
         elif field_type == 'str' and isinstance(content[name], str) is False:
-            return False
+            return False, f"Field '{name}' is not str"
         elif field_type == 'list' and isinstance(content[name], list) is False:
-            return False
+            return False, f"Field '{name}' is not list"
         else:
             continue
 
@@ -70,10 +70,10 @@ def check_spec(spec, content):
     if not ALLOW_OPTIONAL:
         for item in content:
             if item not in requirement_fields and item not in optional_fields:
-                return False
+                return False, f"Optional field '{item}' not allowed"
             else:
                 continue
-    return True
+    return True, "Success"
 
 
 def main():
@@ -99,8 +99,9 @@ def main():
             if content is None:
                 print("Error: {} file format is error.".format(file))
                 sys.exit(-1)
-            if not check_spec(spec, content):
-                print("Error: {} file not valid.".format(file))
+            passed, msg = check_spec(spec, content)
+            if not passed:
+                print("Error in file: {}, {}.".format(file, msg))
                 sys.exit(-1)
 
 

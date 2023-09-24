@@ -11,11 +11,11 @@ notable incidents:
 - Liquor Lovers Campaign
 
 
-attribution:
-- FIN7 is identified through their use of the Carbanak malware.
-- Bastion Secure: FIN7 is now operating under the guise of a fake cybersecurity company called "Bastion Secure", a replacement for the previously reported "Combi Security".
-- Recruitment Process: Bastion Secure posts job offers for IT specialists on both their website and job search sites in post-Soviet states. The job offers appear legitimate, but the recruitment process involves several red flags indicating potential criminal intent.
-- Tools and Techniques: Bastion Secure provides recruits with tools that are components of the Carbanak and Lizar/Tirion post-exploitation toolkits.
+attribution: |
+  FIN7 is identified through their use of the Carbanak malware.
+  Bastion Secure: FIN7 is now operating under the guise of a fake cybersecurity company called "Bastion Secure", a replacement for the previously reported "Combi Security".
+  Recruitment Process: Bastion Secure posts job offers for IT specialists on both their website and job search sites in post-Soviet states. The job offers appear legitimate, but the recruitment process involves several red flags indicating potential criminal intent.
+  Tools and Techniques: Bastion Secure provides recruits with tools that are components of the Carbanak and Lizar/Tirion post-exploitation toolkits.
 
 sources of intelligence:
 - News Outlets
