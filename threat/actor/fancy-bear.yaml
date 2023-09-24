@@ -1,0 +1,50 @@
+threat actor: Fancy Bear
+
+background: |
+    Fancy Bear is the name of a notorious Russian cyber-espionage group, also known by various other names such as APT28 (Advanced Persistent Threat 28), Sofacy Group, Strontium, and Pawn Storm. This group has been active since at least 2004 and is widely believed to be sponsored and operated by the Russian government, particularly the Russian military intelligence agency, GRU (Main Intelligence Directorate).
+
+attack method: |
+- Phishing
+- Zero-Day Exploits
+- Malware
+- Social Engineering
+- Man-in-the-Middle Attacks
+- Certificate Forgery
+- Penetration Testing
+- Multi-Stage Attacks
+
+
+notable incidents:
+- Cybersecurity firm finds evidence that Russian military unit was behind DNC hack
+  date: 2016
+  description: |
+  CrowdStrike’s fingering of the GRU helps to deepen the public’s understanding of how different arms of the Russian government are carrying out malicious and deeply troubling cyber acts in the United States. The director of national intelligence and the homeland security secretary in October publicly blamed the Russian government for interfering in the U.S. election, including through hacks of political organizations and targeting of state election systems.
+
+- OSCE targeted by cyber attackers
+  date: 2016
+  description: |
+  The Organization for Security and Cooperation in Europe (OSCE) confirmed on Wednesday that it has been the target of a "major security information incident."French newspaper Le Monde reported on Wednesday that an unnamed Western intelligence agency believes Russian hacker group APT28 - which is also known as Fancy Bear, Pawn Storm or Sofacy Group - to be behind the OSCE attack.The same source told Le Monde that APT28, which is believed to have connections to the Russian intelligence services, carried out cyber attacks on the Democratic National Committee during this year's presidential campaign in the United States.An investigation by US intelligence services concluded in December that the Russian government sought to interfere deliberately in the US elections.
+
+- French Officials Detail 'Fancy Bear' Hack of TV5Monde
+  date: 2017
+  description: |
+  The incident response team involved in the investigation concluded that the attackers first targeted TV5Monde on Jan. 23, 2015, and accessed a server used by the broadcaster. "One of [the] TV5Monde multimedia servers - used by journalists to send content back - had its RDP port exposed to [the] internet and was using [a] default username/password," French incident response expert Matt Suiche, managing director at Dubai-based Comae Technologies, says in an English-language overview of the French-language ANSSI presentation. "But this machine was not connected to the internal network, and was quickly classified as [a] dead-end by the attacker."Later, however, attackers returned, using a compromised third-party account that allowed them to connect to the TV5Monde VPN, beginning Feb. 6, investigators found.After that, attackers began scanning internal machines connected to an infected endpoint and identified two internal Windows systems that that were used to manage cameras. The attacker then used one of these compromised systems to create a new administrator-level user in Active Director called "LocalAdministator," on Feb. 11, 2015.The incident response team said this was the first major clue they uncovered about the investigation, saying that it jumped out because all of Active Directory administrator names had been in French.During the reconnaissance phase of the 2015 attack - from Feb. 16 to March 25 - the attackers mapped the network's IT infrastructure, including searching for various strings - "telnet," "ssh," "video," "compte" [account], "pass," "VPN - and collecting as much related information as possible, including from the IT department's internal wiki, which detailed how login and password was handled, Suiche says.After that, "the attacker compromised another administrator machine - codenamed: ANKOU - which contains the Remote Access Control (RAT) which was used for the sabotage."The sabotage consisted of running "destructive commands" - obtained via TACACS logs - that erased switch and router firmware, resulting in black screens for viewers, "except for one new channel that was launched on the same day which was covering the attack from inside," Suiche says.
+
+- Microsoft: Fancy Bear targeted European think tanks
+  date: 2019
+  description: |
+  Targeting European military organizations, such as the German parliament, the Norwegian parliament, and NATO, with phishing and malware attacksThe European hacking attempts took place between September and December, according to Microsoft.The hackers targeted 104 accounts belonging to employees of the German Council on Foreign Relations, as well as the European offices of The Aspen Institute and The German Marshall Fund situated in Belgium, France, Germany, Poland, Romania, and Serbia.The hackers attempted to use phishing websites and emails to steal credentials and deliver malware.Microsoft says it quickly notified the affected think tanks.Think tanks are a valuable target for spies because they often have close ties with government officials and behind the scenes data on governance or from the government.
+  
+- Russia's 'Fancy Bear' APT Targets Ukrainian Energy Facility
+  date: 2023
+  description: |
+  Ukraine's Computer Emergency Response Team (CERT-UA) detected and explored the attack, it noted in a report. CERT-UA stated that the MO of the group was to use bulk phishing emails from a fake address that linked to a .ZIP archive, so that it could ultimately gain access to the organization's system and data.The email CERT-UA shared included a message that read: "Hi! I talked to three girls, and they agreed. Their photos are in the archive; I suggest checking them out on the website." This is notably different from past malicious emails that Russian hackers have used, where the correspondence has included false government documents or illegitimate software updates. The recent email also included a BAT formatted file that would have executed harmful script once opened.In addition to this, researchers noted that the attackers installed Tor onto the victim's computer, allowing for anonymous Internet browsing and difficulty tracing the data's root source.
+
+attribution: |
+    Fancy Bear is widely attributed to the Russian military intelligence agency GRU, based on the evidence of their targets, methods, and infrastructure. Several cybersecurity firms, such as CrowdStrike, FireEye, and Mandiant, have said with a medium to high level of confidence that Fancy Bear is associated with the GRU12 In 2018, an indictment by the United States Special Counsel identified Fancy Bear as GRU Unit 261653 The UK’s Foreign and Commonwealth Office and other governments have also publicly accused Russia of being behind Fancy Bear’s activities1 However, Russia has denied any involvement or connection with Fancy Bear1
+    
+sources of intelligence:
+- Search Engines(Bing,Google)
+- News Search
+- Cybersecurity Reports
+- Social Media Platforms
