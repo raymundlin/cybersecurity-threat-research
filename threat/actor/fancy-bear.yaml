@@ -3,7 +3,7 @@ threat actor: Fancy Bear
 background: |
     Fancy Bear is the name of a notorious Russian cyber-espionage group, also known by various other names such as APT28 (Advanced Persistent Threat 28), Sofacy Group, Strontium, and Pawn Storm. This group has been active since at least 2004 and is widely believed to be sponsored and operated by the Russian government, particularly the Russian military intelligence agency, GRU (Main Intelligence Directorate).
 
-attack method: |
+attack method:
 - Phishing
 - Zero-Day Exploits
 - Malware
