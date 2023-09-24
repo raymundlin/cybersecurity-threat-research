@@ -1,0 +1,15 @@
+dig: |
+  redriect to IP 140.82.112.3
+
+whoisrws: |
+  CIDR : 140.82.112.0/20
+
+dnsdumpster: |
+  Github may uses Varnish to be the reverse proxy.
+
+shodan: |
+  People can access website form ssh, http, https.
+
+censys: |
+  GitHub may be using a hybrid cloud approach for load balancing, directing traffic to three EC2 instances and multiple obscured source machines.
+  
