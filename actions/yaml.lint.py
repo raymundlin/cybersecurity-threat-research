@@ -53,7 +53,7 @@ def check_spec(spec, content):
         name = requirement_field['name']
         field_type = requirement_field['type']
         if name not in content:
-            return False, f"Field '{name}' is not in spec"
+            return False, f"Field '{name}' is not in contents"
         elif field_type == 'str' and isinstance(content[name], str) is False:
             return False, f"Field '{name}' is not str"
         elif field_type == 'list' and isinstance(content[name], list) is False:
