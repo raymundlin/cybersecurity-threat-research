@@ -1,17 +1,4 @@
-### threat template
-threat actor:
-
-background:
-
-notable incidents:
-
-attribution:
-
-sources of intelligence:
-
 ### Checks
-- [ ] Your YAML file have to include threat actor in it
-- [ ] Your YAML file have to include background in it
-- [ ] Your YAML file have to include notable incidents in it
-- [ ] Your YAML file have to include attribution in it
-- [ ] Your YAML file have to include sources of intelligence in it
+- [ ] Your YAML file has required fields as listed in [Specs](https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/tree/f63bd214302765c31fbffbfe5b46744d0f8f6877/spec)
+- [ ] All checks have passed (yaml-lint passed)
+- [ ] You agree to contribute your work under [MIT license](https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/f63bd214302765c31fbffbfe5b46744d0f8f6877/LICENSE)
