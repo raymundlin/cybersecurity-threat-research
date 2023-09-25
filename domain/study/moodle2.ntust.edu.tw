@@ -1,0 +1,18 @@
+dig: |
+  moodle2.ntust.edu.tw relays to 140.118.242.99
+
+whoisrws: |
+  The ip adress is related to "T-NTUST.EDU.TW-NET". This netname is linked to the Ministry of Education Computer Center in Taipei, Taiwan. The IP range is maintained by "MAINT-TW-TWNIC," which is the Taiwan Network Information Center. The IP range is associated with the Ministry of Education Computer Center, and it is located at 12F, No 106, Sec.2, Heping E. Rd., Taipei, Taiwan.
+
+dnsdumpster: |
+  Nothing of interest.
+
+shodan: |
+  open ports: 80, 443, 8008
+  Uses PHP.
+
+censys: |
+  mail-1.ntust.edu.tw
+  stu.ntust.edu.tw
+  www.ad.ntust.edu.tw
+  ... and many more
