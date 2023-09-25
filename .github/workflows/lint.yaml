@@ -1,0 +1,30 @@
+name: Lint Threat & Domain
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  run-yaml-lint:
+    runs-on: ubuntu-latest
+    steps:
+    - id: checkout
+      name: Checkout code
+      uses: actions/checkout@v3
+
+    - id: setup-python
+      name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - id: install-dependencies
+      name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - id: run-script
+      name: Run lint script
+      run: python actions/yaml.lint.py
+      shell: bash

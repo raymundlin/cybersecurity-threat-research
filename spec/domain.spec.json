@@ -1,0 +1,25 @@
+{
+  "requirement": [
+      {
+          "name": "dig",
+          "type": "str"
+      },
+      {
+          "name": "whoisrws",
+          "type": "str"
+      },
+      {
+          "name": "dnsdumpster",
+          "type": "str"
+      },
+      {
+          "name": "shodan",
+          "type": "str"
+      },
+      {
+          "name": "censys",
+          "type": "str"
+      }
+  ],
+  "optional": []
+}

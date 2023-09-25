@@ -1,0 +1,25 @@
+threat actor: CozyCar
+
+background: |
+    APT29Cozycar, also known as Cozy Bear, is a highly sophisticated and persistent advanced persistent threat (APT) 
+    group believed to be of Russian origin. This threat actor has been active for several years and is known for conducting cyber espionage campaigns against various government 
+    and private sector targets. APT29Cozycar is known to be one of the most advanced and stealthy APT groups in the cyber threat landscape.
+
+notable incidents:
+- DNC Hack
+- SolarWinds Supply Chain Attack
+- Targeting Government Institutions
+
+attribution: |
+    PT29Cozycar is widely believed to be associated with the Russian government, specifically the Russian intelligence agency known as 
+    the Russian Federal Security Service (FSB). While the Russian government has denied any involvement, 
+    cybersecurity experts and intelligence agencies from various countries have gathered substantial evidence linking APT29Cozycar 
+    to state-sponsored espionage activities.
+
+    
+sources of intelligence:
+- Cybersecurity Firms and Researchers
+- Government Agencies
+- Incident Reports
+- Threat Intelligence Sharing Platforms
+- Open Source Intelligence (OSINT)
