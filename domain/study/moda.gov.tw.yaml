@@ -3,27 +3,20 @@ dig: |
 
 whoisrws: |
   nothing interesting
-  country: U.S
+  country U.S
 
 dnsdumpster: |
   cloudflare , ghs
 shodan: |
-    port:443,80
-    HTTP/1.1 200 OK
-  Date: 
-    Fri, 15 Sep 2023 09:35:49 GMT
-  Content-Type: 
-    text/html; charset=utf-8
-  Transfer-Encoding: 
-    chunked
-  Connection: 
-    keep-alive
-  Access-Control-Allow-Origin: 
-    moda.gov.tw
-  Cache-Control: 
-    public, max-age=0, must-revalidate
-  80:
-    HTTP/1.1 403 Forbidden
+  port:443,80
+  HTTP/1.1 200 OK
+  Date:Fri, 15 Sep 2023 09:35:49 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Access-Control-Allow-Origin: moda.gov.tw
+  Cache-Control: public, max-age=0, must-revalidate
+  80:HTTP/1.1 403 Forbidden
   Date: Fri, 15 Sep 2023 02:55:20 GMT
   Content-Type: text/html; charset=UTF-8
   Content-Length: 5894
