@@ -43,7 +43,7 @@ shodan:
       CVE-2021-3618/CVE-2021-23017/CVE-2019-9516/CVE-2019-9513/CVE-2019-9511/CVE-2019-20372/CVE-2018-16845
 censys:
   somthing
-nmap: 
+nmap: >
   (3) nmap -v symantecs.com
   
     Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-25 11:30 台北標準時間
