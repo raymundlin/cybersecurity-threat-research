@@ -2,8 +2,8 @@ dig: |
   ipvoid.com relays to itk.ac.id
 
 whoisrws: |
-    refer to whois.id
-  domain:       ID
+  refer to whois.id
+  domain:ID
   
   organisation: Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI)
   address:      Icon Business Park, Unit L1-L2
@@ -94,6 +94,6 @@ nmap: |
  110/tcp  open   pop3
  113/tcp  closed ident
  143/tcp  open   imap
-  443/tcp  open   https
-  8008/tcp open   http
-  Host is up (0.23s latency)
+ 443/tcp  open   https
+ 8008/tcp open   http
+ Host is up (0.23s latency)
