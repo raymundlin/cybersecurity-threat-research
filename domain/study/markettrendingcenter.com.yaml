@@ -43,3 +43,28 @@ sublist3r: |
 virustotal: |
   Domain reputation: Clean (10/89)
   Communicating files: 	0160375e19e606d06f672be6e43f70fa70093d2a30031affd2929a5c446d07c1.doc, WMVxEncd.vbs, Benefit_Job_LockheedMartin_description.exe
+
+nmap: |
+  Nmap parameter used： nmap -p0- -v -A -T4 scanme.nmap.org
+  Above script will scan all ports, enable verbose logging, aggressive detection (such as OS, service, etc), and aggressive timing policy
+  Nmap scan report for markettrendingcenter.com (204.11.56.48)
+  Host is up (0.32s latency).
+  Not shown: 65534 filtered ports
+  PORT   STATE SERVICE    VERSION
+  53/tcp open  tcpwrapped
+  80/tcp open  http       Apache httpd
+  | http-methods: 
+  |_  Supported Methods: GET
+  |_http-title: Markettrendingcenter.com
+  |_http-trane-info: Problem with XML parsing of /evox/about
+
+  NSE: Script Post-scanning.
+  Initiating NSE at 10:59
+  Completed NSE at 10:59, 0.00s elapsed
+  Initiating NSE at 10:59
+  Completed NSE at 10:59, 0.00s elapsed
+  Initiating NSE at 10:59
+  Completed NSE at 10:59, 0.00s elapsed
+  Read data files from: /usr/bin/../share/nmap
+  Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+  Nmap done: 1 IP address (1 host up) scanned in 397.31 seconds
