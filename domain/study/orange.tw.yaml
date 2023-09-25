@@ -64,9 +64,15 @@ nmap: |
       185.199.111.153 (testname.orange.tw)
       18.180.25.5 (howger.orange.tw)
       54.178.226.226 (howger.orange.tw)
+
   nmap orange.tw -Pn -A -sS -oX orange.tw.xml -v10
       (https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/orange.tw.html)
   nmap testname.orange.tw -Pn -A -sS -oX testname.orange.tw.xml -v10
       (https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/testname.orange.tw.html)
   nmap howger.orange.tw -Pn -A -sS -oX howger.orange.tw.xml -v10
       (https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/howger.orange.tw.html)
+      
+  xml to html
+      java -jar Downloads\SaxonHE12-3J\saxon-he-12.3.jar -s:localhost.xml -o:localhost.html -xsl:https://nmap.org/svn/docs/nmap.xsl
+  
+  <a src="https://www.google.com">google</a>
