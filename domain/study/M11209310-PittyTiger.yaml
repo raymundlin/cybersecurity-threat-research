@@ -24,7 +24,7 @@ whoisrws: >
     there's five DNS Servers at Canada and Host Records at US
     DNS Servers -> 216.40.47.202/64.98.148.138/216.40.47.201/64.98.148.139/64.98.148.137
     Host Records -> 64.98.135.25
-dnsdumspter: >
+dnsdumspter: |
   symantecs.com jump to ww1.symanfec.com
 shodan: >
   Its a search engine for searching internet-connected devices and system.
@@ -41,7 +41,7 @@ shodan: >
 
     CVE Vulnerabilities -> Because it's use http (?)
       CVE-2021-3618/CVE-2021-23017/CVE-2019-9516/CVE-2019-9513/CVE-2019-9511/CVE-2019-20372/CVE-2018-16845
-censys: >
+censys: |
   somthing
 nmap: >
   (3) nmap -v symantecs.com
