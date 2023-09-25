@@ -14,7 +14,7 @@ dig:
   So we tried remove .tw looking for some info
     (1) avstore.com -> this seems no threat 
       ANSWER SECTION ->
-      avstore.com. 600 IN A	15.197.142.173
+      avstore.com. 600 IN A 15.197.142.173
       avstore.com. 600 IN A 3.33.152.147
     (3) symantecs.com -> really strangeeeee, IP at US.
       ANSWER SECTION ->
