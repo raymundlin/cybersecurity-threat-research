@@ -1,18 +1,22 @@
-threat_actor: Oilrig
+threat actor: Oilrig
+
 background: |
-  Iranian threat group operating primarily in the Middle East where the threat group uses systematic targeting using social engineering rather than software vulnerabilities. They are very systematic and mature, mainly employing spear-headed campaigns. This group, active since 2014, is suspected of acting on behalf of the Iranian government, targeting Middle Eastern financial, energy, and government organizations with the goal of advancing Iran's interests.
-notable_incidents:
-  - 2017 Shamoon 2 attack, Saudi Arabia's state-owned oil company, Saudia Aramco
-  - 2018 cyber attack on French aerospace, Safran
-  - 2018 US Navy, using a spear-phishing email campaign and POWBAT Malware
-  - 2019 phishing campaign using LinkedIn
-  - 2021 targeting Israeli IT service provider
+    Iranian threat group operating primarily in the Middle East where the threat group uses systematic targeting using social engineering rather than software vulnerabilities. They are very systematic and mature, mainly employing spear-headed campaigns. This group, active since 2014, is suspected of acting on behalf of the Iranian government, targeting Middle Eastern financial, energy, and government organizations with the goal of advancing Iran's interests.
+
+notable incidents:
+ - 2017 Shamoon 2 attack, Saudi Arabia's state-owned oil company, Saudia Aramco
+ - 2018 cyber attack on French aerospace, Safran
+ - 2018 US Navy, using a spear-phishing email campaign and POWBAT Malware
+ - 2019 phishing campaign using LinkedIn
+ - 2021 targeting Israeli IT service provider
+
 attribution: |
-  Oilrig is still active, and the investigation is ongoing.
-sources_of_intelligence:
-  - malpedia news
-  - LinkedIn
-  - unit 42
-  - eset threat report t32021
-  - Mandiane news
-  - pay2kitten news
+    Oilrig is still active, and the investigation is ongoing.
+    
+sources of intelligence:
+- malpedia news
+- LinkedIn
+- unit 42
+- eset threat report t32021
+- Mandiane news 
+- pay2kitten news
