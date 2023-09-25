@@ -23,7 +23,6 @@ Censys: >
 167	AKAMAI-ASN1
 
 
-
 nmap: >
 Nmap scan report for www.cia.gov (23.196.118.145)
 Host is up (0.17s latency).
