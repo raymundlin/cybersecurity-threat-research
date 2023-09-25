@@ -33,8 +33,6 @@ censys: |
   amazonaws!
   protocol 80/HTTP
 
-[other tools]
-
 urlscan.io: |
   (using the dig infomation - IP : 52.86.6.113)
   result : www.hugedomains.com 
@@ -90,3 +88,14 @@ Website Informer: |
   DNSSEC: unsigned
   URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
   >>> Last update of WHOIS database: 2021-05-20T07:19:56.785Z <<<
+
+nmap: |
+  C:\Users\Sinyu>nmap fancybear.com
+  Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:22 ￥x￥_?D·CRE?!
+  Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+  Nmap done: 1 IP address (0 hosts up) scanned in 9.91 seconds
+  
+  C:\Users\Sinyu>nmap 3.94.41.167
+  Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:23 ￥x￥_?D·CRE?!
+  Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+  Nmap done: 1 IP address (0 hosts up) scanned in 8.65 seconds
