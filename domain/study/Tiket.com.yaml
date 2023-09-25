@@ -1,0 +1,58 @@
+dig: | 
+  tiket.com is using 8.8.8.8#53(8.8.8.8) server
+
+  The finding summary:
+  www.tiket.com.		18	IN	CNAME	www.tiket.com.cdn.cloudflare.net.
+  www.tiket.com.cdn.cloudflare.net. 300 IN A	104.17.225.234
+  www.tiket.com.cdn.cloudflare.net. 300 IN A	104.17.224.234
+
+  Explanation:
+  Tiket.com have port open in 104.17.225.234 which maximum TTL they set is 300
+  This URL protect their data and prevent any data branches or data
+
+whoisrws: |
+  can not be detected because it's IP address is not registered in ARIN
+
+dnsdumpster: | 
+  IP block owner : AMAZON-02, GOOGLE, GOOGLE-CLOUD PLATFORM, SOFTLAYER, SENDGRID
+  Server is used is provided by Amazon Web Service
+1. The DNS servers 
+    The DNS servers which is hosted by AMAZON-02 located the data center in US
+    AMAZON-2 differentiate the domain into  4 different domains, those are "org", "net", "co.uk", "com"
+2. Mail Exchan  ge Records (MX)
+     These 5 mailing architectures / systems are hosted by Google which the server is physically placed in US
+3. Host Record
+     The main page of this company "tiket.com" is hosted by Google-Cloud Platform located in US and utilize nginx for the HTTP arhitecture.
+     Found that tiket.com web page is deployed by employing WordPress but this scanning tools website (builtwith.com) which can detect the CMS is used in a website can not validate that tiket.com is build up by WordPress
+
+shodan: | 
+  Security Certificate
+  tlsv1.2 4
+  tlsv1.3 4
+  tlsv1    2
+  tlsv1.1 2
+  Port Open :
+  80 and 443
+  Vurnerabilities :
+  No vurnerabilities
+
+censys: |  
+  Port Open :
+  443, 80, 22, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096, 8080, 8443, 8880, 5432, 9100, 55155
+
+nmap: | 
+Nmap scan report for tiket.com (34.98.71.161)
+Host is up (0.018s latency).
+Other addresses for tiket.com (not scanned): 34.98.93.77
+rDNS record for 34.98.71.161: 161.71.98.34.bc.googleusercontent.com
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+25/tcp   open   smtp
+53/tcp   open   domain
+80/tcp   open   http
+110/tcp  open   pop3
+113/tcp  closed ident
+143/tcp  open   imap
+443/tcp  open   https
+8008/tcp open   http
