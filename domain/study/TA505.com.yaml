@@ -24,3 +24,20 @@ shodan: |
   no information
 censys: |
   no information
+nmap: |
+  (base) johnathan@ip208-129 ~ % nmap ta505.com            
+  Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-25 11:22 CST
+  Nmap scan report for ta505.com (209.15.37.6)
+  Host is up (0.0083s latency).
+  rDNS record for 209.15.37.6: parama.ca
+  Not shown: 992 filtered tcp ports (no-response)
+  PORT     STATE  SERVICE
+  21/tcp   open   ftp
+  25/tcp   open   smtp
+  53/tcp   open   domain
+  80/tcp   open   http
+  110/tcp  open   pop3
+  113/tcp  closed ident
+  143/tcp  open   imap
+  8008/tcp open   http
+  Nmap done: 1 IP address (1 host up) scanned in 43.07 seconds
