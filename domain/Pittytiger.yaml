@@ -40,8 +40,35 @@ shodan:
     ASN	AS32133
 
     CVE Vulnerabilities -> Because it's use http (?)
-      CVE-2021-3618/CVE-2021-23017/CVE-2019-9516/CVE-2019-9513/CVE-2019-9511/CVE-2019-20372/CVE-2018-16845
+    CVE-2021-3618/CVE-2021-23017/CVE-2019-9516/CVE-2019-9513/CVE-2019-9511/CVE-2019-20372/CVE-2018-16845
 censys:
   somthing
 nmap:
-  
+  symantecs.com(the fake domain):
+    Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-25 03:27 UTC
+    Initiating Ping Scan at 03:27
+    Scanning symantecs.com (64.98.135.25) [4 ports]
+    Completed Ping Scan at 03:28, 3.04s elapsed (1 total hosts)
+    Nmap scan report for symantecs.com (64.98.135.25) [host down]
+    Read data files from /usr/bin/../share/nmap
+    Host seems down. If it is really up, but blocking our ping probes, try -Pn
+    Nmap done 1 IP address (0 hosts up) scanned in 3.48 seconds
+    Raw packets sent 8 (304B) | Rcvd 0 (0B)
+  ww1.symanfec.com(symantecs.com will jump to):
+    Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-25 03:32 UTC
+    Initiating Ping Scan at 03:32
+    Scanning ww1.symanfec.com (199.59.243.224) [4 ports]
+    Completed Ping Scan at 03:32, 0.03s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 03:32
+    Completed Parallel DNS resolution of 1 host. at 03:32, 0.23s elapsed
+    Initiating XMAS Scan at 03:32
+    Scanning ww1.symanfec.com (199.59.243.224) [65535 ports]
+    XMAS Scan Timing About 21.09% done; ETC 03:35 (0:01:56 remaining)
+    XMAS Scan Timing About 49.89% done; ETC 03:34 (0:01:01 remaining)
+    Completed XMAS Scan at 03:34, 103.02s elapsed (65535 total ports)
+    Nmap scan report for ww1.symanfec.com (199.59.243.224)
+    Host is up (0.0014s latency).
+    All 65535 scanned ports on ww1.symanfec.com (199.59.243.224) are open|filtered
+    Read data files from /usr/bin/../share/nmap
+    Nmap done 1 IP address (1 host up) scanned in 103.98 seconds
+    Raw packets sent 131155 (5.247MB) | Rcvd 82 (4.264KB)
