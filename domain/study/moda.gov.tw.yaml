@@ -1,37 +1,29 @@
 dig: |
-  mysticwidgets.com. relays to 64.187.239.250
-
+  moda.gov.tw. rely to 104.18.22.126 and 104.18.23.126
 whoisrws: |
+  country: U.S
   nothing interesting
-
 dnsdumpster: |
-  HTTP: Apache
-  FTP: 220- Welcome to Pure-FTPd privsep TLS -220-You are user number 1 of 50 allowed.220-Local time is now
-
+  cloudflare , ghs
 shodan: |
-  ports 21,53,80,110,143,443,587,993,995,2082,2083,2086,2087
-
+  port:443,80
 censys: |
-  Reverse DNS:64-187-239-250.quickpacket.com
-  OS:linux
-  Network:QUICKPACKET (US)
-  Routing:64.187.232.0/21  via  AS46261
-  Protocols:21/FTP , 25/SMTP , 53/DNS , 80/HTTP , 110/POP3 , 143/IMAP , 443/HTTP , 465/SMTP , 587/SMTP , 993/IMAP , 995/POP3 , 1357/SSH , 2077/HTTP , 2078/HTTP , 2082/HTTP , 2083/HTTP , 2086/HTTP , 2087/HTTP , 2095/HTTP , 2096/HTTP
-  Labels:email , file-sharing , login-page , remote-access , web.control-panel.hosting
-
+  數位發展部:
+  Basic Information
+  Network
+  CLOUDFLARENET (US)
+  Routing
+  104.18.16.0/20 via AS13335
+  Protocols
+  80/HTTP , 443/HTTP , 2052/HTTP , 2053/HTTP , 2082/HTTP , 2083/HTTP , 2086/HTTP , 2087/HTTP , 2095/HTTP , 2096/HTTP , 8080/HTTP , 8
 nmap: |
-  Nmap scan report for mysticwidgets.com (64.187.239.250)
-  Host is up (0.12s latency).
-  Other addresses for mysticwidgets.com (not scanned): none
-  rDNS record for 64.187.239.250: host.goatom.com
-  Not shown: 11 filtered ports(25,135,139,445,5555,6666,6667,6668,6669,9100,9101)
-  PORT    STATE SERVICE
-  21/tcp  open  tcpwrapped
-  22/tcp open  ssh
-  53/tcp open domain
-  80/tcp open http
-  110/tcp open tcpwrapped
-  143/tcp open tcpwrapped
-  8008/tcp open http
-  9929/tcp open nping-echo Nping echo
-  31337/tcp open tcpwrapped
+  Starting Nmap 7.94SVN ( https://nmap.org ) at 2023-09-25 03:31 UTC
+  Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+  Connect Scan Timing: About 80.27% done; ETC: 03:31 (0:00:02 remaining)
+  Nmap scan report for egg.coa.gov.tw (210.241.95.4)
+  Host is up (0.052s latency).
+  Not shown: 997 filtered tcp ports (no-response)
+  PORT    STATE  SERVICE
+  25/tcp  open   smtp
+  113/tcp closed ident
+  443/tcp open   https
