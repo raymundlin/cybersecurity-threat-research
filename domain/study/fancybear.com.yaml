@@ -90,12 +90,88 @@ Website Informer: |
   >>> Last update of WHOIS database: 2021-05-20T07:19:56.785Z <<<
 
 nmap: |
-  C:\Users\Sinyu>nmap fancybear.com
-  Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:22 ￥x￥_?D·CRE?!
-  Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
-  Nmap done: 1 IP address (0 hosts up) scanned in 9.91 seconds
+  - fancybear.com 
+    C:\Users\Sinyu>nmap fancybear.com
+    Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:22 ￥x￥_?D·CRE?!
+    Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+    Nmap done: 1 IP address (0 hosts up) scanned in 9.91 seconds
+
+  - 3.94.41.167
+    C:\Users\Sinyu>nmap 3.94.41.167
+    Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:23 ￥x￥_?D·CRE?!
+    Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+    Nmap done: 1 IP address (0 hosts up) scanned in 8.65 seconds
+
+  - xtars.com
+    C:\Users\Sinyu>nmap www.xtars.com
+    Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:48 ￥x￥_?D·CRE?!
+    Nmap scan report for www.xtars.com (35.229.183.96)
+    Host is up (0.060s latency).
+    rDNS record for 35.229.183.96: 96.183.229.35.bc.googleusercontent.com
+    Not shown: 995 filtered ports
+    PORT     STATE  SERVICE
+    21/tcp   open   ftp
+    22/tcp   open   ssh
+    80/tcp   open   http
+    443/tcp  open   https
+    3389/tcp closed ms-wbt-server
+    
+    Nmap done: 1 IP address (1 host up) scanned in 71.09 seconds
   
-  C:\Users\Sinyu>nmap 3.94.41.167
-  Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:23 ￥x￥_?D·CRE?!
-  Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
-  Nmap done: 1 IP address (0 hosts up) scanned in 8.65 seconds
+  - xstar.me
+    C:\Users\Sinyu>nmap xstar.me
+    Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 11:50 ￥x￥_?D·CRE?!
+    Nmap scan report for xstar.me (172.67.189.19)
+    Host is up (0.044s latency).
+    Other addresses for xstar.me (not scanned): 2606:4700:3037::6815:494c 2606:4700:3031::ac43:bd13 104.21.73.76
+    Not shown: 995 filtered ports
+    PORT     STATE SERVICE
+    21/tcp   open  ftp
+    80/tcp   open  http
+    443/tcp  open  https
+    8080/tcp open  http-proxy
+    8443/tcp open  https-alt
+
+    Nmap done: 1 IP address (1 host up) scanned in 69.56 seconds
+
+    C:\Users\Sinyu>nmap -v xstar.me
+    Starting Nmap 7.70 ( https://nmap.org ) at 2023-09-25 12:02 ￥x￥_?D·CRE?!
+    Initiating Ping Scan at 12:02
+    Scanning xstar.me (172.67.189.19) [4 ports]
+    Completed Ping Scan at 12:02, 0.62s elapsed (1 total hosts)
+    Initiating Parallel DNS resolution of 1 host. at 12:02
+    Completed Parallel DNS resolution of 1 host. at 12:02, 0.01s elapsed
+    Initiating SYN Stealth Scan at 12:02
+    Scanning xstar.me (172.67.189.19) [1000 ports]
+    Discovered open port 21/tcp on 172.67.189.19
+    Discovered open port 443/tcp on 172.67.189.19
+    Discovered open port 143/tcp on 172.67.189.19
+    Discovered open port 25/tcp on 172.67.189.19
+    Discovered open port 53/tcp on 172.67.189.19
+    Discovered open port 110/tcp on 172.67.189.19
+    Discovered open port 80/tcp on 172.67.189.19
+    Discovered open port 8080/tcp on 172.67.189.19
+    Discovered open port 8443/tcp on 172.67.189.19
+    Discovered open port 8008/tcp on 172.67.189.19
+    Completed SYN Stealth Scan at 12:02, 4.74s elapsed (1000 total ports)
+    Nmap scan report for xstar.me (172.67.189.19)
+    Host is up (0.021s latency).
+    Other addresses for xstar.me (not scanned): 104.21.73.76
+    Not shown: 989 filtered ports
+    PORT     STATE  SERVICE
+    21/tcp   open   ftp
+    25/tcp   open   smtp
+    53/tcp   open   domain
+    80/tcp   open   http
+    110/tcp  open   pop3
+    113/tcp  closed ident
+    143/tcp  open   imap
+    443/tcp  open   https
+    8008/tcp open   http
+    8080/tcp open   http-proxy
+    8443/tcp open   https-alt
+    
+    Read data files from: C:\Program Files (x86)\Nmap
+    Nmap done: 1 IP address (1 host up) scanned in 6.57 seconds
+
+  
