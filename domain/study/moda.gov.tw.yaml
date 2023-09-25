@@ -1,17 +1,17 @@
 dig:
-moda.gov.tw. rely to 104.18.22.126 and 104.18.23.126
+  moda.gov.tw. rely to 104.18.22.126 and 104.18.23.126
 
 whoisrws:
 country: U.S
-nothing interesting
+  nothing interesting
 
 dnsdumpster:
-cloudflare , ghs
+  cloudflare , ghs
 
 shodan:
-port:443,80
+  port:443,80
 443:
-HTTP/1.1 200 OK
+  HTTP/1.1 200 OK
 Date: Fri, 15 Sep 2023 09:35:49 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
@@ -28,26 +28,26 @@ X-Frame-Options: SAMEORIGIN
 Referrer-Policy: same-origin
 
 censys:
-數位發展部:
-Basic Information
-Network
-CLOUDFLARENET (US)
-Routing
-104.18.16.0/20 via AS13335
-Protocols
-80/HTTP , 443/HTTP , 2052/HTTP , 2053/HTTP , 2082/HTTP , 2083/HTTP , 2086/HTTP , 2087/HTTP , 2095/HTTP , 2096/HTTP , 8080/HTTP , 8443/HTTP , 88
+  數位發展部:
+  Basic Information
+  Network
+  CLOUDFLARENET (US)
+  Routing
+  104.18.16.0/20 via AS13335
+  Protocols
+  80/HTTP , 443/HTTP , 2052/HTTP , 2053/HTTP , 2082/HTTP , 2083/HTTP , 2086/HTTP , 2087/HTTP , 2095/HTTP , 2096/HTTP , 8080/HTTP , 8443/HTTP , 88
 
 nmap:
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2023-09-25 03:31 UTC
-Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
-Connect Scan Timing: About 80.27% done; ETC: 03:31 (0:00:02 remaining)
-Nmap scan report for egg.coa.gov.tw (210.241.95.4)
-Host is up (0.052s latency).
-Not shown: 997 filtered tcp ports (no-response)
-PORT    STATE  SERVICE
-25/tcp  open   smtp
-113/tcp closed ident
-443/tcp open   https
+  Starting Nmap 7.94SVN ( https://nmap.org ) at 2023-09-25 03:31 UTC
+  Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+  Connect Scan Timing: About 80.27% done; ETC: 03:31 (0:00:02 remaining)
+  Nmap scan report for egg.coa.gov.tw (210.241.95.4)
+  Host is up (0.052s latency).
+  Not shown: 997 filtered tcp ports (no-response)
+  PORT    STATE  SERVICE
+  25/tcp  open   smtp
+  113/tcp closed ident
+  443/tcp open   https
 
 Nmap done: 1 IP address (1 host up) scanned in 12.22 seconds
 
