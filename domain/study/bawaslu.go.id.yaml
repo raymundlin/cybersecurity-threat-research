@@ -1,0 +1,91 @@
+Server Technology: |
+  Content Management: Drupal
+  Server-side Language: PHP
+  Client-Side Language: Javascript
+  Javascript Libraries: JQuery
+  Webservice: Nginx
+  Operating System: CentOS
+  Email Server: SpamHero
+  SSL Certificate Authority: DigiCert
+  Traffic Analysis Tool: Google Analytics
+  Site Elements: External CSS
+  Structured Data: Open Graph
+  Server Location: Indonesia
+  Content Language: Indonesian
+  Character Encoding: UTF-8
+  Internet Service Provider: Indonesia Network Information Center
+  Hostname: 103.249.227.160
+
+Server Owner Info: |
+  Created Date: 26 June 2015
+  Owner: Idham
+  Address: Jl. Thamrin no. 14, Jakarta Pusat, DKI Jakarta, 10350, Indonesia
+  Email: admin@bawaslu.go.id
+  Phone: +620213905889
+  Name Server: ns1.bawaslu.go.id ns2.bawaslu.go.id
+
+Server SSL: |
+  Server Type: Apache/2.4.6(CentOS)OpenSSL/1.0.2k-fipsPHP/7.0.33
+  Issuer: DigiCert, Inc.
+  Domain Name: bawaslu.go.id
+  Serial Number: 0E9A532B11F6771109BD81F0F2A76466
+  Common Name: *.bawaslu.go.id
+  Certificate Signature Algorithm: sha256WithRSAEncryption
+  Ciphers: AES256+EECDH
+  Primary Domain: *.bawaslu.go.id
+  Certificate Duration: Certificate expires in 133 days
+  SCSV Fallback: Enabled
+  Heartbeat Extension: Enabled
+  Heartbleed Vulnerability: True
+  OCSP Stapling: Disabled
+  OCSP Status: Good
+  Encryption Methods: TLSv1, TLSv1.1, TLSv1.2
+
+dig: |
+  Mail Exchange (MX):
+  bawaslu-go-id.p30.mxthunder.net & bawaslu-go-id.p30.mxthunder.com 
+
+  Address (A):
+  Only got record for the domain address
+  103.249.227.160
+
+  Name Server (NS):
+  a.dns.bawaslu.go.id
+  b.dns.bawaslu.go.id
+  c.dns.bawaslu.go.id
+
+  Start of authority:
+  Administrative Contact Information: djaelani.mcs.co.id
+
+  Text (TXT:
+  some google site verification like
+  google-site-verification=WqtrQBAq3a3BIc6Hpo8xRU_p8mUAHrb68IX0OSqQphk
+
+whoisrws: |
+  didnt get any result since its goverment website
+
+dnsdumpster: |
+  Web Serving: Litespeed
+  Content Management System: Wordpress
+  Web Hosting Company: Hostinger
+
+shodan: |
+  ports open: 465, 587
+
+censys: |
+  80/HTTP
+  443/HTTP
+  587/SMTP
+  2082/HTTP
+  2083/HTTP
+  2086/HTTP
+  2095/HTTP
+  2096/HTTP
+  52223/HTTP
+  52224/HTTP
+  52227/HTTP
+  52228/HTTP
+  52229/HTTP
+  52230/HTTP
+  52231/HTTP
+  52232/HTTP
