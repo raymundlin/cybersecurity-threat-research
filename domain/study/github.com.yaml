@@ -12,4 +12,17 @@ shodan: |
 
 censys: |
   GitHub may be using a hybrid cloud approach for load balancing, directing traffic to three EC2 instances and multiple obscured source machines.
-  
+nmap: |
+  Nmap scan report for github.com (20.27.177.113)
+  Host is up (0.0092s latency).
+  Not shown: 991 filtered ports
+  PORT     STATE SERVICE
+  21/tcp   open  ftp
+  22/tcp   open  ssh
+  25/tcp   open  smtp
+  53/tcp   open  domain
+  80/tcp   open  http
+  110/tcp  open  pop3
+  143/tcp  open  imap
+  443/tcp  open  https
+  8008/tcp open  http
