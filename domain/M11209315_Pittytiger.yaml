@@ -36,8 +36,8 @@ shodan:
     Country United States
     City Centennial
     Organization Tucows.com Co.
-    ISP	Ting Fiber Inc.
-    ASN	AS32133
+    ISP Ting Fiber Inc.
+    ASN AS32133
     CVE Vulnerabilities -> Because it's use http (?)
     CVE-2021-3618/CVE-2021-23017/CVE-2019-9516/CVE-2019-9513/CVE-2019-9511/CVE-2019-20372/CVE-2018-16845
 censys:
