@@ -12,8 +12,18 @@ HTTP: AkamaiGHost
 Shodan: |
 Port 80, 443
 
-
 Censys: |
 210	AKAMAI-AS
 167	AKAMAI-ASN1
 
+nmap: |
+Nmap scan report for www.cia.gov (23.196.118.145)
+Host is up (0.17s latency).
+Other addresses for www.cia.gov (not scanned): 2600:1409:5000:380::184d 2600:1409:5000:38f::184d
+rDNS record for 23.196.118.145: a23-196-118-145.deploy.static.akamaitechnologies.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 12.15 seconds
