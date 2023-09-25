@@ -1,44 +1,5 @@
 dig: |
   ipvoid.com relays to itk.ac.id
-  apple command relays to itk.ac.id 
-  here the result :
-  ; <<>> DiG 9.10.6 <<>> itk.ac.id
-  ;; global options: +cmd
-  ;; Got answer:
-  ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51317
-  ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 5, ADDITIONAL: 11
- 
- ;; OPT PSEUDOSECTION:
- ; EDNS: version: 0, flags:; udp: 1400
- ;; QUESTION SECTION:
- ;itk.ac.id.			IN	A
- 
- ;; ANSWER SECTION:
- itk.ac.id.		1937	IN	A	103.154.74.129
- 
- ;; AUTHORITY SECTION:
- id.			20590	IN	NS	d.dns.id.
- id.			20590	IN	NS	b.dns.id.
- id.			20590	IN	NS	ns4.apnic.net.
- id.			20590	IN	NS	c.dns.id.
- id.			20590	IN	NS	e.dns.id.
- 
- ;; ADDITIONAL SECTION:
- b.dns.id.		24997	IN	A	103.19.179.179
- c.dns.id.		24997	IN	A	103.19.178.178
- d.dns.id.		24997	IN	A	45.126.57.57
- e.dns.id.		24997	IN	A	103.19.177.177
- ns4.apnic.net.		19702	IN	A	202.12.31.53
- b.dns.id.		24997	IN	AAAA	2402:ee80:b::b
- c.dns.id.		24997	IN	AAAA	2402:ee80:c::c
- d.dns.id.		24997	IN	AAAA	2402:ee80:d::d
- e.dns.id.		24997	IN	AAAA	2001:df5:4000:4::4
- ns4.apnic.net.		19702	IN	AAAA	2001:dd8:12::53
- 
- ;; Query time: 3 msec
- ;; SERVER: 140.118.31.99#53(140.118.31.99)
- ;; WHEN: Mon Sep 18 11:43:16 CST 2023
- ;; MSG SIZE  rcvd: 369
 
 whoisrws: |
     refer to whois.id
