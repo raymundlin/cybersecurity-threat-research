@@ -135,7 +135,6 @@ nmap: |
  110/tcp  open   pop3
  113/tcp  closed ident
  143/tcp  open   imap
-443/tcp  open   https
-8008/tcp open   http
-
-Host is up (0.23s latency)
+  443/tcp  open   https
+  8008/tcp open   http
+  Host is up (0.23s latency)
