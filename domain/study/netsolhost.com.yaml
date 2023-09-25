@@ -16,6 +16,46 @@ fierce: |
   NS: ns2.netsolmail.com. ns1.netsolmail.com., SOA: NS99.WORLDNIC.com. (162.159.26.217), Nearby: {'205.178.146.20': 'miva2.bos.netsolhost.com.'}
 sublist3r.py: |
   nothing interesting
+nmap: >
+  Starting Nmap 7.93 ( https://nmap.org ) at 2023-09-24 23:53 EDT
+  Nmap scan report for netsolhost.com (208.91.197.128)
+  Host is up (0.042s latency).
+  Not shown: 991 filtered tcp ports (no-response)
+  PORT     STATE  SERVICE
+  21/tcp   open   ftp
+  25/tcp   open   smtp
+  53/tcp   open   domain
+  80/tcp   open   http
+  110/tcp  open   pop3
+  113/tcp  closed ident
+  143/tcp  open   imap
+  443/tcp  open   https
+  8008/tcp open   http
+  Nmap done: 1 IP address (1 host up) scanned in 27.30 seconds
+rustscan: >
+  [~] The config file is expected to be at "/root/.rustscan.toml"
+  [~] Automatically increasing ulimit value to 5000.
+  Open 208.91.197.128:21
+  Open 208.91.197.128:25
+  Open 208.91.197.128:53
+  Open 208.91.197.128:80
+  Open 208.91.197.128:110
+  Open 208.91.197.128:143
+  Open 208.91.197.128:443
+  208.91.197.128 -> [21,25,53,80,110,143,443]
+autorecon: >
+  [*] Scanning target netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/80 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/110 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/143 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/53 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/25 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/21 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/443 on netsolhost.com
+  [*] [netsolhost.com/top-100-udp-ports] Discovered open port udp/53 on netsolhost.com
+  [*] [netsolhost.com/all-tcp-ports] Discovered open port tcp/8008 on netsolhost.com
+
+
 
 
   
