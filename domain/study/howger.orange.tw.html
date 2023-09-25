@@ -1,0 +1,932 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--generated with nmap.xsl - version 0.9c by Benjamin Erb - http://www.benjamin-erb.de/nmap_xsl.php -->
+      <style type="text/css">
+/* stylesheet print */
+@media print
+{
+  #menu {
+    display:none;
+  }
+
+  body {
+    font-family: Verdana, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    font-size: 13pt;
+    font-weight:bold;
+    margin:4pt 0pt 0pt 0pt;
+    padding:0;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight:bold;
+    margin:3pt 0pt 0pt 0pt;
+    padding:0;
+  }
+
+  h3, a:link, a:visited {
+    font-size: 9pt;
+    font-weight:bold;
+    margin:1pt 0pt 0pt 20pt;
+    padding:0;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  p,ul {
+    font-size: 9pt;
+    margin:1pt 0pt 8pt 40pt;
+    padding:0;
+    text-align:left;
+  }
+
+  li {
+    font-size: 9pt;
+    margin:0;
+    padding:0;
+    text-align:left;
+  }
+
+  table {
+    margin:1pt 0pt 8pt 40pt;
+    border:0px;
+    width:90%
+  }
+
+  td {
+    border:0px;
+    border-top:1px solid black;
+    font-size: 9pt;
+  }
+
+  .head td {
+    border:0px;
+    font-weight:bold;
+    font-size: 9pt;
+  }
+  .noprint { display: none; }
+}
+
+/* stylesheet screen */
+@media screen
+{
+  body {
+    font-family: Verdana, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+  }
+
+  #container {
+    text-align:left;
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  h1 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 14pt;
+    color: #FFFFFF;
+    background-color:#2A0D45;
+    margin:10px 0px 0px 0px;
+    padding:5px 4px 5px 4px;
+    width: 100%;
+    border:1px solid black;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 11pt;
+    color: #000000;
+    margin:30px 0px 0px 0px;
+    padding:4px;
+    width: 100%;
+    background-color:#F0F8FF;
+    text-align: left;
+  }
+
+  h2.green {
+    color: #000000;
+    background-color:#CCFFCC;
+    border-color:#006400;
+  }
+
+  h2.red {
+    color: #000000;
+    background-color:#FFCCCC;
+    border-color:#8B0000;
+  }
+   
+  h3 {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 10pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  p {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  p i {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #CCCCCC;
+  }
+
+  ul {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 75%;
+    text-align: left;
+  }
+
+  a {
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 8pt;
+    color:#000000;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  li a {
+    font-family: Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 10pt;
+    color:#000000;
+    font-weight:bold;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a.up {
+      color:#006400;
+  }
+
+  table {
+    width: 80%;
+    border:0px;
+    color: #000000;
+    background-color: #000000;
+    margin:10px;
+  }
+
+  tr {
+    vertical-align:top;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    color:#000000;
+    background-color: #FFFFFF;
+  }
+
+  tr.head {
+    background-color: #E1E1E1;
+    color: #000000;
+    font-weight:bold;
+  }
+
+  tr.open {
+    background-color: #CCFFCC;
+    color: #000000;
+  }
+	
+  tr.script {
+    background-color: #EFFFF7;
+    color: #000000;
+  }
+
+  tr.filtered {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+
+  tr.closed {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+    
+  td {
+    padding:2px;
+  }
+        
+  #menu li {
+    display         : inline;
+    margin          : 0;
+    /*margin-right    : 10px;*/
+    padding         : 0;
+    list-style-type : none;
+  }    
+ 
+  #menubox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 120px;
+  }
+  
+  
+  
+  /* This section handle's IE's refusal to honor the fixed CSS attribute */
+  
+  * html div#menubox {
+    position: absolute;
+    top:expression(eval(
+      document.compatMode && document.compatMode=='CSS1Compat') ?
+      documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) 
+      : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+  }
+  /* This fixes the jerky effect when scrolling in IE*/
+  * html,* html body {
+    background: #fff url(nosuchfile) fixed;
+  }
+
+  
+ 
+  .up {
+    color: #000000;
+    background-color:#CCFFCC;
+  }
+  
+  .down {
+    color:#626262;
+    background-color: #F2F2F2;
+  }
+
+  .print_only { display: none; }
+  .hidden { display: none; }
+  .unhidden { display: block; }
+  
+}
+</style>
+      <title>Nmap Scan Report - Scanned at Mon Sep 25 12:28:25 2023</title><script type="text/javascript">
+     
+      
+                
+      function toggle(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+          item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+      }
+           
+      function togglePorts(tableID,portState) {
+        var table = document.getElementById(tableID);    
+        var tbody = table.getElementsByTagName("tbody")[0];
+        var rows = tbody.getElementsByTagName("tr");
+        for (var i=0; i < rows.length; i++) {
+          var value = rows[i].getElementsByTagName("td")[2].firstChild.nodeValue;
+          if (value == portState) {
+            rows[i].style.display = (rows[i].style.display == 'none')?'':'none';
+          }
+        }
+      }
+      
+      function toggleAll(portState) {
+        var allTables = document.getElementsByTagName("table");
+        for (var c=0; c < allTables.length; c++) {
+          if (allTables[c].id != "") {
+            togglePorts(allTables[c].id, portState)
+          }
+        }
+      }
+      
+      function init (){
+        toggleAll('closed');
+        toggleAll('filtered');     
+      }     
+            
+      window.onload = init; 
+      
+      
+    
+    </script></head>
+   <body><a name="top"></a><div id="container">
+         <h1>Nmap Scan Report - Scanned at Mon Sep 25 12:28:25 2023</h1>
+         <ul id="menu">
+            <li><a href="#scansummary">Scan Summary</a></li>
+            <li> | <a href="#host_18_180_25_5" class="up">howger.orange.tw
+                  (18.180.25.5)
+                  </a></li>
+         </ul><a name="scansummary"></a><hr class="print_only">
+         <h2>Scan Summary</h2>
+         <p>
+            Nmap 7.93 was initiated at Mon Sep 25 12:28:25 2023 with these arguments:<br><i>nmap -Pn -A -sS -oX howger.orange.tw.xml -v10 howger.orange.tw</i><br></p>
+         <p>
+            Verbosity: 10; Debug level 0</p>
+         <p>Nmap done at Mon Sep 25 12:32:15 2023; 1 IP address (1 host up) scanned in 230.17
+            seconds</p>
+         <hr class="print_only"><a name="host_18_180_25_5"></a><h2 class="up">18.180.25.5 / ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com / howger.orange.tw<span class="print_only">(online)</span></h2>
+         <div id="hostblock_18.180.25.5" class="unhidden">
+            <h3>Address</h3>
+            <ul>
+               <li>18.180.25.5
+                  (ipv4)
+                  </li>
+            </ul>
+            
+            
+            <h3>Hostnames</h3>
+            <ul>
+               
+               <li>howger.orange.tw (user)</li>
+               
+               <li>ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com (PTR)</li>
+               </ul>
+            
+            <h3>Ports</h3>
+            <p>The 981 ports scanned but not shown below are in state: <b>closed</b></p>
+            <ul>
+               <li>
+                  <p>981 ports replied with: <b>reset</b></p>
+               </li>
+            </ul>
+            <table id="porttable_18.180.25.5" cellspacing="1">
+               <tr class="head">
+                  <td colspan="2">Port</td>
+                  <td>State 
+                     <a href="javascript:togglePorts('porttable_18.180.25.5','closed');"><span class="noprint"><small> (toggle closed [0] </small></span></a><a href="javascript:togglePorts('porttable_18.180.25.5','filtered');"><span class="noprint"><small> | filtered [10])</small></span></a></td>
+                  <td>Service</td>
+                  <td>Reason</td>
+                  <td>Product</td>
+                  <td>Version</td>
+                  <td>Extra info</td>
+               </tr>
+               
+               
+               
+               <tr class="open">
+                  <td>21</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>tcpwrapped&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="open">
+                  <td>22</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>ssh&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>OpenSSH&nbsp;</td>
+                  <td>7.6p1 Ubuntu 4ubuntu0.5&nbsp;</td>
+                  <td>Ubuntu Linux; protocol 2.0&nbsp;</td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>ssh-hostkey&nbsp;</td>
+                  <td colspan="6">
+                     <pre>
+  2048 1d80e42e2dc9c162852d1f3c1308c4ff (RSA)
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLXJ0pq+DDO3rGB7cAnNKc1i1XKdLZbNUffiioTx9H9g0lqrVU6PSdaY57dRlSOwBad4msyZQVljCxOcK+Z+emkmo2LOvP2W6E2EYKS2XVk2MiRLYhzodJ6u48ZEBDZ/PcwbHLW1Er6c4+ztRDYPCwcIVuGoiE7eRX6KeeDHW39lEt2WAPN30wm1gJfCN5DVz1C4l1no6K3lRpN84TmDXUPSUcKYWHZBAiqFr0t85DCSOWXPUXa2Q1hyoqQq0mbQtl5FOO4aABilgWln5/o34NhSbc9qoLrryLby9fOufIuefDY3krq56aXGpjPd1ZVab2UNwiPhKDtP6gOrXJNnAb&nbsp;</pre>
+                  </td>
+               </tr>
+               
+               <tr class="open">
+                  <td>25</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>tcpwrapped&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>smtp-commands&nbsp;</td>
+                  <td colspan="6">
+                     <pre>Couldn't establish connection on port 25&nbsp;</pre>
+                  </td>
+               </tr>
+               
+               <tr class="open">
+                  <td>53</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>domain&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="open">
+                  <td>80</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>http&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>Apache httpd&nbsp;</td>
+                  <td>2.4.29&nbsp;</td>
+                  <td>(Ubuntu)&nbsp;</td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-server-header&nbsp;</td>
+                  <td colspan="6">
+                     <pre>Apache/2.4.29 (Ubuntu)&nbsp;</pre>
+                  </td>
+               </tr>
+               
+               <tr class="open">
+                  <td>110</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>tcpwrapped&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>135</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>msrpc&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>139</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>netbios-ssn&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="open">
+                  <td>143</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>tcpwrapped&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="open">
+                  <td>443</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>http&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>Apache httpd&nbsp;</td>
+                  <td>2.4.29&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-server-header&nbsp;</td>
+                  <td colspan="6">
+                     <pre>Apache/2.4.29 (Ubuntu)&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>tls-alpn&nbsp;</td>
+                  <td colspan="6">
+                     <pre>
+  http/1.1&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>ssl-cert&nbsp;</td>
+                  <td colspan="6">
+                     <pre>Subject: commonName=howger.orange.tw
+Subject Alternative Name: DNS:howger.orange.tw
+Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+Public Key type: rsa
+Public Key bits: 2048
+Signature Algorithm: sha256WithRSAEncryption
+Not valid before: 2023-09-21T12:45:38
+Not valid after:  2023-12-20T12:45:37
+MD5:   553d9ca641001972bb53bee6937501e4
+SHA-1: 6aba0901b7b2dce16d13342e3a70498e1e760662
+-----BEGIN CERTIFICATE-----
+MIIE7jCCA9agAwIBAgISBBkloJTJHjtmmCCN+Whfhjb4MA0GCSqGSIb3DQEBCwUA
+MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+EwJSMzAeFw0yMzA5MjExMjQ1MzhaFw0yMzEyMjAxMjQ1MzdaMBsxGTAXBgNVBAMT
+EGhvd2dlci5vcmFuZ2UudHcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQCqdnSvijv9vdqL70z4fOZwvAEmKJGl9Emy6XWdRH6d3iAZ4uvs+IO9Q1rG96lo
+3CfOxjXkSBiDXmy1CkkDIoSc9NKqD0nrHKJ+Js3VGBvUd7cduRoCi3JQNHTAXlIh
+O4grBUXV5IcxeXUl2s86hOF9hRcETAxlosVO64atnrNim+kt+Vf0VG9zQC7WwRDa
+n3ls0x+LuNx1mACUBaChjlRi6Xog6En66R4M1zJC/MTL8Qp8ii/V7y5wnBencUyC
+5QUrUTSNIFtYkRK39MWbzQnhGRnUhyq4nTksvyOhiGU+IyL/CaIUvF28lKlGVfpB
+M8I7yCQb9XHTCAoAaps/XilPAgMBAAGjggITMIICDzAOBgNVHQ8BAf8EBAMCBaAw
+HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYD
+VR0OBBYEFLTyS3BXNfWOUvZ1crQ6U+tfI6MxMB8GA1UdIwQYMBaAFBQusxe3WFbL
+rlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDov
+L3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5v
+cmcvMBsGA1UdEQQUMBKCEGhvd2dlci5vcmFuZ2UudHcwEwYDVR0gBAwwCjAIBgZn
+gQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgC3Pvsk35xNunXyOcW6WPRs
+XfxCz3qfNcSeHQmBJe20mQAAAYq3/TINAAAEAwBHMEUCIQCjTzrcjWLMDa7kqF6E
+vPYnTiAc/sU/JiM6og+PHkx9TgIgH5m2X+ocj3RbD1aUHytghr+qRgECd1FkAZsp
+j1Cz1wQAdwB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYq3/TIb
+AAAEAwBIMEYCIQCRIyFSEp4WD85YJc5gKSr3HfsvxslrmVRBA6K5ObUCwAIhANSY
+9ZTu6l9WhSy1clFn48XY4Czl1ElEhCcdFxp2y5hIMA0GCSqGSIb3DQEBCwUAA4IB
+AQBJHysv52uJi0GYljywccIS40Fj/Luj4B8cWRSFVniUIcMpbxI0BgUHfrcJNB6p
+4l5hIs0gSYCW4UeUsA/3vAZ3e0rH4a101z0MO6bp9yLtCBkfOoIRYLHpovYinyik
+Iz1on213/WSaRvK2U5ZXUb+szETpFPiNkqyzgI/cgWUmq9fPSRVsX/nsXTeul5Dx
+4DMVrS0mkK/hpaT8qXD4+9jnG9KBXCtXw8BU8OCrgAIG2nCfxlJ0ZSn+mKLHDNlu
+NLrd+58+LOvtwUgFM0WaPsgF8FQkv24ke0jr491QvQr59bhDVkzRwhnFfPeeH/FC
+b2KzGLxuKf4wcvfX8twVHA9c
+-----END CERTIFICATE-----
+&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>ssl-date&nbsp;</td>
+                  <td colspan="6">
+                     <pre>TLS randomness does not represent time&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-methods&nbsp;</td>
+                  <td colspan="6">
+                     <pre>
+  Supported Methods: GET HEAD POST OPTIONS&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-title&nbsp;</td>
+                  <td colspan="6">
+                     <pre>How\xE5\x93\xA5\xE7\x94\xA2\xE7\x94\x9F\xE5\x99\xA8&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-favicon&nbsp;</td>
+                  <td colspan="6">
+                     <pre>Unknown favicon MD5: 8B79D20F4DCA13D3F8DD6CD9766D7C9A&nbsp;</pre>
+                  </td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>445</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>microsoft-ds&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>5555</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>freeciv&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>6666</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>irc&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>6667</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>irc&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>6668</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>irc&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>6669</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>irc&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="open">
+                  <td>8008</td>
+                  <td>tcp</td>
+                  <td>open</td>
+                  <td>http&nbsp;</td>
+                  <td>syn-ack</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-methods&nbsp;</td>
+                  <td colspan="6">
+                     <pre>
+  Supported Methods: GET HEAD POST OPTIONS&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>fingerprint-strings&nbsp;</td>
+                  <td colspan="6">
+                     <pre>
+  FourOhFourRequest: 
+    HTTP/1.1 302 Found
+    Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
+    Connection: close
+    X-Frame-Options: SAMEORIGIN
+    X-XSS-Protection: 1; mode=block
+    X-Content-Type-Options: nosniff
+    Content-Security-Policy: frame-ancestors 'self'
+  GenericLines, HTTPOptions, RTSPRequest, SIPOptions: 
+    HTTP/1.1 302 Found
+    Location: https://:8010
+    Connection: close
+    X-Frame-Options: SAMEORIGIN
+    X-XSS-Protection: 1; mode=block
+    X-Content-Type-Options: nosniff
+    Content-Security-Policy: frame-ancestors 'self'
+  GetRequest: 
+    HTTP/1.1 302 Found
+    Location: https://:8010/
+    Connection: close
+    X-Frame-Options: SAMEORIGIN
+    X-XSS-Protection: 1; mode=block
+    X-Content-Type-Options: nosniff
+    Content-Security-Policy: frame-ancestors 'self'&nbsp;</pre>
+                  </td>
+               </tr>
+               <tr class="script">
+                  <td></td>
+                  <td>http-title&nbsp;</td>
+                  <td colspan="6">
+                     <pre>Did not follow redirect to https://howger.orange.tw:8010/&nbsp;</pre>
+                  </td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>9100</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>jetdirect&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               
+               <tr class="filtered">
+                  <td>9101</td>
+                  <td>tcp</td>
+                  <td>filtered</td>
+                  <td>jetdirect&nbsp;</td>
+                  <td>no-response</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               </table>
+            
+            <h3>Remote Operating System Detection</h3>
+            <ul>
+               <li>Used port: <b>22/tcp</b> (<b>open</b>)  </li>
+               <li>Used port: <b>1/tcp</b> (<b>closed</b>)  </li>
+               <li>Used port: <b>41617/udp</b> (<b>closed</b>)  </li>
+               <li>OS match: <b>Synology DiskStation Manager 5.1</b> (<b>91%</b>)</li>
+               <li>OS match: <b>Linux 2.6.32</b> (<b>91%</b>)</li>
+               <li>OS match: <b>Linux 2.6.32 or 3.10</b> (<b>91%</b>)</li>
+               <li>OS match: <b>Linux 3.5</b> (<b>91%</b>)</li>
+               <li>OS match: <b>Linux 4.4</b> (<b>91%</b>)</li>
+               <li>OS match: <b>WatchGuard Fireware 11.8</b> (<b>91%</b>)</li>
+               <li>OS match: <b>Linux 2.6.35</b> (<b>90%</b>)</li>
+               <li>OS match: <b>Linux 2.6.39</b> (<b>90%</b>)</li>
+               <li>OS match: <b>Linux 3.10 - 3.12</b> (<b>90%</b>)</li>
+               <li>OS match: <b>Linux 4.2</b> (<b>90%</b>)</li>
+            </ul>
+            <ul>
+               <li class="noprint">OS identified but the fingerprint was requested at scan time. 
+                  
+                  <a href="javascript:toggle('osblock_18.180.25.5');"><span class="noprint"><small> (click to expand)</small></span></a></li>
+            </ul>
+            <div id="osblock_18.180.25.5" class="hidden">
+               <table class="noprint" cellspacing="1">
+                  <tr class="head">
+                     <td>Operating System fingerprint</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <pre>SCAN(V=7.93%E=4%D=9/25%OT=22%CT=1%CU=41617%PV=N%DS=19%DC=T%G=N%TM=65110D4F%P=i686-pc-windows-windows)
+SEQ(SP=FF%GCD=1%ISR=107%TI=Z%II=I%TS=A)
+OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
+WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)
+ECN(R=Y%DF=Y%T=41%W=F507%O=M566NNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=42%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=41%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=N)
+T7(R=N)
+U1(R=Y%DF=N%T=41%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=41%CD=S)
+</pre>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            
+            
+            
+            
+            
+            <a href="javascript:toggle('trace_18.180.25.5');">
+               Traceroute Information <span class="noprint"><small> (click to expand)</small></span></a><div id="trace_18.180.25.5" class="hidden">
+               <ul>
+                  <li>Traceroute data generated using port 8888/tcp</li>
+               </ul>
+               <table cellspacing="1">
+                  <tr class="head">
+                     <td>Hop</td>
+                     <td>Rtt</td>
+                     <td>IP</td>
+                     <td>Host</td>
+                  </tr>
+                  <tr class="open">
+                     <td>1</td>
+                     <td>2.00</td>
+                     <td>140.118.247.254</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>2</td>
+                     <td>3.00</td>
+                     <td>10.118.250.1</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>3</td>
+                     <td>3.00</td>
+                     <td>10.0.0.6</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>4</td>
+                     <td>4.00</td>
+                     <td>10.0.0.9</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>5</td>
+                     <td>3.00</td>
+                     <td>192.192.7.197</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>6</td>
+                     <td>6.00</td>
+                     <td>211.22.226.186</td>
+                     <td>tpdb-3312.hinet.net</td>
+                  </tr>
+                  <tr class="open">
+                     <td>7</td>
+                     <td>4.00</td>
+                     <td>220.128.2.250</td>
+                     <td>tpdt-3032.hinet.net</td>
+                  </tr>
+                  <tr class="open">
+                     <td>9</td>
+                     <td>5.00</td>
+                     <td>220.128.13.237</td>
+                     <td>220-128-13-237.hinet-ip.hinet.net</td>
+                  </tr>
+                  <tr class="open">
+                     <td>10</td>
+                     <td>4.00</td>
+                     <td>203.75.72.237</td>
+                     <td>203-75-72-237.hinet-ip.hinet.net</td>
+                  </tr>
+                  <tr class="open">
+                     <td>11</td>
+                     <td>5.00</td>
+                     <td>203.69.110.61</td>
+                     <td>ae6.edge1.Banqiao.idc.hinet.net</td>
+                  </tr>
+                  <tr class="open">
+                     <td>12</td>
+                     <td>6.00</td>
+                     <td>52.93.136.106</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>13</td>
+                     <td>6.00</td>
+                     <td>52.93.136.31</td>
+                     <td></td>
+                  </tr>
+                  <tr class="open">
+                     <td>19</td>
+                     <td>39.00</td>
+                     <td>18.180.25.5</td>
+                     <td>ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com</td>
+                  </tr>
+               </table>
+            </div>
+            
+            <br><a href="javascript:toggle('metrics_18.180.25.5');">
+               Misc Metrics <span class="noprint"><small> (click to expand)</small></span></a><div id="metrics_18.180.25.5" class="hidden">
+               <table cellspacing="1">
+                  <tr class="head">
+                     <td>Metric</td>
+                     <td>Value</td>
+                  </tr>
+                  <tr>
+                     <td>Ping Results</td>
+                     <td>user-set</td>
+                  </tr>
+                  <tr>
+                     <td>System Uptime</td>
+                     <td>364770 seconds  (last reboot: Thu Sep 21 07:12:45 2023)
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>Network Distance</td>
+                     <td>19 hops</td>
+                  </tr>
+                  <tr>
+                     <td>TCP Sequence Prediction</td>
+                     <td>Difficulty=255 (Good luck!)</td>
+                  </tr>
+                  <tr>
+                     <td>IP ID Sequence Generation</td>
+                     <td>All zeros</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <div id="menubox" class="noprint"><a href="#top"><small>Go to top</small></a><br><a href="javascript:toggleAll('closed');"><small>Toggle Closed Ports</small></a><br><a href="javascript:toggleAll('filtered');"><small>Toggle Filtered Ports</small></a></div>
+   </body>
+</html>
