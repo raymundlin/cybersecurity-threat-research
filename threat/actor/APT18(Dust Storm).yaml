@@ -1,24 +1,18 @@
-threat actor: APT-C-35 Sea Turtle
-background: '"Sea Turtle" is a threat actor known for its involvement in highly damaging
-  attacks, primarily characterized by DNS hijacking.
-
-  Sea Turtle has targeted various organizations, including government agencies, energy
-  companies, telecommunications, and international organizations.
+threat actor: APT18(dust storm)
+background: 
+  Dust Storm is a threat group that has targeted multiple industries in Japan, South Korea, the United States, Europe, and several Southeast Asian countries.
 
   '
 notable incidents:
-- Attack on Pakistan’s defense sector.
-- They deliver their malware as documents containing malicious macros.
-- The group also appears to have Android malware, such as Android RAT malware found
-  as a rogue Kashmir News Service Lite app and more like that.
+- In October 2011  October, the group attempted to take advantage of the ongoing Libyan crisis at the time and phish the news cycle regarding Muammar Gaddafi’s death on October 20, 2011. It appears that in addition to some US defense targets, this campaign was also directed at a Uyghur mailing list. This time, the group used a specially crafted malicious Windows Help (.hlp) file, which exploited CVE-2010-1885.
+description: 
+- The group attempted to take advantage of the ongoing Libyan crisis at the time and phish the news cycle regarding Muammar Gaddafi’s death on October 20, 2011. It appears that in addition to some US defense targets, this campaign was also directed at a Uyghur mailing list. This time, the group used a specially crafted malicious Windows Help (.hlp) file, which exploited CVE-2010-1885.
+
 attribution: 'While the true identity of Sea Turtle remains unclear, some reports
-  suggest it may be associated with a specific nation-state or state-sponsored threat
-  actor.
+  - Dust Storm is widely believed to be associated with the China government,It wasn’t until June 2011 that Operation Dust Storm started to garner some notoriety from a series of attacks which leveraged an unpatched Internet Explorer 8 vulnerability, CVE-2011-1255, to gain a foothold into victim networks. In these attacks, a link to the exploit was sent via a spear phishing email from a purported Chinese student seeking advice or asking the target a question following a presentation.
 
   '
 sources of intelligence:
-- Security news outlets
-- Cybersecurity blogs and forums
-- Reports from international organizations
-- Security research reports
-- Information releases from government agencies
+- News Outlets(e.g ,threat post)
+- Cybersecurity Blogs and Forums(e.g , IThome,cyberintelmatrix)
+- Electronic Transactions Development Agency(ETDA)
