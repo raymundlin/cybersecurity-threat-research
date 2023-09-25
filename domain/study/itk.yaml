@@ -49,9 +49,7 @@ whoisrws: |
   changed:      2021-10-12
   source:       IANA
   
-  # whois.id
-  
-  
+
   ID ccTLD whois server
   Please see 'whois -h whois.id help' for usage.
   
