@@ -1,5 +1,5 @@
 dig: |
-  https://www.ipvoid.com/dig-dns-lookup/ relays to itk.ac.id
+ipvoid.com relays to itk.ac.id
  apple command relays to itk.ac.id 
 here the result :
 ; <<>> DiG 9.10.6 <<>> itk.ac.id
@@ -127,7 +127,6 @@ censys: |
   IDNIC-ITK-AS-ID Institut Teknologi Kalimantan
 
 nmap: |
-
 PORT     STATE  SERVICE
 21/tcp   open   ftp
 25/tcp   open   smtp
