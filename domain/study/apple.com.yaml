@@ -74,3 +74,14 @@ censys: |
   Network: APPLE-ENGINEERING (US)
   Routing: 17.253.144.0/24  via  AS714
   Protocols: 80/HTTP , 443/HTTP
+
+nmap: |
+  Nmap scan report for apple.com (17.253.144.10)
+  Host is up (0.0013s latency).
+  Other addresses for apple.com (not scanned): 2620:149:af0::10
+  rDNS record for 17.253.144.10: www.brkgls.com
+  Not shown: 998 filtered ports
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
+  
