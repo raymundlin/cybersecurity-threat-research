@@ -1,0 +1,20 @@
+dig: |
+  oceanbuffalo relays to AUTHORITY SECTION: 86336	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2023091701 1800 900 604800 86400
+
+whoisrws: |
+  nothing interesting
+
+dnsdumpster: |
+  herberged on AMAZON-02, USA; 13.56.33.8; http tech: openresty
+
+shodan: |
+  nothing found
+
+censys: |
+  amazonaws!
+
+googledorks: |
+  oceanbuffalo.com domain name is for sale
+
+nmap: |
+  
