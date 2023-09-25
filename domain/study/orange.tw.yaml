@@ -66,13 +66,17 @@ nmap: |
       54.178.226.226 (howger.orange.tw)
 
   nmap orange.tw -Pn -A -sS -oX orange.tw.xml -v10
-      (https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/orange.tw.html)
+      <a href="https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/orange.tw.html">
+          orange.tw.html
+      </a>
   nmap testname.orange.tw -Pn -A -sS -oX testname.orange.tw.xml -v10
-      (https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/testname.orange.tw.html)
+      <a href="https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/testname.orange.tw.html">
+          testname.orange.tw.html
+      </a>
   nmap howger.orange.tw -Pn -A -sS -oX howger.orange.tw.xml -v10
-      (https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/howger.orange.tw.html)
+      <a href="https://htmlpreview.github.io/?https://github.com/ntust-im-labyrinth/cybersecurity-threat-research/blob/M11009140/domain/study/howger.orange.tw.html">
+          howger.orange.tw.html
+      </a>
       
   xml to html
       java -jar Downloads\SaxonHE12-3J\saxon-he-12.3.jar -s:localhost.xml -o:localhost.html -xsl:https://nmap.org/svn/docs/nmap.xsl
-  
-  <a src="https://www.google.com">google</a>
