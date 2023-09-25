@@ -7,7 +7,7 @@ dnsdumpster: |
   nginx and WordPress!
 
 shodan: |
-  ports 80, 443
+  www.bilibili.com is had servaral different ip from US, Taiwan, China
 
 censys: |
   Software is Taobao Tengine
