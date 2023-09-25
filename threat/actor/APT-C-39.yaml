@@ -3,26 +3,26 @@ threat actor: APT-C-39
 background: | 
     Dating back to 2017, WikiLeaks received a "backup copy" of the hacking materials from Joshua and disclosed 8716 documents from the CIA of the United States, including 156 confidential documents that detail record the CIA hacking group’s attack methods, targets, tools, and technical specifications and requirements. The disclosure contains a hacking tool Vault 7 (code name) which is considered to be the core cyber weapon. Qihoo 360 analyzed the leaked material of Vault 7 and associated with the team’s research, discovered a series of targeted attacks against China's aviation industry, scientific research institutions, the petroleum industry, large Internet companies, and government agencies. These eleven-year attacks can be traced back to 2008 (spanning from September 2008 to June 2019), and are mainly distributed in provinces such as Beijing, Guangdong, and Zhejiang. The above-mentioned targeted attacks are all attributed to a U.S.-related APT organization - APT-C-39 (according to Qihoo 360’s code-naming system).
 
-notable incidents: |
-    - Aerospace
-    - Scientific research institutions
-    - The oil industry
-    - Large Internet companies
-    - Government agencies
+notable incidents:
+- Aerospace
+- Scientific research institutions
+- The oil industry
+- Large Internet companies
+- Government agencies
 
-attribution: | 
-    - Five Major Related Evidences Reveal That APT-C-39 is Affiliated with the CIA:
-    - 1. APT-C-39 uses massive exclusive cyber weapons in the CIA's Vault 7 project: APT-C-39 has used CIA-exclusive cyber weapons such as Fluxwire, and Grasshopper to carry out cyber-attacks against China. By comparing relevant sample codes, behavioral fingerprints, and other information, the Qihoo 360 can be pretty sure that the cyber weapon used by the group is the cyber weapon described in the Vault 7 leaks.
-    - 2. The technical details of most samples of the APT-C-39 are consistent with the ones described in the Vault 7 documents: Qihoo 360 analysis found that the technical details of most of the samples are consistent with the ones in the Vault 7 document, such as control commands, compile pdb paths, encryption schemes. These are the patterns usually found in standardized attack organizations, and it is also one of the methods to classify them. Therefore, the group is believed to belong to the CIA-led national hacking group.
-    - 3. Before the Vault 7 cyber weapon was disclosed by WikiLeaks, the APT-C-39 already used relevant cyber weapons against targets in China: For example, at the beginning of 2010, the APT-C-39 has used the Fluxwire backdoor in the Vault 7 cyber weapon in cyber-attack activities in China, which is much earlier than the Vault 7 leaks. This further confirms the source of these cyberweapons. After in-depth analysis and decryption of the version in the Fluxwire backdoor in Vault 7, Qihoo 360 statistically classified the version, attack time, and samples captured by itself that APT-C-39 used to attack targets in China over the years.
-    - 4. Some attack weapons used by the APT-C-39 are associated with the NSA: WISTFULTOLL is an attack plugin in the 2014 NSA leaks. In an attack against a large Internet company in China in 2011, the APT-C-39 organization used the WISTFULTOOL plugin on the target. At the same time, in the CIA confidential documents uncovered by WikiLeaks, it was confirmed that the NSA assisted the CIA in developing cyber weapons, which is also side-by-side evidence of the association between the APT-C-39 and US intelligence agencies.
-    - 5. APT-C-39 group's weapons compilation time is located in the US time zone: The compilation time of the captured samples is in line with the North American business working hours. The compilation time of malware is a common method and statistics in the research of APT group attribution. Through the study of the compilation time of malware, we can find out the developer's work schedule, so as to know the approximate time zone of his location.
+attribution: 
+- Five Major Related Evidences Reveal That APT-C-39 is Affiliated with the CIA:
+- 1. APT-C-39 uses massive exclusive cyber weapons in the CIA's Vault 7 project: APT-C-39 has used CIA-exclusive cyber weapons such as Fluxwire, and Grasshopper to carry out cyber-attacks against China. By comparing relevant sample codes, behavioral fingerprints, and other information, the Qihoo 360 can be pretty sure that the cyber weapon used by the group is the cyber weapon described in the Vault 7 leaks.
+- 2. The technical details of most samples of the APT-C-39 are consistent with the ones described in the Vault 7 documents: Qihoo 360 analysis found that the technical details of most of the samples are consistent with the ones in the Vault 7 document, such as control commands, compile pdb paths, encryption schemes. These are the patterns usually found in standardized attack organizations, and it is also one of the methods to classify them. Therefore, the group is believed to belong to the CIA-led national hacking group.
+- 3. Before the Vault 7 cyber weapon was disclosed by WikiLeaks, the APT-C-39 already used relevant cyber weapons against targets in China: For example, at the beginning of 2010, the APT-C-39 has used the Fluxwire backdoor in the Vault 7 cyber weapon in cyber-attack activities in China, which is much earlier than the Vault 7 leaks. This further confirms the source of these cyberweapons. After in-depth analysis and decryption of the version in the Fluxwire backdoor in Vault 7, Qihoo 360 statistically classified the version, attack time, and samples captured by itself that APT-C-39 used to attack targets in China over the years.
+- 4. Some attack weapons used by the APT-C-39 are associated with the NSA: WISTFULTOLL is an attack plugin in the 2014 NSA leaks. In an attack against a large Internet company in China in 2011, the APT-C-39 organization used the WISTFULTOOL plugin on the target. At the same time, in the CIA confidential documents uncovered by WikiLeaks, it was confirmed that the NSA assisted the CIA in developing cyber weapons, which is also side-by-side evidence of the association between the APT-C-39 and US intelligence agencies.
+- 5. APT-C-39 group's weapons compilation time is located in the US time zone: The compilation time of the captured samples is in line with the North American business working hours. The compilation time of malware is a common method and statistics in the research of APT group attribution. Through the study of the compilation time of malware, we can find out the developer's work schedule, so as to know the approximate time zone of his location.
 
 
-sources of intelligence: |
-    - Search Engines
-    - Cybersecurity Firms' Reports (e.g., blogs.360.net)
-    - Threat Intelligence (APTnotes)
-    - News Outlets
-    - Cybersecurity Blogs and Forums
-    - Technical Analysis and Malware Samples
+sources of intelligence: 
+- Search Engines
+- Cybersecurity Firms' Reports (e.g., blogs.360.net)
+- Threat Intelligence (APTnotes)
+- News Outlets
+- Cybersecurity Blogs and Forums
+- Technical Analysis and Malware Samples
