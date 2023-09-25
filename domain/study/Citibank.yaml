@@ -1,8 +1,8 @@
 dig: |
   ANSWER SECTION:
-www.citi.com.		64	IN	CNAME	san.www.citi.com.edgekey.net.
-san.www.citi.com.edgekey.net. 421 IN	CNAME	e16976.x.akamaiedge.net.
-e16976.x.akamaiedge.net. 20	IN	A	23.205.12.95
+  www.citi.com.		64	IN	CNAME	san.www.citi.com.edgekey.net.
+  san.www.citi.com.edgekey.net. 421 IN	CNAME	e16976.x.akamaiedge.net.
+  e16976.x.akamaiedge.net. 20	IN	A	23.205.12.95
 
 whoisrws: |
   nothing interesting
