@@ -1,8 +1,7 @@
 dig: |
-  on.tdo.com relays to cname.bitly.com
-
+  www.bilibili.com relays to bilicdn1.com
 whoisrws: |
-  nothing interesting
+  Cannot found results on whoisRWS or ARIN
 
 dnsdumpster: |
   nginx and WordPress!
