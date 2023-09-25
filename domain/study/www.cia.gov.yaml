@@ -1,0 +1,19 @@
+Dig gui: |
+www.cia.gov.	relay to	www.cia.gov.edgekey.net. 
+www.cia.gov.edgekey.net. relay to	e6221.dscna.akamaiedge.net.
+e6221.dscna.akamaiedge.net. relay to	184.31.74.5
+
+Whois: |
+Detail information of company
+
+Dnsdumpster: |
+HTTP: AkamaiGHost
+
+Shodan: |
+Port 80, 443
+
+
+Censys: |
+210	AKAMAI-AS
+167	AKAMAI-ASN1
+
