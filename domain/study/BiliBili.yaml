@@ -10,7 +10,7 @@ shodan: |
   ports 80, 443
 
 censys: |
-  amazonaws!
+  Software is Taobao Tengine
 
 nmap: |
   nmap www.bilibili.com
