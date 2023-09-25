@@ -1,10 +1,9 @@
-threat actor: |
-    APT-C-39
+threat actor: APT-C-39
 
 background: | 
-    "Dating back to 2017, WikiLeaks received a "backup copy" of the hacking materials from Joshua and disclosed 8716 documents from the CIA of the United States, including 156 confidential documents that detail record the CIA hacking group’s attack methods, targets, tools, and technical specifications and requirements. The disclosure contains a hacking tool Vault 7 (code name) which is considered to be the core cyber weapon. Qihoo 360 analyzed the leaked material of Vault 7 and associated with the team’s research, discovered a series of targeted attacks against China's aviation industry, scientific research institutions, the petroleum industry, large Internet companies, and government agencies. These eleven-year attacks can be traced back to 2008 (spanning from September 2008 to June 2019), and are mainly distributed in provinces such as Beijing, Guangdong, and Zhejiang. The above-mentioned targeted attacks are all attributed to a U.S.-related APT organization - APT-C-39 (according to Qihoo 360’s code-naming system)."
+    Dating back to 2017, WikiLeaks received a "backup copy" of the hacking materials from Joshua and disclosed 8716 documents from the CIA of the United States, including 156 confidential documents that detail record the CIA hacking group’s attack methods, targets, tools, and technical specifications and requirements. The disclosure contains a hacking tool Vault 7 (code name) which is considered to be the core cyber weapon. Qihoo 360 analyzed the leaked material of Vault 7 and associated with the team’s research, discovered a series of targeted attacks against China's aviation industry, scientific research institutions, the petroleum industry, large Internet companies, and government agencies. These eleven-year attacks can be traced back to 2008 (spanning from September 2008 to June 2019), and are mainly distributed in provinces such as Beijing, Guangdong, and Zhejiang. The above-mentioned targeted attacks are all attributed to a U.S.-related APT organization - APT-C-39 (according to Qihoo 360’s code-naming system).
 
-notable incidents (China critical infrastructure): |
+notable incidents: |
     - Aerospace
     - Scientific research institutions
     - The oil industry
