@@ -10,7 +10,7 @@ notable incidents:
 - Large Internet companies
 - Government agencies
 
-attribution: 
+attribution: |
 - Five Major Related Evidences Reveal That APT-C-39 is Affiliated with the CIA:
 - 1. APT-C-39 uses massive exclusive cyber weapons in the CIA's Vault 7 project: APT-C-39 has used CIA-exclusive cyber weapons such as Fluxwire, and Grasshopper to carry out cyber-attacks against China. By comparing relevant sample codes, behavioral fingerprints, and other information, the Qihoo 360 can be pretty sure that the cyber weapon used by the group is the cyber weapon described in the Vault 7 leaks.
 - 2. The technical details of most samples of the APT-C-39 are consistent with the ones described in the Vault 7 documents: Qihoo 360 analysis found that the technical details of most of the samples are consistent with the ones in the Vault 7 document, such as control commands, compile pdb paths, encryption schemes. These are the patterns usually found in standardized attack organizations, and it is also one of the methods to classify them. Therefore, the group is believed to belong to the CIA-led national hacking group.
