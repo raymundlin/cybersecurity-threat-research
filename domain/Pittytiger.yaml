@@ -14,11 +14,11 @@ dig:
   So we tried remove .tw looking for some info
     (1) avstore.com -> this seems no threat 
       ANSWER SECTION ->
-      avstore.com.		600	IN	A	15.197.142.173
-      avstore.com.		600	IN	A	3.33.152.147
+      avstore.com. 600 IN A	15.197.142.173
+      avstore.com. 600 IN A 3.33.152.147
     (3) symantecs.com -> really strangeeeee, IP at US.
       ANSWER SECTION ->
-      symantecs.com.		1800	IN	A	64.98.135.25
+      symantecs.com. 1800 IN A 64.98.135.25
 whoisrws:
   (3) symantecs.com
     there's five DNS Servers at Canada and Host Records at US
@@ -32,13 +32,12 @@ shodan:
   I've used it on searching exposed PLC device which produce by Omron, 
   but after doing some try out ... I gess most of them are HoneyPot.
   (3) symantecs.com
-    64.98.135.25 ->   
+    64.98.135.25 ->
     Country	United States
-    City	Centennial
-    Organization	Tucows.com Co.
+    City Centennial
+    Organization Tucows.com Co.
     ISP	Ting Fiber Inc.
     ASN	AS32133
-
     CVE Vulnerabilities -> Because it's use http (?)
     CVE-2021-3618/CVE-2021-23017/CVE-2019-9516/CVE-2019-9513/CVE-2019-9511/CVE-2019-20372/CVE-2018-16845
 censys:
