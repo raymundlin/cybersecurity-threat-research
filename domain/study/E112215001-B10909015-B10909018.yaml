@@ -21,6 +21,14 @@ shodan: |
   domains za.com
 censys: |
   Network AMAZON-02 (US)
+  
+nmap: |
+  Nmap scan report for oilrig.com (199.59.243.224)
+  Host is up (0.0012s latency).
+  Not shown: 998 filtered ports
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
 
 #We wanted to push the analysis a little further by using other network exploration tools and what's better than trying it on the NTUST website.
 
@@ -48,6 +56,7 @@ criminalip: |
     - <script async="" src="https://cse.google.com/cse.js?cx=000249874316517329518:uzcxz4nn8si" type="text/javascript"></script>
     - <script src="https://www.google.com/cse/static/element/e992cd4de3c7044f/cse_element__zh_tw.js?usqp=CAI%3D" type="text/javascript"></script>
   Suspicious Program 0
+
 
 student id : | 
   E112215001, B10909015 and B10909018
