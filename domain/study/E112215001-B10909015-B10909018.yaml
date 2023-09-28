@@ -22,6 +22,14 @@ shodan: |
 censys: |
   Network AMAZON-02 (US)
 
+nmap: |
+  Nmap scan report for oilrig.com (199.59.243.224)
+  Host is up (0.0012s latency).
+  Not shown: 998 filtered ports
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
+
 #We wanted to push the analysis a little further by using other network exploration tools and what's better than trying it on the NTUST website.
 
 fofa: |
