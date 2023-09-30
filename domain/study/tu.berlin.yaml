@@ -1,0 +1,13 @@
+dig: |
+  domain belongs to the IP 130.149.8.20
+whoisrws: |
+  130.149.8.20 : last updated on 30 of Aug 2023
+  CIDR : 130.149.0.0/16
+dnsdumpster: |
+  all six services are hosted in germany
+  uses BigIP and nginx
+shodan: |
+  no vulnerabilities are listed
+  two organizationsare related to the website - netcup GmbH and TU Berlin, campus network
+censys: |
+  Reverse DNS for this IP - tu.berlin, user.tu-berlin.de, apply4master.studsek.tu-berlin.de, www.tu.berlin, www.static.tu.berlin, go.tu.berlin
