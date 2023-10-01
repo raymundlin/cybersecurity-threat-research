@@ -1,0 +1,99 @@
+dig: |
+  ipvoid.com relays to itk.ac.id
+
+whoisrws: |
+  refer to whois.id
+  domain:ID
+  
+  organisation: Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI)
+  address:      Icon Business Park, Unit L1-L2
+  address:      Jalan Raya Cisauk - LAPAN
+  address:      Tangerang Banten 15345
+  address:      Indonesia
+  
+  contact:      administrative
+  name:         Muhammad Neil El Himam
+  organisation: Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI)
+  address:      Icon Business Park, Unit L1-L2
+  address:      Jalan Raya Cisauk - LAPAN
+  address:      Tangerang Banten 15345
+  address:      Indonesia
+  phone:        +62 82111610360
+  fax-no:       +62 21 3005 5789
+  e-mail:       admin@pandi.id
+  
+  contact:      technical
+  name:         Aidil Chendramata
+  organisation: Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI)
+  address:      Icon Business Park, Unit L1-L2
+  address:      Jalan Raya Cisauk - LAPAN
+  address:      Tangerang Banten 15345
+  address:      Indonesia
+  phone:        +62 817758377
+  fax-no:       +62 21 3005 5789
+  e-mail:       tech@pandi.id
+  
+  nserver:      B.DNS.ID 103.19.179.179 2402:ee80:b:0:0:0:0:b
+  nserver:      C.DNS.ID 103.19.178.178 2402:ee80:c:0:0:0:0:c
+  nserver:      D.DNS.ID 2402:ee80:d:0:0:0:0:d 45.126.57.57
+  nserver:      E.DNS.ID 103.19.177.177 2001:df5:4000:4:0:0:0:4
+  nserver:      NS4.APNIC.NET 2001:dd8:12:0:0:0:0:53 202.12.31.53
+  ds-rdata:     26887 8 2 28be22003a1afb1ed9a7bb82482274e2db5f09a6c50702c731e040d2257347ea
+  
+  whois:        whois.id
+  
+  status:       ACTIVE
+  remarks:      Registration information: https://pandi.id
+  
+  created:      1993-02-27
+  changed:      2021-10-12
+  source:       IANA
+  
+
+  ID ccTLD whois server
+  Please see 'whois -h whois.id help' for usage.
+  
+  Domain ID: PANDI-DO348126
+  Domain Name: itk.ac.id
+  Created On: 2014-11-11 04:09:11
+  Last Updated On: 2023-06-17 07:09:06 
+  Expiration Date: 2024-11-11 00:09:11
+  Status: clientTransferProhibited
+  
+  ====================================================
+  Sponsoring Registrar Organization: Digital Registra
+  Sponsoring Registrar URL: www.digitalregistra.co.id
+  Sponsoring Registrar Street: Jl. lempongsari no. 39C  Jongkang RT/RW 12/35 Sariharjo  
+  Sponsoring Registrar City: Sleman
+  Sponsoring Registrar State/Province: Yogyakarta
+  Sponsoring Registrar Postal Code: 55281
+  Sponsoring Registrar Country: ID
+  Sponsoring Registrar Phone: 0274882257
+  Sponsoring Registrar Email: info@digitalregistra.co.id
+  Name Server: ns1.he.net
+  Name Server: ns2.he.net
+  DNSSEC: Unsigned
+
+dnsdumpster: |
+  openresty, LiteSpeed
+
+shodan: |
+  ports 161,443, 2000, 500,53 and 80
+  product microtic
+
+
+censys: |
+  IDNIC-ITK-AS-ID Institut Teknologi Kalimantan
+
+nmap: |
+ PORT     STATE  SERVICE
+ 21/tcp   open   ftp
+ 25/tcp   open   smtp
+ 53/tcp   open   domain
+ 80/tcp   open   http
+ 110/tcp  open   pop3
+ 113/tcp  closed ident
+ 143/tcp  open   imap
+ 443/tcp  open   https
+ 8008/tcp open   http
+ Host is up (0.23s latency)
