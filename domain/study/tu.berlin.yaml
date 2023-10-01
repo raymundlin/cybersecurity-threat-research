@@ -7,7 +7,16 @@ dnsdumpster: |
   all six services are hosted in germany
   uses BigIP and nginx
 shodan: |
+  ports are 80 and 443
   no vulnerabilities are listed
   two organizationsare related to the website - netcup GmbH and TU Berlin, campus network
 censys: |
-  Reverse DNS for this IP - tu.berlin, user.tu-berlin.de, apply4master.studsek.tu-berlin.de, www.tu.berlin, www.static.tu.berlin, go.tu.berlin
+  reverse DNS for this IP - tu.berlin, user.tu-berlin.de, apply4master.studsek.tu-berlin.de, www.tu.berlin, www.static.tu.berlin, go.tu.berlin
+nmap: |
+  scan for tu.berlin (130.149.8.20) with 4 ports
+  host is up (0.17s latency)
+  130.149.8.20/8 all IP's are up
+  all 131070 ports on tu.berlin (130.149.8.20) are open|filtered
+  80/tcp  open  http
+  443/tcp open  https
+  no OS identified, requires root privileges
