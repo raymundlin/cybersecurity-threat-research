@@ -1,0 +1,70 @@
+# Searching Lazarus Group related domain (markettrendingcenter.com)
+# source: https://www.malwarebytes.com/blog/threat-intelligence/2022/01/north-koreas-lazarus-apt-leverages-windows-update-client-github-in-latest-campaign
+# the malicious document used this domain to retrieve a remote HTML page
+# Below are the information that we gathered for the domain markettrendingcenter.com
+dig: |
+  markettrendingcenter.com resolves to 204.11.56.48
+
+whoisrws: |
+  Record of this domain was not found
+
+dnsdumpster: |
+  markettrendingcenter.com 204.11.56.48 A CONFLUENCE-NETWORK-INC British Virgin Islands
+  ns2626.ztomy.com. 204.11.57.26 NS CONFLUENCE-NETWORK-INC British Virgin Islands
+  ns1626.ztomy.com. 204.11.56.26 NS CONFLUENCE-NETWORK-INC British Virgin Islands
+
+shodan: |
+  No result
+
+censys: |
+  CN=markettrendingcenter.com
+  ZeroSSL ECC Domain Secure Site CA
+  Valid: 2023-09-02 — 2023-12-01
+  
+  CN=markettrendingcenter.com
+  Let's Encrypt R3
+  Valid: 2022-01-13 — 2022-04-13
+  Domains: *.markettrendingcenter.com, markettrendingcenter.com
+
+  No result for host search
+
+crt.sh: |
+  No subdomains, domain certificate firstly logged at 2021-08-19
+
+fierce: |
+  NS: ns2626.ztomy.com. ns1626.ztomy.com.
+  SOA: ns1626.ztomy.com. (204.11.56.26)
+  Zone: failure
+  Wildcard: 204.11.56.48
+
+sublist3r: |
+  No result (Virustotal blocked our request for some reason)
+
+virustotal: |
+  Domain reputation: Clean (10/89)
+  Communicating files: 	0160375e19e606d06f672be6e43f70fa70093d2a30031affd2929a5c446d07c1.doc, WMVxEncd.vbs, Benefit_Job_LockheedMartin_description.exe
+
+nmap: |
+  Nmap parameter used： nmap -p0- -v -A -T4 scanme.nmap.org
+  Above script will scan all ports, enable verbose logging, aggressive detection (such as OS, service, etc), and aggressive timing policy
+  Nmap scan report for markettrendingcenter.com (204.11.56.48)
+  Host is up (0.32s latency).
+  Not shown: 65534 filtered ports
+  PORT   STATE SERVICE    VERSION
+  53/tcp open  tcpwrapped
+  80/tcp open  http       Apache httpd
+  | http-methods: 
+  |_  Supported Methods: GET
+  |_http-title: Markettrendingcenter.com
+  |_http-trane-info: Problem with XML parsing of /evox/about
+
+  NSE: Script Post-scanning.
+  Initiating NSE at 10:59
+  Completed NSE at 10:59, 0.00s elapsed
+  Initiating NSE at 10:59
+  Completed NSE at 10:59, 0.00s elapsed
+  Initiating NSE at 10:59
+  Completed NSE at 10:59, 0.00s elapsed
+  Read data files from: /usr/bin/../share/nmap
+  Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+  Nmap done: 1 IP address (1 host up) scanned in 397.31 seconds
