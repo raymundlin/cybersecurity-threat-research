@@ -1,9 +1,9 @@
-Dig: >
+dig: >
   www.cia.gov relay to www.cia.gov.edgekey.net
   www.cia.gov.edgekey.net relay to e6221.dscna.akamaiedge.net
   e6221.dscna.akamaiedge.net relay to 184.31.74.5
 
-Whois: >
+whois: >
   Detail information of company
   Net Range 184.24.0.0 - 184.31.255.255
   CIDR 184.24.0.0/13 
@@ -12,13 +12,13 @@ Whois: >
   Registration Date	2010-10-11
   Last Updated 2012-03-02
 
-Dnsdumpster: >
+dnsdumpster: >
   HTTP AkamaiGHost
 
-Shodan: >
+shodan: >
   Port 80, 443
 
-Censys: >
+censys: >
   210	AKAMAI-AS
   167	AKAMAI-ASN1
 
