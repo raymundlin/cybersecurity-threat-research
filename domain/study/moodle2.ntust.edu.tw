@@ -16,3 +16,14 @@ censys: |
   stu.ntust.edu.tw
   www.ad.ntust.edu.tw
   ... and many more
+
+nmap: |
+  Nmap scan report for moodle2.ntust.edu.tw (140.118.242.99)
+  Host is up (0.049s latency).
+  rDNS record for 140.118.242.99: nst.ntust.edu.tw
+  Not shown: 996 filtered ports
+  PORT     STATE  SERVICE
+  80/tcp   open   http
+  113/tcp  closed ident
+  443/tcp  open   https
+  8008/tcp open   http
