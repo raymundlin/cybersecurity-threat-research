@@ -1,9 +1,9 @@
-Dig gui: >
+Dig: |
   www.cia.gov relay to www.cia.gov.edgekey.net
   www.cia.gov.edgekey.net relay to e6221.dscna.akamaiedge.net
   e6221.dscna.akamaiedge.net relay to 184.31.74.5
 
-Whois: >
+Whois: |
   Detail information of company
   Net Range 184.24.0.0 - 184.31.255.255
   CIDR 184.24.0.0/13 
@@ -12,20 +12,20 @@ Whois: >
   Registration Date	2010-10-11
   Last Updated 2012-03-02
 
-Dnsdumpster: >
+Dnsdumpster: |
   HTTP AkamaiGHost
 
-Shodan: >
+Shodan: |
   Port 80, 443
 
-Censys: >
+Censys: |
   210	AKAMAI-AS
   167	AKAMAI-ASN1
 
-SANS Internet Storm Center: >
+SANS Internet Storm Center: |
   no ssh logs
 
-nmap: >
+nmap: |
   Nmap scan report for www.cia.gov (23.196.118.145)
   Host is up (0.17s latency).
   Other addresses for www.cia.gov (not scanned): 2600:1409:5000:380::184d 2600:1409:5000:38f::184d
