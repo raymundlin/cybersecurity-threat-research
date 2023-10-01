@@ -1,27 +1,29 @@
-### Threat Actor 202309
+### threat actor 202309
 
-|   Index | name                                                                      |   notable incidents |   sources of intelligence |
-|--------:|:--------------------------------------------------------------------------|--------------------:|--------------------------:|
-|       0 | APT-C-35 Sea Turtle                                                       |                   3 |                         5 |
-|       1 | APT28 (Sofacy)                                                            |                   3 |                         4 |
-|       2 | APT33 (Elfin)                                                             |                   3 |                         3 |
-|       3 | APT33                                                                     |                   3 |                         3 |
-|       4 | Lazarus Group                                                             |                   4 |                         7 |
-|       5 | Silence group                                                             |                   2 |                         3 |
-|       6 | OceanBuffalo (APT32)                                                      |                   3 |                         6 |
-|       7 | MuddyWater                                                                |                   9 |                         4 |
-|       8 | APT19(Codoso)                                                             |                  16 |                         1 |
-|       9 | APT40 (Bronze President)                                                  |                   3 |                         6 |
-|      10 | TA505                                                                     |                   1 |                         1 |
-|      11 | PittyTiger                                                                |                   1 |                         3 |
-|      12 | Fancy Bear                                                                |                   5 |                         4 |
-|      13 | APT33 (Elfin)                                                             |                   4 |                         4 |
-|      14 | DarkHydrus                                                                |                   3 |                         5 |
-|      15 | TDO                                                                       |                   3 |                         6 |
-|      16 | CozyCar                                                                   |                   3 |                         5 |
-|      17 | APT31 (Zirconium)                                                         |                   4 |                        11 |
-|      18 | APT 37 - Reaper                                                           |                   2 |                         3 |
-|      19 | Charming Kitten                                                           |                   3 |                         5 |
-|      20 | FIN7 (Carbanak)                                                           |                   3 |                         4 |
-|      21 | APT41 (Double Dragon, Winnti, Barium, Wicked Panda, Bronze Atlas, HOODOO) |                   4 |                         9 |
-|      22 | APT10                                                                     |                   2 |                         2 |
+|   Index | name                                                                      | keys                                                                                                           |   nkeys |   notable incidents |   sources of intelligence |
+|--------:|:--------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|--------:|--------------------:|--------------------------:|
+|       0 | APT-C-35 Sea Turtle                                                       | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         5 |
+|       1 | APT28 (Sofacy)                                                            | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         4 |
+|       2 | APT 37 - Reaper                                                           | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence', 'source']        |       6 |                   2 |                         3 |
+|       3 | Charming Kitten                                                           | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         5 |
+|       4 | APT40 (Bronze President)                                                  | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         6 |
+|       5 | TA505                                                                     | ['threat actor', 'background', 'attribution', 'notable incidents', 'sources of intelligence']                  |       5 |                   1 |                         1 |
+|       6 | FIN7 (Carbanak)                                                           | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         4 |
+|       7 | OceanBuffalo (APT32)                                                      | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         6 |
+|       8 | CozyCar                                                                   | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         5 |
+|       9 | TDO                                                                       | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         6 |
+|      10 | Fancy Bear                                                                | ['threat actor', 'background', 'attack method', 'notable incidents', 'attribution', 'sources of intelligence'] |       6 |                   5 |                         4 |
+|      11 | PittyTiger                                                                | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   1 |                         3 |
+|      12 | APT19(Codoso)                                                             | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                  16 |                         1 |
+|      13 | APT33                                                                     | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         3 |
+|      14 | APT33 (Elfin)                                                             | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         3 |
+|      15 | APT41 (Double Dragon, Winnti, Barium, Wicked Panda, Bronze Atlas, HOODOO) | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   4 |                         9 |
+|      16 | Oilrig                                                                    | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   5 |                         6 |
+|      17 | Silence group                                                             | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   2 |                         3 |
+|      18 | Oilrig                                                                    | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   5 |                         6 |
+|      19 | APT10                                                                     | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   2 |                         2 |
+|      20 | DarkHydrus                                                                | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   3 |                         5 |
+|      21 | MuddyWater                                                                | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   9 |                         4 |
+|      22 | APT33 (Elfin)                                                             | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   4 |                         4 |
+|      23 | Lazarus Group                                                             | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   4 |                         7 |
+|      24 | APT31 (Zirconium)                                                         | ['threat actor', 'background', 'notable incidents', 'attribution', 'sources of intelligence']                  |       5 |                   4 |                        11 |
