@@ -21,3 +21,20 @@ shodan: |
 
 censys: |
   amazonws!
+
+nmap:   |
+  Nmap scan report for news.timhortons.ca (165.22.235.75)
+  Host is up (0.36s latency).
+  Not shown: 997 filtered tcp ports (no-response)
+  PORT    STATE  SERVICE
+  22/tcp  open   ssh
+  80/tcp  open   http
+  443/tcp closed https
+  Nmap scan report for timhortons.ca (18.238.192.120)
+  Host is up (0.16s latency).
+  Other addresses for timhortons.ca (not scanned): 18.238.192.74 18.238.192.112 18.238.192.52
+  rDNS record for 18.238.192.120: server-18-238-192-120.sfo53.r.cloudfront.net
+  Not shown: 998 filtered tcp ports (no-response)
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
