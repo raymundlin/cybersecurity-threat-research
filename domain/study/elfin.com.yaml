@@ -27,3 +27,14 @@ shodan: |
 
 censys: |
   no results.
+
+nmap: |
+  Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-25 11:43 台北標準時間
+  Nmap scan report for elfin.com (199.59.243.224)
+  Host is up (0.011s latency).
+  Not shown: 998 filtered tcp ports (no-response)
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
+  
+  Nmap done: 1 IP address (1 host up) scanned in 4.84 seconds
