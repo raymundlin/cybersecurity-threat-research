@@ -3,7 +3,7 @@ dig: >
   www.cia.gov.edgekey.net relay to e6221.dscna.akamaiedge.net
   e6221.dscna.akamaiedge.net relay to 184.31.74.5
 
-whois: >
+whoisrws: >
   Detail information of company
   Net Range 184.24.0.0 - 184.31.255.255
   CIDR 184.24.0.0/13 
