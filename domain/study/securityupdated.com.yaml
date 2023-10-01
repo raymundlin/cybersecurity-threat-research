@@ -1,7 +1,5 @@
-notes: |
-  relates to APT33 in previous research: https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage
-  website became not reachable anymore during the research but site still actively registered
-  also checked with tools following this resource which I used in my former job by https://www.bellingcat.com : bit.ly/bcattools
+affiliation: |
+  relates to APT33 in previous research: https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage; website became not reachable anymore during the research but site still actively registered; also checked with tools following this resource which I used in my former job by https://www.bellingcat.com : bit.ly/bcattools
 googledorks: |
   securityupdated.com domain still or again active
 dig: |
@@ -18,3 +16,6 @@ shodan: |
   open ports 22, 80, and 8888; several vulnerabilities listed concerning an outdated OpenSSH implementation
 censys: |
   no further interesting information
+nmap: |
+  scripted different scans to be found in nmap_scans_ykpyck.sh; result_file saved locally, summary as follows
+  scanned only for ports 1-1024, all ports open; open ports 22/tcp (SSH) and 80/tcp (HTTP) identified the OS as Linux 4.X. and service versions as OpenSSH 7.4 and nginx
