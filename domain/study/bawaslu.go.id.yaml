@@ -1,3 +1,108 @@
+NMap: |
+  Nmap parameter used: nmap -p 0- -T4 -A -v bawaslu.go.id
+  Nmap scan report for bawaslu.go.id (103.249.227.160)
+  Host is up (0.024s latency).
+  Not shown: 65277 filtered tcp ports (no-response), 243 filtered tcp ports (host-prohibited)
+  PORT      STATE  SERVICE           VERSION
+  21/tcp    open   ftp               vsftpd 3.0.2
+  22/tcp    open   ssh               OpenSSH 7.4 (protocol 2.0)
+  25/tcp    open   smtp?
+  |_smtp-commands: Couldn't establish connection on port 25
+  43/tcp    closed whois
+  53/tcp    open   domain?
+  80/tcp    open   http              Apache httpd 2.4.6 ((CentOS) OpenSSL/1.0.2k-fips PHP/7.0.33)
+  110/tcp   open   tcpwrapped
+  111/tcp   open   rpcbind
+  113/tcp   closed ident
+  143/tcp   open   imap?
+  443/tcp   open   ssl/http          Apache httpd 2.4.6 ((CentOS) OpenSSL/1.0.2k-fips PHP/7.0.33)
+  2049/tcp  open   rpcbind
+  8008/tcp  open   http
+  |_http-title: Did not follow redirect to https://bawaslu.go.id:8010/
+  | fingerprint-strings: 
+  |   FourOhFourRequest: 
+  |     HTTP/1.1 302 Found
+  |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
+  |     Connection: close
+  |     X-Frame-Options: SAMEORIGIN
+  |     X-XSS-Protection: 1; mode=block
+  |     X-Content-Type-Options: nosniff
+  |     Content-Security-Policy: frame-ancestors 'self'
+  |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions: 
+  |     HTTP/1.1 302 Found
+  |     Location: https://:8010
+  |     Connection: close
+  |     X-Frame-Options: SAMEORIGIN
+  |     X-XSS-Protection: 1; mode=block
+  |     X-Content-Type-Options: nosniff
+  |     Content-Security-Policy: frame-ancestors 'self'
+  |   GetRequest: 
+  |     HTTP/1.1 302 Found
+  |     Location: https://:8010/
+  |     Connection: close
+  |     X-Frame-Options: SAMEORIGIN
+  |     X-XSS-Protection: 1; mode=block
+  |     X-Content-Type-Options: nosniff
+  |_    Content-Security-Policy: frame-ancestors 'self'
+  | http-methods: 
+  |_  Supported Methods: GET HEAD POST OPTIONS
+  9090/tcp  closed zeus-admin
+  10000/tcp open   snet-sensor-mgmt?
+  20048/tcp open   rpcbind
+  1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+  SF-Port8008-TCP:V=7.94%I=7%D=10/1%Time=651929C1%P=i686-pc-windows-windows%
+  SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
+  SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
+  SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
+  SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
+  SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
+  SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
+  SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
+  SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
+  SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
+  SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
+  SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
+  SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
+  SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
+  SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
+  SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
+  SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
+  SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
+  SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
+  SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
+  SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
+  SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
+  SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
+  SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
+  SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
+  SF:\r\n");
+  OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+  No OS matches for host
+  Uptime guess: 21.142 days (since Sun Sep 10 12:57:18 2023)
+  TCP Sequence Prediction: Difficulty=261 (Good luck!)
+  IP ID Sequence Generation: Randomized
+  Service Info: OS: Unix
+
+  TRACEROUTE (using port 9090/tcp)
+  HOP RTT      ADDRESS
+  1   6.00 ms  140.118.75.254
+  2   0.00 ms  140.118.250.209
+  3   0.00 ms  10.0.0.6
+  4   0.00 ms  10.0.0.9
+  5   1.00 ms  192.192.7.197
+  6   1.00 ms  192.192.61.82
+  7   2.00 ms  192.192.61.48
+  8   1.00 ms  192.192.61.58
+  9   2.00 ms  192.192.68.62
+  10  3.00 ms  unknown.telstraglobal.net (210.176.44.177)
+  11  3.00 ms  63-222-40-9.static.pccwglobal.net (63.222.40.9)
+  12  56.00 ms bundle-ether46.br06.sin02.pccwbtn.net (63.223.34.146)
+  13  57.00 ms 63-218-107-62.static.pccwglobal.net (63.218.107.62)
+  14  ...
+  15  73.00 ms 103.144.182.210
+  16  98.00 ms 103.31.43.2
+  17  ... 30
+
 Server Technology: |
   Content Management: Drupal
   Server-side Language: PHP
