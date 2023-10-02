@@ -1,16 +1,18 @@
-dig (orange.tw): |
-  A RECORD 50.116.8.239 
+dig: |
+  (orange.tw)
+    A RECORD 50.116.8.239 
 
-whoisrws (50.116.8.239): |
-  Linode
-  Akamai
-  Last update: 2023/2/9
+whoisrws: |
+  (50.116.8.239)
+    Linode
+    Akamai
+    Last update: 2023/2/9
 
-dnsdumpster (orange.tw): |
-  ns1.cyberdns.tw:
-    212.212.80.34.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
-  ns2.cyberdne.tw:
-    87.228.194.35.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
+dnsdumpster: |
+    ns1.cyberdns.tw:
+      212.212.80.34.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
+    ns2.cyberdne.tw:
+      87.228.194.35.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
     
   orange.tw(50.116.8.239): 
     devstd.in(50.116.8.239):
@@ -31,14 +33,14 @@ dnsdumpster (orange.tw): |
     Apache/2.4.29 (Ubuntu)
     GAnalytics,13047966
 
-shodan (50.116.8.239): |
+shodan: |
   50.116.8.239:
     domains:
       devstd.in:
       z.nisra.net:
     ports: 22, 25, 53, 80, 111, udp/123, 443, udp/500, udp/1701
 
-censys (orange.tw): |
+censys: |
   54.178.226.226 (ec2-54-178-226-226.ap-northeast-1.compute.amazonaws.com):
     HTML Title: How哥產生器
   18.180.25.5 (ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com)
