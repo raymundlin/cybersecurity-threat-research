@@ -12,8 +12,7 @@ dnsdumpster: |
     ns1.cyberdns.tw:
       212.212.80.34.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
     ns2.cyberdne.tw:
-      87.228.194.35.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM
-    
+      87.228.194.35.bc.googleusercontent.com GOOGLE-CLOUD-PLATFORM   
   orange.tw(50.116.8.239): 
     devstd.in(50.116.8.239):
       ns29.domaincontrol.com: GODADDY-DNS
@@ -21,12 +20,10 @@ dnsdumpster: |
     AKAMAI-LINODE-AP Akamai Connected Cloud
     Apache/2.4.7
     SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
-    
   testname.orange.tw(185.199.111.153): 
     cdn-185-199-111-153.github.com
     GitHub.com
     varnish (reverse proxy server)
-    
   howger.orange.tw(18.180.25.5): 
     AMAZON-02 JAPAN
     ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com
@@ -50,15 +47,11 @@ censys: |
       Fork you :q
     https response body:
       # Index of /
-
       ![\[ICO\]](/icons/blank.gif)| [Name](?C=N;O=D)| [Last modified](?C=M;O=A)|
       [Size](?C=S;O=A)| [Description](?C=D;O=A)  
-      ---|---|---|---|---  
-        
+      ---|---|---|---|---
       * * *  
-        
       ![\[   \]](/icons/unknown.gif)| [test.sql](test.sql)| 2017-05-26 18:20 |  25M|        <---- interesting
-        
       * * *
 nmap: |
   nmap orange.tw -Pn -A -v10
