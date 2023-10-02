@@ -25,11 +25,123 @@ censys: |
 nmap: |
   Nmap scan report for oilrig.com (199.59.243.224)
   Host is up (0.0012s latency).
-  Not shown: 998 filtered ports
-  PORT    STATE SERVICE
-  80/tcp  open  http
-  443/tcp open  https
+  =======
+    # target hostname or IP address
+    target="oilrig.com"
+    ports="1-1024"
 
+    # nmap commands
+
+    echo "Nmap scan: fragmented IP packets and a TCP Xmas scan to identify open ports, skips host discovery, and increases output verbosity" >>
+    sudo nmap -f -sX -Pn -v $target
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 10:50 UTC
+    Initiating Parallel DNS resolution of 1 host. at 10:50
+    Completed Parallel DNS resolution of 1 host. at 10:50, 0.00s elapsed
+    Initiating XMAS Scan at 10:50
+    Scanning oilrig.com (199.59.243.224) [1000 ports]
+    XMAS Scan Timing: About 15.50% done; ETC: 10:53 (0:02:49 remaining)
+    XMAS Scan Timing: About 30.50% done; ETC: 10:53 (0:02:19 remaining)
+    XMAS Scan Timing: About 45.10% done; ETC: 10:53 (0:01:51 remaining)
+    XMAS Scan Timing: About 60.45% done; ETC: 10:53 (0:01:19 remaining)
+    XMAS Scan Timing: About 75.10% done; ETC: 10:53 (0:00:50 remaining)
+    Completed XMAS Scan at 10:53, 201.24s elapsed (1000 total ports)
+    Nmap scan report for oilrig.com (199.59.243.224)
+    Host is up.
+    All 1000 scanned ports on oilrig.com (199.59.243.224) are open|filtered
+    Nmap done: 1 IP address (1 host up) scanned in 201.45 seconds
+               Raw packets sent: 2000 (80.000KB) | Rcvd: 0 (0B)
+
+    echo "perform an aggressive FIN scan, sending raw IP packets to the specified host (199.59.243.224), providing port classification explanations, and saving results in an XLM file" >>
+    $ sudo nmap -T4 -sF --send-ip --reason 199.59.243.224/32 -oX new-out.xml
+    >> new-out.xml
+
+    echo "fragmented IP packets, a TCP Xmas scan, disabled host discovery, increased verbosity in output, and targets a specified host or IP address." >>
+    $ sudo nmap -f -sX -Pn -v $target
+    >> Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:12 UTC
+    Initiating Parallel DNS resolution of 1 host. at 11:12
+    Completed Parallel DNS resolution of 1 host. at 11:12, 0.00s elapsed
+    Initiating XMAS Scan at 11:12
+    Scanning oilrig.com (199.59.243.224) [1000 ports]
+    XMAS Scan Timing: About 15.50% done; ETC: 11:16 (0:02:49 remaining)
+    XMAS Scan Timing: About 30.05% done; ETC: 11:16 (0:02:22 remaining)
+    XMAS Scan Timing: About 45.05% done; ETC: 11:16 (0:01:51 remaining)
+    XMAS Scan Timing: About 60.25% done; ETC: 11:16 (0:01:20 remaining)
+    XMAS Scan Timing: About 75.25% done; ETC: 11:16 (0:00:50 remaining)
+    Completed XMAS Scan at 11:16, 201.23s elapsed (1000 total ports)
+    Nmap scan report for oilrig.com (199.59.243.224)
+    Host is up.
+    All 1000 scanned ports on oilrig.com (199.59.243.224) are open|filtered
+    Nmap done: 1 IP address (1 host up) scanned in 201.30 seconds
+               Raw packets sent: 2000 (80.000KB) | Rcvd: 0 (0B)
+
+    echo "Nmap scan: performs a SYN scan with aggressive timing (-T4) on the target host" >>
+    sudo nmap -sX -T4 $target
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:18 UTC
+    Nmap scan report for oilrig.com (199.59.243.224)
+    Host is up (0.0010s latency).
+    All 1000 scanned ports on oilrig.com (199.59.243.224) are open|filtered
+    Nmap done: 1 IP address (1 host up) scanned in 4.10 seconds
+
+    echo "Nmap scan: performs a SYN scan with aggressive timing (-T4) and deliberately uses bad packet checksums on the target IP address without pinging it" >>
+    sudo nmap -sX -T4 --badsum 199.59.243.224 -Pn
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:24 UTC
+    Nmap scan report for 199.59.243.224
+    Host is up.
+    All 1000 scanned ports on 199.59.243.224 are open|filtered
+    Nmap done: 1 IP address (1 host up) scanned in 101.46 seconds
+
+    echo "Nmap scan: performs a SYN scan on the target host with randomized decoy addresses (RND:10)" >>
+    sudo nmap -D RND:10 -sS $target
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:31 UTC
+    Nmap scan report for oilrig.com (199.59.243.224)
+    Host is up (0.0010s latency).
+    Not shown: 998 filtered ports
+    PORT    STATE SERVICE
+    80/tcp  open  http
+    443/tcp open  https
+    Nmap done: 1 IP address (1 host up) scanned in 4.85 seconds
+
+    echo "Nmap scan: performs a SYN scan on the target host with a specified data length of 300 bytes for each packet" >>
+    sudo nmap -sS -data-length 300 $target
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:32 UTC
+    Nmap scan report for oilrig.com (199.59.243.224)
+    Host is up (0.0010s latency).
+    Not shown: 998 filtered ports
+    PORT    STATE SERVICE
+    80/tcp  open  http
+    443/tcp open  https
+    Nmap done: 1 IP address (1 host up) scanned in 4.26 seconds
+
+    echo "Nmap scan: runs the "firewalk" Nmap script with the specified maximum number of probed ports set to 5 against the target host" >>
+    sudo nmap --script=firewalk --script-args=firewalk.max.probed.ports=5 $target
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:43 UTC
+    Nmap scan report for oilrig.com (199.59.243.224)
+    Host is up (0.0011s latency).
+    Not shown: 998 filtered ports
+    PORT    STATE SERVICE
+    80/tcp  open  http
+    443/tcp open  https
+    Nmap done: 1 IP address (1 host up) scanned in 5.00 seconds
+
+    echo "Nmap scan: performs a traceroute to the IP address target using Nmap" >>
+    sudo nmap --traceroute 199.59.243.224
+    >>Starting Nmap 7.80 ( https://nmap.org ) at 2023-09-28 11:48 UTC
+    Nmap scan report for 199.59.243.224
+    Host is up (0.0011s latency).
+  >>>>>>> main
+    Not shown: 998 filtered ports
+    PORT    STATE SERVICE
+    80/tcp  open  http
+    443/tcp open  https
+  <<<<<<< E11215001-B10909015-B10909018
+
+  =======
+    TRACEROUTE (using port 443/tcp)
+    HOP RTT     ADDRESS
+    1   ... 9
+    10  1.58 ms 199.59.243.224
+    Nmap done: 1 IP address (1 host up) scanned in 7.58 seconds
+  >>>>>>> main
 #We wanted to push the analysis a little further by using other network exploration tools and what's better than trying it on the NTUST website.
 
 fofa: |

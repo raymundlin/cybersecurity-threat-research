@@ -1,0 +1,40 @@
+dig: |
+  www.timhortons.ca relays to prod-th-web.ca.rbi.tools
+  Associated IP-Adresses are following (reason: load-balancing) 13.224.214.87, 13.224.214.109, 13.224.214.48, 13.224.214.125
+
+whoisrws: |
+  13.224.214.87 is a network of amazon webservices
+  customer Tim Hortons (C00272065) adress is 2701 West 15th Street PMB 236, Plano, TX, 75075, US
+  Registration Date was 2002-02-09 and last update 2018-07-19
+  Network Resources are following SBC067038084072020208 (NET-67-38-84-72-1)	67.38.84.72 - 67.38.84.79
+  Others are Tim Hortons (C02486163), Tim Hortons (C05805069), Tim Hortons (C05805074), TIM HORTONS (C07221990)
+  All based in US
+
+dnsdumpster: |
+  news.timhortons.ca uses nginx and Ubuntu
+
+shodan: |
+  165.22.235.75 open ports 22, 80
+  cloud provider DigitalOcean
+  country canada
+  has some vulnerabilities
+
+censys: |
+  amazonws!
+
+nmap:   |
+  Nmap scan report for news.timhortons.ca (165.22.235.75)
+  Host is up (0.36s latency).
+  Not shown: 997 filtered tcp ports (no-response)
+  PORT    STATE  SERVICE
+  22/tcp  open   ssh
+  80/tcp  open   http
+  443/tcp closed https
+  Nmap scan report for timhortons.ca (18.238.192.120)
+  Host is up (0.16s latency).
+  Other addresses for timhortons.ca (not scanned): 18.238.192.74 18.238.192.112 18.238.192.52
+  rDNS record for 18.238.192.120: server-18-238-192-120.sfo53.r.cloudfront.net
+  Not shown: 998 filtered tcp ports (no-response)
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
