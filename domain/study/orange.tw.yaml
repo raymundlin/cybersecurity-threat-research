@@ -59,985 +59,985 @@ censys (orange.tw): |
         
       * * *
 nmap: |
-    nmap orange.tw -Pn -A -v10
-                            PORT     STATE    SERVICE      REASON         VERSION
-                            21/tcp   open     tcpwrapped   syn-ack ttl 62
-                            22/tcp   open     ssh          syn-ack ttl 45 OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-                            25/tcp   open     smtp         syn-ack ttl 62 Postfix smtpd
-                            | ssl-cert: Subject: commonName=z.nisra.net
-                            | Subject Alternative Name: DNS:z.nisra.net
-                            | Issuer: commonName=z.nisra.net
-                            | Public Key type: rsa
-                            | Public Key bits: 2048
-                            | Signature Algorithm: sha256WithRSAEncryption
-                            | Not valid before: 2023-08-26T08:50:04
-                            | Not valid after:  2033-08-23T08:50:04
-                            | MD5:   c8a28776a16c9d6898706b0a2ca7ff75
-                            | SHA-1: dfe42117282248e5e1eb99a8589cc02dc87c865b
-                            | -----BEGIN CERTIFICATE-----
-                            | MIIC/jCCAeagAwIBAgIUcrPqmojC5mteVAuR85BlAmgImmswDQYJKoZIhvcNAQEL
-                            | BQAwFjEUMBIGA1UEAwwLei5uaXNyYS5uZXQwHhcNMjMwODI2MDg1MDA0WhcNMzMw
-                            | ODIzMDg1MDA0WjAWMRQwEgYDVQQDDAt6Lm5pc3JhLm5ldDCCASIwDQYJKoZIhvcN
-                            | AQEBBQADggEPADCCAQoCggEBALe3fznerE93qgasS4MU8Ubb+XK5SdNmFQOAk2vl
-                            | l0Laqld+olN4InezJT1asQCuL/qtPihLYTr92IzKdOufrOGpgoOZXcI/N6qEqZFU
-                            | mCG/4hyXV9UrfBYDXWpGg3bO9Ne3bkIhBvqlyG9XbpUQ8+QrTB8FQX/BNg4AOG1i
-                            | HYtlTk78IjzRjg7wi66vNlbtN13UEpIQ5vXUIp8I+3d9AmoBevp+KgSmdGGIGipS
-                            | je6danzxUIkEytkzKEtzMSL8FIgu5YMtFvqQRvXMLhNXhI+EU5fEejt3frrNTKoq
-                            | wgSLfp134wDqAso3lnGsgL/3FL6UtWhZ3qCzDQbVSBdoSEECAwEAAaNEMEIwCQYD
-                            | VR0TBAIwADAWBgNVHREEDzANggt6Lm5pc3JhLm5ldDAdBgNVHQ4EFgQUMw6RIfeJ
-                            | tB5++cy8mgjDHNzarigwDQYJKoZIhvcNAQELBQADggEBAJ+5J5ULCmsHQ96c7CQM
-                            | Zb8Sd/GRaMJxA6oRD7tvINmTGt0Ae6iaKV/qee206DbK5y8x17AdbvnO1u5C/I17
-                            | N4DIyY5i6ZScvZsqX00kf/CQrk4QKIYin12lCjDywOFq4MRsaYi6IE6Xc2i5Iayd
-                            | +gIkP3vPb4grBBDB1C4GkUCr50p8+5rBmK+ahKMIgKs5vu6+pi/4ktgHCbOr8mTn
-                            | 4nDKL44I5Lt8quh7cvurlCSmH8MkJKr001YGrPGxj4+pFWoQulfrz4F2RnGE95K4
-                            | oVoMJy+bXVI2iErkOoBZP1gCMEUWeBhGt6J1fxJ3cc702+kcOQehHlLBRqU04qKa
-                            | Ag4=
-                            |_-----END CERTIFICATE-----
-                            |_ssl-date: TLS randomness does not represent time
-                            |_smtp-commands: z.nisra.net, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
-                            53/tcp   open     domain?      syn-ack ttl 62
-                            80/tcp   open     http         syn-ack ttl 62 Apache httpd 2.4.52
-                            |_http-server-header: Apache/2.4.52
-                            110/tcp  open     tcpwrapped   syn-ack ttl 62
-                            111/tcp  open     rpcbind      syn-ack ttl 45 2-4 (RPC #100000)
-                            135/tcp  filtered msrpc        no-response
-                            139/tcp  filtered netbios-ssn  no-response
-                            143/tcp  open     tcpwrapped   syn-ack ttl 62
-                            443/tcp  open     ssl/http     syn-ack ttl 44 Apache httpd 2.4.52
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD POST OPTIONS
-                            | tls-alpn:
-                            |_  http/1.1
-                            | ssl-cert: Subject: commonName=orange.tw
-                            | Subject Alternative Name: DNS:orange.tw
-                            | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
-                            | Public Key type: rsa
-                            | Public Key bits: 2048
-                            | Signature Algorithm: sha256WithRSAEncryption
-                            | Not valid before: 2023-09-06T01:00:45
-                            | Not valid after:  2023-12-05T01:00:44
-                            | MD5:   db35597527ad5d16ac72c7d8ebf867e6
-                            | SHA-1: f2f9bc2df681cc4759f4b4780d6fa4988cad1441
-                            | -----BEGIN CERTIFICATE-----
-                            | MIIE3zCCA8egAwIBAgISAxqPRI9PS46UKaGSxlbPufgwMA0GCSqGSIb3DQEBCwUA
-                            | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
-                            | EwJSMzAeFw0yMzA5MDYwMTAwNDVaFw0yMzEyMDUwMTAwNDRaMBQxEjAQBgNVBAMT
-                            | CW9yYW5nZS50dzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALYmdgx7
-                            | r2k/GF+yiVvkC1Vjk+30jeW2v2QT89QagMyWOrk300sfvhgFzVbSPrWXOLUzDtdM
-                            | vXfs9ANIxnDLzemk63Oxgwq0420/B3eWnXU0nwbccDkuoPHq5WpnUa2o3eqvLhk9
-                            | KykQkVh8puXqAN7sq7HOGjoMlelUAqVNs170a29lKW3HyfmjZHZGNiF7n6TQ9niq
-                            | Dw8fn+EeWsi82wWQH3j4fqNO/O5LXBHRpLLOsUZH0POpoR0ORNTN7dEzyhKm+AEE
-                            | XqSVF4xkWU+5mNSvfkodrhEeKjx8JLWAz4+k71w6/wH2oXiD/NvLFhWHqlhjAYSE
-                            | 6z/94hFaJzfhfH0CAwEAAaOCAgswggIHMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
-                            | FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU
-                            | ew9pjm+mbW/cTa4/Is4ieR5i5qYwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+v
-                            | nYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5s
-                            | ZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wFAYD
-                            | VR0RBA0wC4IJb3JhbmdlLnR3MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYB
-                            | BAHWeQIEAgSB9QSB8gDwAHYAtz77JN+cTbp18jnFulj0bF38Qs96nzXEnh0JgSXt
-                            | tJkAAAGKaDh4bgAABAMARzBFAiADua5e1+E73WwQMaAEzSwlgtakM0gf7u0CXDDg
-                            | h9Hf3gIhALlSDu1NlmgQRWuR6vy74CF1Fym8+4IZlO6ANZo3ZViKAHYAejKMVNi3
-                            | LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGKaDh4gwAABAMARzBFAiBWSMAX
-                            | hrWGNRd8hl/1yQCCf+Ar0fyzsqYRReWiIqiPxwIhALov4ugBi90e0wpY6V4G6XMM
-                            | L5M/PNuMsShQHEpFJ6QgMA0GCSqGSIb3DQEBCwUAA4IBAQCjya3bkx00u4FQJcF/
-                            | 2KJ+eph7Zyar8f0iKM7poIPPMTK958PnBYYx+9KeOlz0yh9zu6VTAcGwURTWjHTG
-                            | z9p/ErqS1hEz9PvPOrXlf4KPLINRmiZAJpWKAyB9JXvhARI/pmUaPsSUSc5UavEq
-                            | xnL7goDYqTOm96G1XGigCjVaIKQYrxevrsCRK6Abo5rNpSgodvmI6S9T9xitVmuY
-                            | 3pVIihaLgrmL2PshiT13M0YW0sLy2g30eMnK14RXkPEIKzD5dS6Kz6r5haIS/7ZA
-                            | tmoRTUVy8lhpfXBnLBX3Cx3BWTZSLhlaECLsAdGoaic0uVweUgHlVV3IvSstGdeq
-                            | Vlgr
-                            |_-----END CERTIFICATE-----
-                            |_ssl-date: TLS randomness does not represent time
-                            |_http-server-header: Apache/2.4.52
-                            |_http-favicon: Unknown favicon MD5: 8B79D20F4DCA13D3F8DD6CD9766D7C9A
-                            |_http-title: Site doesn't have a title (text/plain;charset=UTF-8).
-                            445/tcp  filtered microsoft-ds no-response
-                            5555/tcp filtered freeciv      no-response
-                            6666/tcp filtered irc          no-response
-                            6667/tcp filtered irc          no-response
-                            6668/tcp filtered irc          no-response
-                            6669/tcp filtered irc          no-response
-                            8008/tcp open     http         syn-ack ttl 62
-                            | fingerprint-strings:
-                            |   FourOhFourRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GetRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |_    Content-Security-Policy: frame-ancestors 'self'
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD POST OPTIONS
-                            |_http-title: Did not follow redirect to https://orange.tw:8010/
-                            9100/tcp filtered jetdirect    no-response
-                            9101/tcp filtered jetdirect    no-response
-                            1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-                            SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2B8F%P=i686-pc-windows-windows%
-                            SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
-                            SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
-                            SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
-                            SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
-                            SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
-                            SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
-                            SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
-                            SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
-                            SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
-                            SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
-                            SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
-                            SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
-                            SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
-                            SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
-                            SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
-                            SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
-                            SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
-                            SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
-                            SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
-                            SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
-                            SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
-                            SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
-                            SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
-                            SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
-                            SF:\r\n");
-                            OS fingerprint not ideal because: Host distance (18 network hops) is greater than five
-                            Aggressive OS guesses: Synology DiskStation Manager 5.1 (91%), Linux 2.6.32 (91%), Linux 3.4 (91%), Linux 3.5 (91%), Linux 4.2 (91%), Linux 4.4 (91%), Linux 2.6.35 (90%), Linux 3.10 (90%), Linux 2.6.32 or 3.10 (90%), Linux 2.6.39 (90%)
-                            No exact OS matches for host (test conditions non-ideal).
-                            TCP/IP fingerprint:
-                            SCAN(V=7.93%E=4%D=10/2%OT=22%CT=1%CU=35341%PV=N%DS=18%DC=T%G=N%TM=651A2CAB%P=i686-pc-windows-windows)
-                            SEQ(SP=107%GCD=1%ISR=109%TI=Z%II=I%TS=A)
-                            OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
-                            WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
-                            ECN(R=Y%DF=Y%T=3F%W=FAF0%O=M566NNSNW7%CC=Y%Q=)
-                            T1(R=Y%DF=Y%T=3D%S=O%A=S+%F=AS%RD=0%Q=)
-                            T2(R=N)
-                            T3(R=N)
-                            T4(R=N)
-                            T5(R=Y%DF=Y%T=3E%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
-                            T6(R=N)
-                            T7(R=N)
-                            U1(R=Y%DF=N%T=3E%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
-                            IE(R=Y%DFI=N%T=3E%CD=S)
-                            
-                            Uptime guess: 6.007 days (since Tue Sep 26 10:26:55 2023)
-                            Network Distance: 18 hops
-                            TCP Sequence Prediction: Difficulty=264 (Good luck!)
-                            IP ID Sequence Generation: All zeros
-                            Service Info: Host:  z.nisra.net; OS: Linux; CPE: cpe:/o:linux:linux_kernel
-                            
-                            TRACEROUTE (using port 1723/tcp)
-                            HOP RTT       ADDRESS
-                            1   3.00 ms   140.118.247.254
-                            2   3.00 ms   10.118.250.1
-                            3   3.00 ms   10.0.0.6
-                            4   5.00 ms   10.0.0.9
-                            5   5.00 ms   192.192.7.197
-                            6   6.00 ms   192.192.61.82
-                            7   7.00 ms   192.192.61.66
-                            8   5.00 ms   192.192.68.30
-                            9   22.00 ms  unknown.telstraglobal.net (210.176.44.153)
-                            10  73.00 ms  i-91.ttak-core02.telstraglobal.net (202.84.137.254)
-                            11  62.00 ms  i-15735.siko-core02.telstraglobal.net (202.84.143.5)
-                            12  143.00 ms i-14236.jtha-core02.telstraglobal.net (202.84.140.201)
-                            13  178.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
-                            14  181.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
-                            15  204.00 ms eqix-sv1.linode.com (206.223.116.196)
-                            16  ... 17
-                            18  171.00 ms devstd.in (50.116.8.239)
-                            
-                            NSE: Script Post-scanning.
-                            NSE: Starting runlevel 1 (of 3) scan.
-                            Initiating NSE at 10:36
-                            Completed NSE at 10:36, 0.00s elapsed
-                            NSE: Starting runlevel 2 (of 3) scan.
-                            Initiating NSE at 10:36
-                            Completed NSE at 10:36, 0.00s elapsed
-                            NSE: Starting runlevel 3 (of 3) scan.
-                            Initiating NSE at 10:36
-                            Completed NSE at 10:36, 0.00s elapsed
-                            Read data files from: C:\Program Files (x86)\Nmap
-                            OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-                            Nmap done: 1 IP address (1 host up) scanned in 297.99 seconds
-                            Raw packets sent: 1112 (50.836KB) | Rcvd: 1088 (46.030KB)
+  nmap orange.tw -Pn -A -v10
+    PORT     STATE    SERVICE      REASON         VERSION
+    21/tcp   open     tcpwrapped   syn-ack ttl 62
+    22/tcp   open     ssh          syn-ack ttl 45 OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+    25/tcp   open     smtp         syn-ack ttl 62 Postfix smtpd
+    | ssl-cert: Subject: commonName=z.nisra.net
+    | Subject Alternative Name: DNS:z.nisra.net
+    | Issuer: commonName=z.nisra.net
+    | Public Key type: rsa
+    | Public Key bits: 2048
+    | Signature Algorithm: sha256WithRSAEncryption
+    | Not valid before: 2023-08-26T08:50:04
+    | Not valid after:  2033-08-23T08:50:04
+    | MD5:   c8a28776a16c9d6898706b0a2ca7ff75
+    | SHA-1: dfe42117282248e5e1eb99a8589cc02dc87c865b
+    | -----BEGIN CERTIFICATE-----
+    | MIIC/jCCAeagAwIBAgIUcrPqmojC5mteVAuR85BlAmgImmswDQYJKoZIhvcNAQEL
+    | BQAwFjEUMBIGA1UEAwwLei5uaXNyYS5uZXQwHhcNMjMwODI2MDg1MDA0WhcNMzMw
+    | ODIzMDg1MDA0WjAWMRQwEgYDVQQDDAt6Lm5pc3JhLm5ldDCCASIwDQYJKoZIhvcN
+    | AQEBBQADggEPADCCAQoCggEBALe3fznerE93qgasS4MU8Ubb+XK5SdNmFQOAk2vl
+    | l0Laqld+olN4InezJT1asQCuL/qtPihLYTr92IzKdOufrOGpgoOZXcI/N6qEqZFU
+    | mCG/4hyXV9UrfBYDXWpGg3bO9Ne3bkIhBvqlyG9XbpUQ8+QrTB8FQX/BNg4AOG1i
+    | HYtlTk78IjzRjg7wi66vNlbtN13UEpIQ5vXUIp8I+3d9AmoBevp+KgSmdGGIGipS
+    | je6danzxUIkEytkzKEtzMSL8FIgu5YMtFvqQRvXMLhNXhI+EU5fEejt3frrNTKoq
+    | wgSLfp134wDqAso3lnGsgL/3FL6UtWhZ3qCzDQbVSBdoSEECAwEAAaNEMEIwCQYD
+    | VR0TBAIwADAWBgNVHREEDzANggt6Lm5pc3JhLm5ldDAdBgNVHQ4EFgQUMw6RIfeJ
+    | tB5++cy8mgjDHNzarigwDQYJKoZIhvcNAQELBQADggEBAJ+5J5ULCmsHQ96c7CQM
+    | Zb8Sd/GRaMJxA6oRD7tvINmTGt0Ae6iaKV/qee206DbK5y8x17AdbvnO1u5C/I17
+    | N4DIyY5i6ZScvZsqX00kf/CQrk4QKIYin12lCjDywOFq4MRsaYi6IE6Xc2i5Iayd
+    | +gIkP3vPb4grBBDB1C4GkUCr50p8+5rBmK+ahKMIgKs5vu6+pi/4ktgHCbOr8mTn
+    | 4nDKL44I5Lt8quh7cvurlCSmH8MkJKr001YGrPGxj4+pFWoQulfrz4F2RnGE95K4
+    | oVoMJy+bXVI2iErkOoBZP1gCMEUWeBhGt6J1fxJ3cc702+kcOQehHlLBRqU04qKa
+    | Ag4=
+    |_-----END CERTIFICATE-----
+    |_ssl-date: TLS randomness does not represent time
+    |_smtp-commands: z.nisra.net, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+    53/tcp   open     domain?      syn-ack ttl 62
+    80/tcp   open     http         syn-ack ttl 62 Apache httpd 2.4.52
+    |_http-server-header: Apache/2.4.52
+    110/tcp  open     tcpwrapped   syn-ack ttl 62
+    111/tcp  open     rpcbind      syn-ack ttl 45 2-4 (RPC #100000)
+    135/tcp  filtered msrpc        no-response
+    139/tcp  filtered netbios-ssn  no-response
+    143/tcp  open     tcpwrapped   syn-ack ttl 62
+    443/tcp  open     ssl/http     syn-ack ttl 44 Apache httpd 2.4.52
+    | http-methods:
+    |_  Supported Methods: GET HEAD POST OPTIONS
+    | tls-alpn:
+    |_  http/1.1
+    | ssl-cert: Subject: commonName=orange.tw
+    | Subject Alternative Name: DNS:orange.tw
+    | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+    | Public Key type: rsa
+    | Public Key bits: 2048
+    | Signature Algorithm: sha256WithRSAEncryption
+    | Not valid before: 2023-09-06T01:00:45
+    | Not valid after:  2023-12-05T01:00:44
+    | MD5:   db35597527ad5d16ac72c7d8ebf867e6
+    | SHA-1: f2f9bc2df681cc4759f4b4780d6fa4988cad1441
+    | -----BEGIN CERTIFICATE-----
+    | MIIE3zCCA8egAwIBAgISAxqPRI9PS46UKaGSxlbPufgwMA0GCSqGSIb3DQEBCwUA
+    | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+    | EwJSMzAeFw0yMzA5MDYwMTAwNDVaFw0yMzEyMDUwMTAwNDRaMBQxEjAQBgNVBAMT
+    | CW9yYW5nZS50dzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALYmdgx7
+    | r2k/GF+yiVvkC1Vjk+30jeW2v2QT89QagMyWOrk300sfvhgFzVbSPrWXOLUzDtdM
+    | vXfs9ANIxnDLzemk63Oxgwq0420/B3eWnXU0nwbccDkuoPHq5WpnUa2o3eqvLhk9
+    | KykQkVh8puXqAN7sq7HOGjoMlelUAqVNs170a29lKW3HyfmjZHZGNiF7n6TQ9niq
+    | Dw8fn+EeWsi82wWQH3j4fqNO/O5LXBHRpLLOsUZH0POpoR0ORNTN7dEzyhKm+AEE
+    | XqSVF4xkWU+5mNSvfkodrhEeKjx8JLWAz4+k71w6/wH2oXiD/NvLFhWHqlhjAYSE
+    | 6z/94hFaJzfhfH0CAwEAAaOCAgswggIHMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
+    | FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU
+    | ew9pjm+mbW/cTa4/Is4ieR5i5qYwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+v
+    | nYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5s
+    | ZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wFAYD
+    | VR0RBA0wC4IJb3JhbmdlLnR3MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYB
+    | BAHWeQIEAgSB9QSB8gDwAHYAtz77JN+cTbp18jnFulj0bF38Qs96nzXEnh0JgSXt
+    | tJkAAAGKaDh4bgAABAMARzBFAiADua5e1+E73WwQMaAEzSwlgtakM0gf7u0CXDDg
+    | h9Hf3gIhALlSDu1NlmgQRWuR6vy74CF1Fym8+4IZlO6ANZo3ZViKAHYAejKMVNi3
+    | LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGKaDh4gwAABAMARzBFAiBWSMAX
+    | hrWGNRd8hl/1yQCCf+Ar0fyzsqYRReWiIqiPxwIhALov4ugBi90e0wpY6V4G6XMM
+    | L5M/PNuMsShQHEpFJ6QgMA0GCSqGSIb3DQEBCwUAA4IBAQCjya3bkx00u4FQJcF/
+    | 2KJ+eph7Zyar8f0iKM7poIPPMTK958PnBYYx+9KeOlz0yh9zu6VTAcGwURTWjHTG
+    | z9p/ErqS1hEz9PvPOrXlf4KPLINRmiZAJpWKAyB9JXvhARI/pmUaPsSUSc5UavEq
+    | xnL7goDYqTOm96G1XGigCjVaIKQYrxevrsCRK6Abo5rNpSgodvmI6S9T9xitVmuY
+    | 3pVIihaLgrmL2PshiT13M0YW0sLy2g30eMnK14RXkPEIKzD5dS6Kz6r5haIS/7ZA
+    | tmoRTUVy8lhpfXBnLBX3Cx3BWTZSLhlaECLsAdGoaic0uVweUgHlVV3IvSstGdeq
+    | Vlgr
+    |_-----END CERTIFICATE-----
+    |_ssl-date: TLS randomness does not represent time
+    |_http-server-header: Apache/2.4.52
+    |_http-favicon: Unknown favicon MD5: 8B79D20F4DCA13D3F8DD6CD9766D7C9A
+    |_http-title: Site doesn't have a title (text/plain;charset=UTF-8).
+    445/tcp  filtered microsoft-ds no-response
+    5555/tcp filtered freeciv      no-response
+    6666/tcp filtered irc          no-response
+    6667/tcp filtered irc          no-response
+    6668/tcp filtered irc          no-response
+    6669/tcp filtered irc          no-response
+    8008/tcp open     http         syn-ack ttl 62
+    | fingerprint-strings:
+    |   FourOhFourRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GetRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |_    Content-Security-Policy: frame-ancestors 'self'
+    | http-methods:
+    |_  Supported Methods: GET HEAD POST OPTIONS
+    |_http-title: Did not follow redirect to https://orange.tw:8010/
+    9100/tcp filtered jetdirect    no-response
+    9101/tcp filtered jetdirect    no-response
+    1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+    SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2B8F%P=i686-pc-windows-windows%
+    SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
+    SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
+    SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
+    SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
+    SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
+    SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
+    SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
+    SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
+    SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
+    SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
+    SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
+    SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
+    SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
+    SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
+    SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
+    SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
+    SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
+    SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
+    SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
+    SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
+    SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
+    SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
+    SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
+    SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
+    SF:\r\n");
+    OS fingerprint not ideal because: Host distance (18 network hops) is greater than five
+    Aggressive OS guesses: Synology DiskStation Manager 5.1 (91%), Linux 2.6.32 (91%), Linux 3.4 (91%), Linux 3.5 (91%), Linux 4.2 (91%), Linux 4.4 (91%), Linux 2.6.35 (90%), Linux 3.10 (90%), Linux 2.6.32 or 3.10 (90%), Linux 2.6.39 (90%)
+    No exact OS matches for host (test conditions non-ideal).
+    TCP/IP fingerprint:
+    SCAN(V=7.93%E=4%D=10/2%OT=22%CT=1%CU=35341%PV=N%DS=18%DC=T%G=N%TM=651A2CAB%P=i686-pc-windows-windows)
+    SEQ(SP=107%GCD=1%ISR=109%TI=Z%II=I%TS=A)
+    OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
+    WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
+    ECN(R=Y%DF=Y%T=3F%W=FAF0%O=M566NNSNW7%CC=Y%Q=)
+    T1(R=Y%DF=Y%T=3D%S=O%A=S+%F=AS%RD=0%Q=)
+    T2(R=N)
+    T3(R=N)
+    T4(R=N)
+    T5(R=Y%DF=Y%T=3E%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+    T6(R=N)
+    T7(R=N)
+    U1(R=Y%DF=N%T=3E%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+    IE(R=Y%DFI=N%T=3E%CD=S)
+    
+    Uptime guess: 6.007 days (since Tue Sep 26 10:26:55 2023)
+    Network Distance: 18 hops
+    TCP Sequence Prediction: Difficulty=264 (Good luck!)
+    IP ID Sequence Generation: All zeros
+    Service Info: Host:  z.nisra.net; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+    
+    TRACEROUTE (using port 1723/tcp)
+    HOP RTT       ADDRESS
+    1   3.00 ms   140.118.247.254
+    2   3.00 ms   10.118.250.1
+    3   3.00 ms   10.0.0.6
+    4   5.00 ms   10.0.0.9
+    5   5.00 ms   192.192.7.197
+    6   6.00 ms   192.192.61.82
+    7   7.00 ms   192.192.61.66
+    8   5.00 ms   192.192.68.30
+    9   22.00 ms  unknown.telstraglobal.net (210.176.44.153)
+    10  73.00 ms  i-91.ttak-core02.telstraglobal.net (202.84.137.254)
+    11  62.00 ms  i-15735.siko-core02.telstraglobal.net (202.84.143.5)
+    12  143.00 ms i-14236.jtha-core02.telstraglobal.net (202.84.140.201)
+    13  178.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
+    14  181.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
+    15  204.00 ms eqix-sv1.linode.com (206.223.116.196)
+    16  ... 17
+    18  171.00 ms devstd.in (50.116.8.239)
+    
+    NSE: Script Post-scanning.
+    NSE: Starting runlevel 1 (of 3) scan.
+    Initiating NSE at 10:36
+    Completed NSE at 10:36, 0.00s elapsed
+    NSE: Starting runlevel 2 (of 3) scan.
+    Initiating NSE at 10:36
+    Completed NSE at 10:36, 0.00s elapsed
+    NSE: Starting runlevel 3 (of 3) scan.
+    Initiating NSE at 10:36
+    Completed NSE at 10:36, 0.00s elapsed
+    Read data files from: C:\Program Files (x86)\Nmap
+    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 297.99 seconds
+    Raw packets sent: 1112 (50.836KB) | Rcvd: 1088 (46.030KB)
   nmap devstd.in -Pn -A -v10
-                            PORT     STATE  SERVICE   REASON         VERSION
-                            21/tcp   open   ftp?      syn-ack ttl 62
-                            25/tcp   open   smtp?     syn-ack ttl 62
-                            |_smtp-commands: Couldn't establish connection on port 25
-                            53/tcp   open   domain?   syn-ack ttl 62
-                            80/tcp   open   http      syn-ack ttl 62 GitHub.com
-                            | fingerprint-strings:
-                            |   GetRequest:
-                            |     HTTP/1.0 404 Not Found
-                            |     Connection: keep-alive
-                            |     Content-Length: 9115
-                            |     Server: GitHub.com
-                            |     Content-Type: text/html; charset=utf-8
-                            |     ETag: "65020b3f-239b"
-                            |     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
-                            |     X-GitHub-Request-Id: 1A18:1378D7:5090D1:5A62B6:651A2BAD
-                            |     X-Served-By: cache-mnl9724-MNL
-                            |     X-Cache: MISS
-                            |     X-Cache-Hits: 0
-                            |     X-Timer: S1696213934.785593,VS0,VE278
-                            |     X-Fastly-Request-ID: 1a51a443059edb0d2cb09fc7aa53c329ae2abfcb
-                            |     Accept-Ranges: bytes
-                            |     Date: Mon, 02 Oct 2023 02:32:14 GMT
-                            |     Via: 1.1 varnish
-                            |     Age: 0
-                            |     Vary: Accept-Encoding
-                            |     <!DOCTYPE html>
-                            |     <html>
-                            |     <head>
-                            |     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-                            |     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
-                            |     <title>Site not found &middot; GitHub Pages</title>
-                            |     <sty
-                            |   HTTPOptions:
-                            |     HTTP/1.0 405 Method Not Allowed
-                            |     Connection: close
-                            |     Content-Length: 131
-                            |     Server: Varnish
-                            |     Retry-After: 0
-                            |     Accept-Ranges: bytes
-                            |     Date: Mon, 02 Oct 2023 02:32:14 GMT
-                            |     Via: 1.1 varnish
-                            |     X-Served-By: cache-mnl9722-MNL
-                            |     X-Cache: MISS
-                            |     X-Cache-Hits: 0
-                            |     X-Timer: S1696213934.145463,VS0,VE0
-                            |     X-Fastly-Request-ID: 9f36adc012862ca4b0b5a938cae786e116098a55
-                            |     <html>
-                            |     <head><title>405 Not Allowed</title></head>
-                            |     <body bgcolor="white">
-                            |     <center><h1>405 Not Allowed</h1></center>
-                            |     </body>
-                            |_    </html>
-                            | http-server-header:
-                            |   GitHub.com
-                            |_  Varnish
-                            110/tcp  open   pop3?     syn-ack ttl 62
-                            113/tcp  closed ident     reset ttl 62
-                            143/tcp  open   imap?     syn-ack ttl 62
-                            443/tcp  open   ssl/https syn-ack ttl 49 GitHub.com
-                            | fingerprint-strings:
-                            |   FourOhFourRequest:
-                            |     HTTP/1.1 404 Not Found
-                            |     Connection: close
-                            |     Content-Length: 9115
-                            |     Server: GitHub.com
-                            |     Content-Type: text/html; charset=utf-8
-                            |     ETag: "65020b3f-239b"
-                            |     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
-                            |     X-GitHub-Request-Id: 6AA2:2774D1:221EED:2708F6:651A2BB4
-                            |     Accept-Ranges: bytes
-                            |     Date: Mon, 02 Oct 2023 02:32:20 GMT
-                            |     Via: 1.1 varnish
-                            |     Age: 0
-                            |     X-Served-By: cache-mnl9720-MNL
-                            |     X-Cache: MISS
-                            |     X-Cache-Hits: 0
-                            |     X-Timer: S1696213941.635250,VS0,VE273
-                            |     Vary: Accept-Encoding
-                            |     X-Fastly-Request-ID: bb9ae27e7217dfd23e48c6f0bcc01f64984a7919
-                            |     <!DOCTYPE html>
-                            |     <html>
-                            |     <head>
-                            |     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-                            |     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
-                            |     <title>Site not found &middot; GitHub Pages</title>
-                            |     <style ty
-                            |   GetRequest:
-                            |     HTTP/1.1 404 Not Found
-                            |     Connection: close
-                            |     Content-Length: 9115
-                            |     Server: GitHub.com
-                            |     Content-Type: text/html; charset=utf-8
-                            |     ETag: "65020b3f-239b"
-                            |     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
-                            |     X-GitHub-Request-Id: B8CC:AB45:17B0A0:1B65CF:651A2BB3
-                            |     Accept-Ranges: bytes
-                            |     Date: Mon, 02 Oct 2023 02:32:20 GMT
-                            |     Via: 1.1 varnish
-                            |     Age: 0
-                            |     X-Served-By: cache-mnl9729-MNL
-                            |     X-Cache: MISS
-                            |     X-Cache-Hits: 0
-                            |     X-Timer: S1696213940.963485,VS0,VE281
-                            |     Vary: Accept-Encoding
-                            |     X-Fastly-Request-ID: 7b387610cbf8d86a82eedd2114d16e650808a14e
-                            |     <!DOCTYPE html>
-                            |     <html>
-                            |     <head>
-                            |     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-                            |     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
-                            |     <title>Site not found &middot; GitHub Pages</title>
-                            |     <style type
-                            |   HTTPOptions:
-                            |     HTTP/1.1 405 Method Not Allowed
-                            |     Connection: close
-                            |     Content-Length: 131
-                            |     Server: Varnish
-                            |     Retry-After: 0
-                            |     Accept-Ranges: bytes
-                            |     Date: Mon, 02 Oct 2023 02:32:20 GMT
-                            |     Via: 1.1 varnish
-                            |     X-Served-By: cache-mnl9726-MNL
-                            |     X-Cache: MISS
-                            |     X-Cache-Hits: 0
-                            |     X-Timer: S1696213940.433881,VS0,VE0
-                            |     X-Fastly-Request-ID: 96c158555e307c75d105ca68cbab99ad1ccd46f0
-                            |     <html>
-                            |     <head><title>405 Not Allowed</title></head>
-                            |     <body bgcolor="white">
-                            |     <center><h1>405 Not Allowed</h1></center>
-                            |     </body>
-                            |_    </html>
-                            | ssl-cert: Subject: commonName=testname.orange.tw
-                            | Subject Alternative Name: DNS:testname.orange.tw
-                            | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
-                            | Public Key type: rsa
-                            | Public Key bits: 2048
-                            | Signature Algorithm: sha256WithRSAEncryption
-                            | Not valid before: 2023-08-19T09:22:05
-                            | Not valid after:  2023-11-17T09:22:04
-                            | MD5:   cd550f789a2f7d511758a8f187cc1812
-                            | SHA-1: 8b657c0c671256cf147237ef532f57b2b0c5ed39
-                            | -----BEGIN CERTIFICATE-----
-                            | MIIE8DCCA9igAwIBAgISA6f9xfVzsuQkHzLWCkziLs7WMA0GCSqGSIb3DQEBCwUA
-                            | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
-                            | EwJSMzAeFw0yMzA4MTkwOTIyMDVaFw0yMzExMTcwOTIyMDRaMB0xGzAZBgNVBAMT
-                            | EnRlc3RuYW1lLm9yYW5nZS50dzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
-                            | ggEBAKvHGwztxgH46qmzzwgXT6LLfDTEZhLm7/OYF3nJZe5mTB+akn0z7gf6LhVi
-                            | 97TzH9VPLrFnqElCv+PMmrcwRsJo9SipZGlvTEtkJMnc7UafpB/C72820LxpJ7ji
-                            | 1hhwQCy09e6P9w2MbgOS513WPry7yVsoEKBa9jf14Z4VI3JujmkBCaSMpMnX2wUB
-                            | kEhLkCCMOHoKYHR5GCYwjmALF7kkoIDfPxQA0wnnNEc1Y3xU0qCd4VfRyxPTPDAk
-                            | l47qNACfzGwMavdUvF5g3EYxwgne2cPjYx6PHMWQkOjahr598cMfGoZpmwvgsgxH
-                            | CMiSWStmL/qhOKEvEGX2l/0WhzMCAwEAAaOCAhMwggIPMA4GA1UdDwEB/wQEAwIF
-                            | oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAd
-                            | BgNVHQ4EFgQUY04VhVZapJQCwhZCpKWXmjgCV5cwHwYDVR0jBBgwFoAUFC6zF7dY
-                            | VsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRw
-                            | Oi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNy
-                            | Lm9yZy8wHQYDVR0RBBYwFIISdGVzdG5hbWUub3JhbmdlLnR3MBMGA1UdIAQMMAow
-                            | CAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAtz77JN+cTbp18jnF
-                            | ulj0bF38Qs96nzXEnh0JgSXttJkAAAGKDVD6fQAABAMARzBFAiB1v8DCt4Hhli6y
-                            | GP/cLcprCjKWsyKhrXltT0R6+k1ciQIhAOuY3T299uDvYjh/OwzTOKs0MId+IRwD
-                            | j6l9jDPtc0FCAHUA6D7Q2j71BjUy51covIlryQPTy9ERa+zraeF3fW0GvW4AAAGK
-                            | DVD6nAAABAMARjBEAiBsVMkp1+H1x0AZws1cDkXP8WnlbBDhX42P+mpWFJOOqAIg
-                            | cTdIxz3qn2oW7vIK3rgXhCc95EBIcKBTgHA2x+C7A7swDQYJKoZIhvcNAQELBQAD
-                            | ggEBAGCBwyv3LQnPTvywmI9AfTUoYI9H1BspgHKMFsh5LcjzqUMEBpMehz9MPXlF
-                            | raXHGcMps6dMol5W5jlv5oltIkY2d3+7di8R4JoXLgup+3fQgPufwGJJx141L16R
-                            | /lx7JhnzffuvPV5AykCnDogRPE8ap2RKwUCvArMS+mXbbEFxQOlVFkdeSKwlM/4i
-                            | gXdVlbas8ch+eYcXIqApSJGlbPJHOE1GzfP0Apqj2NAwcipCecS4cOcDy/it1Mi6
-                            | 0Tf04U6lp74kETPM6aD8Gf8Sspi2I+CSBu0bRdhbxjdOvtKULgtjElxf0ARhlhlj
-                            | ZZcNkXcyCDvWFm0UjiqwYMbjBVI=
-                            |_-----END CERTIFICATE-----
-                            | http-server-header:
-                            |   GitHub.com
-                            |_  Varnish
-                            | tls-alpn:
-                            |   h2
-                            |   http/1.1
-                            |_  http/1.0
-                            |_ssl-date: TLS randomness does not represent time
-                            |_http-title: Site not found &middot; GitHub Pages
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD
-                            8008/tcp open   http      syn-ack ttl 62
-                            | fingerprint-strings:
-                            |   FourOhFourRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GetRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |_    Content-Security-Policy: frame-ancestors 'self'
-                            |_http-title: Did not follow redirect to https://testname.orange.tw:8010/
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD POST OPTIONS
-                            3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
-                            ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-                            SF-Port80-TCP:V=7.93%I=7%D=10/2%Time=651A2BAC%P=i686-pc-windows-windows%r(
-                            SF:GetRequest,25EC,"HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20kee
-                            SF:p-alive\r\nContent-Length:\x209115\r\nServer:\x20GitHub\.com\r\nContent
-                            SF:-Type:\x20text/html;\x20charset=utf-8\r\nETag:\x20\"65020b3f-239b\"\r\n
-                            SF:Content-Security-Policy:\x20default-src\x20'none';\x20style-src\x20'uns
-                            SF:afe-inline';\x20img-src\x20data:;\x20connect-src\x20'self'\r\nX-GitHub-
-                            SF:Request-Id:\x201A18:1378D7:5090D1:5A62B6:651A2BAD\r\nX-Served-By:\x20ca
-                            SF:che-mnl9724-MNL\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x
-                            SF:20S1696213934\.785593,VS0,VE278\r\nX-Fastly-Request-ID:\x201a51a443059e
-                            SF:db0d2cb09fc7aa53c329ae2abfcb\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon
-                            SF:,\x2002\x20Oct\x202023\x2002:32:14\x20GMT\r\nVia:\x201\.1\x20varnish\r\
-                            SF:nAge:\x200\r\nVary:\x20Accept-Encoding\r\n\r\n<!DOCTYPE\x20html>\n<html
-                            SF:>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"
-                            SF:\x20content=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20
-                            SF:http-equiv=\"Content-Security-Policy\"\x20content=\"default-src\x20'non
-                            SF:e';\x20style-src\x20'unsafe-inline';\x20img-src\x20data:;\x20connect-sr
-                            SF:c\x20'self'\">\n\x20\x20\x20\x20<title>Site\x20not\x20found\x20&middot;
-                            SF:\x20GitHub\x20Pages</title>\n\x20\x20\x20\x20<sty")%r(HTTPOptions,1E0,"
-                            SF:HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nConnection:\x20close\r\
-                            SF:nContent-Length:\x20131\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\nA
-                            SF:ccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2002\x20Oct\x202023\x2002:32:1
-                            SF:4\x20GMT\r\nVia:\x201\.1\x20varnish\r\nX-Served-By:\x20cache-mnl9722-MN
-                            SF:L\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x20S1696213934\
-                            SF:.145463,VS0,VE0\r\nX-Fastly-Request-ID:\x209f36adc012862ca4b0b5a938cae7
-                            SF:86e116098a55\r\n\r\n<html>\n<head><title>405\x20Not\x20Allowed</title><
-                            SF:/head>\n<body\x20bgcolor=\"white\">\n<center><h1>405\x20Not\x20Allowed<
-                            SF:/h1></center>\n</body>\n</html>");
-                            ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-                            SF-Port443-TCP:V=7.93%T=SSL%I=7%D=10/2%Time=651A2BB2%P=i686-pc-windows-win
-                            SF:dows%r(GetRequest,25E5,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:
-                            SF:\x20close\r\nContent-Length:\x209115\r\nServer:\x20GitHub\.com\r\nConte
-                            SF:nt-Type:\x20text/html;\x20charset=utf-8\r\nETag:\x20\"65020b3f-239b\"\r
-                            SF:\nContent-Security-Policy:\x20default-src\x20'none';\x20style-src\x20'u
-                            SF:nsafe-inline';\x20img-src\x20data:;\x20connect-src\x20'self'\r\nX-GitHu
-                            SF:b-Request-Id:\x20B8CC:AB45:17B0A0:1B65CF:651A2BB3\r\nAccept-Ranges:\x20
-                            SF:bytes\r\nDate:\x20Mon,\x2002\x20Oct\x202023\x2002:32:20\x20GMT\r\nVia:\
-                            SF:x201\.1\x20varnish\r\nAge:\x200\r\nX-Served-By:\x20cache-mnl9729-MNL\r\
-                            SF:nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x20S1696213940\.963
-                            SF:485,VS0,VE281\r\nVary:\x20Accept-Encoding\r\nX-Fastly-Request-ID:\x207b
-                            SF:387610cbf8d86a82eedd2114d16e650808a14e\r\n\r\n<!DOCTYPE\x20html>\n<html
-                            SF:>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"
-                            SF:\x20content=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20
-                            SF:http-equiv=\"Content-Security-Policy\"\x20content=\"default-src\x20'non
-                            SF:e';\x20style-src\x20'unsafe-inline';\x20img-src\x20data:;\x20connect-sr
-                            SF:c\x20'self'\">\n\x20\x20\x20\x20<title>Site\x20not\x20found\x20&middot;
-                            SF:\x20GitHub\x20Pages</title>\n\x20\x20\x20\x20<style\x20type")%r(HTTPOpt
-                            SF:ions,1E0,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nConnection:\x
-                            SF:20close\r\nContent-Length:\x20131\r\nServer:\x20Varnish\r\nRetry-After:
-                            SF:\x200\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2002\x20Oct\x202023\
-                            SF:x2002:32:20\x20GMT\r\nVia:\x201\.1\x20varnish\r\nX-Served-By:\x20cache-
-                            SF:mnl9726-MNL\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x20S1
-                            SF:696213940\.433881,VS0,VE0\r\nX-Fastly-Request-ID:\x2096c158555e307c75d1
-                            SF:05ca68cbab99ad1ccd46f0\r\n\r\n<html>\n<head><title>405\x20Not\x20Allowe
-                            SF:d</title></head>\n<body\x20bgcolor=\"white\">\n<center><h1>405\x20Not\x
-                            SF:20Allowed</h1></center>\n</body>\n</html>")%r(FourOhFourRequest,25E7,"H
-                            SF:TTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Leng
-                            SF:th:\x209115\r\nServer:\x20GitHub\.com\r\nContent-Type:\x20text/html;\x2
-                            SF:0charset=utf-8\r\nETag:\x20\"65020b3f-239b\"\r\nContent-Security-Policy
-                            SF::\x20default-src\x20'none';\x20style-src\x20'unsafe-inline';\x20img-src
-                            SF:\x20data:;\x20connect-src\x20'self'\r\nX-GitHub-Request-Id:\x206AA2:277
-                            SF:4D1:221EED:2708F6:651A2BB4\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\
-                            SF:x2002\x20Oct\x202023\x2002:32:20\x20GMT\r\nVia:\x201\.1\x20varnish\r\nA
-                            SF:ge:\x200\r\nX-Served-By:\x20cache-mnl9720-MNL\r\nX-Cache:\x20MISS\r\nX-
-                            SF:Cache-Hits:\x200\r\nX-Timer:\x20S1696213941\.635250,VS0,VE273\r\nVary:\
-                            SF:x20Accept-Encoding\r\nX-Fastly-Request-ID:\x20bb9ae27e7217dfd23e48c6f0b
-                            SF:cc01f64984a7919\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>\n\x20
-                            SF:\x20\x20\x20<meta\x20http-equiv=\"Content-type\"\x20content=\"text/html
-                            SF:;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Se
-                            SF:curity-Policy\"\x20content=\"default-src\x20'none';\x20style-src\x20'un
-                            SF:safe-inline';\x20img-src\x20data:;\x20connect-src\x20'self'\">\n\x20\x2
-                            SF:0\x20\x20<title>Site\x20not\x20found\x20&middot;\x20GitHub\x20Pages</ti
-                            SF:tle>\n\x20\x20\x20\x20<style\x20ty");
-                            ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-                            SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2BAC%P=i686-pc-windows-windows%
-                            SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
-                            SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
-                            SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
-                            SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
-                            SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
-                            SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
-                            SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
-                            SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
-                            SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
-                            SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
-                            SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
-                            SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
-                            SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
-                            SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
-                            SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
-                            SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
-                            SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
-                            SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
-                            SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
-                            SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
-                            SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
-                            SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
-                            SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
-                            SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
-                            SF:\r\n");
-                            Device type: VoIP phone|general purpose
-                            Running (JUST GUESSING): Grandstream embedded (86%), Linux 3.X (86%)
-                            OS CPE: cpe:/h:grandstream:gxv3275 cpe:/o:linux:linux_kernel:3
-                            OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
-                            Aggressive OS guesses: Grandstream GXV3275 video phone (86%), Linux 3.2 - 3.8 (86%), Linux 3.3 (85%)
-                            No exact OS matches for host (test conditions non-ideal).
-                            TCP/IP fingerprint:
-                            SCAN(V=7.93%E=4%D=10/2%OT=21%CT=113%CU=%PV=N%DS=3%DC=T%G=N%TM=651A2D8D%P=i686-pc-windows-windows)
-                            SEQ(SP=105%GCD=1%ISR=10B%TI=I%II=I%SS=S%TS=7)
-                            SEQ(SP=104%GCD=1%ISR=10B%TI=RD%II=I%TS=8)
-                            OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
-                            WIN(W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W6=3890)
-                            ECN(R=Y%DF=N%TG=40%W=3908%O=M566NNSNW7%CC=Y%Q=)
-                            T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
-                            T2(R=N)
-                            T3(R=N)
-                            T4(R=N)
-                            T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
-                            T6(R=N)
-                            T7(R=N)
-                            U1(R=N)
-                            IE(R=Y%DFI=N%TG=40%CD=S)
-                            
-                            Uptime guess: 63.899 days (since Sun Jul 30 13:06:18 2023)
-                            Network Distance: 3 hops
-                            TCP Sequence Prediction: Difficulty=260 (Good luck!)
-                            IP ID Sequence Generation: Randomized
-                            
-                            TRACEROUTE (using port 113/tcp)
-                            HOP RTT     ADDRESS
-                            1   2.00 ms 140.118.247.254
-                            2   4.00 ms 10.118.250.1
-                            3   3.00 ms cdn-185-199-111-153.github.com (185.199.111.153)
-                            
-                            NSE: Script Post-scanning.
-                            NSE: Starting runlevel 1 (of 3) scan.
-                            Initiating NSE at 10:40
-                            Completed NSE at 10:40, 0.00s elapsed
-                            NSE: Starting runlevel 2 (of 3) scan.
-                            Initiating NSE at 10:40
-                            Completed NSE at 10:40, 0.00s elapsed
-                            NSE: Starting runlevel 3 (of 3) scan.
-                            Initiating NSE at 10:40
-                            Completed NSE at 10:40, 0.00s elapsed
-                            Read data files from: C:\Program Files (x86)\Nmap
-                            OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-                            Nmap done: 1 IP address (1 host up) scanned in 495.00 seconds
-                                       Raw packets sent: 2071 (94.728KB) | Rcvd: 75 (5.180KB)
+    PORT     STATE  SERVICE   REASON         VERSION
+    21/tcp   open   ftp?      syn-ack ttl 62
+    25/tcp   open   smtp?     syn-ack ttl 62
+    |_smtp-commands: Couldn't establish connection on port 25
+    53/tcp   open   domain?   syn-ack ttl 62
+    80/tcp   open   http      syn-ack ttl 62 GitHub.com
+    | fingerprint-strings:
+    |   GetRequest:
+    |     HTTP/1.0 404 Not Found
+    |     Connection: keep-alive
+    |     Content-Length: 9115
+    |     Server: GitHub.com
+    |     Content-Type: text/html; charset=utf-8
+    |     ETag: "65020b3f-239b"
+    |     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+    |     X-GitHub-Request-Id: 1A18:1378D7:5090D1:5A62B6:651A2BAD
+    |     X-Served-By: cache-mnl9724-MNL
+    |     X-Cache: MISS
+    |     X-Cache-Hits: 0
+    |     X-Timer: S1696213934.785593,VS0,VE278
+    |     X-Fastly-Request-ID: 1a51a443059edb0d2cb09fc7aa53c329ae2abfcb
+    |     Accept-Ranges: bytes
+    |     Date: Mon, 02 Oct 2023 02:32:14 GMT
+    |     Via: 1.1 varnish
+    |     Age: 0
+    |     Vary: Accept-Encoding
+    |     <!DOCTYPE html>
+    |     <html>
+    |     <head>
+    |     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    |     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    |     <title>Site not found &middot; GitHub Pages</title>
+    |     <sty
+    |   HTTPOptions:
+    |     HTTP/1.0 405 Method Not Allowed
+    |     Connection: close
+    |     Content-Length: 131
+    |     Server: Varnish
+    |     Retry-After: 0
+    |     Accept-Ranges: bytes
+    |     Date: Mon, 02 Oct 2023 02:32:14 GMT
+    |     Via: 1.1 varnish
+    |     X-Served-By: cache-mnl9722-MNL
+    |     X-Cache: MISS
+    |     X-Cache-Hits: 0
+    |     X-Timer: S1696213934.145463,VS0,VE0
+    |     X-Fastly-Request-ID: 9f36adc012862ca4b0b5a938cae786e116098a55
+    |     <html>
+    |     <head><title>405 Not Allowed</title></head>
+    |     <body bgcolor="white">
+    |     <center><h1>405 Not Allowed</h1></center>
+    |     </body>
+    |_    </html>
+    | http-server-header:
+    |   GitHub.com
+    |_  Varnish
+    110/tcp  open   pop3?     syn-ack ttl 62
+    113/tcp  closed ident     reset ttl 62
+    143/tcp  open   imap?     syn-ack ttl 62
+    443/tcp  open   ssl/https syn-ack ttl 49 GitHub.com
+    | fingerprint-strings:
+    |   FourOhFourRequest:
+    |     HTTP/1.1 404 Not Found
+    |     Connection: close
+    |     Content-Length: 9115
+    |     Server: GitHub.com
+    |     Content-Type: text/html; charset=utf-8
+    |     ETag: "65020b3f-239b"
+    |     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+    |     X-GitHub-Request-Id: 6AA2:2774D1:221EED:2708F6:651A2BB4
+    |     Accept-Ranges: bytes
+    |     Date: Mon, 02 Oct 2023 02:32:20 GMT
+    |     Via: 1.1 varnish
+    |     Age: 0
+    |     X-Served-By: cache-mnl9720-MNL
+    |     X-Cache: MISS
+    |     X-Cache-Hits: 0
+    |     X-Timer: S1696213941.635250,VS0,VE273
+    |     Vary: Accept-Encoding
+    |     X-Fastly-Request-ID: bb9ae27e7217dfd23e48c6f0bcc01f64984a7919
+    |     <!DOCTYPE html>
+    |     <html>
+    |     <head>
+    |     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    |     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    |     <title>Site not found &middot; GitHub Pages</title>
+    |     <style ty
+    |   GetRequest:
+    |     HTTP/1.1 404 Not Found
+    |     Connection: close
+    |     Content-Length: 9115
+    |     Server: GitHub.com
+    |     Content-Type: text/html; charset=utf-8
+    |     ETag: "65020b3f-239b"
+    |     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+    |     X-GitHub-Request-Id: B8CC:AB45:17B0A0:1B65CF:651A2BB3
+    |     Accept-Ranges: bytes
+    |     Date: Mon, 02 Oct 2023 02:32:20 GMT
+    |     Via: 1.1 varnish
+    |     Age: 0
+    |     X-Served-By: cache-mnl9729-MNL
+    |     X-Cache: MISS
+    |     X-Cache-Hits: 0
+    |     X-Timer: S1696213940.963485,VS0,VE281
+    |     Vary: Accept-Encoding
+    |     X-Fastly-Request-ID: 7b387610cbf8d86a82eedd2114d16e650808a14e
+    |     <!DOCTYPE html>
+    |     <html>
+    |     <head>
+    |     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    |     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    |     <title>Site not found &middot; GitHub Pages</title>
+    |     <style type
+    |   HTTPOptions:
+    |     HTTP/1.1 405 Method Not Allowed
+    |     Connection: close
+    |     Content-Length: 131
+    |     Server: Varnish
+    |     Retry-After: 0
+    |     Accept-Ranges: bytes
+    |     Date: Mon, 02 Oct 2023 02:32:20 GMT
+    |     Via: 1.1 varnish
+    |     X-Served-By: cache-mnl9726-MNL
+    |     X-Cache: MISS
+    |     X-Cache-Hits: 0
+    |     X-Timer: S1696213940.433881,VS0,VE0
+    |     X-Fastly-Request-ID: 96c158555e307c75d105ca68cbab99ad1ccd46f0
+    |     <html>
+    |     <head><title>405 Not Allowed</title></head>
+    |     <body bgcolor="white">
+    |     <center><h1>405 Not Allowed</h1></center>
+    |     </body>
+    |_    </html>
+    | ssl-cert: Subject: commonName=testname.orange.tw
+    | Subject Alternative Name: DNS:testname.orange.tw
+    | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+    | Public Key type: rsa
+    | Public Key bits: 2048
+    | Signature Algorithm: sha256WithRSAEncryption
+    | Not valid before: 2023-08-19T09:22:05
+    | Not valid after:  2023-11-17T09:22:04
+    | MD5:   cd550f789a2f7d511758a8f187cc1812
+    | SHA-1: 8b657c0c671256cf147237ef532f57b2b0c5ed39
+    | -----BEGIN CERTIFICATE-----
+    | MIIE8DCCA9igAwIBAgISA6f9xfVzsuQkHzLWCkziLs7WMA0GCSqGSIb3DQEBCwUA
+    | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+    | EwJSMzAeFw0yMzA4MTkwOTIyMDVaFw0yMzExMTcwOTIyMDRaMB0xGzAZBgNVBAMT
+    | EnRlc3RuYW1lLm9yYW5nZS50dzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+    | ggEBAKvHGwztxgH46qmzzwgXT6LLfDTEZhLm7/OYF3nJZe5mTB+akn0z7gf6LhVi
+    | 97TzH9VPLrFnqElCv+PMmrcwRsJo9SipZGlvTEtkJMnc7UafpB/C72820LxpJ7ji
+    | 1hhwQCy09e6P9w2MbgOS513WPry7yVsoEKBa9jf14Z4VI3JujmkBCaSMpMnX2wUB
+    | kEhLkCCMOHoKYHR5GCYwjmALF7kkoIDfPxQA0wnnNEc1Y3xU0qCd4VfRyxPTPDAk
+    | l47qNACfzGwMavdUvF5g3EYxwgne2cPjYx6PHMWQkOjahr598cMfGoZpmwvgsgxH
+    | CMiSWStmL/qhOKEvEGX2l/0WhzMCAwEAAaOCAhMwggIPMA4GA1UdDwEB/wQEAwIF
+    | oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAd
+    | BgNVHQ4EFgQUY04VhVZapJQCwhZCpKWXmjgCV5cwHwYDVR0jBBgwFoAUFC6zF7dY
+    | VsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRw
+    | Oi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNy
+    | Lm9yZy8wHQYDVR0RBBYwFIISdGVzdG5hbWUub3JhbmdlLnR3MBMGA1UdIAQMMAow
+    | CAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAtz77JN+cTbp18jnF
+    | ulj0bF38Qs96nzXEnh0JgSXttJkAAAGKDVD6fQAABAMARzBFAiB1v8DCt4Hhli6y
+    | GP/cLcprCjKWsyKhrXltT0R6+k1ciQIhAOuY3T299uDvYjh/OwzTOKs0MId+IRwD
+    | j6l9jDPtc0FCAHUA6D7Q2j71BjUy51covIlryQPTy9ERa+zraeF3fW0GvW4AAAGK
+    | DVD6nAAABAMARjBEAiBsVMkp1+H1x0AZws1cDkXP8WnlbBDhX42P+mpWFJOOqAIg
+    | cTdIxz3qn2oW7vIK3rgXhCc95EBIcKBTgHA2x+C7A7swDQYJKoZIhvcNAQELBQAD
+    | ggEBAGCBwyv3LQnPTvywmI9AfTUoYI9H1BspgHKMFsh5LcjzqUMEBpMehz9MPXlF
+    | raXHGcMps6dMol5W5jlv5oltIkY2d3+7di8R4JoXLgup+3fQgPufwGJJx141L16R
+    | /lx7JhnzffuvPV5AykCnDogRPE8ap2RKwUCvArMS+mXbbEFxQOlVFkdeSKwlM/4i
+    | gXdVlbas8ch+eYcXIqApSJGlbPJHOE1GzfP0Apqj2NAwcipCecS4cOcDy/it1Mi6
+    | 0Tf04U6lp74kETPM6aD8Gf8Sspi2I+CSBu0bRdhbxjdOvtKULgtjElxf0ARhlhlj
+    | ZZcNkXcyCDvWFm0UjiqwYMbjBVI=
+    |_-----END CERTIFICATE-----
+    | http-server-header:
+    |   GitHub.com
+    |_  Varnish
+    | tls-alpn:
+    |   h2
+    |   http/1.1
+    |_  http/1.0
+    |_ssl-date: TLS randomness does not represent time
+    |_http-title: Site not found &middot; GitHub Pages
+    | http-methods:
+    |_  Supported Methods: GET HEAD
+    8008/tcp open   http      syn-ack ttl 62
+    | fingerprint-strings:
+    |   FourOhFourRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GetRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |_    Content-Security-Policy: frame-ancestors 'self'
+    |_http-title: Did not follow redirect to https://testname.orange.tw:8010/
+    | http-methods:
+    |_  Supported Methods: GET HEAD POST OPTIONS
+    3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+    ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+    SF-Port80-TCP:V=7.93%I=7%D=10/2%Time=651A2BAC%P=i686-pc-windows-windows%r(
+    SF:GetRequest,25EC,"HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20kee
+    SF:p-alive\r\nContent-Length:\x209115\r\nServer:\x20GitHub\.com\r\nContent
+    SF:-Type:\x20text/html;\x20charset=utf-8\r\nETag:\x20\"65020b3f-239b\"\r\n
+    SF:Content-Security-Policy:\x20default-src\x20'none';\x20style-src\x20'uns
+    SF:afe-inline';\x20img-src\x20data:;\x20connect-src\x20'self'\r\nX-GitHub-
+    SF:Request-Id:\x201A18:1378D7:5090D1:5A62B6:651A2BAD\r\nX-Served-By:\x20ca
+    SF:che-mnl9724-MNL\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x
+    SF:20S1696213934\.785593,VS0,VE278\r\nX-Fastly-Request-ID:\x201a51a443059e
+    SF:db0d2cb09fc7aa53c329ae2abfcb\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon
+    SF:,\x2002\x20Oct\x202023\x2002:32:14\x20GMT\r\nVia:\x201\.1\x20varnish\r\
+    SF:nAge:\x200\r\nVary:\x20Accept-Encoding\r\n\r\n<!DOCTYPE\x20html>\n<html
+    SF:>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"
+    SF:\x20content=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20
+    SF:http-equiv=\"Content-Security-Policy\"\x20content=\"default-src\x20'non
+    SF:e';\x20style-src\x20'unsafe-inline';\x20img-src\x20data:;\x20connect-sr
+    SF:c\x20'self'\">\n\x20\x20\x20\x20<title>Site\x20not\x20found\x20&middot;
+    SF:\x20GitHub\x20Pages</title>\n\x20\x20\x20\x20<sty")%r(HTTPOptions,1E0,"
+    SF:HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nConnection:\x20close\r\
+    SF:nContent-Length:\x20131\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\nA
+    SF:ccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2002\x20Oct\x202023\x2002:32:1
+    SF:4\x20GMT\r\nVia:\x201\.1\x20varnish\r\nX-Served-By:\x20cache-mnl9722-MN
+    SF:L\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x20S1696213934\
+    SF:.145463,VS0,VE0\r\nX-Fastly-Request-ID:\x209f36adc012862ca4b0b5a938cae7
+    SF:86e116098a55\r\n\r\n<html>\n<head><title>405\x20Not\x20Allowed</title><
+    SF:/head>\n<body\x20bgcolor=\"white\">\n<center><h1>405\x20Not\x20Allowed<
+    SF:/h1></center>\n</body>\n</html>");
+    ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+    SF-Port443-TCP:V=7.93%T=SSL%I=7%D=10/2%Time=651A2BB2%P=i686-pc-windows-win
+    SF:dows%r(GetRequest,25E5,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnection:
+    SF:\x20close\r\nContent-Length:\x209115\r\nServer:\x20GitHub\.com\r\nConte
+    SF:nt-Type:\x20text/html;\x20charset=utf-8\r\nETag:\x20\"65020b3f-239b\"\r
+    SF:\nContent-Security-Policy:\x20default-src\x20'none';\x20style-src\x20'u
+    SF:nsafe-inline';\x20img-src\x20data:;\x20connect-src\x20'self'\r\nX-GitHu
+    SF:b-Request-Id:\x20B8CC:AB45:17B0A0:1B65CF:651A2BB3\r\nAccept-Ranges:\x20
+    SF:bytes\r\nDate:\x20Mon,\x2002\x20Oct\x202023\x2002:32:20\x20GMT\r\nVia:\
+    SF:x201\.1\x20varnish\r\nAge:\x200\r\nX-Served-By:\x20cache-mnl9729-MNL\r\
+    SF:nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x20S1696213940\.963
+    SF:485,VS0,VE281\r\nVary:\x20Accept-Encoding\r\nX-Fastly-Request-ID:\x207b
+    SF:387610cbf8d86a82eedd2114d16e650808a14e\r\n\r\n<!DOCTYPE\x20html>\n<html
+    SF:>\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"
+    SF:\x20content=\"text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20
+    SF:http-equiv=\"Content-Security-Policy\"\x20content=\"default-src\x20'non
+    SF:e';\x20style-src\x20'unsafe-inline';\x20img-src\x20data:;\x20connect-sr
+    SF:c\x20'self'\">\n\x20\x20\x20\x20<title>Site\x20not\x20found\x20&middot;
+    SF:\x20GitHub\x20Pages</title>\n\x20\x20\x20\x20<style\x20type")%r(HTTPOpt
+    SF:ions,1E0,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nConnection:\x
+    SF:20close\r\nContent-Length:\x20131\r\nServer:\x20Varnish\r\nRetry-After:
+    SF:\x200\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2002\x20Oct\x202023\
+    SF:x2002:32:20\x20GMT\r\nVia:\x201\.1\x20varnish\r\nX-Served-By:\x20cache-
+    SF:mnl9726-MNL\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nX-Timer:\x20S1
+    SF:696213940\.433881,VS0,VE0\r\nX-Fastly-Request-ID:\x2096c158555e307c75d1
+    SF:05ca68cbab99ad1ccd46f0\r\n\r\n<html>\n<head><title>405\x20Not\x20Allowe
+    SF:d</title></head>\n<body\x20bgcolor=\"white\">\n<center><h1>405\x20Not\x
+    SF:20Allowed</h1></center>\n</body>\n</html>")%r(FourOhFourRequest,25E7,"H
+    SF:TTP/1\.1\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Leng
+    SF:th:\x209115\r\nServer:\x20GitHub\.com\r\nContent-Type:\x20text/html;\x2
+    SF:0charset=utf-8\r\nETag:\x20\"65020b3f-239b\"\r\nContent-Security-Policy
+    SF::\x20default-src\x20'none';\x20style-src\x20'unsafe-inline';\x20img-src
+    SF:\x20data:;\x20connect-src\x20'self'\r\nX-GitHub-Request-Id:\x206AA2:277
+    SF:4D1:221EED:2708F6:651A2BB4\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\
+    SF:x2002\x20Oct\x202023\x2002:32:20\x20GMT\r\nVia:\x201\.1\x20varnish\r\nA
+    SF:ge:\x200\r\nX-Served-By:\x20cache-mnl9720-MNL\r\nX-Cache:\x20MISS\r\nX-
+    SF:Cache-Hits:\x200\r\nX-Timer:\x20S1696213941\.635250,VS0,VE273\r\nVary:\
+    SF:x20Accept-Encoding\r\nX-Fastly-Request-ID:\x20bb9ae27e7217dfd23e48c6f0b
+    SF:cc01f64984a7919\r\n\r\n<!DOCTYPE\x20html>\n<html>\n\x20\x20<head>\n\x20
+    SF:\x20\x20\x20<meta\x20http-equiv=\"Content-type\"\x20content=\"text/html
+    SF:;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Se
+    SF:curity-Policy\"\x20content=\"default-src\x20'none';\x20style-src\x20'un
+    SF:safe-inline';\x20img-src\x20data:;\x20connect-src\x20'self'\">\n\x20\x2
+    SF:0\x20\x20<title>Site\x20not\x20found\x20&middot;\x20GitHub\x20Pages</ti
+    SF:tle>\n\x20\x20\x20\x20<style\x20ty");
+    ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+    SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2BAC%P=i686-pc-windows-windows%
+    SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
+    SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
+    SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
+    SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
+    SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
+    SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
+    SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
+    SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
+    SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
+    SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
+    SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
+    SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
+    SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
+    SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
+    SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
+    SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
+    SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
+    SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
+    SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
+    SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
+    SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
+    SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
+    SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
+    SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
+    SF:\r\n");
+    Device type: VoIP phone|general purpose
+    Running (JUST GUESSING): Grandstream embedded (86%), Linux 3.X (86%)
+    OS CPE: cpe:/h:grandstream:gxv3275 cpe:/o:linux:linux_kernel:3
+    OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+    Aggressive OS guesses: Grandstream GXV3275 video phone (86%), Linux 3.2 - 3.8 (86%), Linux 3.3 (85%)
+    No exact OS matches for host (test conditions non-ideal).
+    TCP/IP fingerprint:
+    SCAN(V=7.93%E=4%D=10/2%OT=21%CT=113%CU=%PV=N%DS=3%DC=T%G=N%TM=651A2D8D%P=i686-pc-windows-windows)
+    SEQ(SP=105%GCD=1%ISR=10B%TI=I%II=I%SS=S%TS=7)
+    SEQ(SP=104%GCD=1%ISR=10B%TI=RD%II=I%TS=8)
+    OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
+    WIN(W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W6=3890)
+    ECN(R=Y%DF=N%TG=40%W=3908%O=M566NNSNW7%CC=Y%Q=)
+    T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+    T2(R=N)
+    T3(R=N)
+    T4(R=N)
+    T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+    T6(R=N)
+    T7(R=N)
+    U1(R=N)
+    IE(R=Y%DFI=N%TG=40%CD=S)
+    
+    Uptime guess: 63.899 days (since Sun Jul 30 13:06:18 2023)
+    Network Distance: 3 hops
+    TCP Sequence Prediction: Difficulty=260 (Good luck!)
+    IP ID Sequence Generation: Randomized
+    
+    TRACEROUTE (using port 113/tcp)
+    HOP RTT     ADDRESS
+    1   2.00 ms 140.118.247.254
+    2   4.00 ms 10.118.250.1
+    3   3.00 ms cdn-185-199-111-153.github.com (185.199.111.153)
+    
+    NSE: Script Post-scanning.
+    NSE: Starting runlevel 1 (of 3) scan.
+    Initiating NSE at 10:40
+    Completed NSE at 10:40, 0.00s elapsed
+    NSE: Starting runlevel 2 (of 3) scan.
+    Initiating NSE at 10:40
+    Completed NSE at 10:40, 0.00s elapsed
+    NSE: Starting runlevel 3 (of 3) scan.
+    Initiating NSE at 10:40
+    Completed NSE at 10:40, 0.00s elapsed
+    Read data files from: C:\Program Files (x86)\Nmap
+    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 495.00 seconds
+    Raw packets sent: 2071 (94.728KB) | Rcvd: 75 (5.180KB)
   nmap testname.orange.tw -Pn -A -v10
-                            Scanned at 2023-10-02 10:32:17 台北標準時間 for 286s
-                            Not shown: 981 closed tcp ports (reset)
-                            PORT     STATE    SERVICE      REASON         VERSION
-                            21/tcp   open     tcpwrapped   syn-ack ttl 62
-                            22/tcp   open     ssh          syn-ack ttl 42 OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
-                            | ssh-hostkey:
-                            |   256 4f34b9651d1511ff41f9f846985eaa47 (ED25519)
-                            |_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC18fx6EX95+HFrFKreHiVtWHZcngUptJrsqVjJrwE+r
-                            25/tcp   open     tcpwrapped   syn-ack ttl 62
-                            |_smtp-commands: Couldn't establish connection on port 25
-                            53/tcp   open     domain?      syn-ack ttl 62
-                            80/tcp   open     http         syn-ack ttl 62 Apache httpd 2.4.29 ((Ubuntu))
-                            |_http-server-header: Apache/2.4.29 (Ubuntu)
-                            110/tcp  open     tcpwrapped   syn-ack ttl 62
-                            135/tcp  filtered msrpc        no-response
-                            139/tcp  filtered netbios-ssn  no-response
-                            143/tcp  open     tcpwrapped   syn-ack ttl 62
-                            443/tcp  open     ssl/http     syn-ack ttl 41 Apache httpd 2.4.29
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD POST OPTIONS
-                            | tls-alpn:
-                            |_  http/1.1
-                            |_http-server-header: Apache/2.4.29 (Ubuntu)
-                            | ssl-cert: Subject: commonName=howger.orange.tw
-                            | Subject Alternative Name: DNS:howger.orange.tw
-                            | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
-                            | Public Key type: rsa
-                            | Public Key bits: 2048
-                            | Signature Algorithm: sha256WithRSAEncryption
-                            | Not valid before: 2023-09-21T12:45:38
-                            | Not valid after:  2023-12-20T12:45:37
-                            | MD5:   553d9ca641001972bb53bee6937501e4
-                            | SHA-1: 6aba0901b7b2dce16d13342e3a70498e1e760662
-                            | -----BEGIN CERTIFICATE-----
-                            | MIIE7jCCA9agAwIBAgISBBkloJTJHjtmmCCN+Whfhjb4MA0GCSqGSIb3DQEBCwUA
-                            | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
-                            | EwJSMzAeFw0yMzA5MjExMjQ1MzhaFw0yMzEyMjAxMjQ1MzdaMBsxGTAXBgNVBAMT
-                            | EGhvd2dlci5vcmFuZ2UudHcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
-                            | AQCqdnSvijv9vdqL70z4fOZwvAEmKJGl9Emy6XWdRH6d3iAZ4uvs+IO9Q1rG96lo
-                            | 3CfOxjXkSBiDXmy1CkkDIoSc9NKqD0nrHKJ+Js3VGBvUd7cduRoCi3JQNHTAXlIh
-                            | O4grBUXV5IcxeXUl2s86hOF9hRcETAxlosVO64atnrNim+kt+Vf0VG9zQC7WwRDa
-                            | n3ls0x+LuNx1mACUBaChjlRi6Xog6En66R4M1zJC/MTL8Qp8ii/V7y5wnBencUyC
-                            | 5QUrUTSNIFtYkRK39MWbzQnhGRnUhyq4nTksvyOhiGU+IyL/CaIUvF28lKlGVfpB
-                            | M8I7yCQb9XHTCAoAaps/XilPAgMBAAGjggITMIICDzAOBgNVHQ8BAf8EBAMCBaAw
-                            | HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYD
-                            | VR0OBBYEFLTyS3BXNfWOUvZ1crQ6U+tfI6MxMB8GA1UdIwQYMBaAFBQusxe3WFbL
-                            | rlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDov
-                            | L3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5v
-                            | cmcvMBsGA1UdEQQUMBKCEGhvd2dlci5vcmFuZ2UudHcwEwYDVR0gBAwwCjAIBgZn
-                            | gQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgC3Pvsk35xNunXyOcW6WPRs
-                            | XfxCz3qfNcSeHQmBJe20mQAAAYq3/TINAAAEAwBHMEUCIQCjTzrcjWLMDa7kqF6E
-                            | vPYnTiAc/sU/JiM6og+PHkx9TgIgH5m2X+ocj3RbD1aUHytghr+qRgECd1FkAZsp
-                            | j1Cz1wQAdwB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYq3/TIb
-                            | AAAEAwBIMEYCIQCRIyFSEp4WD85YJc5gKSr3HfsvxslrmVRBA6K5ObUCwAIhANSY
-                            | 9ZTu6l9WhSy1clFn48XY4Czl1ElEhCcdFxp2y5hIMA0GCSqGSIb3DQEBCwUAA4IB
-                            | AQBJHysv52uJi0GYljywccIS40Fj/Luj4B8cWRSFVniUIcMpbxI0BgUHfrcJNB6p
-                            | 4l5hIs0gSYCW4UeUsA/3vAZ3e0rH4a101z0MO6bp9yLtCBkfOoIRYLHpovYinyik
-                            | Iz1on213/WSaRvK2U5ZXUb+szETpFPiNkqyzgI/cgWUmq9fPSRVsX/nsXTeul5Dx
-                            | 4DMVrS0mkK/hpaT8qXD4+9jnG9KBXCtXw8BU8OCrgAIG2nCfxlJ0ZSn+mKLHDNlu
-                            | NLrd+58+LOvtwUgFM0WaPsgF8FQkv24ke0jr491QvQr59bhDVkzRwhnFfPeeH/FC
-                            | b2KzGLxuKf4wcvfX8twVHA9c
-                            |_-----END CERTIFICATE-----
-                            |_ssl-date: TLS randomness does not represent time
-                            |_http-favicon: Unknown favicon MD5: 8B79D20F4DCA13D3F8DD6CD9766D7C9A
-                            |_http-title: How\xE5\x93\xA5\xE7\x94\xA2\xE7\x94\x9F\xE5\x99\xA8
-                            445/tcp  filtered microsoft-ds no-response
-                            5555/tcp filtered freeciv      no-response
-                            6666/tcp filtered irc          no-response
-                            6667/tcp filtered irc          no-response
-                            6668/tcp filtered irc          no-response
-                            6669/tcp filtered irc          no-response
-                            8008/tcp open     http         syn-ack ttl 62
-                            | fingerprint-strings:
-                            |   FourOhFourRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GetRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |_    Content-Security-Policy: frame-ancestors 'self'
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD POST OPTIONS
-                            |_http-title: Did not follow redirect to https://howger.orange.tw:8010/
-                            9100/tcp filtered jetdirect    no-response
-                            9101/tcp filtered jetdirect    no-response
-                            1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-                            SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2BBB%P=i686-pc-windows-windows%
-                            SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
-                            SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
-                            SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
-                            SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
-                            SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
-                            SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
-                            SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
-                            SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
-                            SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
-                            SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
-                            SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
-                            SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
-                            SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
-                            SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
-                            SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
-                            SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
-                            SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
-                            SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
-                            SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
-                            SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
-                            SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
-                            SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
-                            SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
-                            SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
-                            SF:\r\n");
-                            OS fingerprint not ideal because: Host distance (19 network hops) is greater than five
-                            Aggressive OS guesses: Synology DiskStation Manager 5.1 (91%), Linux 2.6.32 (91%), Linux 2.6.32 or 3.10 (91%), Linux 2.6.39 (91%), Linux 3.10 - 3.12 (91%), Linux 4.4 (91%), Linux 2.6.35 (90%), Linux 4.9 (90%), Linux 3.4 (90%), Linux 3.5 (90%)
-                            No exact OS matches for host (test conditions non-ideal).
-                            TCP/IP fingerprint:
-                            SCAN(V=7.93%E=4%D=10/2%OT=22%CT=1%CU=42969%PV=N%DS=19%DC=T%G=N%TM=651A2CCF%P=i686-pc-windows-windows)
-                            SEQ(SP=FF%GCD=1%ISR=10F%TI=Z%II=I%TS=A)
-                            OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
-                            WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)
-                            ECN(R=Y%DF=Y%T=3B%W=F507%O=M566NNSNW7%CC=Y%Q=)
-                            T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
-                            T2(R=N)
-                            T3(R=N)
-                            T4(R=N)
-                            T5(R=Y%DF=Y%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
-                            T6(R=N)
-                            T7(R=N)
-                            U1(R=Y%DF=N%T=3C%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
-                            IE(R=Y%DFI=N%T=3C%CD=S)
-                            
-                            Uptime guess: 39.685 days (since Wed Aug 23 18:10:43 2023)
-                            Network Distance: 19 hops
-                            TCP Sequence Prediction: Difficulty=255 (Good luck!)
-                            IP ID Sequence Generation: All zeros
-                            Service Info: Host: howger.orange.tw; OS: Linux; CPE: cpe:/o:linux:linux_kernel
-                            
-                            TRACEROUTE (using port 8080/tcp)
-                            HOP RTT       ADDRESS
-                            1   3.00 ms   140.118.247.254
-                            2   2.00 ms   10.118.250.1
-                            3   3.00 ms   10.0.0.6
-                            4   5.00 ms   10.0.0.9
-                            5   4.00 ms   192.192.7.197
-                            6   4.00 ms   tpdb-3312.hinet.net (211.22.226.186)
-                            7   5.00 ms   tpdt-3032.hinet.net (220.128.2.250)
-                            8   ...
-                            9   6.00 ms   220-128-13-85.hinet-ip.hinet.net (220.128.13.85)
-                            10  7.00 ms   211-22-229-105.hinet-ip.hinet.net (211.22.229.105)
-                            11  5.00 ms   ae6.edge2.Banqiao.idc.hinet.net (203.69.110.125)
-                            12  54.00 ms  52.93.136.106
-                            13  6.00 ms   52.93.136.143
-                            14  ... 18
-                            19  109.00 ms ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com (18.180.25.5)
-                            
-                            NSE: Script Post-scanning.
-                            NSE: Starting runlevel 1 (of 3) scan.
-                            Initiating NSE at 10:37
-                            Completed NSE at 10:37, 0.00s elapsed
-                            NSE: Starting runlevel 2 (of 3) scan.
-                            Initiating NSE at 10:37
-                            Completed NSE at 10:37, 0.00s elapsed
-                            NSE: Starting runlevel 3 (of 3) scan.
-                            Initiating NSE at 10:37
-                            Completed NSE at 10:37, 0.00s elapsed
-                            Read data files from: C:\Program Files (x86)\Nmap
-                            OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-                            Nmap done: 1 IP address (1 host up) scanned in 286.87 seconds
-                                       Raw packets sent: 1105 (50.520KB) | Rcvd: 1349 (64.746KB)
+    Scanned at 2023-10-02 10:32:17 台北標準時間 for 286s
+    Not shown: 981 closed tcp ports (reset)
+    PORT     STATE    SERVICE      REASON         VERSION
+    21/tcp   open     tcpwrapped   syn-ack ttl 62
+    22/tcp   open     ssh          syn-ack ttl 42 OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+    | ssh-hostkey:
+    |   256 4f34b9651d1511ff41f9f846985eaa47 (ED25519)
+    |_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC18fx6EX95+HFrFKreHiVtWHZcngUptJrsqVjJrwE+r
+    25/tcp   open     tcpwrapped   syn-ack ttl 62
+    |_smtp-commands: Couldn't establish connection on port 25
+    53/tcp   open     domain?      syn-ack ttl 62
+    80/tcp   open     http         syn-ack ttl 62 Apache httpd 2.4.29 ((Ubuntu))
+    |_http-server-header: Apache/2.4.29 (Ubuntu)
+    110/tcp  open     tcpwrapped   syn-ack ttl 62
+    135/tcp  filtered msrpc        no-response
+    139/tcp  filtered netbios-ssn  no-response
+    143/tcp  open     tcpwrapped   syn-ack ttl 62
+    443/tcp  open     ssl/http     syn-ack ttl 41 Apache httpd 2.4.29
+    | http-methods:
+    |_  Supported Methods: GET HEAD POST OPTIONS
+    | tls-alpn:
+    |_  http/1.1
+    |_http-server-header: Apache/2.4.29 (Ubuntu)
+    | ssl-cert: Subject: commonName=howger.orange.tw
+    | Subject Alternative Name: DNS:howger.orange.tw
+    | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+    | Public Key type: rsa
+    | Public Key bits: 2048
+    | Signature Algorithm: sha256WithRSAEncryption
+    | Not valid before: 2023-09-21T12:45:38
+    | Not valid after:  2023-12-20T12:45:37
+    | MD5:   553d9ca641001972bb53bee6937501e4
+    | SHA-1: 6aba0901b7b2dce16d13342e3a70498e1e760662
+    | -----BEGIN CERTIFICATE-----
+    | MIIE7jCCA9agAwIBAgISBBkloJTJHjtmmCCN+Whfhjb4MA0GCSqGSIb3DQEBCwUA
+    | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+    | EwJSMzAeFw0yMzA5MjExMjQ1MzhaFw0yMzEyMjAxMjQ1MzdaMBsxGTAXBgNVBAMT
+    | EGhvd2dlci5vcmFuZ2UudHcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+    | AQCqdnSvijv9vdqL70z4fOZwvAEmKJGl9Emy6XWdRH6d3iAZ4uvs+IO9Q1rG96lo
+    | 3CfOxjXkSBiDXmy1CkkDIoSc9NKqD0nrHKJ+Js3VGBvUd7cduRoCi3JQNHTAXlIh
+    | O4grBUXV5IcxeXUl2s86hOF9hRcETAxlosVO64atnrNim+kt+Vf0VG9zQC7WwRDa
+    | n3ls0x+LuNx1mACUBaChjlRi6Xog6En66R4M1zJC/MTL8Qp8ii/V7y5wnBencUyC
+    | 5QUrUTSNIFtYkRK39MWbzQnhGRnUhyq4nTksvyOhiGU+IyL/CaIUvF28lKlGVfpB
+    | M8I7yCQb9XHTCAoAaps/XilPAgMBAAGjggITMIICDzAOBgNVHQ8BAf8EBAMCBaAw
+    | HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYD
+    | VR0OBBYEFLTyS3BXNfWOUvZ1crQ6U+tfI6MxMB8GA1UdIwQYMBaAFBQusxe3WFbL
+    | rlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDov
+    | L3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5v
+    | cmcvMBsGA1UdEQQUMBKCEGhvd2dlci5vcmFuZ2UudHcwEwYDVR0gBAwwCjAIBgZn
+    | gQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgC3Pvsk35xNunXyOcW6WPRs
+    | XfxCz3qfNcSeHQmBJe20mQAAAYq3/TINAAAEAwBHMEUCIQCjTzrcjWLMDa7kqF6E
+    | vPYnTiAc/sU/JiM6og+PHkx9TgIgH5m2X+ocj3RbD1aUHytghr+qRgECd1FkAZsp
+    | j1Cz1wQAdwB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYq3/TIb
+    | AAAEAwBIMEYCIQCRIyFSEp4WD85YJc5gKSr3HfsvxslrmVRBA6K5ObUCwAIhANSY
+    | 9ZTu6l9WhSy1clFn48XY4Czl1ElEhCcdFxp2y5hIMA0GCSqGSIb3DQEBCwUAA4IB
+    | AQBJHysv52uJi0GYljywccIS40Fj/Luj4B8cWRSFVniUIcMpbxI0BgUHfrcJNB6p
+    | 4l5hIs0gSYCW4UeUsA/3vAZ3e0rH4a101z0MO6bp9yLtCBkfOoIRYLHpovYinyik
+    | Iz1on213/WSaRvK2U5ZXUb+szETpFPiNkqyzgI/cgWUmq9fPSRVsX/nsXTeul5Dx
+    | 4DMVrS0mkK/hpaT8qXD4+9jnG9KBXCtXw8BU8OCrgAIG2nCfxlJ0ZSn+mKLHDNlu
+    | NLrd+58+LOvtwUgFM0WaPsgF8FQkv24ke0jr491QvQr59bhDVkzRwhnFfPeeH/FC
+    | b2KzGLxuKf4wcvfX8twVHA9c
+    |_-----END CERTIFICATE-----
+    |_ssl-date: TLS randomness does not represent time
+    |_http-favicon: Unknown favicon MD5: 8B79D20F4DCA13D3F8DD6CD9766D7C9A
+    |_http-title: How\xE5\x93\xA5\xE7\x94\xA2\xE7\x94\x9F\xE5\x99\xA8
+    445/tcp  filtered microsoft-ds no-response
+    5555/tcp filtered freeciv      no-response
+    6666/tcp filtered irc          no-response
+    6667/tcp filtered irc          no-response
+    6668/tcp filtered irc          no-response
+    6669/tcp filtered irc          no-response
+    8008/tcp open     http         syn-ack ttl 62
+    | fingerprint-strings:
+    |   FourOhFourRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GetRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |_    Content-Security-Policy: frame-ancestors 'self'
+    | http-methods:
+    |_  Supported Methods: GET HEAD POST OPTIONS
+    |_http-title: Did not follow redirect to https://howger.orange.tw:8010/
+    9100/tcp filtered jetdirect    no-response
+    9101/tcp filtered jetdirect    no-response
+    1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+    SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2BBB%P=i686-pc-windows-windows%
+    SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
+    SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
+    SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
+    SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
+    SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
+    SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
+    SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
+    SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
+    SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
+    SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
+    SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
+    SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
+    SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
+    SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
+    SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
+    SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
+    SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
+    SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
+    SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
+    SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
+    SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
+    SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
+    SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
+    SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
+    SF:\r\n");
+    OS fingerprint not ideal because: Host distance (19 network hops) is greater than five
+    Aggressive OS guesses: Synology DiskStation Manager 5.1 (91%), Linux 2.6.32 (91%), Linux 2.6.32 or 3.10 (91%), Linux 2.6.39 (91%), Linux 3.10 - 3.12 (91%), Linux 4.4 (91%), Linux 2.6.35 (90%), Linux 4.9 (90%), Linux 3.4 (90%), Linux 3.5 (90%)
+    No exact OS matches for host (test conditions non-ideal).
+    TCP/IP fingerprint:
+    SCAN(V=7.93%E=4%D=10/2%OT=22%CT=1%CU=42969%PV=N%DS=19%DC=T%G=N%TM=651A2CCF%P=i686-pc-windows-windows)
+    SEQ(SP=FF%GCD=1%ISR=10F%TI=Z%II=I%TS=A)
+    OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
+    WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)
+    ECN(R=Y%DF=Y%T=3B%W=F507%O=M566NNSNW7%CC=Y%Q=)
+    T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+    T2(R=N)
+    T3(R=N)
+    T4(R=N)
+    T5(R=Y%DF=Y%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+    T6(R=N)
+    T7(R=N)
+    U1(R=Y%DF=N%T=3C%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+    IE(R=Y%DFI=N%T=3C%CD=S)
+    
+    Uptime guess: 39.685 days (since Wed Aug 23 18:10:43 2023)
+    Network Distance: 19 hops
+    TCP Sequence Prediction: Difficulty=255 (Good luck!)
+    IP ID Sequence Generation: All zeros
+    Service Info: Host: howger.orange.tw; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+    
+    TRACEROUTE (using port 8080/tcp)
+    HOP RTT       ADDRESS
+    1   3.00 ms   140.118.247.254
+    2   2.00 ms   10.118.250.1
+    3   3.00 ms   10.0.0.6
+    4   5.00 ms   10.0.0.9
+    5   4.00 ms   192.192.7.197
+    6   4.00 ms   tpdb-3312.hinet.net (211.22.226.186)
+    7   5.00 ms   tpdt-3032.hinet.net (220.128.2.250)
+    8   ...
+    9   6.00 ms   220-128-13-85.hinet-ip.hinet.net (220.128.13.85)
+    10  7.00 ms   211-22-229-105.hinet-ip.hinet.net (211.22.229.105)
+    11  5.00 ms   ae6.edge2.Banqiao.idc.hinet.net (203.69.110.125)
+    12  54.00 ms  52.93.136.106
+    13  6.00 ms   52.93.136.143
+    14  ... 18
+    19  109.00 ms ec2-18-180-25-5.ap-northeast-1.compute.amazonaws.com (18.180.25.5)
+    
+    NSE: Script Post-scanning.
+    NSE: Starting runlevel 1 (of 3) scan.
+    Initiating NSE at 10:37
+    Completed NSE at 10:37, 0.00s elapsed
+    NSE: Starting runlevel 2 (of 3) scan.
+    Initiating NSE at 10:37
+    Completed NSE at 10:37, 0.00s elapsed
+    NSE: Starting runlevel 3 (of 3) scan.
+    Initiating NSE at 10:37
+    Completed NSE at 10:37, 0.00s elapsed
+    Read data files from: C:\Program Files (x86)\Nmap
+    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 286.87 seconds
+    Raw packets sent: 1105 (50.520KB) | Rcvd: 1349 (64.746KB)
   nmap howger.orange.tw -Pn -A -v10
-                            Scanned at 2023-10-02 10:33:17 台北標準時間 for 299s
-                            Not shown: 980 closed tcp ports (reset)
-                            PORT     STATE    SERVICE      REASON         VERSION
-                            21/tcp   open     tcpwrapped   syn-ack ttl 62
-                            22/tcp   open     ssh          syn-ack ttl 45 OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-                            | ssh-hostkey:
-                            |   256 28081acc682810bc5a9d10701d355642 (ECDSA)
-                            |_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOU5Q1p8V1UGlDOdw2phlgl2bOJxeo8eeZ50sdR+nxSPmCD3oskgPoBA1WesHw2p/qtMLI0qaiiIl7WzmjsI5a0=
-                            25/tcp   open     smtp         syn-ack ttl 62 Postfix smtpd
-                            | ssl-cert: Subject: commonName=z.nisra.net
-                            | Subject Alternative Name: DNS:z.nisra.net
-                            | Issuer: commonName=z.nisra.net
-                            | Public Key type: rsa
-                            | Public Key bits: 2048
-                            | Signature Algorithm: sha256WithRSAEncryption
-                            | Not valid before: 2023-08-26T08:50:04
-                            | Not valid after:  2033-08-23T08:50:04
-                            | MD5:   c8a28776a16c9d6898706b0a2ca7ff75
-                            | SHA-1: dfe42117282248e5e1eb99a8589cc02dc87c865b
-                            | -----BEGIN CERTIFICATE-----
-                            | MIIC/jCCAeagAwIBAgIUcrPqmojC5mteVAuR85BlAmgImmswDQYJKoZIhvcNAQEL
-                            | BQAwFjEUMBIGA1UEAwwLei5uaXNyYS5uZXQwHhcNMjMwODI2MDg1MDA0WhcNMzMw
-                            | ODIzMDg1MDA0WjAWMRQwEgYDVQQDDAt6Lm5pc3JhLm5ldDCCASIwDQYJKoZIhvcN
-                            | AQEBBQADggEPADCCAQoCggEBALe3fznerE93qgasS4MU8Ubb+XK5SdNmFQOAk2vl
-                            | l0Laqld+olN4InezJT1asQCuL/qtPihLYTr92IzKdOufrOGpgoOZXcI/N6qEqZFU
-                            | mCG/4hyXV9UrfBYDXWpGg3bO9Ne3bkIhBvqlyG9XbpUQ8+QrTB8FQX/BNg4AOG1i
-                            | HYtlTk78IjzRjg7wi66vNlbtN13UEpIQ5vXUIp8I+3d9AmoBevp+KgSmdGGIGipS
-                            | je6danzxUIkEytkzKEtzMSL8FIgu5YMtFvqQRvXMLhNXhI+EU5fEejt3frrNTKoq
-                            | wgSLfp134wDqAso3lnGsgL/3FL6UtWhZ3qCzDQbVSBdoSEECAwEAAaNEMEIwCQYD
-                            | VR0TBAIwADAWBgNVHREEDzANggt6Lm5pc3JhLm5ldDAdBgNVHQ4EFgQUMw6RIfeJ
-                            | tB5++cy8mgjDHNzarigwDQYJKoZIhvcNAQELBQADggEBAJ+5J5ULCmsHQ96c7CQM
-                            | Zb8Sd/GRaMJxA6oRD7tvINmTGt0Ae6iaKV/qee206DbK5y8x17AdbvnO1u5C/I17
-                            | N4DIyY5i6ZScvZsqX00kf/CQrk4QKIYin12lCjDywOFq4MRsaYi6IE6Xc2i5Iayd
-                            | +gIkP3vPb4grBBDB1C4GkUCr50p8+5rBmK+ahKMIgKs5vu6+pi/4ktgHCbOr8mTn
-                            | 4nDKL44I5Lt8quh7cvurlCSmH8MkJKr001YGrPGxj4+pFWoQulfrz4F2RnGE95K4
-                            | oVoMJy+bXVI2iErkOoBZP1gCMEUWeBhGt6J1fxJ3cc702+kcOQehHlLBRqU04qKa
-                            | Ag4=
-                            |_-----END CERTIFICATE-----
-                            |_smtp-commands: z.nisra.net, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
-                            53/tcp   open     tcpwrapped   syn-ack ttl 62
-                            80/tcp   open     http         syn-ack ttl 62 Apache httpd 2.4.52
-                            |_http-server-header: Apache/2.4.52
-                            110/tcp  open     tcpwrapped   syn-ack ttl 62
-                            111/tcp  open     rpcbind      syn-ack ttl 45 2-4 (RPC #100000)
-                            135/tcp  filtered msrpc        no-response
-                            139/tcp  filtered netbios-ssn  no-response
-                            143/tcp  open     tcpwrapped   syn-ack ttl 62
-                            443/tcp  open     ssl/http     syn-ack ttl 45 Apache httpd 2.4.52
-                            |_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
-                            |_http-title: /dev/stdin
-                            | tls-alpn:
-                            |_  http/1.1
-                            |_ssl-date: TLS randomness does not represent time
-                            | ssl-cert: Subject: commonName=devstd.in
-                            | Subject Alternative Name: DNS:devstd.in
-                            | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
-                            | Public Key type: rsa
-                            | Public Key bits: 2048
-                            | Signature Algorithm: sha256WithRSAEncryption
-                            | Not valid before: 2023-08-31T21:01:16
-                            | Not valid after:  2023-11-29T21:01:15
-                            | MD5:   8be6d3c47f57d80f16aa59c2256e7d4c
-                            | SHA-1: 9c955c44f8eb77d53e1b7ee9462cde44b62d0665
-                            | -----BEGIN CERTIFICATE-----
-                            | MIIE3zCCA8egAwIBAgISBAg/I07F9QJZbM6PPsymjBiZMA0GCSqGSIb3DQEBCwUA
-                            | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
-                            | EwJSMzAeFw0yMzA4MzEyMTAxMTZaFw0yMzExMjkyMTAxMTVaMBQxEjAQBgNVBAMT
-                            | CWRldnN0ZC5pbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALmKu596
-                            | BlzOsE/amIsT6Hv8+RrwVgSq3cQjw/xVl/i9eXJhq8rkzDz+6GY1zwnRnJt1ksSz
-                            | JyMYPAe7uQFyy38WglGEJS7NEJMwPjl/837oBkydDOjy34KvIHHTi8VSXEUPBCL6
-                            | /ZsTu7/BA+hXht/JZawN/O8A/dUgowNoxSMosNviUpnBd8MDuLXlItpXLTgMox2I
-                            | OFHj/kzDm9brW8TGZXamCKp4MmIbM3MS0qA5wQfT3tOYWZ3i9iz9c43g2oJcWiuF
-                            | LAIPNTcqUtMzl7sew2Cj1wE1XrPWSE44oSpxBCeb16z7PI5EpwYdNn4/hY0zzp6W
-                            | CxV3sYDEEHvPqEsCAwEAAaOCAgswggIHMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
-                            | FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU
-                            | 7uNKWvvlLmoqGVqt8gHkMBpxc6YwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+v
-                            | nYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5s
-                            | ZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wFAYD
-                            | VR0RBA0wC4IJZGV2c3RkLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYB
-                            | BAHWeQIEAgSB9QSB8gDwAHYAtz77JN+cTbp18jnFulj0bF38Qs96nzXEnh0JgSXt
-                            | tJkAAAGKTZ1sPwAABAMARzBFAiEAwWKzD/uN0HFc7vD+nt5/yff/OYeZdQjww5+1
-                            | EcX1PJ8CICBEluMKPoEUZqlNgcafklHjO5vAd/C6kQFwKRIsvgNfAHYAejKMVNi3
-                            | LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGKTZ1sSgAABAMARzBFAiA/bGBF
-                            | bkt6LnfZuOrFpkkPM2tcvj3McGTUWZT32pc+rgIhAOaE4KnjIeNmsKFgGTkTPwuB
-                            | R8cw0Qt9+fBM5zjkrj4vMA0GCSqGSIb3DQEBCwUAA4IBAQBoM8QLyexPdddOou+X
-                            | zKSvMiRY5o39xtdd+r7cRcIl3aeTgm1uuuO/qtBayMy3LewEd1pD0KNY0rMKiGcj
-                            | nLcb0HgZzK/TUwuRQ2XtjSRQy6S5ZaWzjnaflwzcJlwCQqt1YP1EamYsRZqlbslP
-                            | 3HoGQT2SHPka1d1jQ6Y/yVSlLf0WA4aeABAg/kdEBF8ESyjFeZuE2iiPO8UnjlX0
-                            | tgW2bsyRGzSXQLB0B2xKlnTGUzvt/KBlOR/FXvLyx/rBIATbjJ9HKWZslQoI/f9c
-                            | d6eQrCotaWYCGtuEYFnlGfPtsF4BtNboAflt5e9m0HDDYJCb6ovKy2pGzirWX0rZ
-                            | iExp
-                            |_-----END CERTIFICATE-----
-                            |_http-server-header: Apache/2.4.52
-                            | http-methods:
-                            |_  Supported Methods: OPTIONS HEAD GET POST
-                            445/tcp  filtered microsoft-ds no-response
-                            5555/tcp filtered freeciv      no-response
-                            6666/tcp filtered irc          no-response
-                            6667/tcp filtered irc          no-response
-                            6668/tcp filtered irc          no-response
-                            6669/tcp filtered irc          no-response
-                            8008/tcp open     http         syn-ack ttl 62
-                            | http-methods:
-                            |_  Supported Methods: GET HEAD POST OPTIONS
-                            | fingerprint-strings:
-                            |   FourOhFourRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |     Content-Security-Policy: frame-ancestors 'self'
-                            |   GetRequest:
-                            |     HTTP/1.1 302 Found
-                            |     Location: https://:8010/
-                            |     Connection: close
-                            |     X-Frame-Options: SAMEORIGIN
-                            |     X-XSS-Protection: 1; mode=block
-                            |     X-Content-Type-Options: nosniff
-                            |_    Content-Security-Policy: frame-ancestors 'self'
-                            |_http-title: Did not follow redirect to https://devstd.in:8010/
-                            9100/tcp filtered jetdirect    no-response
-                            9101/tcp filtered jetdirect    no-response
-                            1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-                            SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2BFB%P=i686-pc-windows-windows%
-                            SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
-                            SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
-                            SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
-                            SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
-                            SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
-                            SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
-                            SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
-                            SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
-                            SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
-                            SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
-                            SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
-                            SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
-                            SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
-                            SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
-                            SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
-                            SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
-                            SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
-                            SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
-                            SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
-                            SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
-                            SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
-                            SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
-                            SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
-                            SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
-                            SF:\r\n");
-                            OS fingerprint not ideal because: Host distance (19 network hops) is greater than five
-                            Aggressive OS guesses: Synology DiskStation Manager 5.1 (91%), Linux 3.18 (89%), Linux 2.6.37 (89%), Grandstream GXV3275 video phone (87%), IPCop 2.0 (Linux 2.6.32) (87%), Linux 2.6.32 (87%), Linux 2.6.32 or 3.10 (87%), Linux 3.11 - 4.1 (87%), Linux 3.2 (87%), Linux 3.2 - 3.8 (87%)
-                            No exact OS matches for host (test conditions non-ideal).
-                            TCP/IP fingerprint:
-                            SCAN(V=7.93%E=4%D=10/2%OT=22%CT=1%CU=30847%PV=N%DS=18%DC=T%G=N%TM=651A2D18%P=i686-pc-windows-windows)
-                            SEQ(SP=101%GCD=1%ISR=108%TI=Z%II=I%TS=C)
-                            OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
-                            WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
-                            ECN(R=Y%DF=Y%T=40%W=FAF0%O=M566NNSNW7%CC=Y%Q=)
-                            T1(R=Y%DF=Y%T=3F%S=O%A=S+%F=AS%RD=0%Q=)
-                            T2(R=N)
-                            T3(R=N)
-                            T4(R=N)
-                            T5(R=Y%DF=Y%T=3F%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
-                            T6(R=N)
-                            T7(R=N)
-                            U1(R=Y%DF=N%T=3F%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
-                            IE(R=Y%DFI=N%T=3F%CD=S)
-                            
-                            Uptime guess: 6.008 days (since Tue Sep 26 10:26:56 2023)
-                            Network Distance: 18 hops
-                            TCP Sequence Prediction: Difficulty=257 (Good luck!)
-                            IP ID Sequence Generation: All zeros
-                            Service Info: Host:  z.nisra.net; OS: Linux; CPE: cpe:/o:linux:linux_kernel
-                            
-                            TRACEROUTE (using port 5900/tcp)
-                            HOP RTT       ADDRESS
-                            1   3.00 ms   140.118.247.254
-                            2   5.00 ms   10.118.250.1
-                            3   3.00 ms   10.0.0.6
-                            4   4.00 ms   10.0.0.9
-                            5   27.00 ms  192.192.7.197
-                            6   4.00 ms   192.192.61.82
-                            7   5.00 ms   192.192.61.66
-                            8   5.00 ms   192.192.68.30
-                            9   7.00 ms   unknown.telstraglobal.net (210.176.44.153)
-                            10  74.00 ms  i-91.ttak-core02.telstraglobal.net (202.84.137.254)
-                            11  42.00 ms  i-14236.jtha-core02.telstraglobal.net (202.84.140.201)
-                            12  139.00 ms i-14236.jtha-core02.telstraglobal.net (202.84.140.201)
-                            13  170.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
-                            14  172.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
-                            15  ... 17
-                            18  181.00 ms devstd.in (50.116.8.239)
-                            
-                            NSE: Script Post-scanning.
-                            NSE: Starting runlevel 1 (of 3) scan.
-                            Initiating NSE at 10:38
-                            Completed NSE at 10:38, 0.00s elapsed
-                            NSE: Starting runlevel 2 (of 3) scan.
-                            Initiating NSE at 10:38
-                            Completed NSE at 10:38, 0.00s elapsed
-                            NSE: Starting runlevel 3 (of 3) scan.
-                            Initiating NSE at 10:38
-                            Completed NSE at 10:38, 0.00s elapsed
-                            Read data files from: C:\Program Files (x86)\Nmap
-                            OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-                            Nmap done: 1 IP address (1 host up) scanned in 299.34 seconds
-                                       Raw packets sent: 1113 (50.888KB) | Rcvd: 1099 (46.672KB)
+    Scanned at 2023-10-02 10:33:17 台北標準時間 for 299s
+    Not shown: 980 closed tcp ports (reset)
+    PORT     STATE    SERVICE      REASON         VERSION
+    21/tcp   open     tcpwrapped   syn-ack ttl 62
+    22/tcp   open     ssh          syn-ack ttl 45 OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+    | ssh-hostkey:
+    |   256 28081acc682810bc5a9d10701d355642 (ECDSA)
+    |_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOU5Q1p8V1UGlDOdw2phlgl2bOJxeo8eeZ50sdR+nxSPmCD3oskgPoBA1WesHw2p/qtMLI0qaiiIl7WzmjsI5a0=
+    25/tcp   open     smtp         syn-ack ttl 62 Postfix smtpd
+    | ssl-cert: Subject: commonName=z.nisra.net
+    | Subject Alternative Name: DNS:z.nisra.net
+    | Issuer: commonName=z.nisra.net
+    | Public Key type: rsa
+    | Public Key bits: 2048
+    | Signature Algorithm: sha256WithRSAEncryption
+    | Not valid before: 2023-08-26T08:50:04
+    | Not valid after:  2033-08-23T08:50:04
+    | MD5:   c8a28776a16c9d6898706b0a2ca7ff75
+    | SHA-1: dfe42117282248e5e1eb99a8589cc02dc87c865b
+    | -----BEGIN CERTIFICATE-----
+    | MIIC/jCCAeagAwIBAgIUcrPqmojC5mteVAuR85BlAmgImmswDQYJKoZIhvcNAQEL
+    | BQAwFjEUMBIGA1UEAwwLei5uaXNyYS5uZXQwHhcNMjMwODI2MDg1MDA0WhcNMzMw
+    | ODIzMDg1MDA0WjAWMRQwEgYDVQQDDAt6Lm5pc3JhLm5ldDCCASIwDQYJKoZIhvcN
+    | AQEBBQADggEPADCCAQoCggEBALe3fznerE93qgasS4MU8Ubb+XK5SdNmFQOAk2vl
+    | l0Laqld+olN4InezJT1asQCuL/qtPihLYTr92IzKdOufrOGpgoOZXcI/N6qEqZFU
+    | mCG/4hyXV9UrfBYDXWpGg3bO9Ne3bkIhBvqlyG9XbpUQ8+QrTB8FQX/BNg4AOG1i
+    | HYtlTk78IjzRjg7wi66vNlbtN13UEpIQ5vXUIp8I+3d9AmoBevp+KgSmdGGIGipS
+    | je6danzxUIkEytkzKEtzMSL8FIgu5YMtFvqQRvXMLhNXhI+EU5fEejt3frrNTKoq
+    | wgSLfp134wDqAso3lnGsgL/3FL6UtWhZ3qCzDQbVSBdoSEECAwEAAaNEMEIwCQYD
+    | VR0TBAIwADAWBgNVHREEDzANggt6Lm5pc3JhLm5ldDAdBgNVHQ4EFgQUMw6RIfeJ
+    | tB5++cy8mgjDHNzarigwDQYJKoZIhvcNAQELBQADggEBAJ+5J5ULCmsHQ96c7CQM
+    | Zb8Sd/GRaMJxA6oRD7tvINmTGt0Ae6iaKV/qee206DbK5y8x17AdbvnO1u5C/I17
+    | N4DIyY5i6ZScvZsqX00kf/CQrk4QKIYin12lCjDywOFq4MRsaYi6IE6Xc2i5Iayd
+    | +gIkP3vPb4grBBDB1C4GkUCr50p8+5rBmK+ahKMIgKs5vu6+pi/4ktgHCbOr8mTn
+    | 4nDKL44I5Lt8quh7cvurlCSmH8MkJKr001YGrPGxj4+pFWoQulfrz4F2RnGE95K4
+    | oVoMJy+bXVI2iErkOoBZP1gCMEUWeBhGt6J1fxJ3cc702+kcOQehHlLBRqU04qKa
+    | Ag4=
+    |_-----END CERTIFICATE-----
+    |_smtp-commands: z.nisra.net, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+    53/tcp   open     tcpwrapped   syn-ack ttl 62
+    80/tcp   open     http         syn-ack ttl 62 Apache httpd 2.4.52
+    |_http-server-header: Apache/2.4.52
+    110/tcp  open     tcpwrapped   syn-ack ttl 62
+    111/tcp  open     rpcbind      syn-ack ttl 45 2-4 (RPC #100000)
+    135/tcp  filtered msrpc        no-response
+    139/tcp  filtered netbios-ssn  no-response
+    143/tcp  open     tcpwrapped   syn-ack ttl 62
+    443/tcp  open     ssl/http     syn-ack ttl 45 Apache httpd 2.4.52
+    |_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+    |_http-title: /dev/stdin
+    | tls-alpn:
+    |_  http/1.1
+    |_ssl-date: TLS randomness does not represent time
+    | ssl-cert: Subject: commonName=devstd.in
+    | Subject Alternative Name: DNS:devstd.in
+    | Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+    | Public Key type: rsa
+    | Public Key bits: 2048
+    | Signature Algorithm: sha256WithRSAEncryption
+    | Not valid before: 2023-08-31T21:01:16
+    | Not valid after:  2023-11-29T21:01:15
+    | MD5:   8be6d3c47f57d80f16aa59c2256e7d4c
+    | SHA-1: 9c955c44f8eb77d53e1b7ee9462cde44b62d0665
+    | -----BEGIN CERTIFICATE-----
+    | MIIE3zCCA8egAwIBAgISBAg/I07F9QJZbM6PPsymjBiZMA0GCSqGSIb3DQEBCwUA
+    | MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+    | EwJSMzAeFw0yMzA4MzEyMTAxMTZaFw0yMzExMjkyMTAxMTVaMBQxEjAQBgNVBAMT
+    | CWRldnN0ZC5pbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALmKu596
+    | BlzOsE/amIsT6Hv8+RrwVgSq3cQjw/xVl/i9eXJhq8rkzDz+6GY1zwnRnJt1ksSz
+    | JyMYPAe7uQFyy38WglGEJS7NEJMwPjl/837oBkydDOjy34KvIHHTi8VSXEUPBCL6
+    | /ZsTu7/BA+hXht/JZawN/O8A/dUgowNoxSMosNviUpnBd8MDuLXlItpXLTgMox2I
+    | OFHj/kzDm9brW8TGZXamCKp4MmIbM3MS0qA5wQfT3tOYWZ3i9iz9c43g2oJcWiuF
+    | LAIPNTcqUtMzl7sew2Cj1wE1XrPWSE44oSpxBCeb16z7PI5EpwYdNn4/hY0zzp6W
+    | CxV3sYDEEHvPqEsCAwEAAaOCAgswggIHMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
+    | FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU
+    | 7uNKWvvlLmoqGVqt8gHkMBpxc6YwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+v
+    | nYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5s
+    | ZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wFAYD
+    | VR0RBA0wC4IJZGV2c3RkLmluMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYB
+    | BAHWeQIEAgSB9QSB8gDwAHYAtz77JN+cTbp18jnFulj0bF38Qs96nzXEnh0JgSXt
+    | tJkAAAGKTZ1sPwAABAMARzBFAiEAwWKzD/uN0HFc7vD+nt5/yff/OYeZdQjww5+1
+    | EcX1PJ8CICBEluMKPoEUZqlNgcafklHjO5vAd/C6kQFwKRIsvgNfAHYAejKMVNi3
+    | LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGKTZ1sSgAABAMARzBFAiA/bGBF
+    | bkt6LnfZuOrFpkkPM2tcvj3McGTUWZT32pc+rgIhAOaE4KnjIeNmsKFgGTkTPwuB
+    | R8cw0Qt9+fBM5zjkrj4vMA0GCSqGSIb3DQEBCwUAA4IBAQBoM8QLyexPdddOou+X
+    | zKSvMiRY5o39xtdd+r7cRcIl3aeTgm1uuuO/qtBayMy3LewEd1pD0KNY0rMKiGcj
+    | nLcb0HgZzK/TUwuRQ2XtjSRQy6S5ZaWzjnaflwzcJlwCQqt1YP1EamYsRZqlbslP
+    | 3HoGQT2SHPka1d1jQ6Y/yVSlLf0WA4aeABAg/kdEBF8ESyjFeZuE2iiPO8UnjlX0
+    | tgW2bsyRGzSXQLB0B2xKlnTGUzvt/KBlOR/FXvLyx/rBIATbjJ9HKWZslQoI/f9c
+    | d6eQrCotaWYCGtuEYFnlGfPtsF4BtNboAflt5e9m0HDDYJCb6ovKy2pGzirWX0rZ
+    | iExp
+    |_-----END CERTIFICATE-----
+    |_http-server-header: Apache/2.4.52
+    | http-methods:
+    |_  Supported Methods: OPTIONS HEAD GET POST
+    445/tcp  filtered microsoft-ds no-response
+    5555/tcp filtered freeciv      no-response
+    6666/tcp filtered irc          no-response
+    6667/tcp filtered irc          no-response
+    6668/tcp filtered irc          no-response
+    6669/tcp filtered irc          no-response
+    8008/tcp open     http         syn-ack ttl 62
+    | http-methods:
+    |_  Supported Methods: GET HEAD POST OPTIONS
+    | fingerprint-strings:
+    |   FourOhFourRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/nice%20ports%2C/Tri%6Eity.txt%2ebak
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GenericLines, HTTPOptions, RTSPRequest, SIPOptions:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |     Content-Security-Policy: frame-ancestors 'self'
+    |   GetRequest:
+    |     HTTP/1.1 302 Found
+    |     Location: https://:8010/
+    |     Connection: close
+    |     X-Frame-Options: SAMEORIGIN
+    |     X-XSS-Protection: 1; mode=block
+    |     X-Content-Type-Options: nosniff
+    |_    Content-Security-Policy: frame-ancestors 'self'
+    |_http-title: Did not follow redirect to https://devstd.in:8010/
+    9100/tcp filtered jetdirect    no-response
+    9101/tcp filtered jetdirect    no-response
+    1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+    SF-Port8008-TCP:V=7.93%I=7%D=10/2%Time=651A2BFB%P=i686-pc-windows-windows%
+    SF:r(GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:801
+    SF:0/\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-P
+    SF:rotection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\
+    SF:nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(Four
+    SF:OhFourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:80
+    SF:10/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fr
+    SF:ame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\n
+    SF:X-Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame
+    SF:-ancestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20F
+    SF:ound\r\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-O
+    SF:ptions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Con
+    SF:tent-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ance
+    SF:stors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r
+    SF:\nLocation:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options
+    SF::\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-T
+    SF:ype-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\
+    SF:x20'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLoca
+    SF:tion:\x20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20S
+    SF:AMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Op
+    SF:tions:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'se
+    SF:lf'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x
+    SF:20https://:8010\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIG
+    SF:IN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\
+    SF:x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n
+    SF:\r\n");
+    OS fingerprint not ideal because: Host distance (19 network hops) is greater than five
+    Aggressive OS guesses: Synology DiskStation Manager 5.1 (91%), Linux 3.18 (89%), Linux 2.6.37 (89%), Grandstream GXV3275 video phone (87%), IPCop 2.0 (Linux 2.6.32) (87%), Linux 2.6.32 (87%), Linux 2.6.32 or 3.10 (87%), Linux 3.11 - 4.1 (87%), Linux 3.2 (87%), Linux 3.2 - 3.8 (87%)
+    No exact OS matches for host (test conditions non-ideal).
+    TCP/IP fingerprint:
+    SCAN(V=7.93%E=4%D=10/2%OT=22%CT=1%CU=30847%PV=N%DS=18%DC=T%G=N%TM=651A2D18%P=i686-pc-windows-windows)
+    SEQ(SP=101%GCD=1%ISR=108%TI=Z%II=I%TS=C)
+    OPS(O1=M566ST11NW7%O2=M566ST11NW7%O3=M566NNT11NW7%O4=M566ST11NW7%O5=M566ST11NW7%O6=M566ST11)
+    WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
+    ECN(R=Y%DF=Y%T=40%W=FAF0%O=M566NNSNW7%CC=Y%Q=)
+    T1(R=Y%DF=Y%T=3F%S=O%A=S+%F=AS%RD=0%Q=)
+    T2(R=N)
+    T3(R=N)
+    T4(R=N)
+    T5(R=Y%DF=Y%T=3F%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+    T6(R=N)
+    T7(R=N)
+    U1(R=Y%DF=N%T=3F%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+    IE(R=Y%DFI=N%T=3F%CD=S)
+    
+    Uptime guess: 6.008 days (since Tue Sep 26 10:26:56 2023)
+    Network Distance: 18 hops
+    TCP Sequence Prediction: Difficulty=257 (Good luck!)
+    IP ID Sequence Generation: All zeros
+    Service Info: Host:  z.nisra.net; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+    
+    TRACEROUTE (using port 5900/tcp)
+    HOP RTT       ADDRESS
+    1   3.00 ms   140.118.247.254
+    2   5.00 ms   10.118.250.1
+    3   3.00 ms   10.0.0.6
+    4   4.00 ms   10.0.0.9
+    5   27.00 ms  192.192.7.197
+    6   4.00 ms   192.192.61.82
+    7   5.00 ms   192.192.61.66
+    8   5.00 ms   192.192.68.30
+    9   7.00 ms   unknown.telstraglobal.net (210.176.44.153)
+    10  74.00 ms  i-91.ttak-core02.telstraglobal.net (202.84.137.254)
+    11  42.00 ms  i-14236.jtha-core02.telstraglobal.net (202.84.140.201)
+    12  139.00 ms i-14236.jtha-core02.telstraglobal.net (202.84.140.201)
+    13  170.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
+    14  172.00 ms i-92.eqnx03.telstraglobal.net (202.84.247.17)
+    15  ... 17
+    18  181.00 ms devstd.in (50.116.8.239)
+    
+    NSE: Script Post-scanning.
+    NSE: Starting runlevel 1 (of 3) scan.
+    Initiating NSE at 10:38
+    Completed NSE at 10:38, 0.00s elapsed
+    NSE: Starting runlevel 2 (of 3) scan.
+    Initiating NSE at 10:38
+    Completed NSE at 10:38, 0.00s elapsed
+    NSE: Starting runlevel 3 (of 3) scan.
+    Initiating NSE at 10:38
+    Completed NSE at 10:38, 0.00s elapsed
+    Read data files from: C:\Program Files (x86)\Nmap
+    OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 299.34 seconds
+               Raw packets sent: 1113 (50.888KB) | Rcvd: 1099 (46.672KB)
