@@ -7,8 +7,8 @@ repo:
 'threat/actor':
 - threat/actor/**
 
-'app':
-- app/**
+'deployment':
+- deployment/**
 
 yaml:
 - **/*.yaml
