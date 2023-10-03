@@ -26,9 +26,9 @@ jobs:
       run: python build_threat.py
       shell: bash
 
-    - id: build-threat-statistics
-      name: Run build-threat-statistics script
-      run: python build_threat_statistics.py
+    - id: build-statistics
+      name: Run build-statistics script
+      run: python build_statistics.py
       shell: bash
 
     - id: build-domain

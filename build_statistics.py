@@ -30,10 +30,10 @@ def find_yaml_files(root_dir):
     return yaml_files
 
 
-def main(threat_actor_directory):
+def main(main_dir, main_key, len_keys=[]):
     """main"""
-    actor_content_data = {}
-    yaml_files = find_yaml_files(threat_actor_directory)
+    main_content_data = {}
+    yaml_files = find_yaml_files(main_dir)
 
     print(yaml_files)
 
@@ -45,17 +45,24 @@ def main(threat_actor_directory):
 
     for index, yaml_file_path in enumerate(yaml_files):
         raw_content = get_yaml_content(yaml_file_path)
-        actor_content = {}
-        actor_content["name"] = raw_content["threat actor"]
-        actor_content["notable incidents"] = len(raw_content["notable incidents"])
-        actor_content["sources of intelligence"] = len(raw_content["sources of intelligence"])
-        actor_content_data[index] = {
+        main_content = {}
+        if main_key:
+            main_content["name"] = raw_content["threat actor"]
+        else:
+            dms = yaml_file_path.split("/")[-1].split(".")
+            del dms[-1]
+            main_content["name"] = '.'.join(dms)
+        main_content["keys"] = list(raw_content.keys())
+        main_content["nkeys"] = len(raw_content.keys())
+        for k in len_keys:
+            main_content[k] = len(raw_content[k])
+        main_content_data[index] = {
             "Index": index,
-            **actor_content,
+            **main_content,
         }
 
     rows = []
-    for key, value in actor_content_data.items():
+    for key, value in main_content_data.items():
         row = {"Index": key}
         row.update(value)
         rows.append(row)
@@ -63,11 +70,15 @@ def main(threat_actor_directory):
     df = pd.DataFrame(rows)
 
     # Write Summary
-    with open("./threat/README.md", "w+", encoding="utf-8") as markdownFile:
-        markdownFile.write("### Threat Actor 202309\n")
+    parts = main_dir.split("/")
+    title = parts[1] + " " + parts[2]
+    parts[-1] = "README.md"
+    with open("/".join(parts), "w+", encoding="utf-8") as markdownFile:
+        markdownFile.write(f"### {title} 202309\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
 
 
 if __name__ == "__main__":
-    main("./threat/actor")
+    main("./threat/actor", "threat actor", ["notable incidents", "sources of intelligence"])
+    main("./domain/study", None, [])
