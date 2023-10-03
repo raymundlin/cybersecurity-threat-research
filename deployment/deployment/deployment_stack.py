@@ -8,15 +8,17 @@ from constructs import Construct
 
 class DeploymentStack(Stack):
 
-    def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
+    def __init__(self, scope: Construct, construct_id: str, testing: bool = False, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
         # The code that defines your stack goes here
 
+        source_code = _lambda.Code.from_asset("./deployment/app") if testing else _lambda.Code.from_asset("./app")
+
         list_func = _lambda.Function(
-            self, "list-api", 
+            self, "list-api",
             runtime=_lambda.Runtime.PYTHON_3_9,
-            code=_lambda.Code.from_asset("app"),
+            code=source_code,
             handler="list.main",
             timeout=Duration.seconds(10),
         )
