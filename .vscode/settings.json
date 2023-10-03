@@ -6,5 +6,8 @@
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectLanguageModel": 2,
-    "azureFunctions.projectSubpath": "app/Sandy"
+    "azureFunctions.projectSubpath": "app/Sandy",
+    "python.analysis.extraPaths": [
+        "./src"
+    ]
 }
