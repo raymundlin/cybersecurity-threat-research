@@ -1,0 +1,24 @@
+dig: |
+  on.tdo.com relays to cname.bitly.com
+
+whoisrws: |
+  nothing interesting
+
+dnsdumpster: |
+  nginx and WordPress!
+
+shodan: |
+  ports 80, 443
+
+censys: |
+  amazonaws!
+
+nmap: |
+  Nmap scan report for on.tdo.com (67.199.248.13)
+  Host is up (0.0020s latency).
+  Other addresses for on.tdo.com (not scanned): 67.199.248.12
+  rDNS record for 67.199.248.13: cname.bitly.com
+  Not shown: 998 filtered ports
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
