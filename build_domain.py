@@ -62,7 +62,7 @@ def main(root_directory):
 
     # Write Domain Summary
     with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
-        markdownFile.write("### domain\Study\n")
+        markdownFile.write(r"### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
         print(df)
