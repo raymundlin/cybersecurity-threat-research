@@ -11,4 +11,4 @@ repo:
 - deployment/**
 
 yaml:
-- any: ['*.yaml', '*.yml']
+- any: ['**/*.yaml', '**/*.yml']
