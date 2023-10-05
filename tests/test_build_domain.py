@@ -17,7 +17,7 @@ def test_count_yaml_keys():
         assert build_domain.count_yaml_keys(yaml_file_path) != 0
 
     for yaml_file_path in yaml_files2:
-        assert build_threat.count_yaml_keys(yaml_file_path)
+        assert build_threat.count_yaml_keys(yaml_file_path) != 0
 
 def test_get_yaml_content():
     for yaml_file_path in yaml_files:
