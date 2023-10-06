@@ -31,7 +31,7 @@ def find_yaml_files(root_dir):
 
 def main(root_directory):
     """main"""
-    vector_clc = {}
+    vector_clc1 = {}
     yaml_files = find_yaml_files(root_directory)
 
     print(yaml_files)
@@ -47,13 +47,13 @@ def main(root_directory):
         elif domain.endswith(".yml"):
             domain = domain[:-5]
         contents = get_yaml_content(yaml_file_path)
-        vector_clc[domain] = {
+        vector_clc1[domain] = {
             "Domain": domain,
             **contents,
         }
 
     rows = []
-    for key, value in vector_clc.items():
+    for key, value in vector_clc1.items():
         row = {"Domain": key}
         row.update(value)
         rows.append(row)
