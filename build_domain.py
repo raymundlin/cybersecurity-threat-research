@@ -19,7 +19,7 @@ def get_yaml_content(file_path):
         return yaml.safe_load(yaml_file)
 
 
-def find_yaml_files(root_dir):
+def search_yaml_files(root_dir):
     """process all yamls"""
     yaml_files = []
     for item in os.listdir(root_dir):
@@ -32,7 +32,7 @@ def find_yaml_files(root_dir):
 def main(root_directory):
     """main"""
     vector = {}
-    yaml_files = find_yaml_files(root_directory)
+    yaml_files = search_yaml_files(root_directory)
 
     print(yaml_files)
 
