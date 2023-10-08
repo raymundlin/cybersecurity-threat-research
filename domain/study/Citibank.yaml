@@ -1,0 +1,48 @@
+dig: |
+  ANSWER SECTION:
+  www.citi.com.		64	IN	CNAME	san.www.citi.com.edgekey.net.
+  san.www.citi.com.edgekey.net. 421 IN	CNAME	e16976.x.akamaiedge.net.
+  e16976.x.akamaiedge.net. 20	IN	A	23.205.12.95
+
+whoisrws: |
+  nothing interesting
+
+dnsdumpster: |
+  www.citi.com  23.60.112.132
+  HTTP: AkamaiGHost	132.deploy.static.akamaitechnologies.com	AKAMAI-AS
+  United States
+
+shodan: |
+  ports 80, 443
+
+censys: |
+  Labels:
+  13	jquery
+  8	remote-access
+  7	liveramp-dpm
+  6	jquery-ui
+  5	google-analytics
+
+  Autonomous System:
+  551	AKAMAI-AS
+  28	AKAMAI-ASN1
+  12	CITIGROUP
+  12	SOLANA-CITIPLEX
+  10	AKAMAI-AMS
+
+
+Nmap: |
+  Nmap scan report for citi.com (192.193.218.80)
+  Host is up (0.0055s latency).
+  Other addresses for citi.com (not scanned): 192.193.102.176
+  Not shown: 991 filtered tcp ports (no-response)
+  PORT     STATE  SERVICE
+  21/tcp   open   ftp
+  25/tcp   open   smtp
+  53/tcp   open   domain
+  80/tcp   open   http
+  110/tcp  open   pop3
+  113/tcp  closed ident
+  143/tcp  open   imap
+  443/tcp  open   https
+  8008/tcp open   http

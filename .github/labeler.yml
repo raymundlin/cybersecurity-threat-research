@@ -1,0 +1,14 @@
+repo:
+- '*'
+
+'domain/study':
+- domain/study/**
+
+'threat/actor':
+- threat/actor/**
+
+'deployment':
+- deployment/**
+
+yaml:
+- any: ['**/*.yaml', '**/*.yml']

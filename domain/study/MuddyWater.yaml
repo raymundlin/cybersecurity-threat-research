@@ -16,3 +16,15 @@ shodan: |
 
 censys: |
   amazon-02(US)
+  
+nmap: |
+  PORT     STATE SERVICE
+  21/tcp   open  ftp
+  53/tcp   open  domain
+  80/tcp   open  http
+  110/tcp  open  pop3
+  143/tcp  open  imap
+  443/tcp  open  https
+  8008/tcp open  http
+  When we type nmap -v -sn muddywaterholdings.com -oG -, it shows the result below:
+    Host: 76.223.105.230 () Status: Up
