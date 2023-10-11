@@ -17,6 +17,9 @@ def get_contents():
         contents.append({'Topic': t, 'Files': '\n'.join(topic_files[t])})
     return contents
 
+def abcd():
+    print("a")
+
 
 with open(f"./README.md", "w+", encoding="utf-8") as markdownFile:
     markdownFile.write("### Contents\n")
