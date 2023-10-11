@@ -9,7 +9,7 @@ def get_files(folder_name):
                 files.append(file_name)
     return files
 
-def t1():
+def get_contents():
     directory_path = ['domain/study' , 'threat/actor']
     topic_files = {dp: get_files(dp) for dp in directory_path}
     contents = []
@@ -18,9 +18,13 @@ def t1():
     return contents
 
 def x1():
-    
-    return abc
+    a = 1
+    b = 2
+    if (a < b):
+        print("success")
+    else:
+        print("false")
 
 with open(f"./README.md", "w+", encoding="utf-8") as markdownFile:
     markdownFile.write("### Contents\n")
-    markdownFile.writelines(pd.DataFrame(t1()).to_markdown(index=False))
+    markdownFile.writelines(pd.DataFrame(get_contents()).to_markdown(index=False))
