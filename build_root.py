@@ -1,6 +1,9 @@
 import os
 import pandas as pd
 
+def hello():
+    print(hello)
+    
 def get_files(folder_name):
     files = []
     for root, dirs, file_names in os.walk(folder_name):
