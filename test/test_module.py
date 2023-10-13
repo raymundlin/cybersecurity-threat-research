@@ -1,3 +1,4 @@
 from src.module import square
 
-print(square(8)) # 得到 64
+def test_square():
+    assert square(8) == 64
