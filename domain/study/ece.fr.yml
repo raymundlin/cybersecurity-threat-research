@@ -1,0 +1,63 @@
+dig: |
+  ece.fr IN      A       217.70.184.55
+  It indicates that the IPv4 address (A record) for "ece.fr" is "217.70.184.55." 
+
+whoisrws: |
+  The domain "ece.fr" is currently active and registered with the registrar GANDI. 
+  It was created on December 31, 1994, and its current expiration date is April 8, 2024. 
+  The domain uses three name servers: ns-138-c.gandi.net, ns-247-b.gandi.net, and ns-51-a.gandi.net. 
+  The holder of the domain is an organization named "Organisation et Developpement," with administrative and technical contacts from "ARDAN." 
+  The registrar's contact information is 63-65 boulevard Massena, 75013 PARIS, with phone +33.170377661 and email support@support.gandi.net.
+
+dnsdumpster: |
+  The domain "ece.fr" uses the following DNS servers:
+  - ns-51-a.gandi.net (IP: 173.246.100.52) located in the United States.
+  - ns-138-c.gandi.net (IP: 217.70.187.139) located in France.
+  - ns-247-b.gandi.net (IP:           213.167.230.248) located in France.
+
+  It has MX records directing email to "ece-fr.mail.protection.outlook.com" (IP: 52.101.73.30) in the Netherlands.
+  The domain has various TXT records for verification and SPF configurations.
+  
+shodan: |
+  Error: Access denied (403 Forbidden)
+  
+nmap OS scan: |
+  └─$ sudo nmap -O 217.70.184.55
+  Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-25 03:44 UTC
+  Nmap scan report for webredir.gandi.net (217.70.184.55)
+  Host is up (0.036s latency).
+  Not shown: 996 filtered tcp ports (no-response)
+
+nmap open port without ping: |
+  └─$ nmap -Pn 217.70.184.55
+  Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-25 03:28 UTC
+  Nmap scan report for webredir.gandi.net (217.70.184.55)
+  Host is up (0.070s latency).
+  Not shown: 996 filtered tcp ports (no-response)
+
+  PORT     STATE SERVICE
+  80/tcp   open  http
+  443/tcp  open  https
+  554/tcp  open  rtsp
+  1723/tcp open  pptp
+
+  Nmap done: 1 IP address (1 host up) scanned in 11.32 seconds
+
+censys: |
+  no publicly accessible services
+
+arin: |
+  Source Registry: RIPE NCC
+  Net Range: 217.70.184.0 - 217.70.184.255
+  CIDR: 217.70.184.0/24
+  Name: GANDIFR-NET4
+  Net Type: ASSIGNED PA
+  Registration: July 1, 2009
+  Last Change: May 12, 2020
+  Remark: GANDI FRANCE L/B SERVICES
+  Related Entities: 5 entities
+  Abuse Department Contact:
+    Full Name: Gandi Abuse Department
+    Email: abuse@gandi.net
+    Telephone: +33 1 70 39 37 48
+    Address: 63-65 Boulevard Massena, 75013 Paris, France
