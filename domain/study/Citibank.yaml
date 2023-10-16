@@ -1,10 +1,9 @@
 dig: |
   ANSWER SECTION:
 
-=======
   www.citi.com.		64	IN	CNAME	san.www.citi.com.edgekey.net.
   san.www.citi.com.edgekey.net. 421 IN	CNAME	e16976.x.akamaiedge.net.
-  e16976.x.akamaiedge.net. 20	IN	A	23.205.12.95
+  e16976.x.akamaiedge.net. 20	IN	A	23.205.12.95.
 
 
 whoisrws: |
@@ -12,7 +11,6 @@ whoisrws: |
 
 dnsdumpster: |
 
-=======
   www.citi.com  23.60.112.132
   HTTP: AkamaiGHost	132.deploy.static.akamaitechnologies.com	AKAMAI-AS
   United States
@@ -23,7 +21,7 @@ shodan: |
 
 censys: |
 
-=======
+
   Labels:
   13	jquery
   8	remote-access
