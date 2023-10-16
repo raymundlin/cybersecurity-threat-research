@@ -1,0 +1,38 @@
+threat actor: OceanBuffalo (APT32)
+
+background: |
+    "OceanBuffalo", also known as APT32, OceanLotus, SeaLotus, is a threat group that has been active since at least 2014.
+    The group has targeted multiple private sector industries as well as with foreign governments, dissidents, and journalists with a 
+    strong focus on Southeast Asian countries like Vietnam, the Philippines, Laos, and Cambodia. Also, they are known for their use of spear phishing,
+    watering hole attacks, and zero-day exploits to target organizations in the defense, energy, financial services, and telecommunications sectors. 
+    The group's operations are characterized by a high degree of sophistication and a persistent focus on cyber espionage.
+    They have extensively used strategic web compromises to compromise victims. The group is believed to be Vietnam-based.
+
+notable incidents:
+- Government Agency Intrusions
+- Corporate Espionage
+- Advanced Persistent Threat Campaigns:
+  - In 2018, APT32 was linked to a cyberattack on the Indian Ministry of Defense.
+  - In 2019, they were accused of targeting telecommunications companies in Southeast Asia.
+  - In 2020, they were linked to a cyberattack on the Australian Parliament.
+
+attribution: |
+    APT32 has been attributed to Vietnam by a number of cybersecurity researchers, including FireEye, Mandiant, and Symantec.
+    Evidence for the attribution of APT32 to Vietnam includes: 
+    - APT32's use of hacking techniques and tools that are known to be used by the Vietnamese government.
+    - APT32's targeting of organizations and industries that are of interest to the Vietnamese government.
+    - The coordination of APT32's activities with Vietnamese cyberwarfare campaigns.
+
+    Vietnam has denied any involvement in APT32's activities, but the evidence for the attribution is compelling.
+    APT32 is a sophisticated state actor that poses a significant risk to organizations around the world.
+    Organizations that are targeted by APT32 should take steps to improve their security posture,
+    including implementing multi-factor authentication, using up-to-date security software,
+    and conducting regular security awareness training for employees.
+
+sources of intelligence:
+- Cybersecurity Research Reports
+- Government Agencies and Security Alerts
+- Incident Response Teams
+- Threat Intelligence Sharing Platforms
+- Open-Source Intelligence (OSINT)
+- Analysis of Malware and Tactics, Techniques, and Procedures (TTPs)

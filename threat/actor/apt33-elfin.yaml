@@ -1,0 +1,19 @@
+threat actor: APT33 (Elfin)
+
+background: |
+    An Iran-linked cyber-espionage group that has been found targeting critical infrastructure, energy and military sectors in
+    Saudi Arabia and the United States two years ago continues targeting organizations in the two nations, Symantec reported on Wednesday. Source: https://thehackernews.com/2019/03/apt33-cyber-espionage-hacking.html
+
+notable incidents:
+- aviation businesses: May 2017 - now; attacks on Saudi Arabian and South Korean business conglomerate using a malicious file mainly targeting aviation and oil & gas businesses to possibly gain insights on military capabilities
+- attacks: Spear Phishing + Domain Masquerading
+- Source: https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage
+
+attribution: |
+    - member: xman_1365_x -> has been identified as part of the group by researchers; xman_1365_x also was community manager in the Barnamenevis Iranian programming and software engineering forum
+    - Source: https://www.cyberdefensemagazine.com/iranian-cyber-spies-apt33-target-aerospace-and-energy-organizations-2/)
+
+sources of intelligence:
+- News Outlets
+- Cybersecurity Blogs and Forums
+- Cybersecurity Reports
