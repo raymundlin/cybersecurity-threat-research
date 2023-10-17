@@ -1,4 +1,4 @@
-name: AWS Service CI/CD
+name: DRLin CI/CD
 
 on:
   workflow_dispatch:
