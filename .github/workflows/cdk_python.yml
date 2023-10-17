@@ -30,8 +30,6 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
-          aws-region: "us-east-1"
+          # aws-region: "us-east-1"
       - name: Deploy to AWS
         run: cd deployment && cdk deploy --require-approval=never
-      - name: Destroy stack
-        run: cd deployment && cdk destroy --force
