@@ -1,0 +1,25 @@
+threat actor: APT33 (Elfin)
+
+background: |
+    The cybercriminal entity "Advanced Persistent Threat 33" is a hacker group supported by the gouvernment of Iran and identified by the cyber security company "FireEye" (Today called Trellix). 
+    Other Pseudonyms: Peach Sandstorm, Refined Kitten (by Crowdstrike), Magnallium (by Dragos), and Holmium (by Microsoft)
+    According to FireEye is was formed around 2013.
+    The groups trargets have been aerospace, defense and petrochemical industry in the United States, South Korea, and Saudi Arabia.
+    2023 thy have a particular interest in satellite, defense and pharmaceutical sectors.
+    Reported used tools are ALFASHELL, which they used to send spear-phishing emails loaded with malicious HTML Application files to its targets.
+    APT33 used domains to impersonate commercial entities like Boeing, Alsalam Aircraft Company, Northrop Grumman and Vinnell.
+
+notable incidents:
+- 2023 Password spraying attack using AzureHound (https://www.microsoft.com/en-us/security/blog/2023/09/14/peach-sandstorm-password-spray-campaigns-enable-intelligence-collection-at-high-value-targets/)
+- 2019 attempted to exploit a known vulnerability (CVE-2018-20250) in WinRAR (https://www.csoonline.com/article/567091/apt-group-elfin-switches-from-data-destruction-to-data-stealing-via-winrar-vulnerability.html)
+- 2018 Suspected to be linked to the Shamoon malware attacks (https://www.cfr.org/cyber-operations/apt-33)
+- 2017 Spear phishing with malious attachment, attempted to compromise organizations within the petrochemical sector (https://www.boozallen.com/insights/cyber/tech/apt33-hunt-report.html)
+
+attribution: |
+    The identity of APT33 is unknown, one member is known by the pseudonym "xman_1365_x" in iranian hacker forums.
+
+sources of intelligence:
+- Iranian Hacking Forums (Shabgard, Ashiyane) (https://www.mandiant.com/resources/blog/apt33-insights-into-iranian-cyber-espionage)
+- Iranian hacking websites (getting publicly available backdoors and tools including NANOCORE, NETWIRE, and ALFA Shell)
+- Obtained Credentials using third-party breaches 
+- Custom-built malware (https://cyware.com/blog/apt33-the-lesser-known-adversary-with-ties-to-advanced-espionage-threats-27a0/)

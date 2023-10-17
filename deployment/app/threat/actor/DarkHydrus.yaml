@@ -1,0 +1,21 @@
+threat actor: DarkHydrus
+
+background: |
+    DarkHydrus is a threat group that has targeted government agencies and educational institutions in the Middle East since at least 2016. 
+    The group heavily leverages open-source tools and custom payloads for carrying out attacks
+
+notable incidents:
+- RogueRobin
+- Cobalt Strike
+- Mimikatz
+
+attribution: |
+    On 2019, DarkHydrus was absuing the Google Drive as an alternative communications channel. 
+    The latest DarkHydrus scheme was first spotted after 360TIC secured samples of malicious Microsoft Excel documents on 9 January 2019
+    
+sources of intelligence:
+- malware that required users to hit the enable button in Microsoft Excel to allow an .iqy file to be downloaded
+- an open-source tool, Phishery, to inject malicious remote template URLs into Microsoft Word documents and then sent them to victims to enable Forced Authentication
+- Phishing \: Spearphishing Attachment
+- Hide Artifacts \: Hidden Window
+- Template Injection to launch an authentication window for users to enter their credentials
