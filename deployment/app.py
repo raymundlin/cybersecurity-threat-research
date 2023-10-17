@@ -17,6 +17,6 @@ for folder in FOLDERS:
 Osaka = cdk.Environment(account=os.environ["CDK_DEFAULT_ACCOUNT"], region="ap-northeast-3")
 
 app = cdk.App()
-DeploymentStack(app, "DeploymentStack-b11009061", env=Osaka)
+DeploymentStack(app, "DeploymentStack-B11009061", env=Osaka)
 
 app.synth()
