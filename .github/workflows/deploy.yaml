@@ -30,10 +30,10 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
           aws-region: "us-east-1"
       - name: Deploy to AWS
-        run: cdk deploy --app="python3 ${PWD}/cdk/my_service/app.py" --require-approval=never
+        run: cdk deploy --app="python3 /deployment/app.py" --require-approval=never
       - name: Destroy stack
-        run: cdk destroy --app="python3 ${PWD}/cdk/my_service/app.py" --force
+        run: cdk destroy --app="python3 /deployment/app.py" --force
