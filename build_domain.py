@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import yaml
 
-def count_yaml_keys(file_path):
+def count1_yaml_keys(file_path):
     """count"""
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
