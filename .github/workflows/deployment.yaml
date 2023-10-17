@@ -1,0 +1,36 @@
+name: AWS Service CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        run: echo "CDK_DEPLOY_STAGE=prod" >> $GITHUB_ENV
+
+        with:
+          python-version: "3.9"
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - name: Install Python dependencies and CDK
+        run: |
+          python -m pip install --upgrade pip
+          # install your Python dependencies here
+          npm install -g aws-cdk
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+      - name: Deploy to AWS
+        run: cd deployment && cdk deploy --require-approval=never
