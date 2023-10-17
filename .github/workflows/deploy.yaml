@@ -3,7 +3,7 @@ name: DRLin CI/CD
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [drline]
 
 jobs:
   build:
