@@ -1,0 +1,21 @@
+threat actor: APT10
+
+background: |
+    "menuPass" is a threat group that has been active since at least 2006. 
+    Individual members of menuPass are known to have acted in association with the Chinese Ministry of State Security’s (MSS) 
+    Tianjin State Security Bureau and worked for the Huaying Haitai Science and Technology Development Company. menuPass has targeted 
+    healthcare, defense, aerospace, finance, maritime, biotechnology, energy, and government sectors globally, with an emphasis on Japanese organizations. 
+
+notable incidents:
+- In 2016 and 2017, the group is known to have targeted managed IT service providers (MSPs)
+- The actor gained initial access by exploiting unpatched Microsoft Exchange Server vulnerabilities, and the
+  attacker then distributed a variety of tools, including a custom loader and the Sodamaster backdoor.
+
+attribution: |
+    It's from china, according to malpedia, it can also be recognized as following : 
+    STONE PANDAD, Menupass Team, happyyongzi, POTASSIUM, Red Apollo, CVNX, HOGFISH, Cloud Hopper, BRONZE RIVERSIDE, ATK41, G0045, Granite Taurus
+    They acted in association with the Chinese Ministry of State Security's (MSS) Tianjin State Security Bureau and worked for the Huaying Haitai Science and Technology Development Company.
+    
+sources of intelligence:
+- Cybersecurity Forum (Mitre)
+- Cybersecurity Reports

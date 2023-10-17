@@ -1,0 +1,24 @@
+threat actor: APT-C-35 Sea Turtle
+background: '"Sea Turtle" is a threat actor known for its involvement in highly damaging
+  attacks, primarily characterized by DNS hijacking.
+
+  Sea Turtle has targeted various organizations, including government agencies, energy
+  companies, telecommunications, and international organizations.
+
+  '
+notable incidents:
+- Attack on Pakistan’s defense sector.
+- They deliver their malware as documents containing malicious macros.
+- The group also appears to have Android malware, such as Android RAT malware found
+  as a rogue Kashmir News Service Lite app and more like that.
+attribution: 'While the true identity of Sea Turtle remains unclear, some reports
+  suggest it may be associated with a specific nation-state or state-sponsored threat
+  actor.
+
+  '
+sources of intelligence:
+- Security news outlets
+- Cybersecurity blogs and forums
+- Reports from international organizations
+- Security research reports
+- Information releases from government agencies

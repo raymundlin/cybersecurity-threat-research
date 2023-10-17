@@ -1,0 +1,175 @@
+dig: |
+  wongnai.com relays to diggui.com
+
+whoisrws: |
+  % IANA WHOIS server
+  % for more information on IANA, visit http://www.iana.org
+  % This query returned 1 object
+
+  refer:        whois.verisign-grs.com
+
+  domain:       COM
+
+  organisation: VeriSign Global Registry Services
+  address:      12061 Bluemont Way
+  address:      Reston VA 20190
+  address:      United States of America (the)
+
+  contact:      administrative
+  name:         Registry Customer Service
+  organisation: VeriSign Global Registry Services
+  address:      12061 Bluemont Way
+  address:      Reston VA 20190
+  address:      United States of America (the)
+  phone:        +1 703 925-6999
+  fax-no:       +1 703 948 3978
+  e-mail:       info@verisign-grs.com
+
+  contact:      technical
+  name:         Registry Customer Service
+  organisation: VeriSign Global Registry Services
+  address:      12061 Bluemont Way
+  address:      Reston VA 20190
+  address:      United States of America (the)
+  phone:        +1 703 925-6999
+  fax-no:       +1 703 948 3978
+  e-mail:       info@verisign-grs.com
+
+  nserver:      A.GTLD-SERVERS.NET 192.5.6.30 2001:503:a83e:0:0:0:2:30
+  nserver:      B.GTLD-SERVERS.NET 192.33.14.30 2001:503:231d:0:0:0:2:30
+  nserver:      C.GTLD-SERVERS.NET 192.26.92.30 2001:503:83eb:0:0:0:0:30
+  nserver:      D.GTLD-SERVERS.NET 192.31.80.30 2001:500:856e:0:0:0:0:30
+  nserver:      E.GTLD-SERVERS.NET 192.12.94.30 2001:502:1ca1:0:0:0:0:30
+  nserver:      F.GTLD-SERVERS.NET 192.35.51.30 2001:503:d414:0:0:0:0:30
+  nserver:      G.GTLD-SERVERS.NET 192.42.93.30 2001:503:eea3:0:0:0:0:30
+  nserver:      H.GTLD-SERVERS.NET 192.54.112.30 2001:502:8cc:0:0:0:0:30
+  nserver:      I.GTLD-SERVERS.NET 192.43.172.30 2001:503:39c1:0:0:0:0:30
+  nserver:      J.GTLD-SERVERS.NET 192.48.79.30 2001:502:7094:0:0:0:0:30
+  nserver:      K.GTLD-SERVERS.NET 192.52.178.30 2001:503:d2d:0:0:0:0:30
+  nserver:      L.GTLD-SERVERS.NET 192.41.162.30 2001:500:d937:0:0:0:0:30
+  nserver:      M.GTLD-SERVERS.NET 192.55.83.30 2001:501:b1f9:0:0:0:0:30
+  ds-rdata:     30909 8 2 e2d3c916f6deeac73294e8268fb5885044a833fc5459588f4a9184cfc41a5766
+
+  whois:        whois.verisign-grs.com
+
+  status:       ACTIVE
+  remarks:      Registration information: http://www.verisigninc.com
+
+  created:      1985-01-01
+  changed:      2023-09-12
+  source:       IANA
+
+  # whois.verisign-grs.com
+
+    Domain Name: WONGNAI.COM
+    Registry Domain ID: 1576903916_DOMAIN_COM-VRSN
+    Registrar WHOIS Server: whois.registrar.amazon.com
+    Registrar URL: http://registrar.amazon.com
+    Updated Date: 2023-01-12T19:29:26Z
+    Creation Date: 2009-11-25T09:38:50Z
+    Registry Expiry Date: 2023-11-25T09:38:50Z
+    Registrar: Amazon Registrar, Inc.
+    Registrar IANA ID: 468
+    Registrar Abuse Contact Email: abuse@amazonaws.com
+    Registrar Abuse Contact Phone: +1.2067406200
+    Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+    Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+    Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+    Name Server: NS-1486.AWSDNS-57.ORG
+    Name Server: NS-1659.AWSDNS-15.CO.UK
+    Name Server: NS-419.AWSDNS-52.COM
+    Name Server: NS-849.AWSDNS-42.NET
+    DNSSEC: signedDelegation
+    DNSSEC DS Data: 12902 13 2 067B844BCDB7098FE1C78AD74224E3D491F915B1EF5B9490AD926BD4B7479D90
+    URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+  >>> Last update of whois database: 2023-09-25T03:44:08Z <<<
+
+  # whois.registrar.amazon.com
+
+  Domain Name: wongnai.com
+  Registry Domain ID: 1576903916_DOMAIN_COM-VRSN
+  Registrar WHOIS Server: whois.registrar.amazon.com
+  Registrar URL: https://registrar.amazon.com
+  Updated Date: 2023-01-12T19:29:26Z
+  Creation Date: 2009-11-25T09:38:50Z
+  Registrar Registration Expiration Date: 2023-11-25T09:38:50Z
+  Registrar: Amazon Registrar, Inc.
+  Registrar IANA ID: 468
+  Registrar Abuse Contact Email: abuse@amazonaws.com
+  Registrar Abuse Contact Phone: +1.2067406200
+  Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+  Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+  Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+  Registry Registrant ID: Not Available From Registry
+  Registrant Name: On behalf of wongnai.com owner
+  Registrant Organization: Identity Protection Service
+  Registrant Street: PO Box 786
+  Registrant City: Hayes
+  Registrant State/Province: Middlesex
+  Registrant Postal Code: UB3 9TR
+  Registrant Country: GB
+  Registrant Phone: +44.1483307527
+  Registrant Phone Ext:
+  Registrant Fax: +44.1483304031
+  Registrant Fax Ext:
+  Registrant Email: 20447bc8-ff3b-46d2-bcdf-f4fb23b3c4ea@identity-protect.org
+  Registry Admin ID: Not Available From Registry
+  Admin Name: On behalf of wongnai.com owner
+  Admin Organization: Identity Protection Service
+  Admin Street: PO Box 786
+  Admin City: Hayes
+  Admin State/Province: Middlesex
+  Admin Postal Code: UB3 9TR
+  Admin Country: GB
+  Admin Phone: +44.1483307527
+  Admin Phone Ext:
+  Admin Fax: +44.1483304031
+  Admin Fax Ext:
+  Admin Email: 20447bc8-ff3b-46d2-bcdf-f4fb23b3c4ea@identity-protect.org
+  Registry Tech ID: Not Available From Registry
+  Tech Name: On behalf of wongnai.com owner
+  Tech Organization: Identity Protection Service
+  Tech Street: PO Box 786
+  Tech City: Hayes
+  Tech State/Province: Middlesex
+  Tech Postal Code: UB3 9TR
+  Tech Country: GB
+  Tech Phone: +44.1483307527
+  Tech Phone Ext:
+  Tech Fax: +44.1483304031
+  Tech Fax Ext:
+  Tech Email: 20447bc8-ff3b-46d2-bcdf-f4fb23b3c4ea@identity-protect.org
+  Name Server: NS-419.AWSDNS-52.COM
+  Name Server: NS-849.AWSDNS-42.NET
+  Name Server: NS-1659.AWSDNS-15.CO.UK
+  Name Server: NS-1486.AWSDNS-57.ORG
+  DNSSEC: signedDelegation
+  URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+  >>> Last update of WHOIS database: 2023-09-25T04:44:20Z <<<
+
+dnsdumpster: |
+  https://dnsdumpster.com/ relays to wongnai.com
+  CloudFront
+  openresty
+  Varnish
+
+
+shodan: |
+  ports 80, 443
+
+censys: |
+  AMAZON-02
+  CSLOX-IDC-AS-AP CS LOXINFO Public Company Limited.
+  GOOGLE
+  UNIFIEDLAYER-AS-1
+
+
+nmap: |
+  Nmap scan report for wongnai.com (13.35.166.58)
+  Host is up (0.010s latency).
+  Other addresses for wongnai.com (not scanned): 13.35.166.2 13.35.166.89 13.35.166.119
+  rDNS record for 13.35.166.58: server-13-35-166-58.tpe50.r.cloudfront.net
+  Not shown: 998 filtered tcp ports (no-response)
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https

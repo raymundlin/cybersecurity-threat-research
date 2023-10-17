@@ -1,0 +1,28 @@
+affiliation: |
+  apt33 (elfin)
+
+googledorks: |
+  returns nothing on syn.broadcaster.rocks
+
+dig: |
+  syn.broadcaster.rocks relays to 3.141.96.53
+
+whoisrws: |
+  nothing interesting
+
+dnsdumpster: |
+  amazonaws!
+
+shodan: |
+  nothing returned for syn.broadcaster.rocks so used 3.141.96.53; ports 22, 80, 443
+
+censys: |
+  amazonaws!
+  
+nmap: |
+  Nmap scan report for syn.broadcaster.rocks (3.141.96.53)
+  Host is up (0.24s latency).
+  Other addresses for on.syn.broadcaster.rocks (not scanned): 3.20.137.44
+  rDNS record for 3.141.96.53: ec2-3-141-96-53.us-east-2.compute.amazonaws.com
+  All 131070 scanned ports on on.syn.broadcaster.rocks (3.141.96.53) are open|filtered
+  

@@ -1,0 +1,20 @@
+threat actor: APT 37 - Reaper
+
+background: |
+    "Reaper" is a North Korean group specialized in espionage. The activity is probably carried out on behalf of the government. 
+    The activity reaches back to the year 2012. The target group is primarily South Korea.
+ 
+notable incidents:
+- Frequently attacking the Hangul Word Processor because it is often used in South Korea
+- Acces to zero day vulnerabilities
+
+attribution: |
+    There is not much information about Reaper but one individual who is supposed to be a developer for several malware can be identified as North Korean.
+    This is due to the typical working hours and an ip address linked to North Korea.
+    
+sources of intelligence:
+- News Outlets
+- Cybersecurity Blogs and Forums
+- Cybersecurity Reports
+
+source: https://www.mandiant.com/resources/blog/apt37-overlooked-north-korean-actor

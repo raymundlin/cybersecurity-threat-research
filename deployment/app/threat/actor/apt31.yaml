@@ -1,0 +1,41 @@
+threat actor: APT31 (Zirconium)
+
+background: |
+    ZIRCONIUM is a threat group operating out of China, active since at least 2017, 
+    that has targeted individuals associated with the 2020 US presidential election 
+    and prominent leaders in the international affairs community.
+
+notable incidents:
+- Cyberattacks Targeting U.S. Elections (2020): |
+    Detected by Microsoft. The group attempt to gain intelligence about the 
+    2020 US presidential election. Targeting people closely associated with U.S. presidential campaigns 
+    and prominent individuals in the international affairs community. They using web bugs or web beacons,
+    tied to the domain they purchased, and send the urls throuth email text or attachment to victims.
+    When victims access the link, the group can trace what they access.
+- Leverages COVID-19 Vaccine Theme and Abuses Legitimate Online Services (2020): |
+    Discovered by Zscaler. The group leverages COVID-19 Vaccine Theme, to conduct social engneering.
+    They combine c2-tool-downloader and decoy file to lure victim to open the file in the covid associated email. 
+- APT31 operating mode attack campaign targeting France (2021): |
+    Alerted by ANSSI. The group leverages the compromised home routers to do reconnaissance and 
+    attacking in the France.
+- Breach air-gapped devices in Eastern Europe (2023): |
+    Reported by Kaspesky. The group leverages removable devices to collect sensitive data. They inject 
+    malicious dll payload in a legitimate McAfee dll and hide it in removable device.
+    when victim click the lure .lnk, the malware will collect data from the victim device and save them
+    to $RECYCLE.BIN in the removable device.
+attribution: |
+    Currently, apt31 is dedicated to collecting government intelligence information around the world 
+    and is suspected of working for Chinese intelligence agencies.
+    
+sources of intelligence:
+- Cybersecurity Firm Report
+- Blog Search Engine
+- Mitre Att&ck Groups
+- Microsoft Blog
+- Checkpoint Blog
+- Google THREAT ANALYSIS GROUP Blog
+- Zscaler Security Insights Blog
+- Wiki
+- Malpedia
+- Github Aptnote
+- IBM X-Force Exchange

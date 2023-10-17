@@ -1,0 +1,23 @@
+threat actor: Lazarus Group
+
+background: |
+    "The Lazarus Group, also known as Hidden Cobra, is a cyber espionage and sabotage group believed to be sponsored by the North Korean government. The group has been active since at least 2009 and is known for its involvement in a number of high-profile cyber-attacks. These attacks range from cyber espionage to financial theft and destructive attacks. Lazarus Group has targeted various sectors, including the financial, media, aerospace, and critical infrastructure sectors across the globe."
+
+notable incidents:
+- Sony Pictures Entertainment Hack (2014): A major cyber-attack against Sony Pictures, which resulted in the theft of data and the release of several films.
+- Bangladesh Bank Heist (2016): Attempted theft of $1 billion from Bangladesh Bank's account at the Federal Reserve Bank of New York, with $81 million successfully stolen.
+- WannaCry Ransomware Attack (2017): A global ransomware attack that affected hundreds of thousands of computers across 150 countries.
+- Cryptocurrency Exchange Attacks: Multiple attacks on cryptocurrency exchanges to steal digital currencies.
+
+attribution: |
+    The Lazarus Group's attribution to North Korea has been made by multiple cybersecurity firms and government agencies based on technical indicators, tactics, techniques, and procedures (TTPs), as well as infrastructure analysis. The U.S. Department of Justice has also charged North Korean agents in connection with some of the group's activities.
+
+sources of intelligence:
+
+- Cybersecurity Firms' Reports (e.g., Symantec, Kaspersky, FireEye)
+- U.S. Department of Justice Indictments
+- United Nations Security Council Reports
+- News Outlets
+- Cybersecurity Blogs and Forums
+- Law Enforcement Statements and Releases
+- Technical Analysis and Malware Samples

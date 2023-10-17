@@ -1,0 +1,21 @@
+threat actor: Silence group
+
+background: |
+    Silence is a group of Russian-speaking hackers, based on their commands language, the location of infrastructure they used, and the geography of their
+    targets (Russia, Ukraine, Belarus, Azerbaijan, Poland, and Kazakhstan)
+notable incidents:
+- Bank Attacks
+- ATM Attacks
+   
+attribution: |
+  The Developer is a qualified reverse engineer. His advanced reverse-engineering skills do not prevent him from making mistakes while programming. 
+  He is responsible for developing tools for conducting attacks and is also able to modify complex exploits and third party software. 
+  That said, he patched a little known Trojan that had not previously been employed by other groups. 
+  In addition, the Developer has sufficient knowledge of ATM processes, systems and has access to non-public malware samples, which are usually only available to security companies.
+  A distinctive feature of Silence is their untypical role structure and small size. It appears, this Russian-speaking group includes only two members.
+    
+    
+sources of intelligence:
+- fortinet
+- malpedia
+- GROUP-IB
