@@ -32,7 +32,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@master
         with:
           aws-access-key-id: ${{ ACCESS_KEY }}
-          aws-secret-access-key: ${{ SECRET_KEY }}
+          aws-secret-access-key: ${{ SECRET_ACCESS_KEY }}
           aws-region: "us-east-1"
       - name: Deploy to AWS
         run: cdk deploy --app="python3 ${PWD}/cdk/my_service/app.py" --require-approval=never
