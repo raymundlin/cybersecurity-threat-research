@@ -1,0 +1,49 @@
+name: AWS Service CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - uses: actions/checkout@v3
+      - name: Set Aws+Access_Key
+        run: echo "AWS_ACCESS_KEY= AKIAQ3XUOQP6VD5ZPL67" >> $GITHUB_ENV
+      - name: Set AWS_SECRET_KEY
+        run: echo "AWS_SECRET_KEY= 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" >> $GITHUB_ENV
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - name: Install Python dependencies and CDK
+        run: |
+          python -m pip install --upgrade pip
+          # install your Python dependencies here
+          #!/bin/bash
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install 
+          npm install -g aws-cdk
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-access-key-id: ${{ env.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_KEY }}
+          aws-region: 
+          output format:
+      - name: Deploy to AWS
+        run: cdk deploy --app="python3 ${PWD}/deployment/app.py" --require-approval=never
+      - name: Destroy stack
+        run: cdk destroy --app="python3 ${PWD}/deployment/app.py" --force
