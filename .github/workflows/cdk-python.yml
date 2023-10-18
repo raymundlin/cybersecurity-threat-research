@@ -10,10 +10,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - uses: actions/checkout@v3
-      - run: echo "GITHUB_SHA_SHORT=prod" >> $GITHUB_ENV
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
+        run: echo "CDK_DEPLOY_STAGE=prod" >> $GITHUB_ENV
         with:
           python-version: "3.9"
       - name: Set up Node
@@ -22,16 +26,14 @@ jobs:
           node-version: "16"
       - name: Install Python dependencies and CDK
         run: |
+          pip3 install -r requirements.txt
+          cd deployment && pip3 install -r requirements.txt
           python -m pip install --upgrade pip
-          # install your Python dependencies here
           npm install -g aws-cdk
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@master
         with:
-          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.SECRET_KEY }}
-          aws-region: "us-east-1"
+          aws-access-key-id: ${{ ACCESS_KEY }}
+          aws-secret-access-key: ${{ SECRET_ACCESS_KEY }}
       - name: Deploy to AWS
         run: cd deployment && cdk deploy --require-approval=never
-      - name: Destroy stack
-        run: cd deployment && cdk destroy --force
