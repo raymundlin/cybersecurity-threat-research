@@ -3,12 +3,13 @@ from aws_cdk import (
     Stack,
     aws_lambda as _lambda,
     aws_apigateway as api_gateway,
+    CfnParameter,
 )
 from constructs import Construct
 
 class DeploymentStack(Stack):
 
-    def __init__(self, scope: Construct, construct_id: str, testing: bool = False, **kwargs) -> None:
+    def __init__(self, scope: Construct, construct_id: str, stage: str = 'prod', testing: bool = False, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
         # The code that defines your stack goes here
@@ -28,12 +29,15 @@ class DeploymentStack(Stack):
             rest_api_name='Deployment Service',
             description='This service serves deployment.',
             deploy_options=api_gateway.StageOptions(
-                stage_name='prod',
-            )
+                stage_name=stage,
+            ),
         )
 
         api.root.add_method(
             'GET', api_gateway.LambdaIntegration(
                 list_func, proxy=True,
             ),
+            method_responses=[api_gateway.MethodResponse(
+                status_code='200',
+            )],
         )
