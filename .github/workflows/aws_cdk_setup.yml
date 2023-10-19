@@ -34,8 +34,8 @@ jobs:
           python -m pip install --upgrade pip
           # install your Python dependencies here
           #!/bin/bash
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip --update
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" --update
+          unzip awscliv2.zip 
           sudo ./aws/install 
           npm install -g aws-cdk
       - name: Configure AWS credentials
