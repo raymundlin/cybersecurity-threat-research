@@ -16,9 +16,11 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - uses: actions/checkout@v3
       - name: Set Aws+Access_Key
-        run: echo "AWS_ACCESS_KEY= AKIAQ3XUOQP6VD5ZPL67" >> $GITHUB_ENV
+        run: echo "AWS_ACCESS_KEY= "AKIAQ3XUOQP6VD5ZPL67" >> $GITHUB_ENV
       - name: Set AWS_SECRET_KEY
-        run: echo "AWS_SECRET_KEY= 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" >> $GITHUB_ENV
+        run: echo "AWS_SECRET_KEY= "uypXmI6gEtjlBDXpdanOZ1Q8bdVElPbfiBmMk564" >> $GITHUB_ENV
+      - name: Set CDK_DEPLOY_STAGE
+        run: echo "CDK_DEPLOY_STAGE= "B11009003" >> $GITHUB_ENV
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:

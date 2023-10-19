@@ -4,6 +4,7 @@ import shutil
 
 import aws_cdk as cdk
 from deployment.deployment_stack import DeploymentStack
+import os
 
 FOLDERS = ["threat", "domain"]
 
@@ -16,7 +17,9 @@ for folder in FOLDERS:
 
 Osaka = cdk.Environment(account=os.environ["CDK_DEFAULT_ACCOUNT"], region="ap-northeast-3")
 
+stage = os.environ['CDK_DEPLOY_STAGE'] if 'CDK_DEPLOY_STAGE' in os.environ else 'dev'
+
 app = cdk.App()
-DeploymentStack(app, "DeploymentStack-B11009003", env=Osaka)
+DeploymentStack(app, "DeploymentStack-{}".format(stage), stage = stage, env=Osaka)
 
 app.synth()
