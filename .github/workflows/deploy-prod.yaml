@@ -26,8 +26,8 @@ jobs:
       - name: Install Python dependencies and CDK
         run: |
           python -m pip install --upgrade pip
-          # install your Python dependencies here
-          pip install aws_cdk
+          pip3 install -r requirements.txt
+          cd deployment && pip3 install -r requirements.txt
           npm install -g aws-cdk
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@master
@@ -35,7 +35,5 @@ jobs:
           aws-access-key-id: ${{ secrets.ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
           aws-region: "us-east-1"
-      - name: Deploy to AWS
-        run: cdk deploy --app="python3 ${PWD}/deployment/app.py" --require-approval=never
-      - name: Destroy stack
-        run: cdk destroy --app="python3 ${PWD}/deployment/app.py" --force
+      - name: Deploy to AWS & Destroy stack
+        run: cd deployment && cdk deploy --require-approval=never 
