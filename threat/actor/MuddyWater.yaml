@@ -1,0 +1,27 @@
+threat actor: MuddyWater
+
+background: |
+    "MuddyWater" is an APT organization which is subsumed into  MOIS by America recently. On January, 2022, MuddyWater 
+    started to attack America, Europe, middle East and South Asia. They used typical TTP which uses a lot of scripts.
+    They use PowerShell ,Visual Basic language and LOLBins to attack. On February, 2022, the attack incidents in academic
+    network of MuddyWatter are 50. Among them, colleges and universities suffered the most number of attacks.
+
+notable incidents:
+- Defense
+- Education
+- Energy
+- Financial Services
+- Government and administration agencies
+- Healthcare
+- High-tech
+- International Organization
+- Media
+
+attribution: |
+    MuddyWater is a cyber espionage group assessed to be a subordinate element within Iran's Ministry of Intelligence and Security (MOIS).
+    
+sources of intelligence:
+- The MITRE Corporation
+- Malpedia
+- Cybersecurity & Infrastructure security agency
+- Open-Source Intelligence(OSINT)

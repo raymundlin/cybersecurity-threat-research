@@ -1,14 +1,33 @@
 dig: |
   moda.gov.tw. rely to 104.18.22.126 and 104.18.23.126
+
 whoisrws: |
   country: U.S
   nothing interesting
+
 dnsdumpster: |
   cloudflare , ghs
 shodan: |
   port:443,80
+
 censys: |
   數位發展部:
+
+  HTTP/1.1 200 OK
+  Date:Fri, 15 Sep 2023 09:35:49 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Access-Control-Allow-Origin: moda.gov.tw
+  Cache-Control: public, max-age=0, must-revalidate
+  80:HTTP/1.1 403 Forbidden
+  Date: Fri, 15 Sep 2023 02:55:20 GMT
+  Content-Type: text/html; charset=UTF-8
+  Content-Length: 5894
+  Connection: close
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: same-origin
+
   Basic Information
   Network
   CLOUDFLARENET (US)
@@ -16,6 +35,7 @@ censys: |
   104.18.16.0/20 via AS13335
   Protocols
   80/HTTP , 443/HTTP , 2052/HTTP , 2053/HTTP , 2082/HTTP , 2083/HTTP , 2086/HTTP , 2087/HTTP , 2095/HTTP , 2096/HTTP , 8080/HTTP , 8
+
 nmap: |
   Starting Nmap 7.94SVN ( https://nmap.org ) at 2023-09-25 03:31 UTC
   Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
@@ -27,3 +47,5 @@ nmap: |
   25/tcp  open   smtp
   113/tcp closed ident
   443/tcp open   https
+  Nmap done: 1 IP address (1 host up) scanned in 12.22 seconds
+

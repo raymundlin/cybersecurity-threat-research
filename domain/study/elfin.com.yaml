@@ -1,0 +1,40 @@
+dig: |
+  elfin.com relays to 199.59.243.224
+
+whoisrws: |
+  Domain Name: ELFIN.COM
+   Registry Domain ID: 1510547592_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.hosting.kr
+   Registrar URL: http://HOSTING.KR
+   Updated Date: 2023-08-28T08:04:49Z
+   Creation Date: 2008-07-27T18:52:27Z
+   Registry Expiry Date: 2024-07-27T18:52:27Z
+   Registrar: Megazone Corp., dba HOSTING.KR
+   Registrar IANA ID: 1489
+   Registrar Abuse Contact Email: abuse@hosting.kr
+   Registrar Abuse Contact Phone: +82.216447378
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS1.BODIS.COM
+   Name Server: NS2.BODIS.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+
+dnsdumpster: |
+  HTTP TECH: openresty
+
+shodan: |
+  No results found
+
+censys: |
+  no results.
+
+nmap: |
+  Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-25 11:43 台北標準時間
+  Nmap scan report for elfin.com (199.59.243.224)
+  Host is up (0.011s latency).
+  Not shown: 998 filtered tcp ports (no-response)
+  PORT    STATE SERVICE
+  80/tcp  open  http
+  443/tcp open  https
+  
+  Nmap done: 1 IP address (1 host up) scanned in 4.84 seconds

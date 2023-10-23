@@ -1,0 +1,25 @@
+{
+    "requirement": [
+        {
+            "name": "threat actor",
+            "type": "str"
+        },
+        {
+            "name": "background",
+            "type": "str"
+        },
+        {
+            "name": "notable incidents",
+            "type": "list"
+        },
+        {
+            "name": "attribution",
+            "type": "str"
+        },
+        {
+            "name": "sources of intelligence",
+            "type": "list"
+        }
+    ],
+    "optional": []
+}
