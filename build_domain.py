@@ -1,9 +1,14 @@
 """ This py build summary md from yaml files """
 
 import os
+import logging
 
 import pandas as pd
 import yaml
+
+logging.basicConfig(filename='myapp.log', level=logging.DEBUG)
+logging.info("Start")
+logging.warning("You have to make sure there is at least one yaml or yml file")
 
 def count_yaml_keys(file_path):
     """count"""
@@ -26,6 +31,8 @@ def find_yaml_files(root_dir):
         if os.path.isfile(os.path.join(root_dir, item)):
             if item.endswith(".yaml") or item.endswith(".yml"):
                 yaml_files.append(os.path.join(root_dir, item))
+            else:
+                logging.error("There's no yaml or yml file.")
     return yaml_files
 
 
@@ -34,9 +41,11 @@ def main(root_directory):
     vector = {}
     yaml_files = find_yaml_files(root_directory)
 
+    logging.debug("Printing files")
     print(yaml_files)
 
     if not yaml_files:
+        logging.critical("No YAML files found in the specified directory.")
         print("No YAML files found in the specified directory.")
         return
 
@@ -65,7 +74,9 @@ def main(root_directory):
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
+        logging.debug("Printing DataFrame")
         print(df)
 
 if __name__ == "__main__":
     main("./domain/study")
+    logging.info("Finished")
