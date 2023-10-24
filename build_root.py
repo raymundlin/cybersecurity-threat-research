@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+import logging
+logging.basicConfig(filename='build_root.log', encoding='utf-8', level=logging.DEBUG)
 
 def get_files(folder_name):
     files = []
@@ -19,5 +21,8 @@ def get_contents():
 
 
 with open(f"./README.md", "w+", encoding="utf-8") as markdownFile:
+    logging.info("Opened README.md for writing")
     markdownFile.write("### Contents\n")
     markdownFile.writelines(pd.DataFrame(get_contents()).to_markdown(index=False))
+    logging.info("README.md finished")
+

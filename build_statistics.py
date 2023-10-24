@@ -4,6 +4,8 @@ import os
 
 import pandas as pd
 import yaml
+import logging
+logging.basicConfig(filename='build_statistics.log', encoding='utf-8', level=logging.DEBUG)
 
 
 def count_yaml_keys(file_path):
@@ -17,6 +19,7 @@ def count_yaml_keys(file_path):
 
 def get_yaml_content(file_path):
     with open(file_path, "r", encoding="utf-8") as yaml_file:
+        logging.info('yaml file is safe to load')
         return yaml.safe_load(yaml_file)
 
 
@@ -40,6 +43,7 @@ def main(main_dir, main_key, len_keys=[]):
 
     if not yaml_files:
         print("No YAML files found in the specified directory.")
+        logging.fatal('No YAML files found in the specified directory.')
         return
 
 
@@ -74,6 +78,7 @@ def main(main_dir, main_key, len_keys=[]):
     title = parts[1] + " " + parts[2]
     parts[-1] = "README.md"
     with open("/".join(parts), "w+", encoding="utf-8") as markdownFile:
+        logging.info('start generate table!!')
         markdownFile.write(f"### {title} 202309\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))

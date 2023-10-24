@@ -3,6 +3,9 @@ import json
 import pandas as pd
 import yaml
 
+import logging
+logging.basicConfig(filename='build_threat.log', encoding='utf-8', level=logging.DEBUG)
+
 def count_yaml_keys(file_path):
     """count"""
     with open(file_path, "r", encoding="utf-8") as yaml_file:
@@ -14,6 +17,7 @@ def count_yaml_keys(file_path):
 def save_yaml_content(file_path, content, testing=False):
     if testing:
         print(f"Testing {file_path}: {content}")
+        logging.debug(f"Testing {file_path}: {content}")
         return
     with open(file_path, "w+", encoding="utf-8") as yaml_file:
         yaml.safe_dump(content, yaml_file, encoding='utf-8', allow_unicode=True, default_flow_style=False, sort_keys=False)
@@ -46,6 +50,7 @@ def main(threat_directory):
 
     if not threat_yaml_files:
         print("No YAML files found in the specified directory.")
+        logging.fatal("No YAML files found in the specified directory.")
         return
 
     with open('spec/threat.spec.json', 'r', encoding="utf-8") as stream:
@@ -70,10 +75,13 @@ def main(threat_directory):
 
     threat_actor_list = pd.DataFrame(rows)
     print(threat_actor_list)
+    logging.debug(threat_actor_list)
 
     with open(f"{threat_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
         markdownFile.write("### Threat Actors\n")
         markdownFile.writelines(threat_actor_list.to_markdown(index=False))
 
 if __name__ == "__main__":
+    logging.info("Threat Builder Start")
     main("./threat/actor")
+    logging.info("Threat Builder Finish")

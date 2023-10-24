@@ -1,9 +1,10 @@
 """ This py build summary md from yaml files """
 
 import os
-
+import logging
 import pandas as pd
 import yaml
+logging.basicConfig(filename='build_domain.log', encoding='utf-8', level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
@@ -16,8 +17,8 @@ def count_yaml_keys(file_path):
 
 def get_yaml_content(file_path):
     with open(file_path, "r", encoding="utf-8") as yaml_file:
+        logging.info('The yaml file  is safe to load')
         return yaml.safe_load(yaml_file)
-
 
 def find_yaml_files(root_dir):
     """process all yamls"""
@@ -35,9 +36,11 @@ def main(root_directory):
     yaml_files = find_yaml_files(root_directory)
 
     print(yaml_files)
+    logging.debug(yaml_files)
 
     if not yaml_files:
-        print("No YAML files found in the specified directory.")
+        print("No YAML files found in the specified directory.")    
+        logging.fatal("No YAML files found in the specified directory.")
         return
 
     for yaml_file_path in yaml_files:
@@ -66,6 +69,7 @@ def main(root_directory):
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
         print(df)
+        logging.debug(df)
 
 if __name__ == "__main__":
     main("./domain/study")
