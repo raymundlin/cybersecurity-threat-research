@@ -4,20 +4,26 @@ import os
 
 import pandas as pd
 import yaml
+import logging
+
+logging.basicConfig(filename='test.log', filemode='w', level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
+            logging.warning("There's no data.")
             return 0
         return len(data.keys())
 
 
 def get_yaml_content(file_path):
-    with open(file_path, "r", encoding="utf-8") as yaml_file:
-        return yaml.safe_load(yaml_file)
-
+    try:
+        with open(file_path, "r", encoding="utf-8") as yaml_file:
+            return yaml.safe_load(yaml_file)
+    except FileNotFoundError as e1:
+        logging.warning(e1)
 
 def find_yaml_files(root_dir):
     """process all yamls"""
@@ -33,10 +39,13 @@ def main(root_directory):
     """main"""
     vector = {}
     yaml_files = find_yaml_files(root_directory)
+    logging.info("start")
 
     print(yaml_files)
 
     if not yaml_files:
+        logging.debug("No YAML files found in the specified directory.")
+        logging.warning("No YAML files found in the specified directory.")
         print("No YAML files found in the specified directory.")
         return
 
@@ -61,11 +70,20 @@ def main(root_directory):
     df = pd.DataFrame(rows)
 
     # Write Domain Summary
-    with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
-        markdownFile.write("### domain\Study\n")
-        markdownFile.write("\n")
-        markdownFile.writelines(df.to_markdown(index=False))
-        print(df)
+    try:
+        with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
+            logging.critical("Write Domain Summary")
+            markdownFile.write("### domain\Study\n")
+            markdownFile.write("\n")
+            markdownFile.writelines(df.to_markdown(index=False))
+            print(df)
+            logging.info("End")
+    except IOError as e2:
+        logging.error(e2)
+        logging.debug("IOError, need to debug.")
 
-if __name__ == "__main__":
-    main("./domain/study")
+try:
+    if __name__ == "__main__":
+        main("./domain/study")
+except Exception as e:
+    logging.fatal("Can't load main!")
