@@ -1,4 +1,4 @@
-name: DRLin CI/CD
+name: Deploy-Prod
 
 on:
   workflow_dispatch:
