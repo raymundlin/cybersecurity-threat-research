@@ -4,6 +4,9 @@ import os
 
 import pandas as pd
 import yaml
+import logging
+
+logging.basicConfig(level=logging.DEBUG, filename='statisticsLog.log')
 
 
 def count_yaml_keys(file_path):
@@ -11,6 +14,7 @@ def count_yaml_keys(file_path):
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
+            logging.debug('No data in directory')
             return 0
         return len(data.keys())
 
@@ -39,7 +43,7 @@ def main(main_dir, main_key, len_keys=[]):
 
 
     if not yaml_files:
-        print("No YAML files found in the specified directory.")
+        logging.error("No YAML files found in the specified directory.")
         return
 
 
@@ -74,11 +78,13 @@ def main(main_dir, main_key, len_keys=[]):
     title = parts[1] + " " + parts[2]
     parts[-1] = "README.md"
     with open("/".join(parts), "w+", encoding="utf-8") as markdownFile:
+        logging.info('Write summary')
         markdownFile.write(f"### {title} 202309\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
 
 
 if __name__ == "__main__":
+    logging.info('app run')
     main("./threat/actor", "threat actor", ["notable incidents", "sources of intelligence"])
     main("./domain/study", None, [])

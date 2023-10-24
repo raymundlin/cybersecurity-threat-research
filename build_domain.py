@@ -4,17 +4,26 @@ import os
 
 import pandas as pd
 import yaml
+import logging
+
+logging.basicConfig(level=logging.DEBUG, filename='domainLog.log')
+
 
 def count_yaml_keys(file_path):
     """count"""
+    if file_path is None:
+        logging.fatal('File path is null')
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
             return 0
+            logging.warning('No file in directory')
         return len(data.keys())
 
 
 def get_yaml_content(file_path):
+    if file_path is None:
+        logger.fatal('File path is null')
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         return yaml.safe_load(yaml_file)
 
@@ -33,11 +42,13 @@ def main(root_directory):
     """main"""
     vector = {}
     yaml_files = find_yaml_files(root_directory)
+    if yaml_files is None:
+        logging.error('No yaml files in directory.')
 
     print(yaml_files)
 
     if not yaml_files:
-        print("No YAML files found in the specified directory.")
+        logging.warning('No YAML files found in the specified directory.')
         return
 
     for yaml_file_path in yaml_files:
@@ -62,10 +73,12 @@ def main(root_directory):
 
     # Write Domain Summary
     with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
+        logging.info('Write summary')
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
         print(df)
 
 if __name__ == "__main__":
+    logging.info('app run')
     main("./domain/study")
