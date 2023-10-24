@@ -1,9 +1,12 @@
 """ This py build summary md from yaml files """
 
 import os
-
+import logging
 import pandas as pd
 import yaml
+
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+logging.debug('This message should go to the log file')
 
 def count_yaml_keys(file_path):
     """count"""
@@ -22,9 +25,11 @@ def get_yaml_content(file_path):
 def find_yaml_files(root_dir):
     """process all yamls"""
     yaml_files = []
+    logging.error('The extension here needs to be yml or ymal')
     for item in os.listdir(root_dir):
         if os.path.isfile(os.path.join(root_dir, item)):
             if item.endswith(".yaml") or item.endswith(".yml"):
+                
                 yaml_files.append(os.path.join(root_dir, item))
     return yaml_files
 
@@ -33,10 +38,11 @@ def main(root_directory):
     """main"""
     vector = {}
     yaml_files = find_yaml_files(root_directory)
-
+    logging.critical('The extension here needs to be ymal') 
     print(yaml_files)
 
     if not yaml_files:
+        
         print("No YAML files found in the specified directory.")
         return
 
@@ -59,6 +65,7 @@ def main(root_directory):
         rows.append(row)
 
     df = pd.DataFrame(rows)
+    
 
     # Write Domain Summary
     with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
@@ -66,6 +73,10 @@ def main(root_directory):
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
         print(df)
+
+
+logging.info('This is the end of program')
+logging.warning('You need to trust the message above')
 
 if __name__ == "__main__":
     main("./domain/study")
