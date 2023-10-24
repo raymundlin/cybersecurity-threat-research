@@ -4,6 +4,9 @@ import os
 
 import pandas as pd
 import yaml
+import logging
+
+logging.basicConfig(filename='build_domain.log', encoding='utf-8', level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
@@ -31,13 +34,14 @@ def find_yaml_files(root_dir):
 
 def main(root_directory):
     """main"""
+    logging.info("Start Fetching YAML files...")
     vector = {}
     yaml_files = find_yaml_files(root_directory)
 
-    print(yaml_files)
+    logging.debug(yaml_files)
 
     if not yaml_files:
-        print("No YAML files found in the specified directory.")
+        logging.fatal("No YAML files found in the specified directory.")
         return
 
     for yaml_file_path in yaml_files:
@@ -60,12 +64,17 @@ def main(root_directory):
 
     df = pd.DataFrame(rows)
 
+    logging.info("Finish Fetching YAML files.")
+
     # Write Domain Summary
     with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
+        logging.info("Start Generate Domains Table...")
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
-        print(df)
+        logging.debug(df)
 
 if __name__ == "__main__":
+    logging.info("=== Domain Builder Start ===")
     main("./domain/study")
+    logging.info("=== Bomain Builder Finished ===")
