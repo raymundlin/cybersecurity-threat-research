@@ -10,6 +10,8 @@ logging.basicConfig(filename='build_domain.log', encoding='utf-8', level=logging
 
 def count_yaml_keys(file_path):
     """count"""
+    if not file_path:
+        logging.fatal("You need pass parameter in count_yaml_keys func.")
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
@@ -18,12 +20,16 @@ def count_yaml_keys(file_path):
 
 
 def get_yaml_content(file_path):
+    if not file_path:
+        logging.fatal("You need pass parameter in get_yaml_content func.")
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         return yaml.safe_load(yaml_file)
 
 
 def find_yaml_files(root_dir):
     """process all yamls"""
+    if not root_dir:
+        logging.warning("You need pass parameter in find_yaml_files func.")
     yaml_files = []
     for item in os.listdir(root_dir):
         if os.path.isfile(os.path.join(root_dir, item)):
