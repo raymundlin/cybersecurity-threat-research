@@ -15,7 +15,7 @@ for folder in FOLDERS:
       shutil.rmtree("./app/{}".format(folder))
     shutil.copytree("../{}".format(folder), "./app/{}".format(folder))
 
-Osaka = cdk.Environment(account=os.environ["CDK_DEFAULT_ACCOUNT"], region="ap-northeast-3")
+Osaka = cdk.Environment(account=os.environ["CDK_DEFAULT_ACCOUNT"], region=os.environ["CDK_DEFAULT_REGION"])
 
 stage = os.environ['CDK_DEPLOY_STAGE'] if 'CDK_DEPLOY_STAGE' in os.environ else 'dev'
 
