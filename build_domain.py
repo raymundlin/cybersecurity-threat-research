@@ -11,7 +11,7 @@ def count_yaml_keys(file_path):
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
-            logging.warning('Data is None')
+            logging.warning('Data is None ')
             return 0
         return len(data.keys())
 
