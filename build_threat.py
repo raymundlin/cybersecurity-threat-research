@@ -2,6 +2,8 @@ import os
 import json
 import pandas as pd
 import yaml
+import logging
+logging.basicConfig(filename='build_threat.py', encoding='utf-8',level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
@@ -45,7 +47,7 @@ def main(threat_directory):
     print(threat_yaml_files)
 
     if not threat_yaml_files:
-        print("No YAML files found in the specified directory.")
+        logging.fatal('No YAML files found in the specified directory')
         return
 
     with open('spec/threat.spec.json', 'r', encoding="utf-8") as stream:
@@ -75,5 +77,6 @@ def main(threat_directory):
         markdownFile.write("### Threat Actors\n")
         markdownFile.writelines(threat_actor_list.to_markdown(index=False))
 
+    logging.debug('Actor info processed successfully')
 if __name__ == "__main__":
     main("./threat/actor")

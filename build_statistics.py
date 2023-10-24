@@ -4,6 +4,8 @@ import os
 
 import pandas as pd
 import yaml
+import logging
+logging.basicConfig(filename='build_statistic.py', encoding='utf-8',level=logging.DEBUG)
 
 
 def count_yaml_keys(file_path):
@@ -39,7 +41,7 @@ def main(main_dir, main_key, len_keys=[]):
 
 
     if not yaml_files:
-        print("No YAML files found in the specified directory.")
+        logging.error("No YAML files found in the specified directory.")
         return
 
 
