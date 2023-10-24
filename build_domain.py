@@ -2,6 +2,7 @@
 
 import os
 
+import logging
 import pandas as pd
 import yaml
 
@@ -10,6 +11,7 @@ def count_yaml_keys(file_path):
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
+            logging.warning('Data is None')
             return 0
         return len(data.keys())
 
@@ -31,6 +33,9 @@ def find_yaml_files(root_dir):
 
 def main(root_directory):
     """main"""
+    logging.basicConfig(filename='test.log', level=logging.DEBUG)     
+    logging.info('Build_Doamin Start')
+
     vector = {}
     yaml_files = find_yaml_files(root_directory)
 
@@ -38,6 +43,7 @@ def main(root_directory):
 
     if not yaml_files:
         print("No YAML files found in the specified directory.")
+        logging.critical('No YAML files found in the specified directory.')
         return
 
     for yaml_file_path in yaml_files:
@@ -46,6 +52,8 @@ def main(root_directory):
             domain = domain[:-6]
         elif domain.endswith(".yml"):
             domain = domain[:-5]
+        elif domain.endswith(' '):
+            logging.error( domain + 'has no .yml or .yaml')
         contents = get_yaml_content(yaml_file_path)
         vector[domain] = {
             "Domain": domain,
@@ -65,6 +73,7 @@ def main(root_directory):
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
+        logging.debug(df)
         print(df)
 
 if __name__ == "__main__":
