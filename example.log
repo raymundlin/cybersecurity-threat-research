@@ -1,0 +1,58 @@
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+WARNING:root:watch out
+INFO:root:infomation
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:finished
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+WARNING:root:watch out
+INFO:root:infomation
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:finished
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+WARNING:root:watch out
+INFO:root:infomation
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:finished
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+WARNING:root:watch out
+INFO:root:infomation
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:finished
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+WARNING:root:watch out
+INFO:root:infomation
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:finished
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+WARNING:root:watch out
+INFO:root:infomation
+INFO:root:Started
+INFO:root:Doing something
+INFO:root:finished
