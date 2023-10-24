@@ -3,8 +3,9 @@
 import os
 
 import pandas as pd
+import logging
 import yaml
-
+logging.basicConfig(filename='build_domain.log', encoding='utf-8',level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
@@ -23,6 +24,7 @@ def get_yaml_content(file_path):
 def find_yaml_files(root_dir):
     """process all yamls"""
     yaml_files = []
+    logging.info("在檔案裡面找有沒有鴨某檔！")
     for item in os.listdir(root_dir):
         if os.path.isfile(os.path.join(root_dir, item)):
             if item.endswith(".yaml") or item.endswith(".yml"):
@@ -36,10 +38,12 @@ def main(main_dir, main_key, len_keys=[]):
     yaml_files = find_yaml_files(main_dir)
 
     print(yaml_files)
+    logging.debug('yaml_files print failed!')
 
 
     if not yaml_files:
         print("No YAML files found in the specified directory.")
+        logging.fatal("No YAML files found in the specified directory.")
         return
 
 
@@ -80,5 +84,7 @@ def main(main_dir, main_key, len_keys=[]):
 
 
 if __name__ == "__main__":
+    logging.info("🌝 START")
     main("./threat/actor", "threat actor", ["notable incidents", "sources of intelligence"])
     main("./domain/study", None, [])
+    logging.info("🌚 END")

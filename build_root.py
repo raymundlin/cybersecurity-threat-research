@@ -1,8 +1,11 @@
 import os
 import pandas as pd
+import logging
+logging.basicConfig(filename='build_domain.log', encoding='utf-8',level=logging.DEBUG)
 
 def get_files(folder_name):
     files = []
+    logging.info("在檔案裡面找有沒有鴨某檔！")
     for root, dirs, file_names in os.walk(folder_name):
         for file_name in file_names:
             if file_name.endswith('.yaml') or file_name.endswith('.yml'):

@@ -1,7 +1,9 @@
 import os
 import json
 import pandas as pd
+import logging
 import yaml
+logging.basicConfig(filename='build_domain.log', encoding='utf-8',level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
@@ -76,4 +78,6 @@ def main(threat_directory):
         markdownFile.writelines(threat_actor_list.to_markdown(index=False))
 
 if __name__ == "__main__":
+    logging.info("🌝 START")
     main("./threat/actor")
+    logging.info("🌚 END")
