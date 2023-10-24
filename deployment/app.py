@@ -16,7 +16,7 @@ for folder in FOLDERS:
     shutil.copytree("../{}".format(folder), "./app/{}".format(folder))
 
 env = cdk.Environment(account=os.environ["CDK_DEFAULT_ACCOUNT"], region=os.environ["CDK_DEFAULT_REGION"])
-stage = os.environ['CDK_DEPLOY_STAGE']
+stage = os.environ.get('CDK_DEPLOY_STAGE') or 'dev'
 
 app = cdk.App()
 DeploymentStack(app, "DeploymentStack-{}".format(stage), stage=stage, env=env)
