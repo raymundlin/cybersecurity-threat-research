@@ -169,6 +169,18 @@ criminalip: |
     - <script src="https://www.google.com/cse/static/element/e992cd4de3c7044f/cse_element__zh_tw.js?usqp=CAI%3D" type="text/javascript"></script>
   Suspicious Program 0
 
+inurlbr: |
+  git clone https://github.com/MrCl0wnLab/SCANNER-INURLBR
+  Once we have downloaded INURLBR, we make it executable by running the following command: chmod +x inurlbr.php
+  After we run INURLBR by using the following syntax:
+  ./inurlbr.php [options]
+  eg : $ ./inurlbr.php --dork 'link:oilrig.com' -s req.txt -q 1
+
+  Target::  ( POTENTIALLY VULNERABLE ) :
+  https://www.content.shi.com/SHIcom/ContentAttachmentImages/SharedResources/PDFs/lr-041017-oilrig-report2.pdf
+  https://qz.com/89580/how-an-oil-rig-shed-its-macho-culture-and-became-safer-and-more-productive
+  https://www.flaticon.com/free-icons/oil-rig
+
 student id : | 
   E112215001, B10909015 and B10909018
 
