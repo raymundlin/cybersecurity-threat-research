@@ -5,6 +5,12 @@ import os
 import pandas as pd
 import yaml
 
+import logging 
+from logtrace import LogTrace#pip install logtrace
+
+logger = logging.getLogger('')
+trace = LogTrace(logger=logger)
+
 def count_yaml_keys(file_path):
     """count"""
     with open(file_path, "r", encoding="utf-8") as yaml_file:
@@ -30,14 +36,18 @@ def find_yaml_files(root_dir):
 
 
 def main(root_directory):
+    trace.add("Start")
+    logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', filename='domain/storelog.log',filemode='w', encoding='utf-8', level=logging.INFO)
     """main"""
     vector = {}
     yaml_files = find_yaml_files(root_directory)
 
     print(yaml_files)
+    logging.info('print yaml_files')
 
     if not yaml_files:
         print("No YAML files found in the specified directory.")
+        logging.warning('%s YAML files', 'No')
         return
 
     for yaml_file_path in yaml_files:
@@ -65,7 +75,11 @@ def main(root_directory):
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
+        logging.info('Already Written Domain Summary')
         print(df)
+
+    trace.add("Finish")
+    trace.emit()
 
 if __name__ == "__main__":
     main("./domain/study")
