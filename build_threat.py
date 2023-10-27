@@ -2,9 +2,14 @@ import os
 import json
 import pandas as pd
 import yaml
+import logging
+
+logging.basicConfig(filename='build_threat.log', encoding='utf-8', level=logging.DEBUG)
 
 def count_yaml_keys(file_path):
     """count"""
+    if not file_path:
+        logging.fatal("You need pass parameter in count_yaml_keys func.")
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
@@ -12,6 +17,8 @@ def count_yaml_keys(file_path):
         return len(data.keys())
 
 def save_yaml_content(file_path, content, testing=False):
+    if not file_path or not content:
+        logging.fatal("You need pass parameter in save_yaml_content func.")
     if testing:
         print(f"Testing {file_path}: {content}")
         return
@@ -19,6 +26,8 @@ def save_yaml_content(file_path, content, testing=False):
         yaml.safe_dump(content, yaml_file, encoding='utf-8', allow_unicode=True, default_flow_style=False, sort_keys=False)
 
 def get_yaml_content(file_path):
+    if not file_path:
+        logging.fatal("You need pass parameter in get_yaml_content func.")
     with open(file_path,"r", encoding="utf-8") as yaml_file:
         raw = yaml.safe_load(yaml_file)
         normalized = {}
@@ -30,6 +39,8 @@ def get_yaml_content(file_path):
 
 def find_yaml_files(root_dir):
     """process all yamls"""
+    if not root_dir:
+        logging.warn("You need pass parameter in find_yaml_files func.")
     yaml_files = []
     for root, _, files in os.walk(root_dir):
         for file in files:
@@ -42,10 +53,10 @@ def main(threat_directory):
     actor_info = {}
     threat_yaml_files = find_yaml_files(threat_directory)
 
-    print(threat_yaml_files)
+    logging.debug(threat_yaml_files)
 
     if not threat_yaml_files:
-        print("No YAML files found in the specified directory.")
+        logging.fatal("No YAML files found in the specified directory.")
         return
 
     with open('spec/threat.spec.json', 'r', encoding="utf-8") as stream:
@@ -60,7 +71,7 @@ def main(threat_directory):
             **required_contents
         }
 
-    print(actor_info)
+    logging.debug(actor_info)
 
     rows = []
     for key, value in actor_info.items():
@@ -69,11 +80,14 @@ def main(threat_directory):
         rows.append(row)
 
     threat_actor_list = pd.DataFrame(rows)
-    print(threat_actor_list)
+    logging.debug(threat_actor_list)
 
     with open(f"{threat_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
+        logging.info("Start Generate Threat Actor Table...")
         markdownFile.write("### Threat Actors\n")
         markdownFile.writelines(threat_actor_list.to_markdown(index=False))
 
 if __name__ == "__main__":
+    logging.info("=== Threat Builder Start ===")
     main("./threat/actor")
+    logging.info("=== Threat Builder Finished ===")
