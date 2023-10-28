@@ -83,4 +83,4 @@ def main(root_directory):
 if __name__ == "__main__":
     logging.info("=== Domain Builder Start ===")
     main("./domain/study")
-    logging.info("=== Bomain Builder Finished ===")
+    logging.info("=== Domain Builder Finished ===")
