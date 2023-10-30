@@ -1,0 +1,899 @@
+
+
+
+    ██▓    ███▄    █     █    ██     ██▀███      ██▓        ▄▄▄▄       ██▀███  
+    ▓██▒    ██ ▀█   █     ██  ▓██▒   ▓██ ▒ ██▒   ▓██▒       ▓█████▄    ▓██ ▒ ██▒
+    ▒██▒   ▓██  ▀█ ██▒   ▓██  ▒██░   ▓██ ░▄█ ▒   ▒██░       ▒██▒ ▄██   ▓██ ░▄█ ▒
+    ░██░   ▓██▒  ▐▌██▒   ▓▓█  ░██░   ▒██▀▀█▄     ▒██░       ▒██░█▀     ▒██▀▀█▄  
+    ░██░   ▒██░   ▓██░   ▒▒█████▓    ░██▓ ▒██▒   ░██████▒   ░▓█  ▀█▓   ░██▓ ▒██▒
+    ░▓     ░ ▒░   ▒ ▒    ░▒▓▒ ▒ ▒    ░ ▒▓ ░▒▓░   ░ ▒░▓  ░   ░▒▓███▀▒   ░ ▒▓ ░▒▓░
+     ▒ ░   ░ ░░   ░ ▒░   ░░▒░ ░ ░      ░▒ ░ ▒░   ░ ░ ▒  ░   ▒░▒   ░      ░▒ ░ ▒░
+     ▒ ░      ░   ░ ░     ░░░ ░ ░      ░░   ░      ░ ░       ░    ░      ░░   ░ 
+     ░              ░       ░           ░            ░  ░    ░            ░     3.0
+    
+[ ! ]  https://blog.mrcl0wn.com
+[ ! ]  https://twitter.com/MrCl0wnLab
+[ ! ]  https://github.com/MrCl0wnLab
+[ ! ]  Current IPinfo Token::[  ]
+[ ! ]  Current PHP version::[ 7.4.33 ]
+[ ! ]  Current script owner::[ codespace ]
+[ ! ]  Current uname::[ Linux codespaces-118425 6.2.0-1015-azure #15~22.04.1-Ubuntu SMP Fri Oct  6 13:20:44 UTC 2023 x86_64 ]
+[ ! ]  Current pwd::[ /workspaces/SCANNER-INURLBR ]
+[ ! ]  Help: php inurlbr.php --help
+ ____________________________________________________________________________________________________________________
+
+[ ! ] Starting SCANNER INURLBR 3.0 at [25-10-2023 08:41:27]
+[ ! ] legal disclaimer: Usage of INURLBR for attacking targets without prior mutual consent is illegal. 
+[ ! ] It is the end user's responsibility to obey all applicable local, state and federal laws.
+[ ! ] Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[ INFO ][ OUTPUT FILE ]:: [ /workspaces/SCANNER-INURLBR/output/req.txt  ]
+[ INFO ][ DORK ]::[ link:oilrig.com ]
+[ INFO ][ SEARCHING ]:: { 
+[ INFO ][ ENGINE ]::[ GOOGLE - www.google.com.eg ]
+
+[ INFO ][ SEARCHING ]:: 
+||
+
+[ INFO ][ TOTAL FOUND VALUES ]:: [ 94 ]
+
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 0 / 94 ]-[ 08:41:29 ] 
+[ + ] Target::  https://attack.mitre.org/groups/G0049/ 
+[ + ] Exploit:: 
+[ + ] Title:: OilRig, COBALT GYPSY, IRN2, APT34, Helix Kitten, Evasive Serpens, Group G0049 | MITRE ATT&CK&reg;
+[ + ] Information Server:: HTTP/2 200 ,    , IP:185.199.110.153:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 1 / 94 ]-[ 08:41:30 ] 
+[ + ] Target::  https://www.linkedin.com/posts/the-cyber-security-hub_iran-linked-oilrig-targets-middle-east-governments-activity-7120720276488630273-xqLu 
+[ + ] Exploit:: 
+[ + ] Title:: The Cyber Security Hub™ on LinkedIn: Iran-Linked OilRig Targets Middle East Governments in 8-Month Cyber…
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.107.42.14:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 2 / 94 ]-[ 08:41:35 ] 
+[ + ] Target::  https://malpedia.caad.fkie.fraunhofer.de/actor/oilrig 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:129.233.182.56:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 3 / 94 ]-[ 08:41:35 ] 
+[ + ] Target::  https://thehackernews.com/2023/10/iran-linked-oilrig-targets-middle-east.html 
+[ + ] Exploit:: 
+[ + ] Title:: Iran-Linked OilRig Targets Middle East Governments in 8-Month Cyber Campaign
+[ + ] Information Server:: HTTP/2 200 ,    , IP:172.67.71.166:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 4 / 94 ]-[ 08:41:36 ] 
+[ + ] Target::  https://www.attackiq.com/2022/07/11/oilrig-attack-graphs-emulating-the-iranian-threat-actors-global-campaigns/ 
+[ + ] Exploit:: 
+[ + ] Title:: OilRig Attack Graphs: Emulating the Iranian Threat Actor’s Global Campaigns - AttackIQ
+[ + ] Information Server:: HTTP/2 200 ,    , IP:172.67.6.98:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 5 / 94 ]-[ 08:41:37 ] 
+[ + ] Target::  https://unit42.paloaltonetworks.com/behind-the-scenes-with-oilrig/ 
+[ + ] Exploit:: 
+[ + ] Title:: Behind the Scenes with OilRig
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: Apache   , IP:23.15.250.174:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 6 / 94 ]-[ 08:41:39 ] 
+[ + ] Target::  https://unit42.paloaltonetworks.com/unit42-oilrig-uses-ismdoor-variant-possibly-linked-greenbug-threat-group/ 
+[ + ] Exploit:: 
+[ + ] Title:: OilRig uses ISMDoor variant; Possibly Linked to Greenbug Threat Group
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: Apache   , IP:23.15.250.174:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 7 / 94 ]-[ 08:41:41 ] 
+[ + ] Target::  https://www.rigzone.com/ 
+[ + ] Exploit:: 
+[ + ] Title:: Oil & Gas Jobs and News.  Rigzone Empowers Professionals in Oil and Gas | Rigzone
+[ + ] Information Server:: HTTP/2 200 ,    , IP:107.23.63.185:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 8 / 94 ]-[ 08:41:42 ] 
+[ + ] Target::  https://www.securityweek.com/iran-linked-oilrig-apt-caught-using-new-backdoor/ 
+[ + ] Exploit:: 
+[ + ] Title:: Iran-Linked OilRig APT Caught Using New Backdoor - SecurityWeek
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.24.160.3:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 9 / 94 ]-[ 08:41:42 ] 
+[ + ] Target::  https://www.welivesecurity.com/en/eset-research/oilrigs-outer-space-juicy-mix-same-ol-rig-new-drill-pipes/ 
+[ + ] Exploit:: 
+[ + ] Title:: OilRig’s Outer Space and Juicy Mix: Same ol’ rig, new drill pipes
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.211.140.136:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 10 / 94 ]-[ 08:41:43 ] 
+[ + ] Target::  https://www.theguardian.com/world/2023/oct/03/end-the-licences-vanuatu-oil-rig-registry-sparks-concern-amid-climate-advocacy 
+[ + ] Exploit:: 
+[ + ] Title:: ‘End the licences’: Vanuatu oil rig registry sparks concern amid climate advocacy  | Vanuatu | The Guardian
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.45.111:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 11 / 94 ]-[ 08:41:43 ] 
+[ + ] Target::  https://www.speedcast.com/industries-hub/product/energy/offshore/ 
+[ + ] Exploit:: 
+[ + ] Title:: Oil Rig Wi-Fi - Satellite Internet for Oil Rigs- Speedcast
+[ + ] Information Server:: HTTP/2 200 ,    , IP:162.159.135.42:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 12 / 94 ]-[ 08:41:46 ] 
+[ + ] Target::  https://www.offshore-technology.com/features/feature-the-worlds-deadliest-offshore-oil-rig-disasters-4149812/ 
+[ + ] Exploit:: 
+[ + ] Title:: The world’s worst offshore oil rig disasters, and how they happened
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.185.0.4:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 13 / 94 ]-[ 08:41:47 ] 
+[ + ] Target::  https://link.springer.com/book/10.1007/978-981-15-5297-7 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 303 ,    , IP:199.232.44.95:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 14 / 94 ]-[ 08:41:48 ] 
+[ + ] Target::  https://www.ft.com/content/dc0e1834-e386-11e9-b8e0-026e07cbe5b4 
+[ + ] Exploit:: 
+[ + ] Title:: Oil rig tragedy leads to improved safety as robots step into breach
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.46.209:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 15 / 94 ]-[ 08:41:48 ] 
+[ + ] Target::  https://ca.indeed.com/q-oil-rig-jobs.html 
+[ + ] Exploit:: 
+[ + ] Title:: Just a moment...
+[ + ] Information Server:: HTTP/2 403 ,    , IP:162.159.129.67:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 16 / 94 ]-[ 08:41:50 ] 
+[ + ] Target::  https://www.reuters.com/business/energy/us-drillers-add-oil-rig-first-time-since-june-baker-hughes-2023-09-08/ 
+[ + ] Exploit:: 
+[ + ] Title:: US drillers add oil rig for first time since June, Baker Hughes says | Reuters
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.224.250.121:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 17 / 94 ]-[ 08:41:55 ] 
+[ + ] Target::  https://www.reuters.com/business/energy/us-drillers-cut-oil-gas-rigs-second-week-row-baker-hughes-2023-07-21/ 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:13.224.250.89:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 18 / 94 ]-[ 08:41:57 ] 
+[ + ] Target::  https://www.nesfircroft.com/resources/blog/oil-rig-life-whats-it-like-living-on-an-offshore-oil-platform-/ 
+[ + ] Exploit:: 
+[ + ] Title:: Oil Rig Life - What&#39;s It Like Living On An Offshore Oil Platform? | NES Fircroft
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.107.213.59:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 19 / 94 ]-[ 08:41:57 ] 
+[ + ] Target::  https://www.eia.gov/energyexplained/oil-and-petroleum-products/offshore-oil-and-gas-in-depth.php 
+[ + ] Exploit:: 
+[ + ] Title:: Offshore oil and gas in depth - U.S. Energy Information Administration (EIA)
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: Microsoft-IIS/10.0  X-Powered-By: ASP.NET , IP:104.103.147.10:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 20 / 94 ]-[ 08:41:58 ] 
+[ + ] Target::  https://abcnews.go.com/Technology/wireStory/us-tightens-offshore-oil-rig-safety-rules-loosened-102461938 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 200 ,    , IP:99.84.66.72:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 21 / 94 ]-[ 08:41:59 ] 
+[ + ] Target::  https://www.nytimes.com/2011/07/06/world/asia/06china.html 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 200 , Server:"googletag",params:{si_section:t}}),E(e,n)}function B(e,t){var n;switch(t.includes(J)?J:t){case K:n=e.top;break;case J:n=e.mid;break;case X:n=e.bottom;break;default:n=e.default}return n}function N(e){var t;switch(e){case"livebl":t="hp";break;case"coll":t="sf";break;default:t=e}return t in V||(t="default"),t}var Y=(x(me={},R,[[728,90],[970,90],[970,250]]),x(me,P,[[728,90],[300,250]]),x(me,y,[[300,250]]),me),F={hp:[{id:"dfp-ad-top",sizes:Y}],games:[{id:"ad-top",sizes:Y}],default:[{id:"top",sizes:Y}]},V={art:{id:["top","story-ad-1","story-ad-2","story-ad-3","story-ad-4","story-ad-5","story-ad-6","bottom"],pos:["top","mid1","mid2","mid3","mid4","mid5","mid6","bottom"]},int:{id:["top","mid1","mid2","bottom"],pos:["top","mid1","mid2","bottom"]},hp:{id:["dfp-ad-top","dfp-ad-mid1","dfp-ad-mid2","dfp-ad-mid3","dfp-ad-bottom"],pos:["top","mid1","mid2","mid3","bottom"]},ss:{id:["right-0","right-1","right-2","right-3"],pos:["mid1","mid1","mid1","mid1"],size:{small:[[300,250]],medium:[[300,250]],large:[[300,250]]}},sf:{id:["top","mid1","mid2"],pos:["top","mid1","mid2"],size:{small:[[300,250]],medium:[[300,250]],large:[[300,250]]}},games:{id:["ad-top","ad-mid1","ad-bottom"],pos:["top","mid1","bottom"]},default:{id:["top","mid1","mid2"],pos:["top","mid1","mid2"],size:{small:[[300,250]],medium:[[728,90]],large:[[728,90],[970,90],[970,250]]}}},G={top:2088370,mid:2088372,bottom:2088374,default:2088376},L={top:544112060,mid:544112063,bottom:544112062,default:544112065},q={top:684296214,mid:190706820,bottom:932254072,default:153468583},H={top:"NYTimes_728x90_970_top_PB",mid:"NYTimes_728x90_970_mid_PB",bottom:"NYTimes_728x90_970_bot_PB",default:"NYTimes_728x90_970_mid_PB"},Q={top:"nytimes_top",mid:"nytimes_mid",bottom:"nytimes_bottom",default:"nytimes_catchall"},W={top:"995821",mid:"995822",bottom:"995823",default:"995824"},Z={buckets:[{max:3,increment:.05},{max:10,increment:.01},{max:20,increment:.1},{max:50,increment:.5},{max:101,increment:1}]},K="top",J="mid",X="bottom";function $(o,e,t){var t=2<arguments.length&&void 0!==t?t:{},a=t.sizeConfig,r=t.activeBidders,t=t.positionsToFilter,d=void 0===t?[]:t,c=N(e),s=V[c].size?c:"default";return V[c].pos.reduce(function(e,t,n){if(d.includes(t))return e;var n=V[c].id[n],i=D(D({},V[s].size),null==a||null===(i=a[n])||void 0===i?void 0:i.size),t={code:n,mediaTypes:{banner:{sizeConfig:[{minViewPort:[970,0],sizes:i.large},{minViewPort:[728,0],sizes:i.medium},{minViewPort:[0,0],sizes:i.small}]}},bids:function(e,t){var n=2<arguments.length&&void 0!==arguments[2]?arguments[2]:[],e=[{bidder:"appnexus",params:{member:3661,invCode:"nyt_".concat(e,"_").concat(t)}},{bidder:"medianet",params:{cid:"8CU4WQK98",crid:B(q,t)}},{bidder:"rubicon",params:{accountId:12330,siteId:378266,inventory:{invCode:["nyt_".concat(e,"_").concat(t)]},zoneId:B(G,t),position:"top"===t?"atf":"btf"}},{bidder:"openx",params:{unit:B(L,t),delDomain:"nytimes-d.openx.net",customParams:{invCode:"nyt_".concat(e,"_").concat(t)}}},{bidder:"triplelift",params:{inventoryCode:B(H,t)}},{bidder:"pubmatic",params:{publisherId:"163427",adSlot:B(Q,t)}},{bidder:"ix",params:{siteId:B(W,t)}}],t=e.filter(function(e){return!["pubmatic","ix"].includes(e.bidder)});return n.length?e.filter(function(e){return n.includes(e.bidder)}):t}(o,t,r)};return e.push(t),e},[])}function ee(n){window.pbjs=window.pbjs||{},window.pbjs.initAdserverSet||(window.pbjs.initAdserverSet=!0,a().cmd.push(function(){a().events.subscribe({name:k,scope:"all",callback:function(t){w().cmd.push(function(){var e;(e=N(e=n),V[e].id).includes(t.id)&&window.pbjs.setTargetingForGPTAsync([t.id])})}})}))}function te(n,e,t,i){function o(e,t){window.pbjs.initAdserverSet=!1,n.requestBids({bidsBackHandler:function(){ee(e)},timeout:t})}a().cmd.push(function(){n.que.push(function(){n.addAdUnits($(e,t,i)),o(t,1e4),a().events.subscribe({name:I,scope:"all",callback:function(){o(t,800)}})})})}function ne(e,t){var n=2<arguments.length&&void 0!==arguments[2]?arguments[2]:{},i=function(){var e=0<arguments.length&&void 0!==arguments[0]?arguments[0]:window;return e.pbjs=e.pbjs||{},e.pbjs.que=e.pbjs.que||[],e.pbjs}(),o=n.priceGranularity;i.setConfig({priceGranularity:o||Z}),te(i,e,t,n)}function ie(){a().cmd.push(function(){var e="".concat("PreBid"," failed to load");a().events.publish({name:U,value:{type:"PreBid",message:e}})})}function oe(e,t,n){return!window.pbjs&&(l("https://www.nytimes.com/ads/prebid8.1.0.js",(i=e,o=t,a=n,function(){window.pbjs||console.log("prebid did not load"),ne(i,o,a)}),ie),!0);var i,o,a}function ae(){try{var e=((t=document.createElement("div")).innerHTML="&nbsp;",t.className="ad adsbox pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad ad-server",t.style="width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;",document.body.prepend(t),document.getElementsByClassName("ad adsbox")[0]),t=!(!(t=e)||0!==t.offsetHeight&&0!==t.clientHeight)||function(e){if(void 0!==window.getComputedStyle){e=window.getComputedStyle(e,null);if(e&&("none"===e.getPropertyValue("display")||"hidden"===e.getPropertyValue("visibility")))return!0}return!1}(e);return e=e,document.body.removeChild(e),t}catch(e){console.error("ad class check failed",e)}var t;return!1}function re(){return!(window&&window.AdSlot&&window.AdSlot.AdSlotReady)||(!(window&&window.googletag&&window.googletag.apiReady)||ae())}function de(){var e=window&&window.nyt_et&&window.nyt_et.get_host&&window.nyt_et.get_host();return e?fetch("".concat(e,"/.status"),{credentials:"include",headers:{accept:"*/*","content-type":"text/plain;charset=UTF-8"},mode:"no-cors"}).then(function(){return{success:!0}}).catch(function(e){return console.error("et track blocked",e),{success:!1}}):Promise.resolve({success:!1})}function ce(e,t,n){var i=(o="nyt-a",(document&&document.cookie&&document.cookie.match&&(o=document.cookie.match(new RegExp("".concat(o,"=([^;]+)"))))?o[1]:"")||null),o=!!(window&&window.matchMedia&&window.matchMedia("(max-width: 739px)").matches);return"".concat("https://a-reporting.nytimes.com/report.jpg","?mobile=").concat(o,"&block=").concat(n,"&aid=").concat(i,"&pvid=").concat(e,"&et=").concat(t)}function se(e,t,n){return!!(window&&window.NYTD&&window.NYTD.Abra&&"1_network_detection"===window.NYTD.Abra("DFP_blockDetect_0221"))&&((new Image).src=ce(e,t,n),!0)}function ue(e,t){t&&a().cmd.push(function(){var e=a();e.events&&e.events.publish({name:A,value:{type:O}})});var n=!1;return de().then(function(){n=(0<arguments.length&&void 0!==arguments[0]?arguments[0]:{success:!1}).success}).catch(function(){}).finally(function(){se(e,n,t)})}function le(e){var t;window.addEventListener("load",(t=e,function(){ue(t,re())}))}var pe,me=function(){var e=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{};if(pe)return!1;var t=e.loadAmazon,n=void 0===t||t,i=e.loadPrebid,o=void 0===i||i,a=e.setFastFetch,r=void 0!==a&&a,d=e.loadGeoEdge,c=void 0===d||d,s=e.section,t=void 0===s?"none":s,i=e.pageViewId,a=void 0===i?"":i,d=e.pageType,s=void 0===d?"":d,i=e.prebidOverrides,d=void 0===i?{}:i;return e=document.referrer||"",!(i=/([a-zA-Z0-9_\-.]+)(@|%40)([a-zA-Z0-9_\-.]+).([a-zA-Z]{2,5})/).test(e)&&!i.test(window.location.href)&&(u()&&(s=new RegExp(ar/).test(s)?"art":s,c&&p(),n&&(c=r,n=t,r=s,window.apstag||(l("//c.amazon-adsystem.com/aax2/apstag.js",m,f),T(c,n,r))),o&&oe(t,s,d)),le(a),pe=!0)};return(Y=a()).loadScripts=Y.loadScripts||me,window.AdSlot4=Y}();   , IP:199.232.45.164:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 22 / 94 ]-[ 08:42:04 ] 
+[ + ] Target::  https://www.keystoneenergytools.com/10-ways-keep-offshore-oil-rig-injury-fatality-free/ 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:35.224.19.253:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 23 / 94 ]-[ 08:42:07 ] 
+[ + ] Target::  https://www.merriam-webster.com/dictionary/oil rig 
+[ + ] Exploit:: 
+[ + ] Title:: Oil rig Definition &amp; Meaning - Merriam-Webster
+[ + ] Information Server:: HTTP/2 200 ,    , IP:54.192.18.61:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 24 / 94 ]-[ 08:42:11 ] 
+[ + ] Target::  https://www.bugcrowd.com/glossary/oilrig/ 
+[ + ] Exploit:: 
+[ + ] Title:: OilRig | Bugcrowd
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.46.132:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 25 / 94 ]-[ 08:42:12 ] 
+[ + ] Target::  https://www.morrowsheppard.com/blog/annual-oil-rig-deaths-and-disasters/ 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 403 ,    , IP:141.193.213.21:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 26 / 94 ]-[ 08:42:15 ] 
+[ + ] Target::  https://www.voanews.com/a/east-asia-pacific_why-china-plans-place-its-super-offshore-oil-rig-disputed-sea/6201166.html 
+[ + ] Exploit:: 
+[ + ] Title:: Why China Plans to Place Its Super Offshore Oil Rig in a Disputed Sea
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.103.151.179:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 27 / 94 ]-[ 08:42:15 ] 
+[ + ] Target::  https://www.marinelink.com/news/norway-drillers-fix-oil-rig-lifeboat-460667 
+[ + ] Exploit:: 
+[ + ] Title:: Just a moment...
+[ + ] Information Server:: HTTP/2 403 ,    , IP:104.26.8.209:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 28 / 94 ]-[ 08:42:15 ] 
+[ + ] Target::  https://www.britannica.com/video/179498/Germany-exploration-drilling-techniques-petroleum-resources-North 
+[ + ] Exploit:: 
+[ + ] Title:: Germany and oil drilling in the North Sea | Britannica
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.18.5.110:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 29 / 94 ]-[ 08:42:16 ] 
+[ + ] Target::  https://www.quora.com/How-was-your-experience-working-on-an-offshore-oil-rig 
+[ + ] Exploit:: 
+[ + ] Title:: How was your experience working on an offshore oil rig? - Quora
+[ + ] Information Server:: HTTP/2 200 ,    , IP:162.159.153.247:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 30 / 94 ]-[ 08:42:21 ] 
+[ + ] Target::  https://www.loc.gov/item/2012647896/ 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:104.16.54.16:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 31 / 94 ]-[ 08:42:22 ] 
+[ + ] Target::  https://rigcount.bakerhughes.com/ 
+[ + ] Exploit:: 
+[ + ] Title:: Rig Count Overview &amp; Summary Count | Baker Hughes Rig Count
+[ + ] Information Server:: HTTP/1.1 200 OK,    , IP:125.56.219.3:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 32 / 94 ]-[ 08:42:24 ] 
+[ + ] Target::  https://www.rmg.co.uk/stories/topics/life-on-north-sea-oil-rig 
+[ + ] Exploit:: 
+[ + ] Title:: Life on a North Sea oil rig | Royal Museums Greenwich
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.185.0.2:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 33 / 94 ]-[ 08:42:25 ] 
+[ + ] Target::  https://ycharts.com/indicators/us_oil_rotary_rigs 
+[ + ] Exploit:: 
+[ + ] Title:: US Oil Rig Count
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.225.103.96:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 34 / 94 ]-[ 08:42:25 ] 
+[ + ] Target::  https://www.ironnet.com/blog/iranian-cyber-attack-updates 
+[ + ] Exploit:: 
+[ + ] Title:: Analysis of the Iranian cyber attack landscape
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.60.103.254:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 35 / 94 ]-[ 08:42:27 ] 
+[ + ] Target::  https://intsights.com/blog/apt-group-oilrig-who-they-are-and-what-you-need-to-know 
+[ + ] Exploit:: 
+[ + ] Title:: APT Group OilRig: Who They Are and What You Need to Know
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.20.117.103:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 36 / 94 ]-[ 08:42:32 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.content.shi.com/SHIcom/ContentAttachmentImages/SharedResources/PDFs/lr-041017-oilrig-report2.pdf 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/1.1 200 OK,    , IP:18.172.213.47:443 
+[ + ] More details:: 
+[ + ] Found::  POSTGRESQL-06  -  VALUE: pg_
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 37 / 94 ]-[ 08:42:37 ] 
+[ + ] Target::  https://www.energyvoice.com/oilandgas/448156/china-rattles-japan-with-oil-rig-in-maritime-spat/ 
+[ + ] Exploit:: 
+[ + ] Title:: China rattles Japan with oil rig in maritime spat - News for the Energy Sector
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.18.29.20:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 38 / 94 ]-[ 08:42:38 ] 
+[ + ] Target::  https://www.exxonmobil.com.au/energy-and-environment/energy-resources/upstream-operations/bass-strait 
+[ + ] Exploit:: 
+[ + ] Title:: Bass Strait | ExxonMobil Australia
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.15.106.127:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 39 / 94 ]-[ 08:42:39 ] 
+[ + ] Target::  https://www.instagram.com/oil_rigmx/?hl=en 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 302 ,    , IP:157.240.15.174:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 40 / 94 ]-[ 08:42:39 ] 
+[ + ] Target::  https://spacewatch.global/2017/05/iranian-linked-oilrig-hacker-group-accused-cyber-espionage-operation-israel/ 
+[ + ] Exploit:: 
+[ + ] Title:: Attention Required! | Cloudflare
+[ + ] Information Server:: HTTP/2 403 ,    , IP:172.67.73.199:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 41 / 94 ]-[ 08:42:39 ] 
+[ + ] Target::  https://www.ge.com/news/reports/digital-ship-edge-computing-helps-oil-rig-workers-drill-better-maintenance 
+[ + ] Exploit:: 
+[ + ] Title:: Digital Ship: Edge Computing Helps Oil Rig Workers Drill Down On Better Maintenance | GE News
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.18.39.49:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 42 / 94 ]-[ 08:42:40 ] 
+[ + ] Target::  https://thediplomat.com/2014/07/so-china-moved-its-oil-rig-what-now/ 
+[ + ] Exploit:: 
+[ + ] Title:: So China Moved Its Oil Rig. What Now? &#8211; The Diplomat
+[ + ] Information Server:: HTTP/2 200 ,    , IP:172.67.73.103:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 43 / 94 ]-[ 08:42:40 ] 
+[ + ] Target::  https://www.shell.com.sg/energy-and-innovation/deep-water.html 
+[ + ] Exploit:: 
+[ + ] Title:: Deep water | Shell Singapore
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.88.70.128:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 44 / 94 ]-[ 08:42:40 ] 
+[ + ] Target::  https://www.sciencedirect.com/science/article/pii/S0925753521003301 
+[ + ] Exploit:: 
+[ + ] Title:: Just a moment...
+[ + ] Information Server:: HTTP/2 403 ,    , IP:162.159.137.70:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 45 / 94 ]-[ 08:42:43 ] 
+[ + ] Target::  https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C01023 
+[ + ] Exploit:: 
+[ + ] Title:: Oil Rig Weather Observations
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: Apache   , IP:205.167.25.178:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 46 / 94 ]-[ 08:42:45 ] 
+[ + ] Target::  https://www.clearskysec.com/oilrig/ 
+[ + ] Exploit:: 
+[ + ] Title:: Iranian Threat Agent OilRig Delivers Digitally Signed Malware, Impersonates University of Oxford &#8211; ClearSky Cyber Security
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: Apache   , IP:107.154.150.1:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 47 / 94 ]-[ 08:42:47 ] 
+[ + ] Target::  https://securityaffairs.com/64119/apt/oilrig-isminjector-campaign.html 
+[ + ] Exploit:: 
+[ + ] Title:: Iran-linked OilRig hacked group use a new Trojan in Middle East Attacks
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.21.9.11:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 48 / 94 ]-[ 08:42:47 ] 
+[ + ] Target::  https://www.usnews.com/news/best-states/louisiana/articles/2023-08-22/us-tightens-some-offshore-oil-rig-safety-rules-that-had-been-loosened-under-trump 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:23.15.102.150:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 49 / 94 ]-[ 08:42:48 ] 
+[ + ] Target::  https://foreignpolicy.com/2014/05/09/chinas-oil-rig-gambit/ 
+[ + ] Exploit:: 
+[ + ] Title:: China&#8217;s Oil Rig Gambit &#8211; Foreign Policy
+[ + ] Information Server:: HTTP/2 200 ,    , IP:192.0.66.136:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 50 / 94 ]-[ 08:42:50 ] 
+[ + ] Target::  https://www.arnolditkin.com/blog/maritime/5-most-interesting-places-on-an-oil-rig/ 
+[ + ] Exploit:: 
+[ + ] Title:: 5 Most Interesting Places on an Oil Rig
+[ + ] Information Server:: HTTP/1.1 200 OK,    , IP:199.46.34.134:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 51 / 94 ]-[ 08:42:50 ] 
+[ + ] Target::  https://www.ice.org.uk/what-is-civil-engineering/what-do-civil-engineers-do/brent-field-oil-rig-decommissioning 
+[ + ] Exploit:: 
+[ + ] Title:: Attention Required! | Cloudflare
+[ + ] Information Server:: HTTP/2 403 ,    , IP:104.16.36.51:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 52 / 94 ]-[ 08:42:52 ] 
+[ + ] Target::  https://apnews.com/article/deepwater-horizon-offshore-drilling-safety-trump-rules-09b40665ff436ef97041e1ac82a98e17 
+[ + ] Exploit:: 
+[ + ] Title:: US tightens some offshore oil rig safety rules that had been loosened under Trump | AP News
+[ + ] Information Server:: HTTP/2 200 ,    , IP:34.111.72.3:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 53 / 94 ]-[ 08:42:54 ] 
+[ + ] Target::  https://oilprice.com/Energy/Crude-Oil/US-Oil-Rig-Count-Jumps-At-Crude-Holds-At-120.html 
+[ + ] Exploit:: 
+[ + ] Title:: U.S. Oil Rig Count Jumps As Crude Holds At $120 | OilPrice.com
+[ + ] Information Server:: HTTP/2 200 ,    , IP:3.128.15.246:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 54 / 94 ]-[ 08:42:55 ] 
+[ + ] Target::  https://www.bbc.com/news/uk-england-tyne-64006806 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.44.81:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 55 / 94 ]-[ 08:42:56 ] 
+[ + ] Target::  https://ca.movember.com/support-us/oil-rig-rumble 
+[ + ] Exploit:: 
+[ + ] Title:: The Oil Rig Rumble Challenge | The oil and gas sector support men's health  - Movember
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.225.103.111:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 56 / 94 ]-[ 08:42:58 ] 
+[ + ] Target::  https://threatpost.com/oilrig-apt-unique-backdoor/157646/ 
+[ + ] Exploit:: 
+[ + ] Title:: OilRig APT Drills into Malware Innovation with Unique Backdoor | Threatpost
+[ + ] Information Server:: HTTP/2 200 ,    , IP:35.173.160.135:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 57 / 94 ]-[ 08:42:58 ] 
+[ + ] Target::  https://robertsmarkland.com/blog/7-of-the-worst-oil-rig-disasters-of-all-time/ 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: HTTP/2 200 ,    , IP:192.124.249.179:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 58 / 94 ]-[ 08:42:58 ] 
+[ + ] Target::  https://www.reddit.com/r/oddlysatisfying/comments/12qjqqx/throwing_an_apple_from_an_offshore_oilrig/ 
+[ + ] Exploit:: 
+[ + ] Title:: 302 Found
+[ + ] Information Server:: HTTP/2 302 ,    , IP:199.232.45.140:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 59 / 94 ]-[ 08:43:00 ] 
+[ + ] Target::  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8233558/ 
+[ + ] Exploit:: 
+[ + ] Title:: Shift Work Disorder, Insomnia, and Depression among Offshore Oil Rig Workers - PMC
+[ + ] Information Server:: HTTP/2 200 ,    , IP:130.14.29.110:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 60 / 94 ]-[ 08:43:03 ] 
+[ + ] Target::  https://www.npr.org/2014/08/06/335282273/up-close-and-personal-with-a-40-story-oil-rig-in-the-gulf 
+[ + ] Exploit:: 
+[ + ] Title:: Up Close And Personal With A 40-Story Oil Rig In The Gulf : NPR
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.210.98.135:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 61 / 94 ]-[ 08:43:05 ] 
+[ + ] Target::  https://jpt.spe.org/twa/texas-tech-becomes-first-us-university-to-train-students-with-full-scale-oil-rig 
+[ + ] Exploit:: 
+[ + ] Title:: Texas Tech Becomes First US University To Train Students With Full-Scale Oil Rig
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.33.33.67:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 62 / 94 ]-[ 08:43:07 ] 
+[ + ] Target::  https://www.slackdavis.com/blog/oil-rig-dangers/ 
+[ + ] Exploit:: 
+[ + ] Title:: Oil Rig Dangers: Work-Related Fatalities | Slack Davis Sanger
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.196.190.188:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 63 / 94 ]-[ 08:43:10 ] 
+[ + ] Target::  https://www.safetyandhealthmagazine.com/articles/23772-study-of-offshore-oil-workers-links-night-shift-to-prostate-cancer-risk 
+[ + ] Exploit:: 
+[ + ] Title:: Study of offshore oil workers links night shift to prostate cancer risk | Safety+Health
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.21.94.157:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 64 / 94 ]-[ 08:43:13 ] 
+[ + ] Target::  https://www.bloomberg.com/news/articles/2023-09-08/us-oil-rig-count-climbs-for-first-time-since-june-as-prices-soar 
+[ + ] Exploit:: 
+[ + ] Title:: US Oil Rig Count Increases For First Time Since June as Prices Soar - Bloomberg
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.45.73:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 65 / 94 ]-[ 08:43:18 ] 
+[ + ] Target::  https://www.forbes.com/sites/jonathanburgos/2022/04/27/singapores-keppel-sembcorp-marine-merging-to-create-worlds-biggest-oil-rig-builder/ 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:199.232.45.55:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 66 / 94 ]-[ 08:43:20 ] 
+[ + ] Target::  https://www.eset.com/int/about/newsroom/press-releases/research/eset-research-iran-aligned-oilrig-group-deployed-new-malware-to-its-israeli-victims-collecting-crede/ 
+[ + ] Exploit:: 
+[ + ] Title:: ESET Research: Iran-aligned OilRig group deployed new malware to its Israeli victims, collecting credentials &#124; ESET
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.52.171.144:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 67 / 94 ]-[ 08:43:21 ] 
+[ + ] Target::  https://www.jobsite.co.uk/advice/oil-rig-worker-job-description 
+[ + ] Exploit:: 
+[ + ] Title:: Access Denied
+[ + ] Information Server:: HTTP/2 403 ,    , IP:125.252.218.150:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 68 / 94 ]-[ 08:43:24 ] 
+[ + ] Target::  https://redcanary.com/blog/2022-mitre-attack-evals/ 
+[ + ] Exploit:: 
+[ + ] Title:: Crude OilRig: Drilling into MITRE’s Managed Service Evaluations
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.198.136.223:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 69 / 94 ]-[ 08:43:25 ] 
+[ + ] Target::  https://theconversation.com/deepwater-horizon-honors-oil-rig-workers-but-oversimplifies-the-blowout-66391 
+[ + ] Exploit:: 
+[ + ] Title:: 'Deepwater Horizon' honors oil rig workers but oversimplifies the blowout
+[ + ] Information Server:: HTTP/2 200 ,    , IP:151.101.194.132:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 70 / 94 ]-[ 08:43:25 ] 
+[ + ] Target::  https://www.fallprotect.com/solutions-by-market-segments/oil-gas-and-chemical/offshore-and-oil-rigs/ 
+[ + ] Exploit:: 
+[ + ] Title:: Oil Rig and Drilling Platform Fall Protection | Diversified Fall Protection
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.60.103.228:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 71 / 94 ]-[ 08:43:27 ] 
+[ + ] Target::  https://getscalefunding.com/scale-funding-insights/active-drilling-rigs/ 
+[ + ] Exploit:: 
+[ + ] Title:: Current Active Drilling Rigs - September 2023 - Scale Funding
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: Apache/2.4.52 (Ubuntu)   , IP:134.209.112.21:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 72 / 94 ]-[ 08:43:27 ] 
+[ + ] Target::  https://www.businessinsider.com/us-oil-rig-operation-decline-december-12-2014-12 
+[ + ] Exploit:: 
+[ + ] Title:: US Oil Rig Operation Decline, December 12
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.45.171:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 73 / 94 ]-[ 08:43:29 ] 
+[ + ] Target::  https://engineering.stackexchange.com/questions/16523/how-much-would-a-regular-sized-oil-rig-type-platform-cost-to-build 
+[ + ] Exploit:: 
+[ + ] Title:: drilling - How much would a regular sized oil rig type platform cost to build? - Engineering Stack Exchange
+[ + ] Information Server:: HTTP/2 200 , Server: Error sending metric to server: "+t)})}else e.cM("Received unhandled message")}getSlotElementIdByEvent(e){let t=this._getFrameByEvent(e).parentElement?.parentElement?.id;return t||""}_getFrameByEvent(e){return Array.from(document.getElementsByTagName("iframe")).filter(t=>t.contentWindow===e.source)[0]}classifyZoneIds(e){const t=e.map(o.Nj).filter(o.yb);return{eligible:t.filter(o.xb).filter(o.pn),ineligible:t.filter(o.xj)}}applyExtraMarginBottom(t){if(t&&t.slot&&!t.isEmpty&&(t.creativeId||t.lineItemId||!t.isEmpty)){var s=t.slot.getSlotElementId();if(s){var o=document.getElementById(s);if(o)if((0,i.eq)(s)){var n=o?.closest(".js-zone-container");n.style.marginBottom="24px",e.cM("Applied extra margin to the bottom of "+s)}else e.cM("Not applying extra margin to the bottom of "+s+": shouldHaveReportButton = false");else e.cM("Not applying extra margin to the bottom of "+s+": resolved invalid adUnit element")}else e.cM("Not applying extra margin to the bottom of element: invalid adUnitElementId")}else e.cM("Not applying extra margin to the bottom of element: invalid SlotRenderEndedEvent")}load(s=(0,i.kG)()){const r=this.opt.tlb_position===t.Above?["dfp-mlb","dfp-smlb"]:["dfp-mlb","dfp-smlb","dfp-tlb"];if(!this.isGptReady())return e.cM("Initializing..."),this.initGpt(),void googletag.cmd.push(()=>this.load(s));this.opt.adReportEnabled?(e.cM("Ad reporting enabled"),this.adReports=new n.t(googletag,this)):(e.cM("Ad reporting not enabled"),this.handleSlotRenderedNoAdReport()),this.opt.refresh?(e.cM("Ad refresh enabled"),this.adRefresh=new a(googletag,this.opt.refreshInterval)):e.cM("Ad refresh not enabled"),this.opt.brandUpliftSurveyEnabled&&(e.cM("Brand uplift survey enabled"),this.brandUpliftSurvey=new p(googletag,this.opt.brandUpliftSettings)),e.cM("Attempting to load ads into ids: ",s);const{eligible:d,ineligible:l}=this.classifyZoneIds(s);if(this.initDebugPanel(googletag,d.concat(l)),d.forEach(e=>(0,o.cf)(e)),l.forEach(o.wo),0===d.length)return void e.cM("Found no ad ids on page");e.cM("Eligible ids:",d),this.opt.abd&&this.appendAdblockDetector();var c=googletag.pubads().getSlots().filter(e=>s.indexOf(e.getSlotElementId())>=0);googletag.destroySlots(c),this.opt.sf&&(googletag.pubads().setForceSafeFrame(!0),googletag.pubads().setSafeFrameConfig({allowOverlayExpansion:!0,allowPushExpansion:!0,sandbox:!0})),e.cM("Targeting consent: Checking...");let g=!1,h=!1;void 0!==this.opt.targeting_consent&&(h=!0,e.cM("Targeting consent: Parameter set"),e.cM("Targeting consent: Consent given? ",this.opt.targeting_consent),g=this.opt.targeting_consent),void 0!==this.opt.personalization_consent&&(e.cM("Personalization consent: Parameter set"),e.cM("Personalization consent: Consent given? ",this.opt.personalization_consent),g=g&&this.opt.personalization_consent),g=g&&h,googletag.pubads().setRequestNonPersonalizedAds(g?0:1),g||googletag.pubads().setPrivacySettings({limitedAds:!0}),this.opt.ll||googletag.pubads().enableSingleRequest(),cam.sreEvent||(googletag.pubads().addEventListener("slotRenderEnded",e=>this.onSlotRendered(e)),cam.sreEvent=!0),this.setTargeting(googletag);var m=d.filter(e=>!this.opt.ll||r.indexOf(e.id)<0),u=d.filter(e=>!!this.opt.ll&&r.indexOf(e.id)>=0);e.cM("Up front ids:",m),e.cM("Lazy loaded ids:",u),m.forEach(t=>{e.cM(`Defining ad for element ${t.id}`),this.defineSlot(t.id,googletag),t.setAttribute("data-dfp-zone","true")}),googletag.enableServices(),m.forEach(t=>{e.cM(`Displaying ad for element ${t.id}`),googletag.cmd.push(()=>googletag.display(t.id))}),this.opt.ll&&(e.cM("Enabling lazy loading for GAM"),googletag.pubads().enableLazyLoad({fetchMarginPercent:0,renderMarginPercent:0}),e.cM("Setting up lazy loaded ad units"),u.forEach(t=>{e.cM(`Lazy loading - Defining Slot ${t.id}`),this.defineSlot(t.id,googletag)}),u.forEach(t=>{e.cM(`Lazy loading - Displaying ad for element ${t.id}`),googletag.cmd.push(()=>googletag.display(t.id))}))}setTargeting(t){let s=this.opt.targeting;if(!s)throw new Error("Targeting not defined");Object.keys(s).forEach(i=>{e.cM(`-> targeting - ${i}: ${s[i]}`),t.pubads().setTargeting(i,s[i])});let i=(new c).getSurveyEngagement();i.getTotalBrandImpressions().forEach((s,i)=>{e.cM(`-> targeting - BrandImpressions: ${i}: ${s}`),t.pubads().setTargeting("brand_"+i.toString()+"_impressions",s.toString())}),i.surveysIdsCompleted.forEach(s=>{e.cM(`-> targeting - SurveysTaken: ${s}`),t.pubads().setTargeting("survey_"+s+"_taken","true")})}appendAdblockDetector(){const e=document.createElement("div");e.className="adsbox",e.id="clc-abd",e.style.position="absolute",e.style.pointerEvents="none",e.innerHTML="&nbsp;",document.body.appendChild(e)}onSlotRendered(s){try{const a=s.slot.getSlotElementId();let r=[];a||r.push("id=0");const d=document.getElementById(a);if(a&&!d&&r.push("el=0"),0!==r.length)return void this.stalled(r.join("&"));const{path:l,sizes:c,zone:p}=(0,i.Z7)(a);if(this.collapsed[p]&&s.isEmpty)return e.cM(`No line item for the element #${d.id}... collapsing.`),void(0,o.wo)(d);if(this.slotsRenderedEvents.push(s),s.lineItemId||s.creativeId||!s.isEmpty){e.cM(`Rendered ad for element #${d.id} [line item #${s.lineItemId}]`),e.cM(s);var n=d.parentElement;if(n.classList.contains("js-zone-container")){switch((0,o.cf)(n),a){case"dfp-tlb":this.opt.tlb_position===t.Above?n.classList.add("mb8"):n.classList.add("mt16");break;case"dfp-tag":n.classList.add("mb8");break;case"dfp-msb":n.classList.add("mt16");break;case"dfp-mlb":case"dfp-smlb":case"dfp-bmlb":n.classList.add("my8");break;case"dfp-isb":n.classList.add("mt24");break;case"dfp-m-aq":n.classList.add("my12"),n.classList.add("mx-auto")}(0,o.$Z)(n),(0,o.$Z)(d)}else e.cM(`No ad for element #${d.id}, collapsing`),e.cM(s),(0,o.wo)(d)}}catch(t){e.cM("Exception thrown onSlotRendered"),e.cM(t),this.stalled("e=1")}}stalled(e){(new Image).src=`https://${this.clc_options.h}/stalled.gif?${e}`}defineSlot(t,s){"dfp-isb"===t&&(e.cM("-> targeting - Sidebar: Inline"),s.pubads().setTargeting("Sidebar",["Inline"])),"dfp-tsb"===t&&(e.cM("-> targeting - Sidebar: Right"),s.pubads().setTargeting("Sidebar",["Right"]));const{path:o,sizes:n,zone:a}=(0,i.Z7)(t);e.cM(`Defining slot for ${t}: ${o}, sizes: ${JSON.stringify(n)}`),s.defineSlot(o,n,t).addService(s.pubads())}importGptLibrary(){this.gptImported||(this.gptImported=!0,void 0===this.opt.targeting_consent||this.opt.targeting_consent?(0,o.Gx)("https://securepubads.g.doubleclick.net/tag/js/gpt.js"):(0,o.Gx)("https://pagead2.googlesyndication.com/tag/js/gpt.js"))}isGptReady(){return"undefined"!=typeof googletag&&!!googletag.apiReady}initGpt(){"undefined"==typeof googletag&&(window.googletag={cmd:(0,o.QZ)(()=>this.importGptLibrary())})}initDebugPanel(t,s){e.cM("initDebugPanel"),e.cM("Not showing debug panel")}},window.clcGamLoaderOptions&&(cam.init(),cam.load())})()})();</script>   , IP:104.18.11.86:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 74 / 94 ]-[ 08:43:30 ] 
+[ + ] Target::  https://attackevals.mitre-engenuity.org/managed-services/oilrig/ 
+[ + ] Exploit:: 
+[ + ] Title:: ATT&CK&reg; Evaluations
+[ + ] Information Server:: HTTP/2 200 ,    , IP:20.81.111.111:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 75 / 94 ]-[ 08:43:32 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://qz.com/89580/how-an-oil-rig-shed-its-macho-culture-and-became-safer-and-more-productive 
+[ + ] Exploit:: 
+[ + ] Title:: How an oil rig shed its macho culture and became safer and more productive
+[ + ] Information Server:: HTTP/2 200 ,    , IP:151.101.129.79:443 
+[ + ] More details:: 
+[ + ] Found::  POSTGRESQL-06  -  VALUE: pg_
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 76 / 94 ]-[ 08:43:34 ] 
+[ + ] Target::  https://ozrobotics.com/shop/diy-oil-rig-kit-with-3d-mechanical-puzzle/ 
+[ + ] Exploit:: 
+[ + ] Title:: Treasure Finder DIY Oil Rig Kit Mechanical Model &#8211; Oz Robotics
+[ + ] Information Server:: HTTP/2 200 ,    , IP:92.204.135.70:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 77 / 94 ]-[ 08:43:36 ] 
+[ + ] Target::  https://www.thestar.com.my/tech/tech-news/2023/04/26/oil-rig-robbery-crew-members-video-call-with-wife-led-to-arrest-of-four 
+[ + ] Exploit:: 
+[ + ] Title:: Oil rig robbery: Crew member’s video call with wife led to arrest of four | The Star
+[ + ] Information Server:: HTTP/2 200 ,    , IP:18.155.68.95:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 78 / 94 ]-[ 08:43:38 ] 
+[ + ] Target::  https://www.intelsat.com/resources/blog/reliable-connectivity-for-offshore-energy-operations/ 
+[ + ] Exploit:: 
+[ + ] Title:: Reliable Connectivity for Offshore Energy Operations | Intelsat
+[ + ] Information Server:: HTTP/2 200 ,    , IP:172.67.21.228:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 79 / 94 ]-[ 08:43:40 ] 
+[ + ] Target::  https://comsys.se/case/offshore-oil-rig-baltic-sea/ 
+[ + ] Exploit:: 
+[ + ] Title:: Offshore oil rig, Baltic Sea - Comsys
+[ + ] Information Server:: HTTP/2 200 ,    , IP:91.201.60.14:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 80 / 94 ]-[ 08:43:40 ] 
+[ + ] Target::  https://www.nature.com/articles/439899a 
+[ + ] Exploit:: 
+[ + ] Title:: 303 See Other
+[ + ] Information Server:: HTTP/2 303 ,    , IP:199.232.44.95:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 81 / 94 ]-[ 08:43:42 ] 
+[ + ] Target::  https://work.chron.com/types-work-done-oil-rig-21242.html 
+[ + ] Exploit:: 
+[ + ] Title:: Types of Work Done on an Oil Rig | Work - Chron.com
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.226.175.98:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 82 / 94 ]-[ 08:43:43 ] 
+[ + ] Target::  https://www.koco.com/article/oklahoma-blackwell-oil-rig-killed-wind/39667886 
+[ + ] Exploit:: 
+[ + ] Title:: One killed, one injured as Blackwell oil rig tips over
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.45.55:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 83 / 94 ]-[ 08:43:44 ] 
+[ + ] Target::  https://www.washingtonpost.com/archive/politics/1980/03/28/7-killed-108-lost-as-oil-rig-falls-in-icy-north-sea/98cf6151-3494-4707-9083-c502b5612114/ 
+[ + ] Exploit:: 
+[ + ] Title:: 7 Killed, 108 Lost As Oil Rig Falls In Icy North Sea - The Washington Post
+[ + ] Information Server:: HTTP/2 200 ,    , IP:104.69.153.222:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 84 / 94 ]-[ 08:43:49 ] 
+[ + ] Target::  https://www.marinetechnologynews.com/blogs/oil-rig-ballast-control-system-accidents-700459 
+[ + ] Exploit:: 
+[ + ] Title:: 
+[ + ] Information Server:: ,    , IP:104.26.7.116:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 85 / 94 ]-[ 08:43:50 ] 
+[ + ] Target::  https://www.istockphoto.com/photos/oil-rig-sea 
+[ + ] Exploit:: 
+[ + ] Title:: 18,500+ Oil Rig Sea Stock Photos, Pictures &amp; Royalty-Free Images - iStock
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.226.120.89:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 86 / 94 ]-[ 08:43:51 ] 
+[ + ] Target::  https://www.aig.co.uk/business-insurance/innovative-products/energy-and-construction/oil-rig-energy 
+[ + ] Exploit:: 
+[ + ] Title:: Oil Rig | AIG UK
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.224.167.82:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 87 / 94 ]-[ 08:43:56 ] 
+[ + ] Target::  https://www.katchkan.com/rsrc/safety-on-oil-rigs-what-you-need-to-know/ 
+[ + ] Exploit:: 
+[ + ] Title:: Safety On Oil Rigs: what you need to know - Katch Kan
+[ + ] Information Server:: HTTP/2 200 ,    , IP:35.203.2.158:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 88 / 94 ]-[ 08:43:57 ] 
+[ + ] Target::  https://www.dailymail.co.uk/news/article-11540959/British-oil-rig-worker-bashed-colleague-death-air-cylinder-Qatar.html 
+[ + ] Exploit:: 
+[ + ] Title:: British oil rig worker 'bashed colleague to death with an air cylinder' in Qatar | Daily Mail Online
+[ + ] Information Server:: HTTP/2 200 ,    , IP:23.195.153.197:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 89 / 94 ]-[ 08:43:58 ] 
+[ + ] Target::  https://cyber.vumetric.com/security-news/2023/10/19/iran-linked-oilrig-targets-middle-east-governments-in-8-month-cyber-campaign/ 
+[ + ] Exploit:: 
+[ + ] Title:: Iran-Linked OilRig Targets Middle East Governments in 8-Month Cyber Campaign | Vumetric Cyber Portal
+[ + ] Information Server:: HTTP/2 200 ,    , IP:172.66.43.26:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 90 / 94 ]-[ 08:44:00 ] 
+[ + ] Target::  https://www.cbsnews.com/news/offshore-oil-rig-island-living-but-no-paradise/ 
+[ + ] Exploit:: 
+[ + ] Title:: Offshore oil rig: Island living, but no paradise - CBS News
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.232.93.188:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 91 / 94 ]-[ 08:44:00 ] 
+[ + ] Target::  https://info.ceicdata.com/ceic-article-oil-rig-count-data-the-us-is-poised-to-increase-oil-production 
+[ + ] Exploit:: 
+[ + ] Title:: CEIC Article: Oil Rig Count Data: The US is Poised to Increase Oil Production
+[ + ] Information Server:: HTTP/2 200 ,    , IP:199.60.103.31:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 92 / 94 ]-[ 08:44:03 ] 
+[ + ] Target::  https://science.howstuffworks.com/environmental/energy/offshore-drilling.htm 
+[ + ] Exploit:: 
+[ + ] Title:: How Offshore Drilling Works | HowStuffWorks
+[ + ] Information Server:: HTTP/2 200 ,    , IP:13.33.33.13:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 93 / 94 ]-[ 08:44:05 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.flaticon.com/free-icons/oil-rig 
+[ + ] Exploit:: 
+[ + ] Title:: Oil rig Icons & Symbols
+[ + ] Information Server:: HTTP/2 200 ,    , IP:34.149.47.137:443 
+[ + ] More details:: 
+[ + ] Found::  MYSQL-11  -  VALUE: num_rows
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ INFO ] [ Shutting down ]
+[ INFO ] [ End of process INURLBR at [ 25-10-2023 08:44:05 ]
+[ INFO ] [ TOTAL FILTERED VALUES ]:: [ 3 ]
+[ INFO ] [ OUTPUT FILE ]:: [ /workspaces/SCANNER-INURLBR/output/req.txt  ]
+|_________________________________________________________________________________________
+https://www.content.shi.com/SHIcom/ContentAttachmentImages/SharedResources/PDFs/lr-041017-oilrig-report2.pdf
+https://qz.com/89580/how-an-oil-rig-shed-its-macho-culture-and-became-safer-and-more-productive
+https://www.flaticon.com/free-icons/oil-rig
+
+\_________________________________________________________________________________________/
