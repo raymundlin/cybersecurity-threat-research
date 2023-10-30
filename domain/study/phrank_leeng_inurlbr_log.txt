@@ -1,0 +1,958 @@
+TERM environment variable not set.
+
+
+
+    ██▓    ███▄    █     █    ██     ██▀███      ██▓        ▄▄▄▄       ██▀███  
+    ▓██▒    ██ ▀█   █     ██  ▓██▒   ▓██ ▒ ██▒   ▓██▒       ▓█████▄    ▓██ ▒ ██▒
+    ▒██▒   ▓██  ▀█ ██▒   ▓██  ▒██░   ▓██ ░▄█ ▒   ▒██░       ▒██▒ ▄██   ▓██ ░▄█ ▒
+    ░██░   ▓██▒  ▐▌██▒   ▓▓█  ░██░   ▒██▀▀█▄     ▒██░       ▒██░█▀     ▒██▀▀█▄  
+    ░██░   ▒██░   ▓██░   ▒▒█████▓    ░██▓ ▒██▒   ░██████▒   ░▓█  ▀█▓   ░██▓ ▒██▒
+    ░▓     ░ ▒░   ▒ ▒    ░▒▓▒ ▒ ▒    ░ ▒▓ ░▒▓░   ░ ▒░▓  ░   ░▒▓███▀▒   ░ ▒▓ ░▒▓░
+     ▒ ░   ░ ░░   ░ ▒░   ░░▒░ ░ ░      ░▒ ░ ▒░   ░ ░ ▒  ░   ▒░▒   ░      ░▒ ░ ▒░
+     ▒ ░      ░   ░ ░     ░░░ ░ ░      ░░   ░      ░ ░       ░    ░      ░░   ░ 
+     ░              ░       ░           ░            ░  ░    ░            ░     3.0
+    
+[ ! ]  https://blog.mrcl0wn.com
+[ ! ]  https://twitter.com/MrCl0wnLab
+[ ! ]  https://github.com/MrCl0wnLab
+[ ! ]  Current IPinfo Token::[  ]
+[ ! ]  Current PHP version::[ 5.5.9-1ubuntu4.29 ]
+[ ! ]  Current script owner::[ root ]
+[ ! ]  Current uname::[ Linux 0a2a04ccdf04 6.2.0-1015-azure #15~22.04.1-Ubuntu SMP Fri Oct  6 13:20:44 UTC 2023 x86_64 ]
+[ ! ]  Current pwd::[ /SCANNER-INURLBR ]
+[ ! ]  Help: php inurlbr.php --help
+ ____________________________________________________________________________________________________________________
+
+[ ! ] Starting SCANNER INURLBR 3.0 at [28-10-2023 17:32:02]
+[ ! ] legal disclaimer: Usage of INURLBR for attacking targets without prior mutual consent is illegal. 
+[ ! ] It is the end user's responsibility to obey all applicable local, state and federal laws.
+[ ! ] Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[ INFO ][ OUTPUT FILE ]:: [ /SCANNER-INURLBR/output/req.txt  ]
+[ INFO ][ DORK ]::[ site:https://www.hackthissite.org/ ]
+[ INFO ][ SEARCHING ]:: { 
+[ INFO ][ ENGINE ]::[ GOOGLE - www.google.com.vc ]
+
+[ INFO ][ SEARCHING ]:: 
+||
+
+[ INFO ][ TOTAL FOUND VALUES ]:: [ 100 ]
+
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 0 / 100 ]-[ 17:32:06 ] 
+[ + ] Target::  https://www.hackthissite.org/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 1 / 100 ]-[ 17:32:08 ] 
+[ + ] Target::  https://www.hackthissite.org/lectures 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 2 / 100 ]-[ 17:32:09 ] 
+[ + ] Target::  https://www.hackthissite.org/hof 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 3 / 100 ]-[ 17:32:10 ] 
+[ + ] Target::  https://www.hackthissite.org/advertise 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 4 / 100 ]-[ 17:32:11 ] 
+[ + ] Target::  https://www.hackthissite.org/news 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 5 / 100 ]-[ 17:32:12 ] 
+[ + ] Target::  https://www.hackthissite.org/h0hNx5WXO814ohGgIgu43KXQMYF7a53K1OVlT748rkbTi1pwA7oDP35F8KzPJGL8d7b5753OjY1cdhSQJmS0Fd26T71G6j6ugHHt 
+[ + ] Exploit:: 
+[ + ] Title:: Redirecting to https://amzn.to/2pNm3NL
+[ + ] Information Server:: HTTP/1.1 302 Found, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 6 / 100 ]-[ 17:32:13 ] 
+[ + ] Target::  https://www.hackthissite.org/blogs 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Blogs
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 7 / 100 ]-[ 17:32:14 ] 
+[ + ] Target::  https://www.hackthissite.org/register 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Register
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 8 / 100 ]-[ 17:32:14 ] 
+[ + ] Target::  https://www.hackthissite.org/donate/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 9 / 100 ]-[ 17:32:15 ] 
+[ + ] Target::  https://www.hackthissite.org/ipv6 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: IPv6
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 10 / 100 ]-[ 17:32:16 ] 
+[ + ] Target::  https://www.hackthissite.org/discord 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Discord
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 11 / 100 ]-[ 17:32:17 ] 
+[ + ] Target::  https://www.hackthissite.org/irc 
+[ + ] Exploit:: 
+[ + ] Title:: 302 Found
+[ + ] Information Server:: HTTP/1.1 302 Found, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 12 / 100 ]-[ 17:32:18 ] 
+[ + ] Target::  https://www.hackthissite.org/?need_login 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 13 / 100 ]-[ 17:32:19 ] 
+[ + ] Target::  https://www.hackthissite.org/info/billofrights 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 14 / 100 ]-[ 17:32:20 ] 
+[ + ] Target::  https://www.hackthissite.org/info/about 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 15 / 100 ]-[ 17:32:21 ] 
+[ + ] Target::  https://www.hackthissite.org/info/legal 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 16 / 100 ]-[ 17:32:21 ] 
+[ + ] Target::  https://www.hackthissite.org/info/underthehood 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 17 / 100 ]-[ 17:32:22 ] 
+[ + ] Target::  https://www.hackthissite.org/register/submit 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Register
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 18 / 100 ]-[ 17:32:23 ] 
+[ + ] Target::  https://www.hackthissite.org/submit/lecture 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 19 / 100 ]-[ 17:32:24 ] 
+[ + ] Target::  https://www.hackthissite.org/news/7 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 20 / 100 ]-[ 17:32:25 ] 
+[ + ] Target::  https://www.hackthissite.org/news/8 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 21 / 100 ]-[ 17:32:26 ] 
+[ + ] Target::  https://www.hackthissite.org/news/19 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 22 / 100 ]-[ 17:32:26 ] 
+[ + ] Target::  https://www.hackthissite.org/user/forgotusername 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 23 / 100 ]-[ 17:32:27 ] 
+[ + ] Target::  https://www.hackthissite.org/playlevel/6/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 24 / 100 ]-[ 17:32:28 ] 
+[ + ] Target::  https://www.hackthissite.org/blogs/4 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Blogs
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 25 / 100 ]-[ 17:32:29 ] 
+[ + ] Target::  https://www.hackthissite.org/news/5 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 26 / 100 ]-[ 17:32:29 ] 
+[ + ] Target::  https://www.hackthissite.org/news/17 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 27 / 100 ]-[ 17:32:30 ] 
+[ + ] Target::  https://www.hackthissite.org/news/22 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 28 / 100 ]-[ 17:32:31 ] 
+[ + ] Target::  https://www.hackthissite.org/user/online 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 29 / 100 ]-[ 17:32:32 ] 
+[ + ] Target::  https://www.hackthissite.org/user/login 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Login
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 30 / 100 ]-[ 17:32:33 ] 
+[ + ] Target::  https://www.hackthissite.org/news/11 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 31 / 100 ]-[ 17:32:34 ] 
+[ + ] Target::  https://www.hackthissite.org/user/search 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 32 / 100 ]-[ 17:32:34 ] 
+[ + ] Target::  https://www.hackthissite.org/blogs/3 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Blogs
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 33 / 100 ]-[ 17:32:35 ] 
+[ + ] Target::  https://www.hackthissite.org/news/12 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 34 / 100 ]-[ 17:32:36 ] 
+[ + ] Target::  https://www.hackthissite.org/info/staff 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 35 / 100 ]-[ 17:32:37 ] 
+[ + ] Target::  https://www.hackthissite.org/user/resetpass 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 36 / 100 ]-[ 17:32:38 ] 
+[ + ] Target::  https://www.hackthissite.org/news/3 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 37 / 100 ]-[ 17:32:38 ] 
+[ + ] Target::  https://www.hackthissite.org/playlevel/8/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 38 / 100 ]-[ 17:32:39 ] 
+[ + ] Target::  https://www.hackthissite.org/news/14 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 39 / 100 ]-[ 17:32:40 ] 
+[ + ] Target::  https://www.hackthissite.org/news/2 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 40 / 100 ]-[ 17:32:41 ] 
+[ + ] Target::  https://www.hackthissite.org/blogs/2 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: Blogs
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 41 / 100 ]-[ 17:32:42 ] 
+[ + ] Target::  https://www.hackthissite.org/news/9 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 42 / 100 ]-[ 17:32:42 ] 
+[ + ] Target::  https://www.hackthissite.org/playlevel/11/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 43 / 100 ]-[ 17:32:43 ] 
+[ + ] Target::  https://www.hackthissite.org/user/themes 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 44 / 100 ]-[ 17:32:44 ] 
+[ + ] Target::  https://www.hackthissite.org/playlevel/10/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 45 / 100 ]-[ 17:32:45 ] 
+[ + ] Target::  https://www.hackthissite.org/submit/article 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 46 / 100 ]-[ 17:32:46 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/901 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 47 / 100 ]-[ 17:32:47 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.hackthissite.org/articles/read/793/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found::  SHELL-14  -  VALUE: MyShell
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 48 / 100 ]-[ 17:32:48 ] 
+[ + ] Target::  https://www.hackthissite.org/?need_login-it 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 49 / 100 ]-[ 17:32:49 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1149 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 50 / 100 ]-[ 17:32:50 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/Nuticulus 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 51 / 100 ]-[ 17:32:51 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/696 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - Metasploit Unleashed
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 52 / 100 ]-[ 17:32:52 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/820 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 53 / 100 ]-[ 17:32:53 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1105 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 54 / 100 ]-[ 17:32:54 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/CyberPhreak 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 55 / 100 ]-[ 17:32:54 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/703 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - Internetwache CTF 2016
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 56 / 100 ]-[ 17:32:55 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.hackthissite.org/articles/read/815 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found::  ERRORPHP-11  -  VALUE: Warning: main(
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 57 / 100 ]-[ 17:32:56 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/722 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - HackThisSite @ 36C3
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 58 / 100 ]-[ 17:32:58 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1099 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 59 / 100 ]-[ 17:32:59 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1114 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 60 / 100 ]-[ 17:33:00 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1140 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 61 / 100 ]-[ 17:33:00 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/retro 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 62 / 100 ]-[ 17:33:01 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/wired/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 63 / 100 ]-[ 17:33:02 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/987 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 64 / 100 ]-[ 17:33:03 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/724 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - Application 7 &amp; 17
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 65 / 100 ]-[ 17:33:04 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/Netalarm123 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 66 / 100 ]-[ 17:33:05 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1134/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 67 / 100 ]-[ 17:33:06 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/557 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - Kage (the sysadmin) on Doppler Effect
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 68 / 100 ]-[ 17:33:07 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/916/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 69 / 100 ]-[ 17:33:08 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/740/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 70 / 100 ]-[ 17:33:09 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1157 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 71 / 100 ]-[ 17:33:10 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/Kane 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 72 / 100 ]-[ 17:33:11 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/711 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - Big Changes Are Coming!
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 73 / 100 ]-[ 17:33:12 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/thedotmaster 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 74 / 100 ]-[ 17:33:13 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/bustedgrl09 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 75 / 100 ]-[ 17:33:14 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.hackthissite.org/articles/read/950 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found::  MYSQL-01  -  VALUE: mysql_
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 76 / 100 ]-[ 17:33:15 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1156 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 77 / 100 ]-[ 17:33:16 ] 
+[ + ] Target::  https://www.hackthissite.org/news/view/717/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site :: News - 34C3 Junior CTF - 2nd place!
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 78 / 100 ]-[ 17:33:17 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/681/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 79 / 100 ]-[ 17:33:18 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1148 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 80 / 100 ]-[ 17:33:19 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1060 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 81 / 100 ]-[ 17:33:20 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/853/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 82 / 100 ]-[ 17:33:21 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1078 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 83 / 100 ]-[ 17:33:22 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/NETWORKsecurity 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 84 / 100 ]-[ 17:33:23 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.hackthissite.org/articles/read/1043 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found::  MICROSOFT-10  -  VALUE: Unclosed quotation mark
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 85 / 100 ]-[ 17:33:24 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1154 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 86 / 100 ]-[ 17:33:24 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/agentsteal 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 87 / 100 ]-[ 17:33:25 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/Lecpetex 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 88 / 100 ]-[ 17:33:26 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/846 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 89 / 100 ]-[ 17:33:27 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/986 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 90 / 100 ]-[ 17:33:28 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/MachinaExDeo/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 91 / 100 ]-[ 17:33:29 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/AR/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 92 / 100 ]-[ 17:33:30 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1025 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 93 / 100 ]-[ 17:33:31 ] 
+[ + ] Target::  ( POTENTIALLY VULNERABLE )   https://www.hackthissite.org/articles/read/855 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found::  MICROSOFT-02  -  VALUE: ADODB.Recordset
+|_[ + ] VALUE SAVED IN THE FILE:: req.txt
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 94 / 100 ]-[ 17:33:32 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1017/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 95 / 100 ]-[ 17:33:33 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1150 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 96 / 100 ]-[ 17:33:34 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/910 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 97 / 100 ]-[ 17:33:35 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1094 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 98 / 100 ]-[ 17:33:36 ] 
+[ + ] Target::  https://www.hackthissite.org/articles/read/1144 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ - ] --------------------------------------------------------------------------------------------------------------
+[ + ] [ 99 / 100 ]-[ 17:33:37 ] 
+[ + ] Target::  https://www.hackthissite.org/user/view/apples/ 
+[ + ] Exploit:: 
+[ + ] Title:: Hack This Site
+[ + ] Information Server:: HTTP/1.1 200 OK, Server: HackThisSite   , IP:137.74.187.100:443 
+[ + ] More details:: 
+[ + ] Found:: UNIDENTIFIED
+
+[ INFO ] [ Shutting down ]
+[ INFO ] [ End of process INURLBR at [ 28-10-2023 17:33:37 ]
+[ INFO ] [ TOTAL FILTERED VALUES ]:: [ 5 ]
+[ INFO ] [ OUTPUT FILE ]:: [ /SCANNER-INURLBR/output/req.txt  ]
+|_________________________________________________________________________________________
+https://www.hackthissite.org/articles/read/793/
+https://www.hackthissite.org/articles/read/815
+https://www.hackthissite.org/articles/read/950
+https://www.hackthissite.org/articles/read/1043
+https://www.hackthissite.org/articles/read/855
+
+\_________________________________________________________________________________________/
