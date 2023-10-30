@@ -1,17 +1,17 @@
 """ This py build summary md from yaml files """
 
 import os
+import logging
 
 import pandas as pd
 import yaml
-import logging
 
-logging.basicConfig(filename='build_domain.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename='myapp.log', level=logging.DEBUG)
+logging.info("Start")
+logging.warning("You have to make sure there is at least one yaml or yml file")
 
 def count_yaml_keys(file_path):
     """count"""
-    if not file_path:
-        logging.fatal("You need pass parameter in count_yaml_keys func.")
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         data = yaml.safe_load(yaml_file)
         if data is None:
@@ -20,34 +20,33 @@ def count_yaml_keys(file_path):
 
 
 def get_yaml_content(file_path):
-    if not file_path:
-        logging.fatal("You need pass parameter in get_yaml_content func.")
     with open(file_path, "r", encoding="utf-8") as yaml_file:
         return yaml.safe_load(yaml_file)
 
 
 def find_yaml_files(root_dir):
     """process all yamls"""
-    if not root_dir:
-        logging.warning("You need pass parameter in find_yaml_files func.")
     yaml_files = []
     for item in os.listdir(root_dir):
         if os.path.isfile(os.path.join(root_dir, item)):
             if item.endswith(".yaml") or item.endswith(".yml"):
                 yaml_files.append(os.path.join(root_dir, item))
+            else:
+                logging.error("There's no yaml or yml file.")
     return yaml_files
 
 
 def main(root_directory):
     """main"""
-    logging.info("Start Fetching YAML files...")
     vector = {}
     yaml_files = find_yaml_files(root_directory)
 
-    logging.debug(yaml_files)
+    logging.debug("Printing files")
+    print(yaml_files)
 
     if not yaml_files:
-        logging.fatal("No YAML files found in the specified directory.")
+        logging.critical("No YAML files found in the specified directory.")
+        print("No YAML files found in the specified directory.")
         return
 
     for yaml_file_path in yaml_files:
@@ -70,17 +69,14 @@ def main(root_directory):
 
     df = pd.DataFrame(rows)
 
-    logging.info("Finish Fetching YAML files.")
-
     # Write Domain Summary
     with open(f"{root_directory}/README.md", "w+", encoding="utf-8") as markdownFile:
-        logging.info("Start Generate Domains Table...")
         markdownFile.write("### domain\Study\n")
         markdownFile.write("\n")
         markdownFile.writelines(df.to_markdown(index=False))
-        logging.debug(df)
+        logging.debug("Printing DataFrame")
+        print(df)
 
 if __name__ == "__main__":
-    logging.info("=== Domain Builder Start ===")
     main("./domain/study")
-    logging.info("=== Bomain Builder Finished ===")
+    logging.info("Finished")
