@@ -8,7 +8,7 @@ logger.setLevel(logging.INFO)
 def get_files(folder_name):
     """Get all files in a folder recursively."""
     if folder_name is None:
-        logger.error("No dictionary")
+        logger.error("File not found")
         logger.debug("File not found")
     files = []
     for root, dirs, file_names in os.walk(folder_name):
