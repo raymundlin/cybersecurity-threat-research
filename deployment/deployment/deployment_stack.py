@@ -3,7 +3,7 @@ from aws_cdk import (
     Stack,
     aws_lambda as _lambda,
     aws_apigateway as api_gateway,
-    CfnParameter,
+    CfnOutput,
 )
 from constructs import Construct
 
@@ -41,3 +41,6 @@ class DeploymentStack(Stack):
                 status_code='200',
             )],
         )
+        
+        # Output to CfnOutput
+        CfnOutput(self, "url", value=api.url)
