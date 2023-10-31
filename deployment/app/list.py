@@ -2,7 +2,9 @@ import os
 import json
 import logging
 
-logging.basicConfig(filename='sinyu.log', encoding='utf-8',level=logging.DEBUG)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
 
 def get_files(folder_name):
     """Get all files in a folder recursively."""
@@ -22,12 +24,11 @@ def main(event, lambda_context):
             if folder not in files:
                 files[folder] = []
             files[folder].append(file)
-            logging.info(f'This is {file} ')
+            logger.info(f'This is {file} ')
 
     return {
         'statusCode': 200,
         'body': json.dumps({
             "data": files,
-            
         })
     }
