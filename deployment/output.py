@@ -18,3 +18,6 @@ if __name__ == '__main__':
     # Print data
     print("Stage: {}".format(stage))
     print("Url: {}".format(data["DeploymentStack-{}".format(stage)]["url"]))
+
+    # Set output
+    print("::set-output name=url::{}".format(data["DeploymentStack-{}".format(stage)]["url"]))
