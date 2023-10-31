@@ -4,7 +4,9 @@ import logging
 import emoji
 import random
 
-logging.basicConfig(filename = "mylist.jog" , level = logging.DEBUG)
+logger = logging.getLogger()
+logger.setLevel(level= logging.DEBUG)
+
 emojis_list = list(emoji.EMOJI_DATA.keys())
 
 
@@ -16,7 +18,7 @@ def get_files(folder_name):
             if file_name.endswith('.yaml') or file_name.endswith('.yml'):
                 random_emoji = random.choice(emojis_list)
                 files.append(file_name + random_emoji)
-                logging.info("Emoji is good to use right ?")
+                logger.info("Emoji is good to use right ?")
     return files
 
 def main(event, lambda_context):
