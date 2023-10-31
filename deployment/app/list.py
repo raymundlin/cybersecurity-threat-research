@@ -1,8 +1,16 @@
 import os
 import json
+import logging
+
+
+logger = logging.getLogger()
+logger.setLevel(logging.info)
 
 def get_files(folder_name):
     """Get all files in a folder recursively."""
+    if folder_name is None:
+        logger.fatal("No directory")
+    
     files = []
     for root, dirs, file_names in os.walk(folder_name):
         for file_name in file_names:
@@ -18,6 +26,7 @@ def main(event, lambda_context):
         for file in get_files(folder):
             if folder not in files:
                 files[folder] = []
+                logger.info("No file in directory")
             files[folder].append(file)
 
     return {
