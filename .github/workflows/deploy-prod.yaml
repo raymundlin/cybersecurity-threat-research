@@ -34,4 +34,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
           aws-region: ${{ vars.CDK_DEFAULT_REGION }}
       - name: Deploy to AWS & Destroy stack
-        run: cd deployment && cdk deploy --require-approval=never 
+        run: cd deployment && cdk deploy --require-approval=never --outputs-file ./out.json
+      - name: Output Deployment Meta
+        run: python output.py
