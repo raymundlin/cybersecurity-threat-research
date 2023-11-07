@@ -24,6 +24,14 @@ class DeploymentStack(Stack):
             timeout=Duration.seconds(10),
         )
 
+        get_item_func = _lambda.Function(
+            self, "get-item-api",
+            runtime=_lambda.Runtime.PYTHON_3_9,
+            code=_lambda.Code.from_asset("./deployment/app") if testing else _lambda.Code.from_asset("./app"),
+            handler="item.main",
+            timeout=Duration.seconds(10),
+        )
+
         api = api_gateway.RestApi(
             self, 'deployment-api',
             rest_api_name='Deployment Service',
@@ -36,6 +44,19 @@ class DeploymentStack(Stack):
         api.root.add_method(
             'GET', api_gateway.LambdaIntegration(
                 list_func, proxy=True,
+            ),
+            method_responses=[api_gateway.MethodResponse(
+                status_code='200',
+            )],
+        )
+        
+        api_domain = api.root.add_resource("domain")
+        api_domain_study = api_domain.add_resource("study")
+
+        domain_study = api_domain_study.add_resource('{item}')
+        domain_study.add_method(
+            'GET', api_gateway.LambdaIntegration(
+                get_item_func, proxy=True,
             ),
             method_responses=[api_gateway.MethodResponse(
                 status_code='200',
