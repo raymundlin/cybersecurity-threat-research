@@ -1,0 +1,7 @@
+domain_only:
+  value: false
+  name: domain study only
+  description: build README with domain study only (without threat actors)
+  jira: CTR-123
+  creation_date: 2023-11-07
+  max_lifetime: 14
