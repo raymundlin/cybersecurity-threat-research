@@ -1,6 +1,12 @@
 import os
 import pandas as pd
 import logging
+from featuretoggles import TogglesList
+
+class ReleaseToggles(TogglesList):
+    domain_only: bool
+
+toggles = ReleaseToggles('toggles.yaml')
 
 logging.basicConfig(filename='build_root.log', encoding='utf-8', level=logging.DEBUG)
 
@@ -16,12 +22,16 @@ def get_files(folder_name):
     return files
 
 def get_contents():
-    directory_path = ['domain/study' , 'threat/actor']
-    topic_files = {dp: get_files(dp) for dp in directory_path}
+    directory_path = ['domain/study']
+    if not toggles.domain_only:
+        directory_path.append('threat/actor')
+    topic_files = {dp: get_files(dp) for 
+    dp in directory_path}
     contents = []
     for t in topic_files:
         contents.append({'Topic': t, 'Files': '\n'.join(topic_files[t])})
     return contents
+    
 
 
 with open(f"./README.md", "w+", encoding="utf-8") as markdownFile:
