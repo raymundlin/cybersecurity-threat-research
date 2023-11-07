@@ -1,5 +1,5 @@
 domain_only:
-  value: false
+  value: true
   name: domain study only
   description: build README with domain study only (without threat actors)
   jira: CTR-123
