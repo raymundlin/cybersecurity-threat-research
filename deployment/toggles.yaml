@@ -1,0 +1,20 @@
+import logging
+from featuretoggles import TogglesList
+
+class ReleaseToggles(TogglesList):
+  domain_only: bool
+
+toggles = ReleaseToggles('toggles.yaml')
+
+domain_only:
+  value: false
+  name: domain study only
+  description: build README with domain study only (without threat actors)
+  jira: CTR-123
+  creation_date: 2023-11-07
+  max_lifetime: 14
+
+def get_contents():
+  directory_path = ['domain/study']
+  if not toggles.domain_only:
+    directory_path.append('threat/actor')
