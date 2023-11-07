@@ -1,0 +1,6 @@
+renderHTML:
+  value: true
+  name: Render HTML
+  description: Render HTML in List Files
+  jira: FEAT-001
+  creation_date: 2023-11-07
