@@ -1,6 +1,17 @@
 import os
 import pandas as pd
 import logging
+from flagsmith import Flagsmith
+
+flagsmith = Flagsmith(environment_key=os.environ['Flag_Smith_key'])
+
+# The method below triggers a network request
+flags = flagsmith.get_environment_flags()
+
+# Check for a feature
+domain_toggle_is_enabled = flags.is_feature_enabled("domain_toggle")
+threat_actor_toggle_is_enabled = flags.is_feature_enabled("threat_actor_toggle")
+
 
 logging.basicConfig(filename='build_root.log', encoding='utf-8', level=logging.DEBUG)
 
@@ -16,7 +27,11 @@ def get_files(folder_name):
     return files
 
 def get_contents():
-    directory_path = ['domain/study' , 'threat/actor']
+    directory_path = []
+    if domain_toggle_is_enabled:
+        directory_path.append('domain')
+    if  threat_actor_toggle_is_enabled:
+        directory_path.append('threat/actor')
     topic_files = {dp: get_files(dp) for dp in directory_path}
     contents = []
     for t in topic_files:
