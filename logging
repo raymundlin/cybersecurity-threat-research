@@ -18,6 +18,8 @@ def get_files(folder_name):
 
 def main(event, lambda_context):
     """Main function."""
+    logging.basicConfig(level=logging.DEBUG)
+    logging.info('info message')
     files = {}
     folders = ["threat/actor", "domain/study"]
     for folder in folders:
