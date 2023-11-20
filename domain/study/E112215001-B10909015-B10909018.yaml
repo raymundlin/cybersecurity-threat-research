@@ -7,6 +7,12 @@ dnsdumpster: |
 shodan: |
   ports 80, 443
   domains za.com
+  shodan FILTER :
+    why this is interesting:
+      - When we try to search for ntust website (ntust.edu.tw), we can find ntust's website
+      - However, when we try to search for university in taiwan specifically in taipei city, the result is unexpected because not a single university is mentioned but previously ntust website is there. 
+        The result mentioned about tenten university (Indie Hackers) and Wenzao Ursuline University which is not as we expected to see.
+      - Then, we still haven't given up, we try search for university in taiwan, most of the result is the university in hsinchu like the NTHU.
 censys: |
   Network AMAZON-02 (US)
 
@@ -196,10 +202,31 @@ Curiosity about our researches : |
   Based on the forum, they said that it's depend on the people's interest. 
   The second topic is "Why bitcoin price drops and surges unexpectedly", the forum said that it is because of the fake news and rumors.
 
-
-Curiosity about our researches : |
+Kestrel huntbook : |
   this is our kestrel huntbook website : 
   https://hub.ovh2.mybinder.org/user/opencybersecuri-estrel-huntbook-f72x12o8/tree/tutorial
+
+Interresting hacks  : |
+  1. To bypass the ruby version (compatibility problem due to a version that is too recent)
+    - Delete the "s" at the end of "exists" in space_finder.rb (if !File.exists? filename)
+    - Copy this code in the module URI :
+        def escape(str)
+              alpha = "a-zA-Z"
+              alnum = "#{alpha}\\d"
+              unreserved = "\\-_.!~*'()#{alnum}"
+              reserved = ";/?:@&=+$,\\[\\]"
+              unsafe = Regexp.new("[^#{unreserved}#{reserved}]")
+              str.gsub(unsafe) do
+                  us = $&
+                  tmp = ''
+                  us.each_byte do |uc|
+                      tmp << sprintf('%%%02X', uc)
+                  end
+                  tmp
+              end.force_encoding(Encoding::US_ASCII)
+          end
+      - Edit the wordlist.txt with one word in this list : https://github.com/koaj/aws-s3-bucket-wordlist/blob/master/list.txt
+      - Run ./space_finder.rb -v wordlist.txt
   
 student id : | 
   E112215001, B10909015 and B10909018
