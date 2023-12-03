@@ -206,6 +206,18 @@ Kestrel huntbook : |
   this is our kestrel huntbook website : 
   https://hub.ovh2.mybinder.org/user/opencybersecuri-estrel-huntbook-f72x12o8/tree/tutorial
 
+Google Images & TinEye : |
+  Although the picture is used as public profile picture in linked in, google image and tineye search showed no result found
+
+Criminal Record Search : |
+  We found this website for criminal search, and they also give the sample of the documents. However, the sample are from other country and not Indonesia. Actually, to check if you have criminal records in Indonesia, you can ask for SKCK (Police Clearance Certificate) 
+  at the nearest police station in Indonesia, however, this police database is inaccessible for the public.
+
+EagleEye: |
+  Explore your friends' online presence by utilizing image recognition and reverse image search to discover their profiles on Instagram, Facebook, and Twitter.
+  We'll demonstrate this using the basic example of Toubia.
+
+  
 Interresting hacks  : |
   1. To bypass the ruby version (compatibility problem due to a version that is too recent)
     - Delete the "s" at the end of "exists" in space_finder.rb (if !File.exists? filename)
