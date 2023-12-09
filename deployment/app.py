@@ -19,6 +19,6 @@ env = cdk.Environment(account=os.environ["CDK_DEFAULT_ACCOUNT"], region=os.envir
 stage = os.environ.get('CDK_DEPLOY_STAGE') or 'dev'
 
 app = cdk.App()
-DeploymentStack(app, "DeploymentStack-{}".format(stage), stage=stage, env=env)
+DeploymentStack(app, "DeploymentStack_B11009045", env=Osaka)
 
 app.synth()
